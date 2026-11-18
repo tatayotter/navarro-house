@@ -141,9 +141,9 @@ Laminated glass on the slider for typhoons adds about ₱4,000–7,000 (Online).
 
 ## For the engineer
 
-The walls attaching to the roof columns is already approved. Please check these details:
+The walls attaching to the roof columns and the slab load are already approved. Please check these details:
 
-1. **Slab load.** The new load is roughly: framed walls ~0.7 t, new CHB half walls on the front and annex-side lines ~1.6 t, T&B partitions ~0.2 t, floor tiles ~0.6 t, raised T&B floor, curb and tiles ~0.6–0.9 t, ceiling ~0.3 t, plus furniture and people. Confirm the roof slab and beams carry this, especially the new half walls (are they over beams?) and the T&B corner.
+1. **Slab load: confirmed OK (18 Nov).** The slab takes the new load: framed walls ~0.7 t, new CHB half walls ~1.6 t, T&B partitions ~0.2 t, floor tiles ~0.6 t, raised T&B floor ~0.6–0.9 t, ceiling ~0.3 t.
 2. **Bottom anchoring.** The steel frame bolts onto the top of the 1 m half walls. Confirm the anchor type into the old parapets (are they reinforced, and strong enough to hold a 2 m wall above them in typhoon wind?), and how the new CHB half walls are dowelled to the slab without breaking the roof waterproofing.
 3. **Top connection.** The walls stop at the red steel purlins. The roof moves in typhoon winds, so the top fixing should allow movement while still holding the wall against wind.
 4. **Typhoon wind on the walls.** Confirm the frame member size and spacing, the cladding screw spacing, and the fixing of the frame to the columns, especially on the long annex-side wall.
