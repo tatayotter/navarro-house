@@ -20,6 +20,8 @@ Above the half wall, from the outside in:
 3. **Frame:** light steel studs or C-purlins at 60 cm, fixed to the columns, a steel angle bolted on top of the half wall, and the purlins at the top.
 4. **Inside:** 6 mm Hardiflex, joints taped, puttied and painted. In the T&B: 12 mm fibre-cement board, waterproofed and tiled.
 
+![Wall cut-through and top view of the rooftop room walls](rooftop-wall-diagram.png)
+
 **The 1 m half wall:**
 
 - **Back and outer side:** use the existing concrete parapets. Patch and skim-coat the inside face, then paint.
