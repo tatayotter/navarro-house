@@ -68,6 +68,32 @@ For about 43 m² of new outside wall.
 | Inside paint: putty, primer, latex, and painting labour | ~50 m² | 5,500 | 9,000 | Online |
 | **Subtotal** | | **84,410** | **131,260** | |
 
+## Option: WPC inside instead of painted Hardiflex
+
+Yes, this works. WPC wall panels (fluted or flat, about 9–12 mm, 16–20 cm wide) clip onto horizontal battens fixed across the steel frame. The T&B stays on Hardiflex/fibre-cement with tiles, because WPC shouldn't be used in the shower zone.
+
+**Can the Hardiflex be dropped?** Yes, in the dry room. WPC goes straight onto battens, so the Hardiflex behind it isn't needed. Two things to keep in mind:
+
+- **Fire:** WPC is part plastic and burns, while Hardiflex doesn't. Keep WPC away from the aircon outlet and plugs or use metal box covers, and don't put it right beside the window aircon sleeve.
+- **Heat:** WPC expands in heat. Leave the gaps the supplier asks for at the ceiling, floor and corners.
+- **Hanging things:** screw heavy items into the battens or the steel frame, not just the WPC.
+
+About 45 m² of room-side wall (the room walls plus the T&B's room-side face), order 50 m².
+
+| Item | Qty | Low (₱) | High (₱) | Source |
+|---|---|---|---|---|
+| WPC interior wall panels | 50 m² | 32,500 | 60,000 | Online |
+| Clips, start and end trims, corner trims | 45 m² | 3,600 | 6,750 | Online |
+| Horizontal battens at 40 cm (metal furring) | 45 m² | 4,500 | 8,100 | Online |
+| WPC installer labour | 45 m² | 6,750 | 11,250 | Online |
+| **WPC total** | | **47,350** | **86,100** | |
+| Less: Hardiflex inside, its share of joints and labour, putty and paint (no longer needed) | | −20,550 | −30,280 | Online |
+| **Extra cost against painted Hardiflex** | | **+26,800** | **+55,820** | |
+
+- **WPC everywhere in the room, Hardiflex dropped:** total becomes about **₱234k–407k** with the 10% buffer, against ₱205k–345k with painted Hardiflex.
+- **Keeping Hardiflex behind the WPC** (stiffer wall, better fire barrier, easier to hang things): add about ₱13,000–18,000 more.
+- **Cheaper middle ground:** WPC on one feature wall only, such as the wall behind the bed (about 12 m²), with painted Hardiflex elsewhere: about **+₱8,000–15,000**.
+
 ## T&B finishes
 
 About 1.6 × 1.7 m. With fibre-cement inside, the T&B walls can be tiled normally: 12 mm fibre-cement board on the wet faces, a waterproofing membrane, then tiles. The plumbing page already covers the raised floor and its membrane.
