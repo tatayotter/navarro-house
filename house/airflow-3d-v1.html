@@ -84,8 +84,8 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
    <div><i style="background:#c0392b"></i>Main panel / dedicated outlet / conduit</div><div><i style="background:#2f6f9e"></i>Socket (30 cm; counter 1.1 m)</div>
    <div><i style="background:#6a4bc4"></i>Tuya switch, 1.3 m</div><div><i style="background:#f2c230"></i>Ceiling light, 15 W+ LED (final count: 20)</div><div><i style="background:#e08a00;border-radius:50%"></i>Smart E27 mood pendant</div>
    <div><i style="background:#1f8a5b"></i>Router / mesh node</div><div><i style="background:linear-gradient(90deg,#e8590c 33%,#1971c2 33% 66%,#2f9e44 66%)"></i>Switch wiring: gang 1 orange, 2 blue, 3 green</div><p>Hung ceilings show when Cutaway is off; conduits run above them. Air dots are hidden while this is on.</p></div>
-  <div id="pleg" hidden><h2>Plumbing key (draft v1)</h2>
-   <div><i style="background:#8d5524"></i>Drain, 100 mm main to the new septic tank</div><div><i style="background:#868e96"></i>Vent above the roof</div><div><i style="background:#1c7ed6"></i>Water: meter, 500 L tank, booster pump, riser</div><div><i style="background:#6b4f2a;opacity:.5"></i>Septic tank / inspection chamber (underground)</div><p>From the plumbing plan thread; shown through floors.</p></div>
+  <div id="pleg" hidden><h2>Plumbing key (draft v1.1)</h2>
+   <div><i style="background:#8d5524"></i>Drain, 100 mm main to the new septic tank</div><div><i style="background:#868e96"></i>Vent above the roof</div><div><i style="background:#1c7ed6"></i>Water: city line (in at the kitchen), 500 L tank, booster pump, riser</div><div><i style="background:#495057;opacity:.5"></i>Old septic tank (to be closed)</div><div><i style="background:#6b4f2a;opacity:.5"></i>Septic tank / inspection chamber (underground)</div><p>From the plumbing plan thread; shown through floors.</p></div>
   <div id="rooms"><h2>Air and heat <span class="chev">▾</span></h2><div id="roomList"></div><p id="tip"></p></div>
 </div>
 <div class="bar">
@@ -691,13 +691,16 @@ pRun([[54,466,-0.2],[54,456,-0.22],[116,456,-0.29]],pmD); pBox(46,62,458,474,-0.
 pRun([[166,266,-0.45],[116,250,-0.45]],pmD,0.05); pRun([[166,266,-0.45],[166,266,RF+0.05]],pmD,0.05); pRun([[166,266,RF+0.05],[166,266,RF+RH+0.45]],pmV,0.03);
 pRun([[150,262,RF+0.08],[166,266,RF+0.08]],pmD); pRun([[126,257,RF+0.08],[166,266,RF+0.08]],pmD); pRun([[157,308,RF+0.06],[166,266,RF+0.07]],pmD);
 pTag('Stack + riser (chase)',166,266,Y2+1.2,2); pTag('Roof T&B drains',150,285,RF+0.3,3);
-// water: meter -> 500 L tank -> booster pump -> riser
-pRun([[172,-10,0.25],[172,137,0.25],[159,137,0.25]],pmW,0.02);
+// water (v1.1): city line enters under the kitchen sink, up into the kitchen/dining ceiling, along x~30 to the partition, across to x~168, down to the tank
+pRun([[46,486,0.3],[46,486,GC+0.1],[30,480,GC+0.1],[30,200,GC+0.1],[168,200,GC+0.1],[168,137,GC+0.1],[159,137,1.45]],pmW,0.025);
+pRun([[168,137,GC+0.1],[168,40,GC+0.1],[168,40,0.6]],pmW,0.02); pBox(166,172,197,203,GC,GC+0.2,pmP);   // hose bib branch + bypass valve
+pBox(14,92,372,448,-1.4,-0.06,PM(0x495057,{opacity:.3}));                                             // OLD septic under the kitchen (outline guessed), to be closed
+pTag('City water in',46,486,0.6,1); pTag('Hose bib',168,40,0.85,1); pTag('Bypass valve',170,200,GC+0.35,1); pTag('Old septic (to close)',53,410,-0.3,1);
 {const t=cyl(14*IN,1.4,pmK,root,159*IN,0.7,-137*IN); t.renderOrder=4; plum.push(t);} pBox(152,164,160,172,0,0.35,pmP);
 pRun([[159,150,0.2],[158,166,0.2]],pmW,0.02); pRun([[158,166,0.3],[174.5,152,1.2]],pmW,0.02);
 pRun([[174.5,152,1.2],[174.5,266,1.2],[166,266,1.2],[166,266,RF+1.0],[150,262,RF+0.5]],pmW,0.02); pRun([[166,266,RF+1.0],[126,257,RF+0.85]],pmW,0.02); pRun([[166,266,RF+1.0],[157,316,RF+1.0]],pmW,0.02);
 pRun([[166,266,1.2],[116,266,0.4],[116,444,0.4],[107,444,0.85]],pmW,0.02); pRun([[116,452,0.4],[116,474,0.3]],pmW,0.02); pRun([[116,420,0.4],[54,440,0.9],[54,466,0.95]],pmW,0.02);
-pTag('Water meter (assumed)',172,-10,0.6,1); pTag('Water tank 500 L',159,137,1.6,1); pTag('Booster pump',158,166,0.55,1);
+pTag('Water tank 500 L',159,137,1.6,1); pTag('Booster pump',158,166,0.55,1);
 function applyLevels(){L2.visible=level>=2;L3.visible=level>=3;cutables.forEach(m=>m.visible=!cut); elec.forEach(m=>m.visible=elecOn); plum.forEach(m=>m.visible=plumOn); document.getElementById('pleg').hidden=!plumOn; document.getElementById('eleg').hidden=!elecOn; OP.forEach(o=>mk[o.id].visible=o.pos[1]<Y2||level>=(o.pos[1]<RF?2:3));
   document.querySelectorAll('[data-l]').forEach(b=>b.setAttribute('aria-pressed',+b.dataset.l===level));}
 document.querySelectorAll('[data-l]').forEach(b=>b.addEventListener('click',()=>{level=+b.dataset.l;applyLevels();}));
