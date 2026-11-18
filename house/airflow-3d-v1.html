@@ -404,9 +404,8 @@ for(let z=RZF-0.35;z>RZB+0.2;z-=0.8) roofParts.push(B(NX0-0.3,W+T+0.15,RF+RH-0.1
 [NX0+0.2,-T-0.1,W/2,W-0.1].forEach(x=>roofParts.push(B(x-0.05,x+0.05,RF+RH-0.22,RF+RH-0.12,RZF,RZB,purl,L3)));  // rafters
 const roofG=new THREE.Group(); roofG.position.set(0,RF+RH,RZC); roofG.rotation.x=Math.atan(RTA); L3.add(roofG);
 roofParts.forEach(m=>{L3.remove(m); m.position.y-=RF+RH; m.position.z-=RZC; roofG.add(m);}); cutables.push(...roofParts);
-// concrete columns up to the sloped underside; the engineer's 2 red steel posts on the front column line (spacing assumed). Room walls attach to these (Rowil 18 Nov)
-[[NX0-0.075,RFZ-0.1],[NX0-0.075,-D+0.1],[0.1,RFZ-0.1],[W-0.1,RFZ-0.1],[AX0+0.1,RFZ-0.1],[AX0+0.1,-D+0.1]].forEach(([x,z])=>B(x-0.1,x+0.1,RF,ruY(z)-0.2,z+0.1,z-0.1,conc,L3));
-[[1.48,RFZ-0.1],[2.95,RFZ-0.1]].forEach(([x,z])=>cyl(0.04,ruY(z)-0.22-RF,purl,L3,x,RF+(ruY(z)-0.22-RF)/2,z));
+// 6 concrete roof columns in total (Rowil's markup 18 Nov): 2 on the neighbour's outer wall, 4 at our house corners (front column line + back). Room walls attach to them
+[[NX0-0.075,RFZ-0.1],[NX0-0.075,-D+0.1],[0.1,RFZ-0.1],[W-0.1,RFZ-0.1],[0.1,-D+0.1],[W-0.1,-D+0.1]].forEach(([x,z])=>B(x-0.1,x+0.1,RF,ruY(z)-0.2,z+0.1,z-0.1,conc,L3));
 // closed room, vertical cladding
 // back (NE) wall, full width from the annex outer side: concrete half wall with the cladded room wall on top (Rowil 18 Nov)
 B(AX0-0.2,W+T,RF,RF+1.0,-D,-D-T,mat.wall,L3); B(AX0-0.2,W+T,RF+1.0,RF+RH,-D,-D-T,clad,L3);
@@ -414,7 +413,7 @@ for(let x=AX0-0.1;x<W;x+=0.12) B(x,x+0.015,RF+1.0,RF+RH,-D-T-0.005,-D-T-0.02,M(0
 // (RZ2 defined above)
 const _rz2=0; // expanded room (Rowil 18 Nov): front wall where the deck's front edge was, side wall along the annex, no hallway
 cutables.push(B(W,W+T,RF,RF+1.0,RZ2,-D,mat.wall,L3), B(W,W+T,RF+1.0,RF+RH,RZ2,-D,clad,L3)); // side wall: concrete half wall, cladding above
-const RP1=1.48, RP2=2.95, RWX0=(RP1+RP2)/2-0.65, RWX1=(RP1+RP2)/2+0.65;  // slider between the engineer's 2 steel posts
+const RP1=1.48, RP2=2.95, RWX0=(RP1+RP2)/2-0.65, RWX1=(RP1+RP2)/2+0.65;  // slider centred in the room front wall
 wallX(-T-0.15,W,RZ2-0.05,0.1,RF,ruY(RZ2)-0.12,clad,L3,[[RWX0,RWX1,RF,RF+2.1]]);           // new SW front wall, keeps the 2-panel sliding glass door (position assumed)
 // annex-side wall: concrete half wall + cladding above, door at the stair's left turn off the landing (blue circle, no half wall there)
 const DZ0=-9.8, DZ1=-10.6;
