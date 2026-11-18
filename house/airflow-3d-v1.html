@@ -76,7 +76,7 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 <div id="view">
   <div id="eleg" hidden><h2>Electrical key (draft) <span class="chev">▾</span></h2>
    <div><i style="background:#c0392b"></i>Main panel / dedicated outlet / conduit</div><div><i style="background:#2f6f9e"></i>Socket (30 cm; counter 1.1 m)</div>
-   <div><i style="background:#6a4bc4"></i>Tuya switch, 1.3 m</div><div><i style="background:#f2c230"></i>Ceiling light, 15 W+ LED (final count: 19)</div><div><i style="background:#e08a00;border-radius:50%"></i>Smart E27 mood pendant</div>
+   <div><i style="background:#6a4bc4"></i>Tuya switch, 1.3 m</div><div><i style="background:#f2c230"></i>Ceiling light, 15 W+ LED (final count: 20)</div><div><i style="background:#e08a00;border-radius:50%"></i>Smart E27 mood pendant</div>
    <div><i style="background:#1f8a5b"></i>Router / mesh node</div><div><i style="background:linear-gradient(90deg,#e8590c 33%,#1971c2 33% 66%,#2f9e44 66%)"></i>Switch wiring: gang 1 orange, 2 blue, 3 green</div><p>Hung ceilings show when Cutaway is off; conduits run above them. Air dots are hidden while this is on.</p></div>
   <div id="rooms"><h2>Air movement <span class="chev">▾</span></h2><div id="roomList"></div><p id="tip"></p></div>
 </div>
@@ -585,9 +585,12 @@ ceil(0,W/IN,0,99,LC,L2); ceil(0,W/IN,99,254,LC,L2); ceil(0,40,254,326,LC,L2); ce
  run([[160*IN,RF+0.25,-92*IN],[W-0.1,RF+0.25,-92*IN],[W-0.1,RF+0.25,RZ+0.1]],L3); eTag('Roof feed (route to confirm)',W-0.3,RF+0.6,-3.6,3);
  // roof re-plan from the electrical thread (layout v15, plan inches)
  const RP=(x,y)=>[x*IN,-y*IN];
- [[87,300,2.42],[87,420,2.42],[-25,400,2.42],[87,246,2.2]].forEach(([x,y,h])=>{const [a,b]=RP(x,y);elec.push(cyl(0.09,0.03,em.lt,L3,a,RF+h,b));});
- [[174.5,300],[174.5,430],[2,300],[87,480],[150,246]].forEach(([x,y])=>{const [a,b]=RP(x,y);eBox(L3,EPX(x),RF+0.3,y>478?-D+0.03:b,0.08,0.11,0.08,em.sock);});
+ [[87,300,2.42],[87,420,2.42],[-25,400,2.42],[87,246,2.2],[126,300,2.38]].forEach(([x,y,h])=>{const [a,b]=RP(x,y);elec.push(cyl(0.09,0.03,em.lt,L3,a,RF+h,b));});
+ [[174.5,430],[2,300],[87,480],[150,246]].forEach(([x,y])=>{const [a,b]=RP(x,y);eBox(L3,EPX(x),RF+0.3,y>478?-D+0.03:b,0.08,0.11,0.08,em.sock);});
  [[10,380],[-3,375]].forEach(([x,y])=>{const [a,b]=RP(x,y);eBox(L3,a,RF+1.3,b,0.09,0.12,0.09,em.sw);});
+ // roof T&B (electrical layout v17): socket moved to the bedside, IP light, exhaust fan, 2-gang switch outside the door
+ eBox(L3,150*IN,RF+0.3,-8.25,0.11,0.08,0.06,em.sock); eBox(L3,W-0.04,RF+2.2,-272*IN,0.06,0.22,0.22,EM(0x7f8c8d)); eTag('Exhaust fan',W-0.3,RF+2.45,-272*IN,3);
+ eBox(L3,105*IN,RF+1.3,-281*IN,0.09,0.12,0.09,em.sw);
  {const [a,b]=RP(10,450); eBox(L3,a,RF+2.1,b,0.16,0.05,0.24,em.net); eTag('Mesh node 3',a+0.2,RF+2.35,b,3);}
 // switch -> light connections (gang mapping from the electrical thread): up from the switch, across the ceiling, down to each load
  {const SW=[
@@ -610,9 +613,9 @@ ceil(0,W/IN,0,99,LC,L2); ceil(0,W/IN,99,254,LC,L2); ceil(0,40,254,326,LC,L2); ce
   // kitchen under-cabinet LED strip (gang 2 of the kitchen switch)
   eBox(L1,1.45,1.48,-D+0.32,1.7,0.02,0.04,em.lt);
   // roof: deck switch -> 2 deck lights, room switch -> room light
-  const rm=EM(gcol[0]),rm2=EM(gcol[1]); [[[-3*IN,RF+1.3,-375*IN],[[-25*IN,-400*IN]],rm],[[10*IN,RF+1.3,-380*IN],[[87*IN,-300*IN],[87*IN,-420*IN]],rm],[[10*IN+0.04,RF+1.3,-380*IN],[[87*IN,-246*IN]],rm2]].forEach(([s0,ls,mm])=>ls.forEach(([x,z])=>{
+  const rm=EM(gcol[0]),rm2=EM(gcol[1]); [[[-3*IN,RF+1.3,-375*IN],[[-25*IN,-400*IN]],rm],[[10*IN,RF+1.3,-380*IN],[[87*IN,-300*IN],[87*IN,-420*IN]],rm],[[10*IN+0.04,RF+1.3,-380*IN],[[87*IN,-246*IN]],rm2],[[105*IN,RF+1.3,-281*IN],[[126*IN,-300*IN]],rm],[[105*IN+0.04,RF+1.3,-281*IN],[[W-0.04,-272*IN]],rm2]].forEach(([s0,ls,mm])=>ls.forEach(([x,z])=>{
    const a=s0,b=[s0[0],RF+2.45,s0[2]],c=[x,RF+2.45,z]; [[a,b],[b,c]].forEach(([p0,p1])=>{const me=bar(p0,p1,0.014,mm,L3);me.userData.run=1;elec.push(me);});}));
-  tag('Landing 1G',-3*IN,RF+1.55,-375*IN,3);tags[tags.length-1].el=1; tag('Room 2G',6*IN+0.2,RF+1.55,-380*IN,3);tags[tags.length-1].el=1;}
+  tag('Landing 1G',-3*IN,RF+1.55,-375*IN,3);tags[tags.length-1].el=1; tag('Room 2G',6*IN+0.2,RF+1.55,-380*IN,3);tags[tags.length-1].el=1; tag('T&B 2G',105*IN-0.2,RF+1.55,-281*IN,3);tags[tags.length-1].el=1;}
  elec.forEach(m=>{m.visible=false; if(!m.userData.run&&m.material!==em.cord&&m.geometry.type!=='BoxGeometry'||m.geometry.type==='BoxGeometry'&&m.material!==em.ded||m.geometry.parameters.depth<0.5) if(!m.userData.run&&m.material!==em.cord) m.scale.multiplyScalar(1.5);});
 }
 // ---------- levels, cutaway, views ----------
