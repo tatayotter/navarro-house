@@ -16,7 +16,7 @@ Last updated: 18 November 2026.
 | Electrical wiring | Whole-house plan drafted: 20 ceiling lights + 5 pendants, 32 outlets, 12 smart switch plates. Booster pump and roof room window aircon have their own circuits. Materials about ₱113k–179k (online estimate). Waiting for the electrician to check. |
 | 3D model | Whole house in 3D with airflow, electrical layer and phone view. Kitchen re-arranged (bar counter, fridge by the T&B). |
 | Rooftop | Roof room enlarged to take in the old deck area: no deck, no hallway; door at the top of the steel stair. Walls decided: 1 m concrete half wall all round, then container-van style steel outside, insulation and Hardiflex inside up to the roof; tiled floor, gypsum ceiling, about ₱208k–348k with buffer (online estimate), see `rooms/rooftop-room.md`. Slab load confirmed OK; engineer to check wall anchoring. |
-| Glass and aluminium | Schedule of all windows, sliding doors, the terrace jalousie (now 6 bays) and the shower screen for supplier quotes, about ₱135k–214k (online estimate); see `house/glass-aluminium.md`. Sizes provisional until measured. |
+| Glass and aluminium | Schedule of all windows, sliding doors, the terrace jalousie (now 6 bays) and the shower screen for supplier quotes, about ₱130k–205k (online estimate); see `house/glass-aluminium.md`. Sizes provisional until measured. |
 
 ## Where the prices come from
 - **Local receipts and quotes:** steel stair materials already bought (₱18,589, store receipt), welder labour (₱7,000), architect's stair quote (₱64,850, for comparison).
