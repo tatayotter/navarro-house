@@ -4,18 +4,18 @@ status: Draft
 cost: "₱205k–345k"
 price_source: online
 updated: 18 Nov 2026
-summary: The closed room on the rooftop under the existing shed roof, with its own T&B, a queen bed, a desk and a window aircon. Walls are a site-built insulated sandwich: steel cladding outside, Hardiflex inside. This page costs the walls, floor, ceiling, doors and windows, and T&B finishes.
+summary: The closed room on the rooftop under the existing shed roof, with its own T&B, a queen bed, a desk and a window aircon. Walls: container-van style steel outside, insulation, Hardiflex inside. This page costs the walls, floor, ceiling, doors and windows, and T&B finishes.
 ---
 
 All prices are online estimates (Sept–Nov 2026) and need local quotes. Sizes are provisional until the site measurements on 19 Nov: room about **4.4 m wide × 5.9 m deep**, walls up to the roof (about 2.65 m at the front, about 3.0 m at the back).
 
 ## Walls: decided
 
-**Site-built insulated sandwich wall** for every new wall: ribbed steel cladding outside, insulation in the middle, Hardiflex (fibre-cement board) inside, all on a light steel frame. Decided 18 Nov.
+**Container-van style steel outside, Hardiflex inside**, with insulation in between, all on a light steel frame. Used for every new wall. Decided 18 Nov.
 
 From the outside in:
 
-1. **Steel cladding:** 0.4 mm pre-painted ribbed steel wall sheets, screwed to the frame. No outside painting.
+1. **Container-van style steel wall:** pre-painted steel sheets in a deep trapezoidal corrugation (the container-van look), about 0.4–0.5 mm, laid vertically and screwed to the frame. No outside painting. Real container-gauge steel (about 1.6 mm, welded) would be several times heavier and costlier, so this uses the look, not the gauge.
 2. **Insulation core:** 50 mm foil-faced rockwool or glasswool between the frame members, foil toward the cladding to reflect heat. Every wall is insulated, including the sun-facing front (SW), outer side and back.
 3. **Frame:** light steel studs or C-purlins at 60 cm, fixed to the columns, a curb at the bottom and the purlins at the top.
 4. **Inside:** 6 mm Hardiflex, joints taped, puttied and painted. In the T&B: 12 mm fibre-cement board, waterproofed and tiled.
@@ -26,13 +26,11 @@ From the outside in:
 - **Weight:** about 20 kg per m², so about 1 t for all the walls (hollow block would be about 8.6 t).
 - **Hanging things:** Hardiflex alone won't hold heavy items. Mark the stud lines, or add plywood backing behind the desk, TV and storage-wall positions before boarding.
 
-**My reading:** I took "sandwich panel" to mean this built-up sandwich (steel outside, insulation, Hardiflex inside). If you meant a factory-made sandwich panel *plus* cladding outside and Hardiflex inside, that adds about **₱57,000–80,000** (Online), because you would be paying for three skins instead of two.
-
 ## How the walls compared
 
 For about 43 m² of new outside wall.
 
-| | CHB 4″, plastered | AAC lightweight block | Fibre-cement both sides on steel studs | Steel cladding + insulation + Hardiflex (chosen) |
+| | CHB 4″, plastered | AAC lightweight block | Fibre-cement both sides on steel studs | Container-van steel + insulation + Hardiflex (chosen) |
 |---|---|---|---|---|
 | Weight per m² | ~200 kg | ~90 kg | ~28 kg | ~20 kg |
 | Total wall weight | ~8.6 t | ~3.9 t | ~1.2 t | ~0.9 t |
@@ -44,7 +42,7 @@ For about 43 m² of new outside wall.
 
 | Section | Low (₱) | High (₱) | Source |
 |---|---|---|---|
-| Walls: frame, cladding, insulation, Hardiflex, curb, T&B partitions, paint | 84,410 | 131,260 | Online |
+| Walls: frame, container-van steel, insulation, Hardiflex, curb, T&B partitions, paint | 84,410 | 131,260 | Online |
 | Floor (porcelain tiles) | 16,500 | 28,700 | Online |
 | Ceiling with vents | 21,000 | 33,000 | Online |
 | Doors and windows | 34,500 | 62,000 | Online |
@@ -59,7 +57,7 @@ For about 43 m² of new outside wall.
 | Item | Qty | Low (₱) | High (₱) | Source |
 |---|---|---|---|---|
 | Light steel frame (studs or C-purlins at 60 cm), angles, frames around openings | 43 m² | 10,750 | 17,200 | Online |
-| Ribbed pre-painted steel wall cladding 0.4 mm (with laps and waste) | 49 m² | 17,150 | 26,950 | Online |
+| Container-van style corrugated steel sheet, pre-painted, 0.4–0.5 mm (with laps and waste) | 49 m² | 17,150 | 26,950 | Online |
 | Breathable wrap behind the cladding | 43 m² | 2,150 | 3,870 | Online |
 | Insulation 50 mm, foil-faced rockwool or glasswool | 43 m² | 5,160 | 9,460 | Online |
 | Hardiflex 6 mm inside (with waste) | 47 m² | 8,750 | 11,830 | Online |
@@ -140,7 +138,7 @@ The walls attaching to the roof columns is already approved. Please check these 
 ## To measure on 19 Nov
 
 - Room front wall to back wall, and inside width.
-- Roof height at the front and back of the room (sets cladding lengths).
+- Roof height at the front and back of the room (sets the steel sheet lengths).
 - Slab slope: how much the floor drops from back to front (sets tile vs SPC).
 - Where the roof drains are, and whether any fall inside the room.
 
@@ -148,7 +146,7 @@ The walls attaching to the roof columns is already approved. Please check these 
 
 1. Engineer check, then pour the curbs and the T&B floor.
 2. Plumbing rough-in and waterproofing; flood test.
-3. Steel frame and cladding outside, trims and opening frames.
+3. Steel frame and container-van steel outside, trims and opening frames.
 4. Wiring and boxes inside the frame, insulation, backing boards, then Hardiflex.
 5. Doors, windows, aircon frame; ceiling and vents.
 6. Tiles (T&B, then room floor), inside paint, fixtures.
