@@ -62,6 +62,16 @@ h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:24px;margin:40px
 .p-wait{color:var(--wait);background:var(--wait-bg)}
 .p-work{color:var(--work);background:var(--work-bg)}
 .note{font-size:13px;color:var(--muted);margin:10px 0 0}
+.src{display:inline-block;font-size:11px;font-weight:600;padding:2px 8px;border-radius:6px;margin-left:6px;vertical-align:1px}
+.s-local{color:var(--done);background:var(--done-bg)}
+.s-online{color:var(--wait);background:var(--wait-bg)}
+.costs{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.costs .cr{display:flex;justify-content:space-between;gap:12px;padding:12px 16px;border-top:1px solid var(--line);flex-wrap:wrap}
+.costs .cr:first-child{border-top:0}
+.costs .amt{font-weight:600;white-space:nowrap}
+.costs .what{flex:1;min-width:200px}
+.costs .what small{display:block;color:var(--muted);font-size:13px}
+.legend{display:flex;flex-wrap:wrap;gap:8px 16px;font-size:13px;color:var(--muted);margin:0 0 12px}
 footer{margin:48px 0 40px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;display:flex;flex-wrap:wrap;gap:10px 20px}
 footer a{color:var(--accent);font-weight:500}
 .tog{position:fixed;top:14px;right:14px;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;font-size:18px}
@@ -116,9 +126,26 @@ footer a{color:var(--accent);font-weight:500}
     <div class="st"><span class="pill p-wait">Measuring</span><div><b>Front gate</b><span class="d">Roll-up car shutter plus a small door. Waiting on final measurements.</span></div></div>
     <div class="st"><span class="pill p-wait">For checking</span><div><b>Electrical wiring</b><span class="d">Whole-house plan drafted. The electrician will check it.</span></div></div>
     <div class="st"><span class="pill p-wait">Draft</span><div><b>Plumbing</b><span class="d">New septic tank under the car bay, water tank and booster pump.</span></div></div>
-    <div class="st"><span class="pill p-done">Planned</span><div><b>Master bedroom</b><span class="d">Plan and costing done, about ₱167k with buffer.</span></div></div>
-    <div class="st"><span class="pill p-done">Planned</span><div><b>Living room</b><span class="d">Design and cost estimate done, ₱228k to ₱370k.</span></div></div>
+    <div class="st"><span class="pill p-done">Planned</span><div><b>Master bedroom</b><span class="d">Plan and costing done, about ₱167k with buffer (online estimate).</span></div></div>
+    <div class="st"><span class="pill p-done">Planned</span><div><b>Living room</b><span class="d">Design and cost estimate done, ₱228k to ₱370k (online estimate).</span></div></div>
   </div>
+</section>
+
+<section>
+  <h2>Where the prices come from</h2>
+  <p class="sub">Some numbers are real receipts and quotes from local shops and workers. Others are estimates from online prices and still need a local quote.</p>
+  <div class="legend"><span><span class="src s-local" style="margin:0">Local</span> receipt or quote from a local shop or worker</span><span><span class="src s-online" style="margin:0">Online estimate</span> from online prices, not yet quoted locally</span></div>
+  <div class="costs">
+    <div class="cr"><div class="what">Steel stair: materials already bought<span class="src s-local">Local</span><small>Store receipt, 16 Nov, plus delivery</small></div><div class="amt">₱18,589</div></div>
+    <div class="cr"><div class="what">Steel stair: welder labour<span class="src s-local">Local</span><small>Agreed fixed price</small></div><div class="amt">₱7,000</div></div>
+    <div class="cr"><div class="what">Steel stair: architect's price for comparison<span class="src s-local">Local</span><small>Architect's quote (not used)</small></div><div class="amt">₱64,850</div></div>
+    <div class="cr"><div class="what">Steel stair: items still to buy<span class="src s-online">Online estimate</span><small>Anchors, paint, vinyl treads, rods</small></div><div class="amt">≈ ₱7,695</div></div>
+    <div class="cr"><div class="what">Front gate<span class="src s-online">Online estimate</span><small>Shutter, door and post. Needs a shutter quote.</small></div><div class="amt">₱40k–51k</div></div>
+    <div class="cr"><div class="what">Master bedroom<span class="src s-online">Online estimate</span><small>Materials, with 10% buffer</small></div><div class="amt">≈ ₱167k</div></div>
+    <div class="cr"><div class="what">Living room<span class="src s-online">Online estimate</span><small>Slider and carpentry quotes still to get</small></div><div class="amt">₱228k–370k</div></div>
+    <div class="cr"><div class="what">Plumbing and new septic tank<span class="src s-online">Online estimate</span><small>Before fixtures and tiles</small></div><div class="amt">₱134k–246k</div></div>
+  </div>
+  <p class="note">The stair total so far is ₱33,284 against a ₱35,000 budget. When a local quote comes in, its label changes to Local.</p>
 </section>
 
 <section>

@@ -17,6 +17,10 @@ Last updated: 18 November 2026.
 | 3D model | Whole house in 3D with airflow, electrical layer and phone view. Kitchen re-arranged (bar counter, fridge by the T&B). |
 | Rooftop | Roof room enlarged to take in the old deck area: no deck, no hallway; door at the top of the steel stair. Engineer to check the new walls. |
 
+## Where the prices come from
+- **Local receipts and quotes:** steel stair materials already bought (₱18,589, store receipt), welder labour (₱7,000), architect's stair quote (₱64,850, for comparison).
+- **Online estimates (no local quote yet):** stair items still to buy (≈₱7,695), front gate, master bedroom, living room, plumbing and septic.
+
 ## Plans and documents
 
 ### Whole house
