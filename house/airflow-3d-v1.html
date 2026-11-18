@@ -98,7 +98,7 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
     <button data-l="1" aria-pressed="false">Ground</button><button data-l="2" aria-pressed="true">+ 2nd</button><button data-l="3" aria-pressed="false">+ Roof</button>
     <button id="cutBtn" aria-pressed="true">Cutaway</button><button id="elBtn" aria-pressed="false">Electrical</button><button id="plBtn" aria-pressed="false">Plumbing</button></div>
   <div class="grp" data-g="4"><span class="lbl">Heat</span>
-    <button data-s="hot" aria-pressed="true">Hot-season afternoon</button><button data-s="cool" aria-pressed="false">Cool-season afternoon</button><button data-s="night" aria-pressed="false">Hot-season night</button><button id="insBtn" aria-pressed="false">Insulate roof room</button><button id="acBtn" aria-pressed="false">Roof room aircon on</button></div>
+    <button data-s="hot" aria-pressed="true">Hot-season afternoon</button><button data-s="cool" aria-pressed="false">Cool-season afternoon</button><button data-s="night" aria-pressed="false">Hot-season night</button><button id="acBtn" aria-pressed="false">Roof room aircon on</button></div>
   <div class="grp" data-g="3"><span class="lbl">View</span>
     <button data-v="front">Street</button><button data-v="iso">3/4</button><button data-v="side">Side</button><button data-v="top">Top</button></div>
 </div>
@@ -549,14 +549,14 @@ const HEAT={ // V m3, solar W, internal W, UA W/K
  'Dining':{V:27,s:0,i:150,ua:20},
  'Kitchen':{V:23,s:0,i:150,ua:15},     // fridge + lights, not cooking (cooking adds several degrees for an hour)
  'T&B':{V:6,s:0,i:30,ua:8},
- 'Terrace':{V:26,s:450,i:50,ua:60},    // SW glass jalousies (partly shaded by the lean-to roof) + the sheet roof itself
+ 'Terrace':{V:26,s:200,i:50,ua:60},    // SW glass shaded by the roof overhang (Rowil 18 Nov); heat mostly from the sheet roof above
  'Living':{V:75,s:300,i:250,ua:60},    // open front of the rooftop slab above + TV/people; includes stairwell air
  'Bedroom':{V:33,s:100,i:150,ua:30},   // under the shaded part of the roof slab; no aircon in this estimate
- 'Roof room':{V:62,s:1450,i:100,ua:100}, // bare corrugated roof right above (no ceiling) + SW cladding wall
- 'Roof T&B':{V:6.5,s:150,i:0,ua:10}};
-let season='hot', insul=false, acOn=false;
+ 'Roof room':{V:62,s:400,i:100,ua:100}, // insulated roof + ceiling with a vented gap above (Rowil 18 Nov) + SW cladding wall
+ 'Roof T&B':{V:6.5,s:60,i:0,ua:10}};
+let season='hot', acOn=false;
 function roomTemp(r,sc){const h=HEAT[r]; if(!h) return null; if(acOn&&r==='Roof room') return 25; const S=SEAS[season]; const ach=sc>=2?15:sc===1?5:1;
-  let sol=h.s; if(insul&&(r==='Roof room'||r==='Roof T&B')) sol*=0.35;
+  let sol=h.s;
   const base=S.t+(MASS.includes(r)?(season==='night'?1:-1.5):0);
   return base+(sol*S.sun+h.i)/(0.33*ach*h.V+h.ua);}
 const MASS=['Car bay','Dining','Kitchen','T&B','Living','Bedroom'];  // heavy concrete rooms lag the outdoor peak: ~1.5 C cooler in the afternoon, ~1 C warmer at night
@@ -571,7 +571,7 @@ function rebuild(){
   if(O.rw.open&&O.rm.open){ if(wind==='sw') score['Roof room']+=1;   // habagat blows straight into the front slider and out the landing door
     if(wind==='calm') score['Roof room']=Math.max(score['Roof room'],1); }   // no wind: warm air still rises out through the door to the stair opening
   score['Roof T&B']=1+(score['Roof room']>0?1:0);   // high exhaust window + fan, helped when the roof room is flowing
-  listEl.innerHTML=roomsAll.map(r=>{const s=score[r];const [c,t]=s>=2?['g','Good']:s===1?['m','Some']:['b','Still air'];const T=roomTemp(r,s);const tt=T==null?'outdoors':Math.round(T)+' °C';return `<div><span>${r}</span><span class="pill ${c}">${t}</span><span class="deg" style="color:${tCol(T)}">${tt}</span></div>`;}).join('')+`<div class="cap">Estimated air temperature, ${SEAS[season].lbl}${insul?', roof room insulated':''}${acOn?', roof room aircon set to 25 °C (keep its slider and door shut)':''}.</div>`;
+  listEl.innerHTML=roomsAll.map(r=>{const s=score[r];const [c,t]=s>=2?['g','Good']:s===1?['m','Some']:['b','Still air'];const T=roomTemp(r,s);const tt=T==null?'outdoors':Math.round(T)+' °C';return `<div><span>${r}</span><span class="pill ${c}">${t}</span><span class="deg" style="color:${tCol(T)}">${tt}</span></div>`;}).join('')+`<div class="cap">Estimated air temperature, ${SEAS[season].lbl}${acOn?', roof room aircon set to 25 °C (keep its slider and door shut)':''}.</div>`;
   const tips=[];
   if(!O.rd.open) tips.push('With the stair room barn door shut, the 2nd floor has no outlet on the back side, so cross-flow mostly stops.');
   if(!O.pt.open) tips.push('Partition closed: the ground floor behind the car bay only gets air from the stairwell.');
@@ -580,14 +580,11 @@ function rebuild(){
   if(wind==='ne') tips.push('Amihan hits the solid back walls of the house and roof room; on the roof it swings in from the open side over the neighbour\'s roof, and in the house it runs back to front through the stair.');
   if(wind==='calm') tips.push('No wind: warm air rises up the old stairwell and the steel stair and leaves through the stair opening on the roof. The new roof shades that opening, which keeps this chimney effect working.');
   if(score['T&B']===0) tips.push('T&B has no window, so it needs its door open or an exhaust fan.');
-  const rr=roomTemp('Roof room',score['Roof room']);
-  if(!insul&&!acOn&&season!=='night'&&rr>35) tips.unshift('The roof room sits right under bare metal sheets, so it is the hottest room. A ceiling with insulation under the roof (try Insulate roof room) cuts that heat by about two-thirds.');
   tipEl.textContent=tips.slice(0,2).join(' ');
   makeArrows();
 }
 document.querySelectorAll('[data-s]').forEach(b=>b.addEventListener('click',()=>{season=b.dataset.s;document.querySelectorAll('[data-s]').forEach(x=>x.setAttribute('aria-pressed',x===b));rebuild();}));
 document.getElementById('acBtn').addEventListener('click',e=>{acOn=!acOn;e.currentTarget.setAttribute('aria-pressed',acOn);rebuild();});
-document.getElementById('insBtn').addEventListener('click',e=>{insul=!insul;e.currentTarget.setAttribute('aria-pressed',insul);rebuild();});
 document.querySelectorAll('[data-w]').forEach(b=>b.addEventListener('click',()=>{wind=b.dataset.w;document.querySelectorAll('[data-w]').forEach(x=>x.setAttribute('aria-pressed',x===b));rebuild();}));
 
 // ---------- electrical layer (from the electrical layout draft; plan inches: x across, y from the front) ----------
