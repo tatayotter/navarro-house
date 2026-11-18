@@ -72,7 +72,7 @@ For about 43 m² of new outside wall.
 
 Yes, this works. WPC wall panels (fluted or flat, about 9–12 mm, 16–20 cm wide) clip onto horizontal battens fixed across the steel frame. The T&B stays on Hardiflex/fibre-cement with tiles, because WPC shouldn't be used in the shower zone.
 
-**Can the Hardiflex be dropped?** Yes, in the dry room. WPC goes straight onto battens, so the Hardiflex behind it isn't needed. Two things to keep in mind:
+**Can the Hardiflex be dropped?** Yes, in the dry room. WPC goes straight onto battens, so the Hardiflex behind it isn't needed. Things to keep in mind:
 
 - **Fire:** WPC is part plastic and burns, while Hardiflex doesn't. Keep WPC away from the aircon outlet and plugs or use metal box covers, and don't put it right beside the window aircon sleeve.
 - **Heat:** WPC expands in heat. Leave the gaps the supplier asks for at the ceiling, floor and corners.
