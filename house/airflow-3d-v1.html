@@ -76,7 +76,7 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 <div id="view">
   <div id="eleg" hidden><h2>Electrical key (draft) <span class="chev">▾</span></h2>
    <div><i style="background:#c0392b"></i>Main panel / dedicated outlet / conduit</div><div><i style="background:#2f6f9e"></i>Socket (30 cm; counter 1.1 m)</div>
-   <div><i style="background:#6a4bc4"></i>Tuya switch, 1.3 m</div><div><i style="background:#f2c230"></i>Ceiling light, 15 W+ LED (final count: 18)</div><div><i style="background:#e08a00;border-radius:50%"></i>Smart E27 mood pendant</div>
+   <div><i style="background:#6a4bc4"></i>Tuya switch, 1.3 m</div><div><i style="background:#f2c230"></i>Ceiling light, 15 W+ LED (final count: 19)</div><div><i style="background:#e08a00;border-radius:50%"></i>Smart E27 mood pendant</div>
    <div><i style="background:#1f8a5b"></i>Router / mesh node</div><div><i style="background:linear-gradient(90deg,#e8590c 33%,#1971c2 33% 66%,#2f9e44 66%)"></i>Switch wiring: gang 1 orange, 2 blue, 3 green</div><p>Hung ceilings show when Cutaway is off; conduits run above them. Air dots are hidden while this is on.</p></div>
   <div id="rooms"><h2>Air movement <span class="chev">▾</span></h2><div id="roomList"></div><p id="tip"></p></div>
 </div>
@@ -360,7 +360,7 @@ B(AX1-1.0,AX1-0.94,Y2,Y2+12*rs/13-0.04,zTop+0.30,zTop+0.24,mat.steel,annex);    
 // upstairs: guard rails on the open edges of the slab opening (top end left open = exit, turn left)
 railRun([OPx1+0.03,RF,OPz0+0.03],[AX0+0.03,RF,OPz0+0.03],2,annex);
 // annex top is ringed by concrete half walls (front + house side + corrugated side); exit at the back into the strip
-B(AX0-0.05,-T,RF,RF+1.0,AZ0,AZ0-0.15,mat.wall,annex); B(-T-0.15,-T,RF,RF+1.0,AZ0,-D+0.9,mat.wall,annex);   // house-side half wall runs almost to the back; 0.9 m gap at the back corner to get onto our deck
+B(AX0-0.05,-T,RF,RF+1.0,AZ0,AZ0-0.15,mat.wall,annex); // house-side half wall removed: the expanded roof room's wall now runs along this edge (Rowil 18 Nov)
 B(AX0-0.2,AX0-0.05,RF,RF+1.0,AZ0,AZ0-0.15,mat.wall,annex);
 // roof slab over 2nd floor
 B(-T,W+T,C2,RF,yL,-D-T,mat.slab,L3);
@@ -373,10 +373,10 @@ B(-T,W+T,C2,RF,yL,-D-T,mat.slab,L3);
 // rooftop per Rowil's sketch (18 Nov): closed room in the back-right corner (window faces SW, door on its
 // left wall near the back), 1 m walkway on the annex side, stair arrives at the back and turns left into
 // a strip along the back edge. Roof runs from the back to the annex front wall (Rowil 18 Nov); front part open.
-const RZ=-8.1, RX0=1.03, RH=2.55, RFZ=AZ0;  // roof runs from the back to where the stair annex wall begins
+const RZ=-8.1, RZ2=-5.95, RX0=1.03, RH=2.55, RFZ=AZ0;  // roof runs from the back to where the stair annex wall begins
 const clad=M(0x57514c,{roughness:.9}), soffit=M(0x6e3d24), fasc=M(0x2a2c2e,{metalness:.3,roughness:.5}), conc=M(0xdcd8d0);
 // parapets: annex side only up to the stair top, then open into the back strip; outer edge of the strip
-cutables.push(B(W,W+T,RF,RF+1.0,yL,RZ,mat.wall,L3));
+cutables.push(B(W,W+T,RF,RF+1.0,yL,RZ2-0.05,mat.wall,L3));
 B(-T,W+T,RF,RF+1.0,yL,yL-0.15,mat.wall,L3);
 // neighbour's rooftop slab (annex side), renovated and shared with us (Rowil 18 Nov): same level, about the
 // same width as our house, from the front parapet line to the back; our side parapet is removed so the decks join
@@ -401,18 +401,21 @@ cutables.push(roofTop,sof,B(NX0-0.45,W+T+0.3,RF+RH+0.12,RF+RH+0.2,RFZ+0.3,RFZ+0.
 // back (NE) wall, full width from the annex outer side: concrete half wall with the cladded room wall on top (Rowil 18 Nov)
 B(AX0-0.2,W+T,RF,RF+1.0,-D,-D-T,mat.wall,L3); B(AX0-0.2,W+T,RF+1.0,RF+RH,-D,-D-T,clad,L3);
 for(let x=AX0-0.1;x<W;x+=0.12) B(x,x+0.015,RF+1.0,RF+RH,-D-T-0.005,-D-T-0.02,M(0x4a4541),L3);
-cutables.push(B(W,W+T,RF,RF+1.0,RZ,-D,mat.wall,L3), B(W,W+T,RF+1.0,RF+RH,RZ,-D,clad,L3)); // side wall: concrete half wall, cladding above
+// (RZ2 defined above)
+const _rz2=0; // expanded room (Rowil 18 Nov): front wall where the deck's front edge was, side wall along the annex, no hallway
+cutables.push(B(W,W+T,RF,RF+1.0,RZ2,-D,mat.wall,L3), B(W,W+T,RF+1.0,RF+RH,RZ2,-D,clad,L3)); // side wall: concrete half wall, cladding above
 const RWX0=(RX0+W)/2-0.65, RWX1=(RX0+W)/2+0.65;
-wallX(RX0-0.05,W,RZ-0.05,0.1,RF,RF+RH,clad,L3,[[RWX0,RWX1,RF,RF+2.1]]);           // SW face with 2-panel sliding glass door onto the WPC deck (Rowil 18 Nov)
-wallZ(RZ,-D,RX0,0.1,RF,RF+RH,clad,L3,[[-D+0.95,-D+0.15,RF,RF+2.05]]);                       // left wall with door near the back
-const rmHinge=new THREE.Group(); rmHinge.position.set(RX0,RF,-D+0.15); L3.add(rmHinge); B(0,0.04,0,2.05,0,0.78,M(0x3a3633),rmHinge); 
-[[RWX0,RWX0+0.04],[RWX1-0.04,RWX1]].forEach(([a,b])=>B(a,b,RF,RF+2.1,RZ+0.01,RZ-0.06,M(0x2a2c2e),L3));
-B(RWX0,RWX1,RF+0.04,RF+0.06,RZ+0.01,RZ-0.06,M(0x2a2c2e),L3); B(RWX0,RWX1,RF+2.06,RF+2.1,RZ+0.01,RZ-0.06,M(0x2a2c2e),L3);
-B(RWX0+0.04,(RWX0+RWX1)/2+0.02,RF+0.06,RF+2.06,RZ-0.01,RZ-0.02,mat.glass,L3);
-const rwP=new THREE.Group(); L3.add(rwP); B((RWX0+RWX1)/2-0.02,RWX1-0.04,RF+0.06,RF+2.06,RZ-0.04,RZ-0.05,mat.glass,rwP); B((RWX0+RWX1)/2-0.02,(RWX0+RWX1)/2+0.01,RF+0.06,RF+2.06,RZ-0.03,RZ-0.06,M(0x2a2c2e),rwP);
-// WPC decking in front of the roof room (Rowil's markup 18 Nov; size read off the sketch ~3.4 x 2.3 m, to confirm)
-{const dk=M(0x8b6a4e), dz0=RZ+0.03, dz1=-5.8; B(0.95,W-0.03,RF,RF+0.015,dz0,dz1,M(0x5a4636),L3);
- for(let z=dz0;z<dz1-0.14;z+=0.145) B(0.95,W-0.03,RF+0.015,RF+0.04,z,z+0.14,dk,L3);}
+wallX(-T-0.15,W,RZ2-0.05,0.1,RF,RF+RH,clad,L3,[[RWX0,RWX1,RF,RF+2.1]]);           // new SW front wall, keeps the 2-panel sliding glass door (position assumed)
+// annex-side wall: concrete half wall + cladding above, door at the stair's left turn off the landing (blue circle, no half wall there)
+const DZ0=-9.8, DZ1=-10.6;
+[[RZ2,DZ0],[DZ1,-D]].forEach(([a,b])=>{B(-T-0.15,-T,RF,RF+1.0,a,b,mat.wall,L3); B(-T-0.15,-T,RF+1.0,RF+RH,a,b,clad,L3);});
+B(-T-0.15,-T,RF+2.05,RF+RH,DZ0,DZ1,clad,L3);
+const rmHinge=new THREE.Group(); rmHinge.position.set(-T-0.02,RF,DZ1); L3.add(rmHinge); B(0,0.04,0,2.05,0,0.78,M(0x3a3633),rmHinge); 
+[[RWX0,RWX0+0.04],[RWX1-0.04,RWX1]].forEach(([a,b])=>B(a,b,RF,RF+2.1,RZ2+0.01,RZ2-0.06,M(0x2a2c2e),L3));
+B(RWX0,RWX1,RF+0.04,RF+0.06,RZ2+0.01,RZ2-0.06,M(0x2a2c2e),L3); B(RWX0,RWX1,RF+2.06,RF+2.1,RZ2+0.01,RZ2-0.06,M(0x2a2c2e),L3);
+B(RWX0+0.04,(RWX0+RWX1)/2+0.02,RF+0.06,RF+2.06,RZ2-0.01,RZ2-0.02,mat.glass,L3);
+const rwP=new THREE.Group(); L3.add(rwP); B((RWX0+RWX1)/2-0.02,RWX1-0.04,RF+0.06,RF+2.06,RZ2-0.04,RZ2-0.05,mat.glass,rwP); B((RWX0+RWX1)/2-0.02,(RWX0+RWX1)/2+0.01,RF+0.06,RF+2.06,RZ2-0.03,RZ2-0.06,M(0x2a2c2e),rwP);
+// WPC deck removed: that area is now inside the room (Rowil 18 Nov)
 // room fit-out: single bed (90x190) by the SW window, 60 cm deep full-height storage along the back wall
 // (mattresses on the bottom bay, boxes above), tall cleaning cabinet on the left wall
 {const sh=M(0xcdb38c), box=M(0xb8a382), mat2=M(0xeeeae2);
@@ -424,7 +427,7 @@ const rwP=new THREE.Group(); L3.add(rwP); B((RWX0+RWX1)/2-0.02,RWX1-0.04,RF+0.06
  for(let k=0;k<3;k++) B(sx0+0.06,(sx0+sx1)/2-0.06,RF+0.09+k*0.13,RF+0.2+k*0.13,-D+0.1,sz1-0.04,mat2,L3);   // folded mattresses
  B((sx0+sx1)/2+0.04,sx1-0.08,RF+0.09,RF+0.45,-D+0.1,sz1-0.04,mat2,L3);
  for(let k=0;k<4;k++){const x=sx0+0.08+k*0.6; B(x,x+0.5,RF+0.59,RF+0.95,-D+0.1,sz1-0.06,box,L3); B(x,x+0.5,RF+1.09,RF+1.45,-D+0.1,sz1-0.06,box,L3);}
- B(RX0+0.05,RX0+0.65,RF,RF+2.1,RZ-0.12,RZ-1.32,M(0x8f8a82),L3);}                                    // cleaning cabinet
+ B(-T+0.02,-T+0.62,RF,RF+2.1,RZ2-0.3,RZ2-1.5,M(0x8f8a82),L3);}   // cleaning cabinet, front corner by the annex wall                                    // cleaning cabinet
 // washer-dryer on the covered deck, against the closed room's SW wall left of the window (RCD circuit, pump-fed water, floor drain)
 // washer-dryer removed (Rowil 18 Nov)
 
@@ -434,7 +437,7 @@ function tag(txt,x,y,z,lv){const d=document.createElement('div');d.className='ta
 tag('Car bay',2.6,1.2,-3.6,1); tag('Dining',1.6,1.3,-6.3,1); tag('Kitchen',1.6,1.3,-9.6,1);
 [['Bar counter',0.3,1.25,-8.8],['Prep',0.3,1.05,-10.0],['Stove',0.3,1.05,-11.0],['Sink',1.37,1.05,-11.9],['Trash',0.81,0.95,-11.6],['Fridge',2.14,1.85,-D+0.36]].forEach(([t,x,y,z])=>{tag(t,x,y,z,1);tags[tags.length-1].only=1;}); tag('T&B',3.4,1.3,-11.5,1);
 tag('Terrace',2.2,Y2+1.2,-2.0,2); tag('Living',1.6,Y2+1.3,-5.5,2); tag('Bedroom',2.2,Y2+1.3,-10.3,2); tag('Stair annex',AX0+0.6,Y2+1.6,-7.6,2);
-tag('Roof deck (open)',2.2,RF+1.0,-4.2,3); tag('WPC deck',2.6,RF+0.4,-6.9,3); tag("Neighbour's slab (shared)",NX0+2.5,RF+0.8,-4.3,3); tag('Covered',0.5,RF+1.0,-9.0,3); tag('Closed room',2.8,RF+1.3,-10.2,3);  tag("Neighbour's corrugated roof",(NX0+AX0)/2,RF+0.2,-9.5,3);
+tag('Roof deck (open)',2.2,RF+1.0,-4.2,3); tag("Neighbour's slab (shared)",NX0+2.5,RF+0.8,-4.3,3); tag('Closed room',2.8,RF+1.3,-10.2,3);  tag("Neighbour's corrugated roof",(NX0+AX0)/2,RF+0.2,-9.5,3);
 
 // ---------- openings ----------
 const OP=[
@@ -448,8 +451,8 @@ const OP=[
  {id:'ex',name:'Bedroom fan',open:true,pos:[0.28,Y2+2.1,-D]},
  {id:'rd',name:'Annex barn door',open:true,pos:[0,Y2+1.0,RDz0-0.4]},
  {id:'cf',name:'Living ceiling fan',open:true,pos:[W/2,C2-0.45,(yL+VZ0)/2]},
- {id:'rw',name:'Roof room slider',open:true,pos:[(RWX0+RWX1)/2,RF+1.5,RZ]},
- {id:'rm',name:'Roof room door',open:true,pos:[RX0,RF+1.0,-D+0.55]},
+ {id:'rw',name:'Roof room slider',open:true,pos:[(RWX0+RWX1)/2,RF+1.5,RZ2]},
+ {id:'rm',name:'Roof room door',open:true,pos:[-T-0.08,RF+1.0,(DZ0+DZ1)/2]},
 ];
 const O=Object.fromEntries(OP.map(o=>[o.id,o]));
 const opsEl=document.getElementById('ops');
@@ -468,9 +471,9 @@ const P=[
  {name:'Living to bedroom fan',rooms:['Bedroom'],req:[['bd'],['ex'],['sl','rd']],modes:['sw','ne','calm'],fixedDir:true,
   pts:[[1.6,Y2+1.2,-6.4],[0.85,Y2+1.1,yB+0.3],[0.85,Y2+1.1,yB-0.4],[1.4,Y2+1.3,-10.6],[0.6,Y2+2.0,-11.8],[0.28,Y2+2.1,-D],[0.28,Y2+2.2,-D-1.2]]},
  {name:'Roof deck cross-breeze',rooms:['Roof deck'],req:[],modes:['sw','ne'],
-  pts:[[2.2,RF+1.6,yL+2.0],[2.2,RF+1.6,yL],[1.8,RF+1.6,-4.6],[0.2,RF+1.7,-5.6],[-1.5,RF+1.7,-5.6],[NX0+1.0,RF+1.6,-5.4],[NX0-1.2,RF+1.6,-5.3]]},
+  pts:[[2.2,RF+1.6,yL+2.0],[2.2,RF+1.6,yL],[1.8,RF+1.6,-4.6],[0.2,RF+1.7,-5.4],[-1.5,RF+1.7,-5.4],[NX0+1.0,RF+1.6,-5.4],[NX0-1.2,RF+1.6,-5.3]]},
  {name:'Roof room through-flow',rooms:['Closed room'],req:[['rw'],['rm']],modes:['sw','ne'],
-  pts:[[2.7,RF+1.5,-6.6],[2.7,RF+1.5,RZ+0.3],[2.7,RF+1.4,RZ-0.4],[2.2,RF+1.3,-10.6],[RX0+0.3,RF+1.2,-D+0.55],[0.5,RF+1.3,-D+0.55],[-0.4,RF+1.5,-D+0.5],[AX0+0.4,RF+1.8,-D+0.6],[AX0-1.2,RF+1.9,-D+1.2],[NX0-0.8,RF+2.0,-D+1.6]]},
+  pts:[[2.7,RF+1.5,-4.6],[2.7,RF+1.5,RZ2+0.3],[2.7,RF+1.4,RZ2-0.5],[2.0,RF+1.3,-8.2],[0.8,RF+1.3,-9.8],[0.1,RF+1.3,(DZ0+DZ1)/2],[-0.5,RF+1.5,(DZ0+DZ1)/2],[AX0+0.4,RF+1.8,-10.8],[AX0-1.2,RF+1.9,-10.6],[NX0-0.8,RF+2.0,-10.2]]},
  {name:'Living ceiling fan',rooms:['Living'],req:[['cf']],modes:['sw','ne','calm'],fixedDir:true,
   pts:[[CFX,C2-0.4,CFZ],[CFX,Y2+0.9,CFZ],[CFX+1.2,Y2+0.5,CFZ+0.6],[CFX+1.6,Y2+1.4,CFZ-0.4],[CFX+0.9,C2-0.4,CFZ-1.0],[CFX-0.9,C2-0.4,CFZ+1.0],[CFX-1.6,Y2+1.2,CFZ+0.4],[CFX-1.2,Y2+0.5,CFZ-0.6],[CFX,Y2+0.9,CFZ-0.05]]},
  {name:'Car bay flush',rooms:['Car bay'],req:[['sh','pd']],modes:['sw','calm'],
@@ -560,12 +563,12 @@ ceil(0,W/IN,0,99,LC,L2); ceil(0,W/IN,99,254,LC,L2); ceil(0,40,254,326,LC,L2); ce
  eTag('Riser',110*IN,1.6,-270*IN,1);
  // rooftop (listed as text in the layout; positions are mine, to confirm)
  run([[160*IN,RF+0.25,-92*IN],[W-0.1,RF+0.25,-92*IN],[W-0.1,RF+0.25,RZ+0.1]],L3); eTag('Roof feed (route to confirm)',W-0.3,RF+0.6,-3.6,3);
- eBox(L3,-0.12,RF+0.3,-9.5,0.08,0.11,0.08,em.sock); eBox(L3,-0.12,RF+0.85,-9.2,0.09,0.12,0.09,em.sw);
-
- [[2.2,-7.0],[0.5,-9.6]].forEach(([x,z])=>elec.push(cyl(0.09,0.03,em.lt,L3,x,RF+2.42,z)));
- eBox(L3,W-0.03,RF+0.3,-9.2,0.08,0.11,0.08,em.sock); eBox(L3,2.6,RF+0.3,-D+0.03,0.08,0.11,0.08,em.sock);
- elec.push(cyl(0.09,0.03,em.lt,L3,(RX0+W)/2,RF+2.42,-10.2)); eBox(L3,RX0+0.04,RF+1.3,-10.6,0.09,0.12,0.09,em.sw);
- eBox(L3,W-0.3,RF+2.0,-8.25,0.24,0.05,0.16,em.net); eTag('Mesh node 3',W-0.4,RF+2.3,-8.3,3);
+ // roof re-plan from the electrical thread (layout v15, plan inches)
+ const RP=(x,y)=>[x*IN,-y*IN];
+ [[87,300,2.42],[87,420,2.42],[-25,400,2.42],[87,232,2.2]].forEach(([x,y,h])=>{const [a,b]=RP(x,y);elec.push(cyl(0.09,0.03,em.lt,L3,a,RF+h,b));});
+ [[174.5,300],[174.5,430],[2,300],[87,480],[150,232]].forEach(([x,y])=>{const [a,b]=RP(x,y);eBox(L3,EPX(x),RF+0.3,y>478?-D+0.03:b,0.08,0.11,0.08,em.sock);});
+ [[6,380],[-3,375]].forEach(([x,y])=>{const [a,b]=RP(x,y);eBox(L3,a,RF+1.3,b,0.09,0.12,0.09,em.sw);});
+ {const [a,b]=RP(6,450); eBox(L3,a,RF+2.1,b,0.16,0.05,0.24,em.net); eTag('Mesh node 3',a+0.2,RF+2.35,b,3);}
 // switch -> light connections (gang mapping from the electrical thread): up from the switch, across the ceiling, down to each load
  {const SW=[
   // [floor, label, switch x,y(in) , [[gang loads: [x,y,h] in plan inches, h above that floor]]]
@@ -587,9 +590,9 @@ ceil(0,W/IN,0,99,LC,L2); ceil(0,W/IN,99,254,LC,L2); ceil(0,40,254,326,LC,L2); ce
   // kitchen under-cabinet LED strip (gang 2 of the kitchen switch)
   eBox(L1,1.45,1.48,-D+0.32,1.7,0.02,0.04,em.lt);
   // roof: deck switch -> 2 deck lights, room switch -> room light
-  const rm=EM(gcol[0]); [[[-0.12,RF+0.85,-9.2],[[2.2,-7.0],[0.5,-9.6]]],[[RX0+0.04,RF+1.3,-10.6],[[(RX0+W)/2,-10.2]]]].forEach(([s0,ls])=>ls.forEach(([x,z])=>{
-   const a=s0,b=[s0[0],RF+2.45,s0[2]],c=[x,RF+2.45,z]; [[a,b],[b,c]].forEach(([p0,p1])=>{const me=bar(p0,p1,0.014,rm,L3);me.userData.run=1;elec.push(me);});}));
-  tag('Deck 1G',-0.12,RF+1.1,-9.2,3);tags[tags.length-1].el=1; tag('Room 1G',RX0+0.1,RF+1.55,-10.6,3);tags[tags.length-1].el=1;}
+  const rm=EM(gcol[0]),rm2=EM(gcol[1]); [[[-3*IN,RF+1.3,-375*IN],[[-25*IN,-400*IN]],rm],[[6*IN,RF+1.3,-380*IN],[[87*IN,-300*IN],[87*IN,-420*IN]],rm],[[6*IN+0.04,RF+1.3,-380*IN],[[87*IN,-232*IN]],rm2]].forEach(([s0,ls,mm])=>ls.forEach(([x,z])=>{
+   const a=s0,b=[s0[0],RF+2.45,s0[2]],c=[x,RF+2.45,z]; [[a,b],[b,c]].forEach(([p0,p1])=>{const me=bar(p0,p1,0.014,mm,L3);me.userData.run=1;elec.push(me);});}));
+  tag('Landing 1G',-3*IN,RF+1.55,-375*IN,3);tags[tags.length-1].el=1; tag('Room 2G',6*IN+0.2,RF+1.55,-380*IN,3);tags[tags.length-1].el=1;}
  elec.forEach(m=>{m.visible=false; if(!m.userData.run&&m.material!==em.cord&&m.geometry.type!=='BoxGeometry'||m.geometry.type==='BoxGeometry'&&m.material!==em.ded||m.geometry.parameters.depth<0.5) if(!m.userData.run&&m.material!==em.cord) m.scale.multiplyScalar(1.5);});
 }
 // ---------- levels, cutaway, views ----------

@@ -96,11 +96,12 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
 <section class="sheet"><h2>Ground floor <span>inside width 174.5 in = 4.43 m</span></h2><svg id="g"></svg></section>
 <section class="sheet"><h2>2nd floor <span>bedroom + living measured</span></h2><svg id="s"></svg></section>
 </div>
-  <div class="rooflist"><h2>Rooftop (no drawing yet)</h2><ul>
-<li>Feed arrives from the terrace ceiling, up under the terrace roof and over the parapet.</li>
-<li>Roof deck: 1 weatherproof socket by the stair arrival, all roof items are wall- or roof-mounted (nothing under the WPC deck); no washer outlet (washer removed 18 Nov), 2 weatherproof LED lights under the shed roof, 1 one-gang switch at the stair arrival (deck lights).</li>
-<li>Rooftop room: 2 sockets (bedside, fan/charger), 1 LED light, 1 switch inside the door.</li>
-<li>Mesh node 3: in the rooftop room, wired back to the router (covers deck lights and room).</li>
+  <div class="rooflist"><h2>Rooftop (updated 18 Nov: no deck, room enlarged to about 4.4 × 6.3 m)</h2><ul>
+<li>Feed arrives from the terrace ceiling, up under the terrace roof and over the parapet, then along the outside of the room's new front wall into the room.</li>
+<li>Roof room (sleeper + house storage): 2 ceiling LED lights (front half and back half), 4 sockets (bed side, opposite wall, beside the front slider, storage end at the back wall), 1 two-gang switch inside the door (room lights · outside front light).</li>
+<li>Stair landing (annex side of the room wall): 1 LED light under the roof, 1 one-gang switch at 1.3 m by the door.</li>
+<li>Outside the room's front wall (open slab): 1 weatherproof LED light and 1 weatherproof socket, both on the wall.</li>
+<li>Mesh node 3: inside the room, wired back to the router.</li>
 <li>Booster pump: on hold, it was for the rooftop washer (confirm if still needed).</li></ul>
 <p class="sub">Assumed: the panel is on the car bay wall on your left as you walk in from the street. Tell me if it's the other wall.</p></div>
   </div>
@@ -253,7 +254,7 @@ text(87,-29,'terrace jalousies (SW), size to confirm','dp'); text(W/2,-58,'STREE
 
 // front zone (unknown)
 rect(0,W,0,yL-4,'out'); text(W/2,12,'Terrace','lbl'); text(W/2,92,'gate line to nibs, ≈ 2.5 m deep','dim');
-rect(W/2-cm(90),W/2+cm(90),49.5-cm(75),49.5+cm(75),'furn'); rect(W/2-cm(90),W/2+cm(90),49.5-cm(38),49.5+cm(38),'furn'); text(W/2,52,'picnic table 180 × 150','dim');
+rect(W/2-cm(60),W/2+cm(60),49.5-cm(75),49.5+cm(75),'furn'); rect(W/2-cm(60),W/2+cm(60),49.5-cm(38),49.5+cm(38),'furn'); text(W/2,52,'picnic table 120 × 150 (4 seats)','dim');
 // terrace wall: wall-to-wall 4-panel aluminium slider (1 + 4 fixed, 2 + 3 slide, ~2.1 m clear)
 const q=W/4; line(0,yL-3,q,yL-3,'glass'); line(q,yL-1,2*q,yL-1,'glass'); line(2*q,yL-3,3*q,yL-3,'glass'); line(3*q,yL-1,W,yL-1,'glass');
 text(W/2,yL+9,'4-panel slider, 4.18 × 2.4 m (middle 2 slide)','dp');
