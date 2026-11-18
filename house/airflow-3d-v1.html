@@ -449,7 +449,7 @@ const rwP=new THREE.Group(); L3.add(rwP); B((RWX0+RWX1)/2-0.02,RWX1-0.04,RF+0.06
  B(TX0-0.1,TX0,RF,RF+2.4,TB0,TB1+0.85,wt,L3); B(TX0-0.1,TX0,RF+2.1,RF+2.4,TB1+0.85,TB1+0.1,wt,L3); B(TX0-0.1,TX0,RF,RF+2.4,TB1+0.1,TB1-0.1,wt,L3);
  const tbC=B(TX0-0.1,W,RF+2.4,RF+2.43,TB0,TB1-0.1,wt,L3); cutables.push(tbC);  // T&B ceiling
  const tdH=new THREE.Group(); tdH.position.set(TX0-0.05,RF,TB1+0.1); tdH.rotation.y=1.0;  /* swings into the T&B, keeps the aisle clear */ L3.add(tdH); B(-0.02,0.02,0,2.05,0,0.72,M(0x3a3633),tdH);
- B(W-0.9,W,RF,RF+0.05,TB1+0.85,TB1,M(0xbfc4c6),L3); B(W-0.92,W-0.9,RF+0.05,RF+2.0,TB1+0.85,TB1,mat.glass,L3); B(W-0.9,W-0.45,RF+0.05,RF+2.0,TB1+0.86,TB1+0.85,mat.glass,L3);   // shower at the back (drain ~157,308) + glass screens
+ B(W-0.9,W,RF,RF+0.05,TB1+0.85,TB1,M(0xbfc4c6),L3);   // shower at the back (drain ~157,308), open, no glass screen (Rowil 18 Nov)
  B(150*IN-0.2,150*IN+0.2,RF,RF+0.4,TB0-0.2,TB0-0.65,por,L3); B(150*IN-0.2,150*IN+0.2,RF+0.4,RF+0.8,TB0,TB0-0.18,por,L3); // rear-outlet WC (150,262) + tank
  B(126*IN-0.22,126*IN+0.22,RF+0.8,RF+0.88,TB0,TB0-0.4,por,L3);            // lav on the front wall (126,257)
  setTimeout(()=>tag('Roof T&B',W-0.8,RF+1.2,(TB0+TB1)/2,3),0);}
