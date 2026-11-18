@@ -133,7 +133,7 @@ Each opening gets a steel frame (costed under the walls).
 | Aluminium sliding door, black, 6 mm tempered glass | 1.3 × 2.1 m | 18,000 | 30,000 | Online |
 | Room door from the stair landing, weatherproof (WPC or uPVC) with jamb and lockset | 0.8 × 2.1 m | 8,500 | 16,500 | Online |
 | T&B door, PVC or WPC with jamb | 0.7 × 2.1 m | 3,500 | 7,000 | Online |
-| T&B awning window, frosted | 0.9 × 0.45 m | 3,000 | 5,500 | Online |
+| T&B awning window, clear glass (privacy by curtain) | 0.9 × 0.45 m | 3,000 | 5,500 | Online |
 | Framed opening and bracket for the window aircon | 1 | 1,500 | 3,000 | Online |
 | **Subtotal** | | **34,500** | **62,000** | |
 
