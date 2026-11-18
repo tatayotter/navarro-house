@@ -13,7 +13,7 @@ Last updated: 18 November 2026.
 | Front gate | Design settled (roll-up car shutter + small door). Waiting on final measurements. |
 | Master bedroom | Plan and costing done (about ₱167k with buffer). |
 | Living room | Design and cost estimate done (₱228k–370k). |
-| Electrical wiring | Whole-house plan drafted, waiting for the electrician to check. |
+| Electrical wiring | Whole-house plan drafted: 20 ceiling lights + 5 pendants, 32 outlets, 12 smart switch plates. Booster pump and roof room window aircon have their own circuits. Waiting for the electrician to check. |
 | 3D model | Whole house in 3D with airflow, electrical layer and phone view. Kitchen re-arranged (bar counter, fridge by the T&B). |
 | Rooftop | Roof room enlarged to take in the old deck area: no deck, no hallway; door at the top of the steel stair. Engineer to check the new walls. |
 
