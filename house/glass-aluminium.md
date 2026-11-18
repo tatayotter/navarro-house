@@ -1,7 +1,7 @@
 ---
 title: Glass and aluminium works
 status: Measuring
-cost: "₱130k–205k"
+cost: "₱118k–185k"
 price_source: online
 updated: 18 Nov 2026
 summary: Every glass and aluminium item in the renovation in one list, ready to show suppliers for quotes. Sizes are provisional until each opening is measured on site. The gate and the steel stair are steel works and are not on this list.
@@ -28,10 +28,9 @@ summary: Every glass and aluminium item in the renovation in one list, ready to 
 | 3 | Sliding glass door | Ground floor, car bay / dining partition (solid double wall beside it), about 5.0 m in from the front | 1.80 × 2.15 | 2 panels, 1 fixed + 1 sliding (about 0.9 m clear) | 6 mm tempered clear | Optional sliding screen | 1 |
 | 4 | Sliding glass door | Rooftop room, front wall | 1.30 × 2.10 | 2 panels, 1 fixed + 1 sliding | 6 mm tempered clear (laminated optional, for typhoons) | Sliding screen | 1 |
 | 5 | Awning window | Rooftop T&B, front wall, high up | 0.90 × 0.45, sill 1.80 (above eye level) | 1 top-hung awning, friction stays | 5 mm clear | Fixed screen | 1 |
-| 6 | Shower screen | Rooftop T&B, around the shower | 0.85 + 0.45 (L-shape) × 2.00 | 2 fixed panels, frameless clamps, open entry | 10 mm tempered clear | — | 1 set |
-| 7 | Aircon sleeve frame | Rooftop room, front wall, left of the slider | 0.62 × 0.42, sill 1.50 | Aluminium angle frame to hold the window-type aircon | — | — | 1 |
+| 6 | Aircon sleeve frame | Rooftop room, front wall, left of the slider | 0.62 × 0.42, sill 1.50 | Aluminium angle frame to hold the window-type aircon | — | — | 1 |
 
-**Not on this list:** the solid double wall beside the car bay sliding door, the front gate and car shutter (steel, separate plan), the steel stair, the annex barn door (wood), the master bedroom glass blocks (kept as they are). The ground floor kitchen and T&B have no windows (party and back walls), so nothing is needed there.
+**Not on this list:** the solid double wall beside the car bay sliding door, the front gate and car shutter (steel, separate plan), the steel stair, the annex barn door (wood), the master bedroom glass blocks (kept as they are), and no shower screen in the rooftop T&B. The ground floor kitchen and T&B have no windows (party and back walls), so nothing is needed there.
 
 ## Rough cost
 
@@ -42,11 +41,10 @@ summary: Every glass and aluminium item in the renovation in one list, ready to 
 | 3 | Car bay partition sliding door (aluminium only) | 21,000 | 33,000 | Online |
 | 4 | Rooftop room slider | 18,000 | 30,000 | Online |
 | 5 | Rooftop T&B awning window | 3,000 | 5,500 | Online |
-| 6 | Rooftop T&B shower screen | 12,000 | 20,000 | Online |
-| 7 | Aircon sleeve frame | 1,500 | 3,000 | Online |
-| | **Total** | **129,500** | **204,500** | |
+| 6 | Aircon sleeve frame | 1,500 | 3,000 | Online |
+| | **Total** | **117,500** | **184,500** | |
 
-Items 2, 4, 5 and 7 are already counted in the [living room](../rooms/living-room.html) and [rooftop room](../rooms/rooftop-room.html) costs, so don't add them twice. Going from 4 to 6 jalousie bays adds roughly ₱1,500–3,000 (2 more mullions and operators) but gives shorter, stiffer blades that rattle less.
+Items 2, 4, 5 and 6 are already counted in the [living room](../rooms/living-room.html) and [rooftop room](../rooms/rooftop-room.html) costs, so don't add them twice. Going from 4 to 6 jalousie bays adds roughly ₱1,500–3,000 (2 more mullions and operators) but gives shorter, stiffer blades that rattle less.
 
 Laminated glass instead of tempered on the living slider adds about ₱15,000–25,000, and on the rooftop slider about ₱4,000–7,000 (Online).
 
@@ -60,8 +58,7 @@ General rule: measure each opening **after** it is finished (plastered, or the s
 - **3. Car bay door:** after the double wall beside it is built and plastered. Floor level on both sides, ceiling height (about 2.40 m), and the clearance to the wheel stop.
 - **4. Rooftop slider:** after the half wall and steel frame are built. Finished tile level, and a raised sill (5–10 cm) so rain doesn't blow in. Faces the open slab and typhoon wind: ask the supplier which series they'd use there.
 - **5. Awning window:** from the T&B floor to the sill (1.80 m) after the T&B floor is raised and tiled.
-- **6. Shower screen:** after the wall and floor tiles are done; measure tiled wall to tiled wall.
-- **7. Aircon sleeve:** buy the aircon first and use its sleeve size from the manual.
+- **6. Aircon sleeve:** buy the aircon first and use its sleeve size from the manual.
 
 ## Questions to settle
 
