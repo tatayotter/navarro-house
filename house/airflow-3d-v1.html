@@ -480,6 +480,17 @@ tag('Car bay',2.6,1.2,-3.6,1); tag('Dining',1.6,1.3,-6.3,1); tag('Kitchen',1.6,1
 tag('Terrace',2.2,Y2+1.2,-2.0,2); tag('Living',1.6,Y2+1.3,-5.5,2); tag('Bedroom',2.2,Y2+1.3,-10.3,2); tag('Stair annex',AX0+0.6,Y2+1.6,-7.6,2);
 tag('Roof deck (open)',2.2,RF+1.0,-4.2,3); tag("Neighbour's slab (shared)",NX0+2.5,RF+0.8,-4.3,3); tag('Roof room',2.8,RF+1.3,-10.2,3);  tag("Neighbour's corrugated roof",(NX0+AX0)/2,RF+0.2,-9.5,3);
 
+// ---------- movable stand fans (Rowil 18 Nov): kitchen (pushes cooking heat to the stairwell), terrace, bedroom, roof room ----------
+const SF={fk:{par:L1,x:2.3,y:0,z:-9.7,ax:2.4,az:-7.8},ft:{par:L2,x:0.45,y:Y2,z:-1.0,ax:2.2,az:-1.25},fb:{par:L2,x:3.9,y:Y2,z:-9.1,ax:2.2,az:-11.0},fr:{par:L3,x:0.5,y:RF,z:-9.3,ax:3.4,az:-11.2}};
+const sfHeads=[];
+{const fm=M(0xf2f2ee,{roughness:.6}), fd=M(0x9aa3a8,{metalness:.4,roughness:.4});
+ for(const id in SF){const f=SF[id], g=new THREE.Group(); g.position.set(f.x,f.y,f.z); g.rotation.y=Math.atan2(f.ax-f.x,f.az-f.z); f.par.add(g);
+  cyl(0.17,0.03,fd,g,0,0.015,0); cyl(0.018,1.1,fd,g,0,0.57,0);
+  const head=new THREE.Group(); head.position.set(0,1.18,0.03); g.add(head);
+  const ring=new THREE.Mesh(new THREE.TorusGeometry(0.22,0.012,8,32),fd); head.add(ring);
+  const bl=new THREE.Group(); head.add(bl); for(let k=0;k<3;k++){const b=new THREE.Mesh(new THREE.BoxGeometry(0.07,0.19,0.01),fm); const a=k*2*Math.PI/3; b.position.set(Math.sin(a)*0.1,Math.cos(a)*0.1,0); b.rotation.z=-a; bl.add(b);}
+  cyl(0.04,0.06,fd,head,0,0,-0.04,Math.PI/2);
+  sfHeads.push({id,bl}); f.mk=[f.x,f.y+1.45,f.z];}}
 // ---------- openings ----------
 const OP=[
  {id:'sh',name:'Shutter',open:true,pos:[1.8,1.2,0]},
@@ -494,6 +505,10 @@ const OP=[
  {id:'cf',name:'Living ceiling fan',open:true,pos:[W/2,C2-0.45,(yL+VZ0)/2]},
  {id:'rw',name:'Roof room slider',open:true,pos:[(RWX0+RWX1)/2,RF+1.5,RZ2]},
  {id:'rm',name:'Roof room door',open:true,pos:[0.1,RF+1.0,(DZ0+DZ1)/2]},
+ {id:'fk',name:'Kitchen stand fan',open:true,pos:SF.fk.mk},
+ {id:'ft',name:'Terrace stand fan',open:true,pos:SF.ft.mk},
+ {id:'fb',name:'Bedroom stand fan',open:true,pos:SF.fb.mk},
+ {id:'fr',name:'Roof room stand fan',open:true,pos:SF.fr.mk},
 ];
 const O=Object.fromEntries(OP.map(o=>[o.id,o]));
 const opsEl=document.getElementById('ops');
@@ -517,6 +532,14 @@ const P=[
   pts:[[1.75,RF+1.5,-4.6],[1.75,RF+1.5,RZ2+0.3],[1.75,RF+1.4,RZ2-0.5],[2.0,RF+1.3,-8.2],[0.8,RF+1.3,-9.8],[0.1,RF+1.3,(DZ0+DZ1)/2],[-0.5,RF+1.5,(DZ0+DZ1)/2],[AX0+0.4,RF+1.8,-10.8],[AX0-1.2,RF+1.9,-10.6],[NX0-0.8,RF+2.0,-10.2]]},
  {name:'Living ceiling fan',rooms:['Living'],req:[['cf']],modes:['sw','ne','calm'],fixedDir:true,
   pts:[[CFX,C2-0.4,CFZ],[CFX,Y2+0.9,CFZ],[CFX+1.2,Y2+0.5,CFZ+0.6],[CFX+1.6,Y2+1.4,CFZ-0.4],[CFX+0.9,C2-0.4,CFZ-1.0],[CFX-0.9,C2-0.4,CFZ+1.0],[CFX-1.6,Y2+1.2,CFZ+0.4],[CFX-1.2,Y2+0.5,CFZ-0.6],[CFX,Y2+0.9,CFZ-0.05]]},
+ {name:'Kitchen stand fan',rooms:['Kitchen'],req:[['fk']],modes:['sw','ne','calm'],fixedDir:true,
+  pts:[[0.7,1.2,-11.4],[1.4,1.2,-10.6],[2.3,1.15,-9.7],[2.4,1.5,-8.7],[2.4,2.4,-7.9],[2.4,3.2,-7.7]]},   // at the kitchen opening, blowing out: pulls cooking heat away from the stove and sends it up the stairwell
+ {name:'Terrace stand fan',rooms:['Terrace'],req:[['ft']],modes:['sw','ne','calm'],fixedDir:true,
+  pts:[[0.45,Y2+1.15,-1.0],[1.3,Y2+1.0,-1.15],[2.2,Y2+0.9,-1.25],[3.2,Y2+1.0,-1.3],[3.8,Y2+1.6,-1.0],[2.4,Y2+2.0,-0.6],[0.8,Y2+1.5,-0.8],[0.45,Y2+1.15,-1.0]]},
+ {name:'Bedroom stand fan',rooms:['Bedroom'],req:[['fb']],modes:['sw','ne','calm'],fixedDir:true,
+  pts:[[3.9,Y2+1.15,-9.1],[3.2,Y2+0.95,-10.0],[2.2,Y2+0.85,-11.0],[1.2,Y2+1.2,-11.3],[0.9,Y2+1.8,-10.2],[2.0,Y2+2.0,-9.3],[3.6,Y2+1.5,-9.0],[3.9,Y2+1.15,-9.1]]},
+ {name:'Roof room stand fan',rooms:['Roof room'],req:[['fr']],modes:['sw','ne','calm'],fixedDir:true,
+  pts:[[0.5,RF+1.15,-9.3],[1.6,RF+0.95,-10.2],[3.0,RF+0.85,-11.0],[3.8,RF+1.4,-11.6],[3.4,RF+2.0,-10.2],[1.6,RF+2.0,-9.2],[0.7,RF+1.4,-9.2],[0.5,RF+1.15,-9.3]]},
  {name:'Car bay flush',rooms:['Car bay'],req:[['sh','pd']],modes:['sw','calm'],
   pts:[[2.8,0.5,1.2],[2.8,0.6,-0.6],[2.4,1.0,-3.0],[1.6,1.8,-3.2],[1.2,2.15,-1.0],[1.2,2.2,0.0],[1.2,2.4,1.2]]},  // in low, out through the perforated top of the shutter
 ];
@@ -555,10 +578,11 @@ const HEAT={ // V m3, solar W, internal W, UA W/K
  'Roof room':{V:62,s:400,i:100,ua:100}, // insulated roof + ceiling with a vented gap above (Rowil 18 Nov) + SW cladding wall
  'Roof T&B':{V:6.5,s:60,i:0,ua:10}};
 let season='hot', acOn=false;
+const FANS={'Kitchen':'fk','Terrace':'ft','Bedroom':'fb','Roof room':'fr'};   // a stand fan adds air movement (counted in the airflow score) and ~50 W of motor heat; it makes people feel ~2-3 C cooler, the air itself is not cooler
 function roomTemp(r,sc){const h=HEAT[r]; if(!h) return null; if(acOn&&r==='Roof room') return 25; const S=SEAS[season]; const ach=sc>=2?15:sc===1?5:1;
-  let sol=h.s;
+  let sol=h.s; const fanW=FANS[r]&&O[FANS[r]].open?50:0;
   const base=S.t+(MASS.includes(r)?(season==='night'?1:-1.5):0);
-  return base+(sol*S.sun+h.i)/(0.33*ach*h.V+h.ua);}
+  return base+(sol*S.sun+h.i+fanW)/(0.33*ach*h.V+h.ua);}
 const MASS=['Car bay','Dining','Kitchen','T&B','Living','Bedroom'];  // heavy concrete rooms lag the outdoor peak: ~1.5 C cooler in the afternoon, ~1 C warmer at night
 const tCol=t=>t==null?'var(--muted)':t<30?'var(--good)':t<34?'var(--mid)':'var(--bad)';
 const tipEl=document.getElementById('tip'), listEl=document.getElementById('roomList');
@@ -571,7 +595,7 @@ function rebuild(){
   if(O.rw.open&&O.rm.open){ if(wind==='sw') score['Roof room']+=1;   // habagat blows straight into the front slider and out the landing door
     if(wind==='calm') score['Roof room']=Math.max(score['Roof room'],1); }   // no wind: warm air still rises out through the door to the stair opening
   score['Roof T&B']=1+(score['Roof room']>0?1:0);   // high exhaust window + fan, helped when the roof room is flowing
-  listEl.innerHTML=roomsAll.map(r=>{const s=score[r];const [c,t]=s>=2?['g','Good']:s===1?['m','Some']:['b','Still air'];const T=roomTemp(r,s);const tt=T==null?'outdoors':Math.round(T)+' °C';return `<div><span>${r}</span><span class="pill ${c}">${t}</span><span class="deg" style="color:${tCol(T)}">${tt}</span></div>`;}).join('')+`<div class="cap">Estimated air temperature, ${SEAS[season].lbl}${acOn?', roof room aircon set to 25 °C (keep its slider and door shut)':''}.</div>`;
+  listEl.innerHTML=roomsAll.map(r=>{const s=score[r];const [c,t]=s>=2?['g','Good']:s===1?['m','Some']:['b','Still air'];const T=roomTemp(r,s);const fanOn=FANS[r]&&O[FANS[r]].open&&!(acOn&&r==='Roof room'); const tt=T==null?'outdoors':Math.round(T)+' °C'+(fanOn?'*':'');return `<div><span>${r}</span><span class="pill ${c}">${t}</span><span class="deg" style="color:${tCol(T)}">${tt}</span></div>`;}).join('')+`<div class="cap">Estimated air temperature, ${SEAS[season].lbl}${acOn?', roof room aircon set to 25 °C (keep its slider and door shut)':''}.${Object.values(FANS).some(id=>O[id].open)?' * stand fan on: feels about 2–3 °C cooler on the skin.':''}</div>`;
   const tips=[];
   if(!O.rd.open) tips.push('With the stair room barn door shut, the 2nd floor has no outlet on the back side, so cross-flow mostly stops.');
   if(!O.pt.open) tips.push('Partition closed: the ground floor behind the car bay only gets air from the stairwell.');
@@ -727,7 +751,7 @@ new ResizeObserver(resize).observe(view); resize();
 
 // ---------- animation ----------
 const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
-const st={sh:1,pd:0,pt:1,tb:1,tw:1,sl:1,bd:1,rd:1,rw:1,rm:1,cf:1};
+const st={sh:1,pd:0,pt:1,tb:1,tw:1,sl:1,bd:1,rd:1,rw:1,rm:1,cf:1,fk:1,ft:1,fb:1,fr:1};
 const tmp=new THREE.Vector3(), ctmp=new THREE.Color();
 let last=performance.now(), time=0;
 function frame(now){const dt=Math.min((now-last)/1000,0.05);last=now;time+=reduce?0:dt;
@@ -737,7 +761,7 @@ function frame(now){const dt=Math.min((now-last)/1000,0.05);last=now;time+=reduc
   blades.forEach(g=>g.rotation.x=-st.tw*1.3);
   slP[1].position.x=slX[1]-st.sl*sq*0.95; slP[2].position.x=slX[2]+st.sl*sq*0.95;
   rmHinge.rotation.y=-1.1*st.rm; rwP.position.x=-st.rw*0.6; bdHinge.rotation.y=st.bd*Math.PI/2; rdHinge.position.z=RDz0+0.05+st.rd*0.92;
-  fan.rotation.z+=O.ex.open&&!reduce?dt*8:0; cfRot.rotation.y+=reduce?0:dt*9*st.cf;
+  fan.rotation.z+=O.ex.open&&!reduce?dt*8:0; cfRot.rotation.y+=reduce?0:dt*9*st.cf; sfHeads.forEach(h=>h.bl.rotation.z+=reduce?0:dt*16*st[h.id]);
   P.forEach(p=>{if(!p.on)return; p.pts3.visible=!elecOn&&!plumOn&&(level>=2||p.rooms.some(r=>['Car bay','Dining','Kitchen','T&B'].includes(r))); const pos=p.pts3.geometry.attributes.position.array,col=p.pts3.geometry.attributes.color.array;
     const sp=SPEED[wind]*6/p.len; const rev=(wind==='ne'&&!p.fixedDir);
     for(let i=0;i<N;i++){let t=(p.ph[i]+time*sp)%1; const u=Math.min(0.999,Math.max(0,rev?1-t:t)); p.curve.getPointAt(u,tmp);
