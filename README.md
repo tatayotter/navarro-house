@@ -15,7 +15,7 @@ Last updated: 18 November 2026.
 | Living room | Design and cost estimate done (₱228k–370k). |
 | Electrical wiring | Whole-house plan drafted: 20 ceiling lights + 5 pendants, 32 outlets, 12 smart switch plates. Booster pump and roof room window aircon have their own circuits. Materials about ₱113k–179k (online estimate). Waiting for the electrician to check. |
 | 3D model | Whole house in 3D with airflow, electrical layer and phone view. Kitchen re-arranged (bar counter, fridge by the T&B). |
-| Rooftop | Roof room enlarged to take in the old deck area: no deck, no hallway; door at the top of the steel stair. Engineer to check the new walls. |
+| Rooftop | Roof room enlarged to take in the old deck area: no deck, no hallway; door at the top of the steel stair. Draft materials plan: fibre-cement walls on steel studs (insulated on the sunny sides), tiled floor, gypsum ceiling, about ₱193k–325k with buffer (online estimate), see `rooms/rooftop-room.md`. Engineer to check slab load and wall anchoring. |
 
 ## Where the prices come from
 - **Local receipts and quotes:** steel stair materials already bought (₱18,589, store receipt), welder labour (₱7,000), architect's stair quote (₱64,850, for comparison).
