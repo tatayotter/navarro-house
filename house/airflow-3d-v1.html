@@ -44,6 +44,7 @@ button{font:600 12.5px var(--f-ui);padding:6px 10px;border-radius:7px;border:1px
 #pleg{position:absolute;left:max(10px,env(safe-area-inset-left,0px));top:10px;max-width:240px;background:color-mix(in srgb,var(--panel) 92%,transparent);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font:12px var(--f-ui);display:grid;gap:3px}
 #pleg h2{font:600 11px var(--f-ui);letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:0 0 2px}
 #pleg i{display:inline-block;width:10px;height:10px;margin-right:6px;vertical-align:-1px}
+#pleg .pvsw{display:flex;gap:4px;margin:2px 0 4px}#pleg .pvsw button{padding:4px 7px;font-size:11.5px}
 #pleg p{margin:4px 0 0;color:var(--muted);font-size:11px}
 .tabs,#infoBtn{display:none}
 #rooms h2 .chev,#eleg h2 .chev{display:none}
@@ -85,7 +86,8 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
    <div><i style="background:#6a4bc4"></i>Tuya switch, 1.3 m</div><div><i style="background:#f2c230"></i>Ceiling light, 15 W+ LED (final count: 20)</div><div><i style="background:#e08a00;border-radius:50%"></i>Smart E27 mood pendant</div>
    <div><i style="background:#1f8a5b"></i>Router / mesh node</div><div><i style="background:linear-gradient(90deg,#e8590c 33%,#1971c2 33% 66%,#2f9e44 66%)"></i>Switch wiring: gang 1 orange, 2 blue, 3 green</div><p>Hung ceilings show when Cutaway is off; conduits run above them. Air dots are hidden while this is on.</p></div>
   <div id="pleg" hidden><h2>Plumbing key (draft v1.1)</h2>
-   <div><i style="background:#8d5524"></i>Drain, 100 mm main to the new septic tank</div><div><i style="background:#868e96"></i>Vent above the roof</div><div><i style="background:#1c7ed6"></i>Water: city line (in at the kitchen), 500 L tank, booster pump, riser</div><div><i style="background:#495057;opacity:.5"></i>Old septic tank (to be closed)</div><div><i style="background:#6b4f2a;opacity:.5"></i>Septic tank / inspection chamber (underground)</div><p>From the plumbing plan thread; shown through floors.</p></div>
+   <div class="pvsw"><button data-pv="1" aria-pressed="false">V1 keep old septic</button><button data-pv="2" aria-pressed="true">V2 new septic</button></div>
+   <div><i style="background:#8d5524"></i>Drain, 100 mm main (to the new tank in V2, old tank + street in V1)</div><div><i style="background:#868e96"></i>Vent above the roof</div><div><i style="background:#1c7ed6"></i>Water: city line (in at the kitchen), 500 L tank, booster pump, riser</div><div><i style="background:#495057;opacity:.5"></i>Old septic tank (closed in V2)</div><div><i style="background:#6b4f2a;opacity:.5"></i>Septic tank / inspection chamber (underground)</div><p>From the plumbing plan thread; shown through floors.</p></div>
   <div id="rooms"><h2>Air and heat <span class="chev">▾</span></h2><div id="roomList"></div><p id="tip"></p></div>
 </div>
 <div class="bar">
@@ -673,37 +675,50 @@ ceil(0,W/IN,0,99,LC,L2); ceil(0,W/IN,99,254,LC,L2); ceil(0,40,254,326,LC,L2); ce
 // ---------- levels, cutaway, views ----------
 let level=2, cut=true;
 // ---------- plumbing layer (plumbing thread draft v1, plan inches; that thread owns the data, the 3D only displays it) ----------
-const plum=[]; let plumOn=false;
+const plum=[]; let plumOn=false, pv=2, curV=0;   // pv: 1 = keep old septic, 2 = new car-bay septic; curV tags variant-only pieces
 const PM=(c,o)=>new THREE.MeshBasicMaterial(Object.assign({color:c,depthTest:false,transparent:true,opacity:.95},o||{}));
 const pmD=PM(0x8d5524), pmW=PM(0x1c7ed6), pmV=PM(0x868e96), pmT=PM(0x6b4f2a,{opacity:.35}), pmK=PM(0x1c7ed6,{opacity:.45}), pmP=PM(0x1864ab);
 const pp=(x,y,h)=>[x*IN,h,-y*IN];
-function pRun(pts,m,r){for(let i=1;i<pts.length;i++){const me=bar(pp(...pts[i-1]),pp(...pts[i]),r||0.035,m,root); me.renderOrder=5; plum.push(me);}}
-function pBox(x0,x1,y0,y1,h0,h1,m){const me=B(x0*IN,x1*IN,h0,h1,-y0*IN,-y1*IN,m,root); me.renderOrder=4; plum.push(me); return me;}
-function pTag(t,x,y,h,lv){tag(t,x*IN,h,-y*IN,lv);tags[tags.length-1].pl=1;}
-// septic tank under the car bay, 2 manholes, inspection chamber
+function pRun(pts,m,r){for(let i=1;i<pts.length;i++){const me=bar(pp(...pts[i-1]),pp(...pts[i]),r||0.035,m,root); me.renderOrder=5; me.userData.v=curV; plum.push(me);}}
+function pBox(x0,x1,y0,y1,h0,h1,m){const me=B(x0*IN,x1*IN,h0,h1,-y0*IN,-y1*IN,m,root); me.renderOrder=4; me.userData.v=curV; plum.push(me); return me;}
+function pTag(t,x,y,h,lv){tag(t,x*IN,h,-y*IN,lv);tags[tags.length-1].pl=1; tags[tags.length-1].pv=curV;}
+// common: ground T&B WC stub + lav + floor drain branches onto the x116 line
+pRun([[116,474,-0.25],[116,452,-0.3]],pmD,0.05); pRun([[107,444,-0.25],[116,444,-0.28]],pmD); pRun([[160,468,-0.22],[116,468,-0.27]],pmD);
+pBox(46,62,458,474,-0.3,0.02,pmP); pTag('Grease trap',54,466,0.3,1);
+// V2: new septic tank under the car bay, 2 manholes, inspection chamber, 100 mm main
+curV=2;
 pBox(95,142,30,125,-1.5,-0.06,pmT); [[106,108],[106,44]].forEach(([x,y])=>pBox(x-10,x+10,y-10,y+10,-0.06,0.02,pmP)); pBox(112,124,162,174,-0.6,0.02,pmT);
 pTag('Septic tank (new)',118,78,-0.4,1); pTag('Inspection chamber',118,168,0.25,1);
-// 100 mm main under the floor: ground T&B -> inspection chamber -> tank
-pRun([[116,474,-0.25],[116,452,-0.3],[116,240,-0.45],[118,168,-0.55],[118,125,-0.6]],pmD,0.05);
-pRun([[107,444,-0.25],[116,444,-0.28]],pmD); pRun([[160,468,-0.22],[116,468,-0.27]],pmD);              // ground lav + floor drain
-pRun([[54,466,-0.2],[54,456,-0.22],[116,456,-0.29]],pmD); pBox(46,62,458,474,-0.3,0.02,pmP); pTag('Grease trap',54,466,0.3,1); // kitchen sink
+pRun([[116,452,-0.3],[116,240,-0.45],[118,168,-0.55],[118,125,-0.6]],pmD,0.05);
+pRun([[54,466,-0.2],[54,456,-0.22],[116,456,-0.29]],pmD);
+pRun([[166,266,-0.45],[116,250,-0.45]],pmD,0.05);
+pBox(14,92,372,448,-1.4,-0.06,PM(0x495057,{opacity:.3})); pTag('Old septic (to close)',53,410,-0.3,1);
+// V1: keep the old septic under the kitchen, outlet to the street drain
+curV=1;
+pBox(14,92,372,448,-1.6,-0.06,pmT); [[30,436],[30,384]].forEach(([x,y])=>pBox(x-10,x+10,y-10,y+10,-0.06,0.02,pmP)); pTag('Old septic (kept)',53,410,-0.3,1);
+pRun([[116,452,-0.3],[104,440,-0.35],[92,432,-0.4]],pmD,0.05); pRun([[62,466,-0.2],[70,448,-0.3]],pmD);
+pRun([[166,266,-0.45],[150,290,-0.5],[110,340,-0.55],[92,384,-0.6]],pmD,0.05);
+pRun([[53,372,-0.6],[53,340,-0.62],[100,250,-0.7],[100,-14,-0.85]],pmD,0.05); pBox(93,107,16,30,-0.9,0.02,pmP);
+[[100,205],[100,120]].forEach(([x,y])=>pBox(x-4,x+4,y-4,y+4,-0.7,0.02,pmP));
+pTag('Backwater valve',100,23,0.25,1); pTag('Outlet to street drain',100,-14,0.25,1);
+curV=0;
 // roof T&B stack + water riser + vent in a boxed chase up the stairwell corner, through one slab core
-pRun([[166,266,-0.45],[116,250,-0.45]],pmD,0.05); pRun([[166,266,-0.45],[166,266,RF+0.05]],pmD,0.05); pRun([[166,266,RF+0.05],[166,266,RF+RH+0.45]],pmV,0.03);
+pRun([[166,266,-0.45],[166,266,RF+0.05]],pmD,0.05); pRun([[166,266,RF+0.05],[166,266,RF+RH+0.45]],pmV,0.03);
 pRun([[150,262,RF+0.08],[166,266,RF+0.08]],pmD); pRun([[126,257,RF+0.08],[166,266,RF+0.08]],pmD); pRun([[157,308,RF+0.06],[166,266,RF+0.07]],pmD);
 pTag('Stack + riser (chase)',166,266,Y2+1.2,2); pTag('Roof T&B drains',150,285,RF+0.3,3);
 // water (v1.1): city line enters under the kitchen sink, up into the kitchen/dining ceiling, along x~30 to the partition, across to x~168, down to the tank
 pRun([[46,486,0.3],[46,486,GC+0.1],[30,480,GC+0.1],[30,200,GC+0.1],[168,200,GC+0.1],[168,137,GC+0.1],[159,137,1.45]],pmW,0.025);
 pRun([[168,137,GC+0.1],[168,40,GC+0.1],[168,40,0.6]],pmW,0.02); pBox(166,172,197,203,GC,GC+0.2,pmP);   // hose bib branch + bypass valve
-pBox(14,92,372,448,-1.4,-0.06,PM(0x495057,{opacity:.3}));                                             // OLD septic under the kitchen (outline guessed), to be closed
-pTag('City water in',46,486,0.6,1); pTag('Hose bib',168,40,0.85,1); pTag('Bypass valve',170,200,GC+0.35,1); pTag('Old septic (to close)',53,410,-0.3,1);
+pTag('City water in',46,486,0.6,1); pTag('Hose bib',168,40,0.85,1); pTag('Bypass valve',170,200,GC+0.35,1);
 {const t=cyl(14*IN,1.4,pmK,root,159*IN,0.7,-137*IN); t.renderOrder=4; plum.push(t);} pBox(152,164,160,172,0,0.35,pmP);
 pRun([[159,150,0.2],[158,166,0.2]],pmW,0.02); pRun([[158,166,0.3],[174.5,152,1.2]],pmW,0.02);
 pRun([[174.5,152,1.2],[174.5,266,1.2],[166,266,1.2],[166,266,RF+1.0],[150,262,RF+0.5]],pmW,0.02); pRun([[166,266,RF+1.0],[126,257,RF+0.85]],pmW,0.02); pRun([[166,266,RF+1.0],[157,316,RF+1.0]],pmW,0.02);
 pRun([[166,266,1.2],[116,266,0.4],[116,444,0.4],[107,444,0.85]],pmW,0.02); pRun([[116,452,0.4],[116,474,0.3]],pmW,0.02); pRun([[116,420,0.4],[54,440,0.9],[54,466,0.95]],pmW,0.02);
 pTag('Water tank 500 L',159,137,1.6,1); pTag('Booster pump',158,166,0.55,1);
-function applyLevels(){L2.visible=level>=2;L3.visible=level>=3;cutables.forEach(m=>m.visible=!cut); elec.forEach(m=>m.visible=elecOn); plum.forEach(m=>m.visible=plumOn); document.getElementById('pleg').hidden=!plumOn; document.getElementById('eleg').hidden=!elecOn; OP.forEach(o=>mk[o.id].visible=o.pos[1]<Y2||level>=(o.pos[1]<RF?2:3));
+function applyLevels(){L2.visible=level>=2;L3.visible=level>=3;cutables.forEach(m=>m.visible=!cut); elec.forEach(m=>m.visible=elecOn); plum.forEach(m=>m.visible=plumOn&&(!m.userData.v||m.userData.v===pv)); document.getElementById('pleg').hidden=!plumOn; document.getElementById('eleg').hidden=!elecOn; OP.forEach(o=>mk[o.id].visible=o.pos[1]<Y2||level>=(o.pos[1]<RF?2:3));
   document.querySelectorAll('[data-l]').forEach(b=>b.setAttribute('aria-pressed',+b.dataset.l===level));}
 document.querySelectorAll('[data-l]').forEach(b=>b.addEventListener('click',()=>{level=+b.dataset.l;applyLevels();}));
+document.querySelectorAll('[data-pv]').forEach(b=>b.addEventListener('click',()=>{pv=+b.dataset.pv;document.querySelectorAll('[data-pv]').forEach(x=>x.setAttribute('aria-pressed',x===b));applyLevels();}));
 const plBtn=document.getElementById('plBtn'); plBtn.addEventListener('click',()=>{plumOn=!plumOn;plBtn.setAttribute('aria-pressed',plumOn);applyLevels();});
 const elBtn=document.getElementById('elBtn'); elBtn.addEventListener('click',()=>{elecOn=!elecOn;elBtn.setAttribute('aria-pressed',elecOn);applyLevels();});
 const cutBtn=document.getElementById('cutBtn'); cutBtn.addEventListener('click',()=>{cut=!cut;cutBtn.setAttribute('aria-pressed',cut);applyLevels();});
@@ -744,7 +759,7 @@ function frame(now){const dt=Math.min((now-last)/1000,0.05);last=now;time+=reduc
     p.pts3.geometry.attributes.position.needsUpdate=true; p.pts3.geometry.attributes.color.needsUpdate=true;});
   ctl.update(); renderer.render(scene,cam);
   const r=view.getBoundingClientRect();
-  tags.forEach(t=>{const show=t.pl?plumOn:(t.lv===level&&(!t.only||level===t.only)&&(!t.el||elecOn)); if(!show){t.d.hidden=true;return;} tmp.copy(t.v); root.localToWorld(tmp); tmp.project(cam);
+  tags.forEach(t=>{const show=t.pl?(plumOn&&(!t.pv||t.pv===pv)):(t.lv===level&&(!t.only||level===t.only)&&(!t.el||elecOn)); if(!show){t.d.hidden=true;return;} tmp.copy(t.v); root.localToWorld(tmp); tmp.project(cam);
     const off=tmp.z>1||Math.abs(tmp.x)>1.1||Math.abs(tmp.y)>1.1; t.d.hidden=off; if(!off){t.d.style.left=((tmp.x+1)/2*r.width)+'px';t.d.style.top=((1-tmp.y)/2*r.height)+'px';}});
   requestAnimationFrame(frame);}
 requestAnimationFrame(frame);
