@@ -40,7 +40,11 @@ header p{margin:2px 0 0;color:var(--muted);font-size:12.5px;max-width:90ch}
 .grp{display:flex;align-items:center;gap:6px;flex-wrap:wrap;min-width:0}
 .lbl{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin-right:2px}
 button{font:600 12.5px var(--f-ui);padding:6px 10px;border-radius:7px;border:1px solid var(--line);background:var(--bg);color:var(--fg);cursor:pointer}
-#eleg[hidden]{display:none}
+#eleg[hidden],#pleg[hidden]{display:none}
+#pleg{position:absolute;left:max(10px,env(safe-area-inset-left,0px));top:10px;max-width:240px;background:color-mix(in srgb,var(--panel) 92%,transparent);border:1px solid var(--line);border-radius:8px;padding:8px 10px;font:12px var(--f-ui);display:grid;gap:3px}
+#pleg h2{font:600 11px var(--f-ui);letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin:0 0 2px}
+#pleg i{display:inline-block;width:10px;height:10px;margin-right:6px;vertical-align:-1px}
+#pleg p{margin:4px 0 0;color:var(--muted);font-size:11px}
 .tabs,#infoBtn{display:none}
 #rooms h2 .chev,#eleg h2 .chev{display:none}
 @media (max-width:640px){
@@ -80,6 +84,8 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
    <div><i style="background:#c0392b"></i>Main panel / dedicated outlet / conduit</div><div><i style="background:#2f6f9e"></i>Socket (30 cm; counter 1.1 m)</div>
    <div><i style="background:#6a4bc4"></i>Tuya switch, 1.3 m</div><div><i style="background:#f2c230"></i>Ceiling light, 15 W+ LED (final count: 20)</div><div><i style="background:#e08a00;border-radius:50%"></i>Smart E27 mood pendant</div>
    <div><i style="background:#1f8a5b"></i>Router / mesh node</div><div><i style="background:linear-gradient(90deg,#e8590c 33%,#1971c2 33% 66%,#2f9e44 66%)"></i>Switch wiring: gang 1 orange, 2 blue, 3 green</div><p>Hung ceilings show when Cutaway is off; conduits run above them. Air dots are hidden while this is on.</p></div>
+  <div id="pleg" hidden><h2>Plumbing key (draft v1)</h2>
+   <div><i style="background:#8d5524"></i>Drain, 100 mm main to the new septic tank</div><div><i style="background:#868e96"></i>Vent above the roof</div><div><i style="background:#1c7ed6"></i>Water: meter, 500 L tank, booster pump, riser</div><div><i style="background:#6b4f2a;opacity:.5"></i>Septic tank / inspection chamber (underground)</div><p>From the plumbing plan thread; shown through floors.</p></div>
   <div id="rooms"><h2>Air and heat <span class="chev">▾</span></h2><div id="roomList"></div><p id="tip"></p></div>
 </div>
 <div class="bar">
@@ -89,9 +95,9 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
   <div class="grp on" data-g="1" id="ops"><span class="lbl">Open</span></div>
   <div class="grp" data-g="2"><span class="lbl">Show</span>
     <button data-l="1" aria-pressed="false">Ground</button><button data-l="2" aria-pressed="true">+ 2nd</button><button data-l="3" aria-pressed="false">+ Roof</button>
-    <button id="cutBtn" aria-pressed="true">Cutaway</button><button id="elBtn" aria-pressed="false">Electrical</button></div>
+    <button id="cutBtn" aria-pressed="true">Cutaway</button><button id="elBtn" aria-pressed="false">Electrical</button><button id="plBtn" aria-pressed="false">Plumbing</button></div>
   <div class="grp" data-g="4"><span class="lbl">Heat</span>
-    <button data-s="hot" aria-pressed="true">Hot-season afternoon</button><button data-s="cool" aria-pressed="false">Cool-season afternoon</button><button data-s="night" aria-pressed="false">Hot-season night</button><button id="insBtn" aria-pressed="false">Insulate roof room</button></div>
+    <button data-s="hot" aria-pressed="true">Hot-season afternoon</button><button data-s="cool" aria-pressed="false">Cool-season afternoon</button><button data-s="night" aria-pressed="false">Hot-season night</button><button id="insBtn" aria-pressed="false">Insulate roof room</button><button id="acBtn" aria-pressed="false">Roof room aircon on</button></div>
   <div class="grp" data-g="3"><span class="lbl">View</span>
     <button data-v="front">Street</button><button data-v="iso">3/4</button><button data-v="side">Side</button><button data-v="top">Top</button></div>
 </div>
@@ -418,7 +424,9 @@ for(let x=AX0-0.1;x<W;x+=0.12) B(x,x+0.015,RF+1.0,RF+RH,-D-T-0.005,-D-T-0.02,M(0
 const _rz2=0; // expanded room (Rowil 18 Nov): front wall where the deck's front edge was, side wall along the annex, no hallway
 cutables.push(B(W,W+T,RF,RF+1.0,RZ2,-D,mat.wall,L3), B(W,W+T,RF+1.0,RF+RH,RZ2,-D,clad,L3)); // side wall: concrete half wall, cladding above
 const RWX0=1.1, RWX1=2.4;  // slider centred on the room's aisle, clear of the roof T&B (Rowil 18 Nov)
-wallX(0,W,RZ2-0.05,0.1,RF,ruY(RZ2)-0.12,clad,L3,[[RWX0,RWX1,RF,RF+2.1],[W-1.3,W-0.4,RF+1.8,RF+2.25]]);
+wallX(0,W,RZ2-0.05,0.1,RF,ruY(RZ2)-0.12,clad,L3,[[RWX0,RWX1,RF,RF+2.1],[W-1.3,W-0.4,RF+1.8,RF+2.25],[0.35,0.97,RF+1.5,RF+1.92]]);
+// window-type aircon (Rowil 18 Nov): ~60x40 cm sleeve in the front wall left of the slider, sill 1.5 m; exhausts under the roof overhang
+B(0.37,0.95,RF+1.51,RF+1.91,RZ2+0.25,RZ2-0.3,M(0xe8e8e4),L3); B(0.4,0.92,RF+1.55,RF+1.87,RZ2-0.301,RZ2-0.305,M(0x9aa0a2),L3); setTimeout(()=>tag('Window aircon',0.66,RF+2.1,RZ2,3),0);
 // roof T&B high exhaust window (Rowil 18 Nov): 0.9 x 0.45 m, sill 1.8 m (above eye level), frosted awning, in the T&B front wall facing the open slab
 B(W-1.3,W-0.4,RF+1.8,RF+2.25,RZ2-0.09,RZ2-0.11,M(0xdfe7ea,{transparent:true,opacity:.6}),L3); B(W-1.3,W-0.4,RF+2.22,RF+2.25,RZ2-0.03,RZ2-0.13,M(0x2a2c2e),L3);           // new SW front wall, keeps the 2-panel sliding glass door (position assumed)
 // annex-side wall on the column line (x 0-0.2, Rowil 18 Nov; the strip outside it is concrete cantilever slab): concrete half wall + cladding above, door at the stair's left turn off the landing (blue circle, no half wall there)
@@ -432,15 +440,15 @@ B(RWX0+0.04,(RWX0+RWX1)/2+0.02,RF+0.06,RF+2.06,RZ2-0.01,RZ2-0.02,mat.glass,L3);
 const rwP=new THREE.Group(); L3.add(rwP); B((RWX0+RWX1)/2-0.02,RWX1-0.04,RF+0.06,RF+2.06,RZ2-0.04,RZ2-0.05,mat.glass,rwP); B((RWX0+RWX1)/2-0.02,(RWX0+RWX1)/2+0.01,RF+0.06,RF+2.06,RZ2-0.03,RZ2-0.06,M(0x2a2c2e),rwP);
 // WPC deck removed: that area is now inside the room (Rowil 18 Nov)
 // roof T&B (Rowil 18 Nov, size my choice): 1.6 x 1.7 m inside, front corner on the outer side wall.
-// Shower in the front corner, toilet behind it on the outer wall, sink on the front wall, door at the back of its inner wall.
+// Fixtures per the plumbing draft v1 (stack at the front-outer corner): WC and lav on the front wall, shower at the back on the outer wall, door at the back of its inner wall.
 {const TX0=W-1.6, TB0=RZ2-0.15, TB1=TB0-1.7, wt=M(0xe9e6df), por=M(0xf7f7f5,{roughness:.3});
  B(TX0-0.1,W,RF,RF+2.4,TB1,TB1-0.1,wt,L3);                                  // back wall (bed head side)
  B(TX0-0.1,TX0,RF,RF+2.4,TB0,TB1+0.85,wt,L3); B(TX0-0.1,TX0,RF+2.1,RF+2.4,TB1+0.85,TB1+0.1,wt,L3); B(TX0-0.1,TX0,RF,RF+2.4,TB1+0.1,TB1-0.1,wt,L3);
  const tbC=B(TX0-0.1,W,RF+2.4,RF+2.43,TB0,TB1-0.1,wt,L3); cutables.push(tbC);  // T&B ceiling
  const tdH=new THREE.Group(); tdH.position.set(TX0-0.05,RF,TB1+0.1); tdH.rotation.y=1.0;  /* swings into the T&B, keeps the aisle clear */ L3.add(tdH); B(-0.02,0.02,0,2.05,0,0.72,M(0x3a3633),tdH);
- B(W-0.9,W,RF,RF+0.05,TB0,TB0-0.9,M(0xbfc4c6),L3); B(W-0.92,W-0.9,RF+0.05,RF+2.0,TB0,TB0-0.9,mat.glass,L3);   // shower tray + glass screen
- B(W-0.65,W-0.25,RF,RF+0.4,TB0-1.05,TB0-1.5,por,L3); B(W-0.2,W-0.02,RF+0.4,RF+0.8,TB0-1.05,TB0-1.5,por,L3); // toilet + tank
- B(TX0+0.1,TX0+0.6,RF+0.8,RF+0.88,TB0,TB0-0.4,por,L3);                    // sink on the front wall
+ B(W-0.9,W,RF,RF+0.05,TB1+0.85,TB1,M(0xbfc4c6),L3); B(W-0.92,W-0.9,RF+0.05,RF+2.0,TB1+0.85,TB1,mat.glass,L3); B(W-0.9,W-0.45,RF+0.05,RF+2.0,TB1+0.86,TB1+0.85,mat.glass,L3);   // shower at the back (drain ~157,308) + glass screens
+ B(150*IN-0.2,150*IN+0.2,RF,RF+0.4,TB0-0.2,TB0-0.65,por,L3); B(150*IN-0.2,150*IN+0.2,RF+0.4,RF+0.8,TB0,TB0-0.18,por,L3); // rear-outlet WC (150,262) + tank
+ B(126*IN-0.22,126*IN+0.22,RF+0.8,RF+0.88,TB0,TB0-0.4,por,L3);            // lav on the front wall (126,257)
  setTimeout(()=>tag('Roof T&B',W-0.8,RF+1.2,(TB0+TB1)/2,3),0);}
 // room fit-out: single bed (90x190) by the SW window, 60 cm deep full-height storage along the back wall
 // (mattresses on the bottom bay, boxes above), tall cleaning cabinet on the left wall
@@ -545,8 +553,8 @@ const HEAT={ // V m3, solar W, internal W, UA W/K
  'Bedroom':{V:33,s:100,i:150,ua:30},   // under the shaded part of the roof slab; no aircon in this estimate
  'Roof room':{V:62,s:1450,i:100,ua:100}, // bare corrugated roof right above (no ceiling) + SW cladding wall
  'Roof T&B':{V:6.5,s:150,i:0,ua:10}};
-let season='hot', insul=false;
-function roomTemp(r,sc){const h=HEAT[r]; if(!h) return null; const S=SEAS[season]; const ach=sc>=2?15:sc===1?5:1;
+let season='hot', insul=false, acOn=false;
+function roomTemp(r,sc){const h=HEAT[r]; if(!h) return null; if(acOn&&r==='Roof room') return 25; const S=SEAS[season]; const ach=sc>=2?15:sc===1?5:1;
   let sol=h.s; if(insul&&(r==='Roof room'||r==='Roof T&B')) sol*=0.35;
   const base=S.t+(MASS.includes(r)?(season==='night'?1:-1.5):0);
   return base+(sol*S.sun+h.i)/(0.33*ach*h.V+h.ua);}
@@ -562,7 +570,7 @@ function rebuild(){
   if(O.rw.open&&O.rm.open){ if(wind==='sw') score['Roof room']+=1;   // habagat blows straight into the front slider and out the landing door
     if(wind==='calm') score['Roof room']=Math.max(score['Roof room'],1); }   // no wind: warm air still rises out through the door to the stair opening
   score['Roof T&B']=1+(score['Roof room']>0?1:0);   // high exhaust window + fan, helped when the roof room is flowing
-  listEl.innerHTML=roomsAll.map(r=>{const s=score[r];const [c,t]=s>=2?['g','Good']:s===1?['m','Some']:['b','Still air'];const T=roomTemp(r,s);const tt=T==null?'outdoors':Math.round(T)+' °C';return `<div><span>${r}</span><span class="pill ${c}">${t}</span><span class="deg" style="color:${tCol(T)}">${tt}</span></div>`;}).join('')+`<div class="cap">Estimated air temperature, ${SEAS[season].lbl}${insul?', roof room insulated':''}.</div>`;
+  listEl.innerHTML=roomsAll.map(r=>{const s=score[r];const [c,t]=s>=2?['g','Good']:s===1?['m','Some']:['b','Still air'];const T=roomTemp(r,s);const tt=T==null?'outdoors':Math.round(T)+' °C';return `<div><span>${r}</span><span class="pill ${c}">${t}</span><span class="deg" style="color:${tCol(T)}">${tt}</span></div>`;}).join('')+`<div class="cap">Estimated air temperature, ${SEAS[season].lbl}${insul?', roof room insulated':''}${acOn?', roof room aircon set to 25 °C (keep its slider and door shut)':''}.</div>`;
   const tips=[];
   if(!O.rd.open) tips.push('With the stair room barn door shut, the 2nd floor has no outlet on the back side, so cross-flow mostly stops.');
   if(!O.pt.open) tips.push('Partition closed: the ground floor behind the car bay only gets air from the stairwell.');
@@ -572,11 +580,12 @@ function rebuild(){
   if(wind==='calm') tips.push('No wind: warm air rises up the old stairwell and the steel stair and leaves through the stair opening on the roof. The new roof shades that opening, which keeps this chimney effect working.');
   if(score['T&B']===0) tips.push('T&B has no window, so it needs its door open or an exhaust fan.');
   const rr=roomTemp('Roof room',score['Roof room']);
-  if(!insul&&season!=='night'&&rr>35) tips.unshift('The roof room sits right under bare metal sheets, so it is the hottest room. A ceiling with insulation under the roof (try Insulate roof room) cuts that heat by about two-thirds.');
+  if(!insul&&!acOn&&season!=='night'&&rr>35) tips.unshift('The roof room sits right under bare metal sheets, so it is the hottest room. A ceiling with insulation under the roof (try Insulate roof room) cuts that heat by about two-thirds.');
   tipEl.textContent=tips.slice(0,2).join(' ');
   makeArrows();
 }
 document.querySelectorAll('[data-s]').forEach(b=>b.addEventListener('click',()=>{season=b.dataset.s;document.querySelectorAll('[data-s]').forEach(x=>x.setAttribute('aria-pressed',x===b));rebuild();}));
+document.getElementById('acBtn').addEventListener('click',e=>{acOn=!acOn;e.currentTarget.setAttribute('aria-pressed',acOn);rebuild();});
 document.getElementById('insBtn').addEventListener('click',e=>{insul=!insul;e.currentTarget.setAttribute('aria-pressed',insul);rebuild();});
 document.querySelectorAll('[data-w]').forEach(b=>b.addEventListener('click',()=>{wind=b.dataset.w;document.querySelectorAll('[data-w]').forEach(x=>x.setAttribute('aria-pressed',x===b));rebuild();}));
 
@@ -630,7 +639,8 @@ ceil(0,W/IN,0,99,LC,L2); ceil(0,W/IN,99,254,LC,L2); ceil(0,40,254,326,LC,L2); ce
  [[2,300],[102,481],[10,435],[150,246]].forEach(([x,y])=>{const [a,b]=RP(x,y);eBox(L3,x===10?0.23:EPX(x),RF+0.3,y>478?-D+0.03:b,0.08,0.11,0.08,em.sock);});
  [[10,380],[-3,375]].forEach(([x,y])=>{const [a,b]=RP(x,y);eBox(L3,a,RF+1.3,b,0.09,0.12,0.09,em.sw);});
  // roof T&B (electrical layout v17): socket moved to the bedside, IP light, exhaust fan, 2-gang switch outside the door
- eBox(L3,W-0.03,RF+1.0,-356*IN,0.08,0.11,0.08,em.sock);  // roof room sockets per layout v18 (bed-head one shifted to x 102 for the queen bed)
+ eBox(L3,W-0.03,RF+1.0,-356*IN,0.08,0.11,0.08,em.sock);  eBox(L1,W-0.04,1.2,-152*IN,0.08,0.16,0.12,em.ded); eTag('Pump outlet (WP, RCD)',W-0.3,1.45,-152*IN,1);  // booster pump dedicated outlet, layout v22
+ // roof room sockets per layout v18 (bed-head one shifted to x 102 for the queen bed)
  eBox(L3,W-0.04,RF+2.2,-272*IN,0.06,0.22,0.22,EM(0x7f8c8d)); eTag('Exhaust fan',W-0.3,RF+2.45,-272*IN,3);
  eBox(L3,105*IN,RF+1.3,-281*IN,0.09,0.12,0.09,em.sw);
  {const [a,b]=RP(10,450); eBox(L3,a,RF+2.1,b,0.16,0.05,0.24,em.net); eTag('Mesh node 3',a+0.2,RF+2.35,b,3);}
@@ -662,9 +672,36 @@ ceil(0,W/IN,0,99,LC,L2); ceil(0,W/IN,99,254,LC,L2); ceil(0,40,254,326,LC,L2); ce
 }
 // ---------- levels, cutaway, views ----------
 let level=2, cut=true;
-function applyLevels(){L2.visible=level>=2;L3.visible=level>=3;cutables.forEach(m=>m.visible=!cut); elec.forEach(m=>m.visible=elecOn); document.getElementById('eleg').hidden=!elecOn; OP.forEach(o=>mk[o.id].visible=o.pos[1]<Y2||level>=(o.pos[1]<RF?2:3));
+// ---------- plumbing layer (plumbing thread draft v1, plan inches; that thread owns the data, the 3D only displays it) ----------
+const plum=[]; let plumOn=false;
+const PM=(c,o)=>new THREE.MeshBasicMaterial(Object.assign({color:c,depthTest:false,transparent:true,opacity:.95},o||{}));
+const pmD=PM(0x8d5524), pmW=PM(0x1c7ed6), pmV=PM(0x868e96), pmT=PM(0x6b4f2a,{opacity:.35}), pmK=PM(0x1c7ed6,{opacity:.45}), pmP=PM(0x1864ab);
+const pp=(x,y,h)=>[x*IN,h,-y*IN];
+function pRun(pts,m,r){for(let i=1;i<pts.length;i++){const me=bar(pp(...pts[i-1]),pp(...pts[i]),r||0.035,m,root); me.renderOrder=5; plum.push(me);}}
+function pBox(x0,x1,y0,y1,h0,h1,m){const me=B(x0*IN,x1*IN,h0,h1,-y0*IN,-y1*IN,m,root); me.renderOrder=4; plum.push(me); return me;}
+function pTag(t,x,y,h,lv){tag(t,x*IN,h,-y*IN,lv);tags[tags.length-1].pl=1;}
+// septic tank under the car bay, 2 manholes, inspection chamber
+pBox(95,142,30,125,-1.5,-0.06,pmT); [[106,108],[106,44]].forEach(([x,y])=>pBox(x-10,x+10,y-10,y+10,-0.06,0.02,pmP)); pBox(112,124,162,174,-0.6,0.02,pmT);
+pTag('Septic tank (new)',118,78,-0.4,1); pTag('Inspection chamber',118,168,0.25,1);
+// 100 mm main under the floor: ground T&B -> inspection chamber -> tank
+pRun([[116,474,-0.25],[116,452,-0.3],[116,240,-0.45],[118,168,-0.55],[118,125,-0.6]],pmD,0.05);
+pRun([[107,444,-0.25],[116,444,-0.28]],pmD); pRun([[160,468,-0.22],[116,468,-0.27]],pmD);              // ground lav + floor drain
+pRun([[54,466,-0.2],[54,456,-0.22],[116,456,-0.29]],pmD); pBox(46,62,458,474,-0.3,0.02,pmP); pTag('Grease trap',54,466,0.3,1); // kitchen sink
+// roof T&B stack + water riser + vent in a boxed chase up the stairwell corner, through one slab core
+pRun([[166,266,-0.45],[116,250,-0.45]],pmD,0.05); pRun([[166,266,-0.45],[166,266,RF+0.05]],pmD,0.05); pRun([[166,266,RF+0.05],[166,266,RF+RH+0.45]],pmV,0.03);
+pRun([[150,262,RF+0.08],[166,266,RF+0.08]],pmD); pRun([[126,257,RF+0.08],[166,266,RF+0.08]],pmD); pRun([[157,308,RF+0.06],[166,266,RF+0.07]],pmD);
+pTag('Stack + riser (chase)',166,266,Y2+1.2,2); pTag('Roof T&B drains',150,285,RF+0.3,3);
+// water: meter -> 500 L tank -> booster pump -> riser
+pRun([[172,-10,0.25],[172,137,0.25],[159,137,0.25]],pmW,0.02);
+{const t=cyl(14*IN,1.4,pmK,root,159*IN,0.7,-137*IN); t.renderOrder=4; plum.push(t);} pBox(152,164,160,172,0,0.35,pmP);
+pRun([[159,150,0.2],[158,166,0.2]],pmW,0.02); pRun([[158,166,0.3],[174.5,152,1.2]],pmW,0.02);
+pRun([[174.5,152,1.2],[174.5,266,1.2],[166,266,1.2],[166,266,RF+1.0],[150,262,RF+0.5]],pmW,0.02); pRun([[166,266,RF+1.0],[126,257,RF+0.85]],pmW,0.02); pRun([[166,266,RF+1.0],[157,316,RF+1.0]],pmW,0.02);
+pRun([[166,266,1.2],[116,266,0.4],[116,444,0.4],[107,444,0.85]],pmW,0.02); pRun([[116,452,0.4],[116,474,0.3]],pmW,0.02); pRun([[116,420,0.4],[54,440,0.9],[54,466,0.95]],pmW,0.02);
+pTag('Water meter (assumed)',172,-10,0.6,1); pTag('Water tank 500 L',159,137,1.6,1); pTag('Booster pump',158,166,0.55,1);
+function applyLevels(){L2.visible=level>=2;L3.visible=level>=3;cutables.forEach(m=>m.visible=!cut); elec.forEach(m=>m.visible=elecOn); plum.forEach(m=>m.visible=plumOn); document.getElementById('pleg').hidden=!plumOn; document.getElementById('eleg').hidden=!elecOn; OP.forEach(o=>mk[o.id].visible=o.pos[1]<Y2||level>=(o.pos[1]<RF?2:3));
   document.querySelectorAll('[data-l]').forEach(b=>b.setAttribute('aria-pressed',+b.dataset.l===level));}
 document.querySelectorAll('[data-l]').forEach(b=>b.addEventListener('click',()=>{level=+b.dataset.l;applyLevels();}));
+const plBtn=document.getElementById('plBtn'); plBtn.addEventListener('click',()=>{plumOn=!plumOn;plBtn.setAttribute('aria-pressed',plumOn);applyLevels();});
 const elBtn=document.getElementById('elBtn'); elBtn.addEventListener('click',()=>{elecOn=!elecOn;elBtn.setAttribute('aria-pressed',elecOn);applyLevels();});
 const cutBtn=document.getElementById('cutBtn'); cutBtn.addEventListener('click',()=>{cut=!cut;cutBtn.setAttribute('aria-pressed',cut);applyLevels();});
 const views={front:[[2.2,3.2,13],[2.2,2.6,-4]],iso:[[-8.5,11,6],[2.8,2.4,-6.2]],side:[[-11.5,4.5,-6.2],[2.4,2.8,-6.2]],top:[[2.2,24,-6.1],[2.2,0,-6.2]]};
@@ -696,7 +733,7 @@ function frame(now){const dt=Math.min((now-last)/1000,0.05);last=now;time+=reduc
   slP[1].position.x=slX[1]-st.sl*sq*0.95; slP[2].position.x=slX[2]+st.sl*sq*0.95;
   rmHinge.rotation.y=-1.1*st.rm; rwP.position.x=-st.rw*0.6; bdHinge.rotation.y=st.bd*Math.PI/2; rdHinge.position.z=RDz0+0.05+st.rd*0.92;
   fan.rotation.z+=O.ex.open&&!reduce?dt*8:0; cfRot.rotation.y+=reduce?0:dt*9*st.cf;
-  P.forEach(p=>{if(!p.on)return; p.pts3.visible=!elecOn&&(level>=2||p.rooms.some(r=>['Car bay','Dining','Kitchen','T&B'].includes(r))); const pos=p.pts3.geometry.attributes.position.array,col=p.pts3.geometry.attributes.color.array;
+  P.forEach(p=>{if(!p.on)return; p.pts3.visible=!elecOn&&!plumOn&&(level>=2||p.rooms.some(r=>['Car bay','Dining','Kitchen','T&B'].includes(r))); const pos=p.pts3.geometry.attributes.position.array,col=p.pts3.geometry.attributes.color.array;
     const sp=SPEED[wind]*6/p.len; const rev=(wind==='ne'&&!p.fixedDir);
     for(let i=0;i<N;i++){let t=(p.ph[i]+time*sp)%1; const u=Math.min(0.999,Math.max(0,rev?1-t:t)); p.curve.getPointAt(u,tmp);
       const j=p.jit[i]; pos[i*3]=tmp.x+j[0];pos[i*3+1]=tmp.y+j[1];pos[i*3+2]=tmp.z+j[2];
@@ -704,7 +741,7 @@ function frame(now){const dt=Math.min((now-last)/1000,0.05);last=now;time+=reduc
     p.pts3.geometry.attributes.position.needsUpdate=true; p.pts3.geometry.attributes.color.needsUpdate=true;});
   ctl.update(); renderer.render(scene,cam);
   const r=view.getBoundingClientRect();
-  tags.forEach(t=>{const show=t.lv===level&&(!t.only||level===t.only)&&(!t.el||elecOn); if(!show){t.d.hidden=true;return;} tmp.copy(t.v); root.localToWorld(tmp); tmp.project(cam);
+  tags.forEach(t=>{const show=t.pl?plumOn:(t.lv===level&&(!t.only||level===t.only)&&(!t.el||elecOn)); if(!show){t.d.hidden=true;return;} tmp.copy(t.v); root.localToWorld(tmp); tmp.project(cam);
     const off=tmp.z>1||Math.abs(tmp.x)>1.1||Math.abs(tmp.y)>1.1; t.d.hidden=off; if(!off){t.d.style.left=((tmp.x+1)/2*r.width)+'px';t.d.style.top=((1-tmp.y)/2*r.height)+'px';}});
   requestAnimationFrame(frame);}
 requestAnimationFrame(frame);
