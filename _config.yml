@@ -1,0 +1,8 @@
+title: Navarro House
+markdown: kramdown
+exclude: [README.md, _templates]
+defaults:
+  - scope: {path: ""}
+    values: {layout: plan}
+kramdown:
+  input: GFM

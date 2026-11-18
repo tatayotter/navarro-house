@@ -55,6 +55,7 @@ h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:24px;margin:40px
 .mini .arrow{color:var(--muted);font-size:20px}
 .status{display:grid;gap:10px}
 .st{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+a.st{transition:border-color .15s}a.st:hover{border-color:var(--accent)}.st .arrow{margin-left:auto;color:var(--muted);font-size:20px;align-self:center}
 .st b{display:block;font-weight:600}
 .st span.d{color:var(--muted);font-size:14px}
 .pill{flex:none;min-width:108px;text-align:center;font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;white-space:nowrap;margin-top:2px}
@@ -126,8 +127,16 @@ footer a{color:var(--accent);font-weight:500}
     <div class="st"><span class="pill p-wait">Measuring</span><div><b>Front gate</b><span class="d">Roll-up car shutter plus a small door. Waiting on final measurements.</span></div></div>
     <div class="st"><span class="pill p-wait">For checking</span><div><b>Electrical wiring</b><span class="d">Whole-house plan drafted: 20 ceiling lights, 32 outlets, 12 smart switch plates. Pump and roof aircon on their own circuits. The electrician will check it.</span></div></div>
     <div class="st"><span class="pill p-wait">Draft</span><div><b>Plumbing</b><span class="d">New septic tank under the car bay, water tank and booster pump.</span></div></div>
-    <div class="st"><span class="pill p-done">Planned</span><div><b>Master bedroom</b><span class="d">Plan and costing done, about ₱167k with buffer (online estimate).</span></div></div>
-    <div class="st"><span class="pill p-done">Planned</span><div><b>Living room</b><span class="d">Design and cost estimate done, ₱228k to ₱370k (online estimate).</span></div></div>
+    <a class="st" href="rooms/master-bedroom.html"><span class="pill p-done">Planned</span><div><b>Master bedroom</b><span class="d">Plan and costing done, about ₱167k with buffer (online estimate).</span></div><span class="arrow">›</span></a>
+    <a class="st" href="rooms/living-room.html"><span class="pill p-done">Planned</span><div><b>Living room</b><span class="d">Design and cost estimate done, ₱228k to ₱370k (online estimate).</span></div><span class="arrow">›</span></a>
+  </div>
+</section>
+
+<section>
+  <h2>Rooms</h2>
+  <div class="grid">
+    <a class="card mini" href="rooms/master-bedroom.html"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 18v-7h18v7M3 14h18M6 11V7h5v4"/></svg></div><div class="card-txt"><h3>Master bedroom</h3><p>Layout, work order, cost</p></div><span class="arrow">›</span></a>
+    <a class="card mini" href="rooms/living-room.html"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 17v-5a2 2 0 0 1 4 0v2h8v-2a2 2 0 0 1 4 0v5zM6 17v2M18 17v2M8 12V8h8v4"/></svg></div><div class="card-txt"><h3>Living room</h3><p>Scope, phases, cost</p></div><span class="arrow">›</span></a>
   </div>
 </section>
 
@@ -155,11 +164,11 @@ footer a{color:var(--accent);font-weight:500}
       <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 20h4v-4h4v-4h4V8h4"/></svg></div>
       <div class="card-txt"><h3>Full plan</h3><p>PDF, version 3.3</p></div><span class="arrow">›</span>
     </a>
-    <a class="card mini" href="https://github.com/tatayotter/navarro-house/blob/main/stairs/stair-project-brief.md">
+    <a class="card mini" href="stairs/stair-project-brief.html">
       <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M9 11h7M9 15h7"/></svg></div>
       <div class="card-txt"><h3>Project brief</h3><p>Design, costs, status</p></div><span class="arrow">›</span>
     </a>
-    <a class="card mini" href="https://github.com/tatayotter/navarro-house/blob/main/stairs/shopping-list-14nov.md">
+    <a class="card mini" href="stairs/shopping-list-14nov.html">
       <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></svg></div>
       <div class="card-txt"><h3>Shopping list</h3><p>14 November</p></div><span class="arrow">›</span>
     </a>
@@ -173,7 +182,7 @@ footer a{color:var(--accent);font-weight:500}
       <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 8h13M3 12h13M3 16h13M16 4v16"/></svg></div>
       <div class="card-txt"><h3>Gate drawing</h3><p>Draft picture</p></div><span class="arrow">›</span>
     </a>
-    <a class="card mini" href="https://github.com/tatayotter/navarro-house/blob/main/gate/gate-plan-draft.md">
+    <a class="card mini" href="gate/gate-plan-draft.html">
       <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M9 11h7M9 15h7"/></svg></div>
       <div class="card-txt"><h3>Gate plan</h3><p>Draft notes and costs</p></div><span class="arrow">›</span>
     </a>

@@ -1,4 +1,13 @@
-# Front gate – draft plan (18 Nov 2026)
+---
+title: "Front gate (draft)"
+status: Measuring
+cost: "₱40k–51k"
+price_source: online
+updated: 18 Nov 2026
+---
+
+![Gate drawing (draft)](gate-elevation-draft.png)
+
 Sizes estimated from Street View photo (July 2024) using a 5'4" (163 cm) person as scale. Accuracy about ±30 cm. Tape-measure before buying the shutter.
 
 ## Assumed sizes

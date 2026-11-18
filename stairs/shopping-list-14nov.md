@@ -1,3 +1,10 @@
+---
+title: "Steel stair: shopping list (14 Nov)"
+status: Bought 16 Nov
+cost: ""
+price_source: online
+updated: 18 Nov 2026
+---
 > Superseded by the v3.3 design (17 Nov). See stair-project-brief.md in this folder.
 
 # Stair materials – shopping list (Sat 14 Nov 2026)

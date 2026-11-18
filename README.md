@@ -38,6 +38,13 @@ Last updated: 18 November 2026.
 - [Gate drawing (draft)](gate/gate-elevation-draft.png)
 
 
+## How the website is built (for whoever updates it)
+- The website is for viewing only. The homepage is `index.html`; every plan page shares one look from `_layouts/plan.html`.
+- **New or changed plan page:** copy `_templates/plan-template.md` into the right folder (`rooms/`, `stairs/`, `gate/`, `house/`), fill in the header (title, status, cost, price_source, updated) and write the body in plain Markdown. GitHub Pages turns `rooms/kitchen.md` into `rooms/kitchen.html`. Then add a card for it on `index.html`.
+- Tag every price **Local** (receipt or local quote) or **Online** (online estimate). Set `price_source` to `local`, `online` or `mixed`.
+- Keep the city name, street address, GPS coordinates and any claude.ai links off every page.
+- **End of every session:** list what changed, copy updated files in, update the homepage status and "Last updated" date, push, and check the site shows the new version.
+
 ## How to get updates
 - On [GitHub](https://github.com/tatayotter/navarro-house), click **Watch** (top right) → **All activity** to get an email (needs a free GitHub account) whenever something changes.
 - The [History](https://github.com/tatayotter/navarro-house/commits/main) page shows every update with a short note of what changed.

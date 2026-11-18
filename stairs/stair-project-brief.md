@@ -1,4 +1,10 @@
-# Stair Works Project (Phase 3) – Project Brief (v3.3, final design, 17 Nov 2026)
+---
+title: "Steel stair: project brief"
+status: Building soon
+cost: "₱33,284 projected"
+price_source: mixed
+updated: 18 Nov 2026
+---
 
 Home project. Steel stair from the ground floor up through a 2nd floor opening.
 Owner manages directly: buys materials and hires a welder instead of the architect's contract.
