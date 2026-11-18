@@ -25,7 +25,7 @@ Above the half wall, from the outside in:
 **The 1 m half wall:**
 
 - **Back and outer side:** use the existing concrete parapets. Patch and skim-coat the inside face, then paint.
-- **Front wall and annex-side wall (my assumption):** there's no parapet on these lines, since the front wall sits mid-slab on the column line. I've costed a new 1 m half wall in 4″ CHB, plastered both sides, on these two walls (about 8 m, leaving out the slider and door openings), so the look is the same all round and floor-level water never reaches the steel frame. If you'd rather avoid the extra weight there, the framed wall can run full height on a 15 cm curb instead, for about the same cost.
+- **Front wall and annex-side wall (confirmed 18 Nov):** there's no parapet on these lines, so a new 1 m half wall in 4″ CHB, plastered both sides, goes on these two walls (about 8 m, leaving out the slider and door openings). The look is the same all round and floor-level water never reaches the steel frame.
 - **Top of the half wall:** a steel flashing cap over the joint, so rain running down the steel never gets into the top of the concrete.
 
 **Other details:**
