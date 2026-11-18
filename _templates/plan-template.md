@@ -18,4 +18,5 @@ Plain text and bullet lists.
 | Example item | 1 | 1,000 | Online |
 | **Total** | | **1,000** | |
 
+<!-- Leave a blank line before and after every table, or the site shows it as plain text. -->
 <!-- Rules: no city name, street address or GPS coordinates on any page. Tag every price Local or Online. -->

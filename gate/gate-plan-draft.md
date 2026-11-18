@@ -21,6 +21,7 @@ Sizes estimated from Street View photo (July 2024) using a 5'4" (163 cm) person 
 - Needs ≥ 4.00 m total (300 + 10 post + 90 bay). With 4.01 m there's ~1 cm spare: confirm the two pier widths on site.
 
 ## Shopping list (rough PHP)
+
 | Item | Qty | Est. PHP |
 |---|---|---|
 | Roll-up shutter, galvanized, manual, ~7.2 m² (3.0 × 2.4), supply + install, **top ~60 cm (≈12 slats) perforated** | 1 | 15,000–23,000 (perforated part est. +1,000–2,000; get quote) |

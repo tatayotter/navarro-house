@@ -18,6 +18,7 @@ Based on stair-project-brief.md (Plan v1). Prices = brief estimates, PHP.
 - [ ] Bring: tape measure (a caliper if you have one), this list, cash for ~22,000.
 
 ## Buy tomorrow
+
 | ✓ | Item | Qty | Est. | Check at the counter |
 |---|---|---|---|---|
 | [ ] | C-channel 2×4 | 2 lengths | 4,600 | Use the thickness the engineer approved; if none was specified, ask for 2–3 mm, not 1.5 mm. Price will be higher, get the quote. Measure the thickness yourself. Straight, no deep rust. Each stringer is ~3.4 m, so one 6 m length per side is enough. |
@@ -33,6 +34,7 @@ Based on stair-project-brief.md (Plan v1). Prices = brief estimates, PHP.
 Subtotal ≈ 20,435 (+ thicker C-channel difference).
 
 ## Wait (buy after welder confirms step count / wall type known)
+
 | Item | Est. | Why wait |
 |---|---|---|
 | Vinyl treads w/ nosing (10 pcs) | 2,500 | Installed last; count may become 11. |

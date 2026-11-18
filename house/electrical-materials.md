@@ -50,6 +50,7 @@ All prices are online estimates (Nov 2026) and need local quotes. Quantities are
 | Grounding rod, clamp and ground bar | 1 | 900 | 1,600 | Online |
 | Surge protector (optional) | 1 | 1,500 | 3,500 | Online |
 | **Subtotal** | | **18,950** | **33,100** | |
+
 ### Wire (THHN, copper)
 
 | Item | Qty | Low (₱) | High (₱) | Source |
@@ -59,6 +60,7 @@ All prices are online estimates (Nov 2026) and need local quotes. Quantities are
 | 5.5 mm² induction circuit, per metre (3 conductors × ~15 m) | 45 | 2,475 | 3,375 | Online |
 | Service feeder from meter to panel (14 mm² + 8 mm² ground), per metre | 10 | 2,500 | 3,800 | Online |
 | **Subtotal** | | **36,675** | **48,575** | |
+
 ### Conduit and boxes
 
 | Item | Qty | Low (₱) | High (₱) | Source |
@@ -71,6 +73,7 @@ All prices are online estimates (Nov 2026) and need local quotes. Quantities are
 | Junction and octagonal ceiling boxes | 30 | 900 | 1,650 | Online |
 | Weatherproof boxes with covers (outdoor, roof, pump) | 6 | 1,800 | 3,300 | Online |
 | **Subtotal** | | **16,650** | **26,550** | |
+
 ### Switches and outlets
 
 | Item | Qty | Low (₱) | High (₱) | Source |
@@ -83,6 +86,7 @@ All prices are online estimates (Nov 2026) and need local quotes. Quantities are
 | Aircon outlets (bedroom split, roof window AC) | 2 | 400 | 700 | Online |
 | 30 A induction outlet or isolator | 1 | 450 | 900 | Online |
 | **Subtotal** | | **14,350** | **23,230** | |
+
 ### Lights and fans
 
 | Item | Qty | Low (₱) | High (₱) | Source |
@@ -94,6 +98,7 @@ All prices are online estimates (Nov 2026) and need local quotes. Quantities are
 | Under-cabinet LED strip with driver (kitchen) | 1 | 900 | 1,800 | Online |
 | Exhaust fans (ground T&B and roof T&B) | 2 | 1,800 | 3,600 | Online |
 | **Subtotal** | | **12,230** | **24,350** | |
+
 ### Network
 
 | Item | Qty | Low (₱) | High (₱) | Source |
@@ -101,6 +106,7 @@ All prices are online estimates (Nov 2026) and need local quotes. Quantities are
 | Cat6 cable, per metre (router to 3 mesh nodes) | 70 | 1,540 | 2,450 | Online |
 | Keystones, wall plates, RJ45 ends | 1 | 500 | 900 | Online |
 | **Subtotal** | | **2,040** | **3,350** | |
+
 ### Sundries
 
 | Item | Qty | Low (₱) | High (₱) | Source |
