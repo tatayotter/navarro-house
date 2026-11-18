@@ -174,13 +174,8 @@ const pHinge=new THREE.Group(); pHinge.position.set(PB1-0.05,0,-0.075); L1.add(p
 B(-0.80,0,0.01,2.10,-0.02,0.02,mat.steel,pHinge);
 // partition at ~5.0 m: wall + 1.80 sliding glass door
 const PZ=-198.5*IN;
-// side panel beside the door (glass schedule, 18 Nov): solid lower 1 m, fixed clear glass above in a steel frame, wall header above 2.15 m
-{const stl=M(0x2b2d2f,{metalness:.5,roughness:.4}), px=98*IN;
- B(0,px,0,1.0,PZ+0.05,PZ-0.05,mat.wall,L1); B(0,px,2.15,C1,PZ+0.05,PZ-0.05,mat.wall,L1);
- B(0,px,1.0,2.15,PZ+0.006,PZ-0.006,mat.glass,L1);
- B(0,px,1.0,1.05,PZ+0.04,PZ-0.04,stl,L1); B(0,px,2.10,2.15,PZ+0.04,PZ-0.04,stl,L1);
- [0,px/2-0.025,px-0.05].forEach(x=>B(x,x+0.05,1.0,2.15,PZ+0.04,PZ-0.04,stl,L1));}
-B(170*IN,W,0,C1,PZ+0.05,PZ-0.05,mat.wall,L1);
+// side panel beside the door: solid double wall, no glass (Rowil 18 Nov)
+B(0,98*IN,0,C1,PZ+0.06,PZ-0.06,mat.wall,L1); B(170*IN,W,0,C1,PZ+0.05,PZ-0.05,mat.wall,L1);
 B(98*IN,170*IN,2.15,C1,PZ+0.05,PZ-0.05,mat.wall,L1);
 const pgA=B(98*IN,134*IN,0,2.15,PZ+0.03,PZ+0.01,mat.glass,L1); const pgB=B(134*IN,170*IN,0,2.15,PZ-0.01,PZ-0.03,mat.glass,L1);
 const pgA0=pgA.position.x;
