@@ -1,0 +1,544 @@
+<title>Navarro House Plumbing Layout</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@600&display=swap">
+<style>
+/* Layout: plan sheets in a grid (stack on phone), section strip, then schedules, flags and questions */
+:root{
+  --bg:#f1f3f2; --paper:#ffffff; --fg:#1f2426; --muted:#626b6e; --line:#d6d8d3;
+  --wall:#2b2f31; --ply:#a77b45; --meas:#c0571f; --photo:#2f6f9e; --furn:#9aa3a6;
+  --waste:#8a5a2b; --vent:#2f8a57; --cold:#1f6fc0; --sep:#e8dcc9; --pump:#6a4bc4; --ded:#c0392b;
+  --wet:#e3eef3; --out:#e9f1e3; --garage:#efeee9; --room:#fbfaf7; --void:#f4dfd3; --earth:#e9e2d6;
+  --f-ui:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-head:"Space Grotesk","Inter",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#131718; --paper:#1d2224; --fg:#e6eaea; --muted:#9aa4a7; --line:#323b3d;
+  --wall:#d9dddd; --ply:#d1a56b; --meas:#f08a52; --photo:#6db0e0; --furn:#6b7578;
+  --waste:#d9a066; --vent:#5cc98a; --cold:#62a8f0; --sep:#3a3226; --pump:#a68cf5; --ded:#f07060;
+  --wet:#1f2e35; --out:#22301f; --garage:#23282a; --room:#20262a; --void:#3d2a22; --earth:#2a2620; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#131718; --paper:#1d2224; --fg:#e6eaea; --muted:#9aa4a7; --line:#323b3d;
+  --wall:#d9dddd; --ply:#d1a56b; --meas:#f08a52; --photo:#6db0e0; --furn:#6b7578;
+  --waste:#d9a066; --vent:#5cc98a; --cold:#62a8f0; --sep:#3a3226; --pump:#a68cf5; --ded:#f07060;
+  --wet:#1f2e35; --out:#22301f; --garage:#23282a; --room:#20262a; --void:#3d2a22; --earth:#2a2620; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-ui);line-height:1.45}
+.wrap{max-width:1080px;margin:0 auto;padding-block:20px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:20px}
+h1{font-family:var(--f-head);font-size:22px;margin:0;text-wrap:balance}
+h2{font-family:var(--f-head);font-size:16px;margin:0 0 8px;text-wrap:balance}
+.sub{color:var(--muted);margin:4px 0 0;font-size:13.5px;max-width:72ch}
+.flow{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:13px;margin-top:10px}
+.flow span{background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:3px 8px}
+.flow b{color:var(--muted);font-weight:400}
+.plans{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:16px}
+.sheet{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px;min-width:0}
+.sheet h2{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.sheet h2 span{font:400 12px var(--f-ui);color:var(--muted)}
+.secwrap{overflow-x:auto} .secwrap svg{min-width:640px}
+svg{width:100%;height:auto;display:block}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:12.5px;color:var(--muted)}
+.lg{display:inline-flex;align-items:center;gap:6px} .lg svg{width:22px;height:16px;display:inline}
+.tbl{overflow-x:auto;background:var(--paper);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:13px;min-width:560px}
+th,td{text-align:left;padding:7px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
+.box{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:13.5px;min-width:0}
+.box ul,.box ol{margin:6px 0 0;padding-left:20px;display:grid;gap:4px;max-width:76ch}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.flag li::marker{color:var(--meas)}
+.tag{font-size:11px;font-weight:600;padding:1px 7px;border-radius:99px;border:1px solid currentColor;white-space:nowrap}
+.tag.a{color:var(--muted)} .tag.e{color:var(--meas)}
+/* svg classes */
+.wall{fill:var(--wall)} .ply{fill:var(--ply)}
+.rm{fill:var(--room)} .wet{fill:var(--wet)} .out{fill:var(--out)} .gar{fill:var(--garage)} .void{fill:var(--void)}
+.furn{fill:none;stroke:var(--furn);stroke-width:1;stroke-dasharray:3 2}
+.tread{stroke:var(--fg);stroke-width:.8;fill:none} .tread.dn{stroke:var(--muted);stroke-dasharray:2 2}
+.door{fill:none;stroke:var(--fg);stroke-width:1} .arc{fill:none;stroke:var(--muted);stroke-width:.7;stroke-dasharray:2 2}
+.lbl{fill:var(--fg);font:600 9.5px var(--f-ui);text-anchor:middle}
+.dim{fill:var(--muted);font:400 7.5px var(--f-ui);text-anchor:middle;font-variant-numeric:tabular-nums}
+.dm{fill:var(--meas);font:600 7.5px var(--f-ui);text-anchor:middle} .dp{fill:var(--photo);font:600 7.5px var(--f-ui);text-anchor:middle}
+.dl{stroke:var(--muted);stroke-width:.6} .rail{stroke:var(--meas);stroke-width:2;fill:none}
+.gate{stroke:var(--photo);stroke-width:2.2;stroke-dasharray:5 2;fill:none}
+.arrow{stroke:var(--fg);stroke-width:1;fill:none;marker-end:url(#ah)}
+.glass{stroke:var(--photo);stroke-width:1.4;fill:none}
+.street{fill:var(--muted);font:600 8px var(--f-ui);text-anchor:middle;letter-spacing:.12em}
+.hc{fill:var(--void);fill-opacity:.45;stroke:var(--meas);stroke-width:1;stroke-dasharray:5 3}
+.fade{opacity:.35}
+.pw{fill:none;stroke:var(--waste);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.pb{fill:none;stroke:var(--waste);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.pv{fill:none;stroke:var(--vent);stroke-width:1.5;stroke-dasharray:4 2.5;stroke-linecap:round}
+.pc{fill:none;stroke:var(--cold);stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.sep{fill:var(--sep);stroke:var(--waste);stroke-width:1.4}
+.mh{fill:var(--paper);stroke:var(--waste);stroke-width:1.2}
+.stk{fill:var(--waste);stroke:var(--paper);stroke-width:1.2}
+.co{fill:var(--paper);stroke:var(--waste);stroke-width:1.3}
+.fx{fill:var(--paper);stroke:var(--fg);stroke-width:.9}
+.fd{fill:var(--paper);stroke:var(--waste);stroke-width:1.2}
+.tk{fill:var(--paper);stroke:var(--cold);stroke-width:1.6}
+.pmp{fill:var(--pump)} .pmt{fill:#fff;font:700 6.5px var(--f-ui);text-anchor:middle}
+.ded{fill:var(--ded);stroke:var(--paper);stroke-width:.8}
+.lw{fill:var(--waste);font:600 7px var(--f-ui);text-anchor:middle}
+.lv{fill:var(--vent);font:600 7px var(--f-ui);text-anchor:middle}
+.lc{fill:var(--cold);font:600 7px var(--f-ui);text-anchor:middle}
+.lp{fill:var(--pump);font:600 7px var(--f-ui);text-anchor:middle}
+.le{fill:var(--ded);font:600 7px var(--f-ui);text-anchor:middle}
+.earth{fill:var(--earth)} .slab{fill:var(--wall);opacity:.75}
+.wrap[data-opt="1"] .v2{display:none} .wrap[data-opt="2"] .v1{display:none}
+.opt{display:inline-flex;gap:0;margin-top:12px;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--paper)}
+.opt button{font:600 13px var(--f-ui);padding:7px 14px;border:0;background:transparent;color:var(--muted);cursor:pointer}
+.opt button[aria-pressed="true"]{background:var(--waste);color:var(--paper)}
+.opt button:focus-visible{outline:2px solid var(--cold);outline-offset:-2px}
+</style>
+<div class="wrap" id="wrap" data-opt="2">
+  <header>
+    <h1>Navarro House plumbing layout</h1>
+    <p class="sub">Draft v2, 18 Nov (decided: new septic tank). All our waste goes to our own new septic tank under the car bay; the old tank under the kitchen is shared with both neighbours, so it stays for them and we cap our lines. All water goes through a tank and booster pump. Plans have the street (southwest) at the top, like the electrical layout, so left and right are swapped compared with standing in the street. Positions are a first draft: your plumber and engineer set the final ones.</p>    <div class="flow v2"><span>Roof T&amp;B</span><b>→</b><span>stack down the stairwell corner</span><b>→</b><span>main under the floor</span><b>←</b><span>ground T&amp;B + kitchen (grease trap)</span><b>→</b><span>inspection chamber</span><b>→</b><span>2-chamber septic</span><b>→</b><span>street drain</span></div>
+    <div class="flow"><span>City line (in under the kitchen sink)</span><b>→</b><span>500 L tank</span><b>→</b><span>booster pump</span><b>→</b><span>ceiling lines + stairwell riser</span><b>→</b><span>kitchen, both T&amp;Bs</span><b>·</b><span>bypass for brownouts</span></div>
+  </header>
+  <div class="legend">
+<span class="lg"><svg viewBox="0 0 22 16"><line x1="1" y1="8" x2="21" y2="8" stroke="var(--waste)" stroke-width="3"/></svg>Main drain 100 mm PVC</span>
+<span class="lg"><svg viewBox="0 0 22 16"><line x1="1" y1="8" x2="21" y2="8" stroke="var(--waste)" stroke-width="1.6"/></svg>Branch drain 50–75 mm</span>
+<span class="lg"><svg viewBox="0 0 22 16"><circle cx="11" cy="8" r="5.5" fill="var(--waste)"/></svg>Stack (vertical 100 mm)</span>
+<span class="lg"><svg viewBox="0 0 22 16"><circle cx="11" cy="8" r="4" fill="var(--paper)" stroke="var(--waste)" stroke-width="1.4"/><line x1="8" y1="8" x2="14" y2="8" stroke="var(--waste)"/></svg>Cleanout (CO)</span>
+<span class="lg"><svg viewBox="0 0 22 16"><rect x="7" y="4" width="8" height="8" fill="var(--paper)" stroke="var(--waste)" stroke-width="1.3"/><line x1="7" y1="4" x2="15" y2="12" stroke="var(--waste)"/></svg>Floor drain</span>
+<span class="lg"><svg viewBox="0 0 22 16"><line x1="1" y1="8" x2="21" y2="8" stroke="var(--vent)" stroke-width="1.6" stroke-dasharray="4 2.5"/></svg>Vent 50 mm</span>
+<span class="lg"><svg viewBox="0 0 22 16"><line x1="1" y1="8" x2="21" y2="8" stroke="var(--cold)" stroke-width="1.6"/></svg>Cold water PPR</span>
+<span class="lg"><svg viewBox="0 0 22 16"><rect x="3" y="2" width="16" height="12" rx="2" fill="var(--pump)"/></svg>Booster pump</span>
+<span class="lg"><svg viewBox="0 0 22 16"><rect x="7" y="4" width="8" height="8" fill="var(--ded)" transform="rotate(45 11 8)"/></svg>Pump outlet (electrical)</span>
+</div>
+  <div class="plans">
+<section class="sheet"><h2>Ground floor <span>septic, pump, main line</span></h2><svg id="g"></svg></section>
+<section class="sheet"><h2>2nd floor <span>stack passes through the void</span></h2><svg id="s"></svg></section>
+<section class="sheet"><h2>Rooftop <span>roof T&amp;B, one slab core</span></h2><svg id="r"></svg></section>
+</div>
+  <section class="sheet"><h2>Section along the right-hand wall <span>heights are estimates, not measured</span></h2><div class="secwrap"><svg id="sec"></svg></div></section>
+
+  <div class="two">    <div class="box v2"><h2>Why this route</h2><ul>
+      <li>The roof T&amp;B sits right above the stairwell void, so its stack drops straight down the open void to the ground. It needs only <b>one core through the roof slab</b> and none through the 2nd floor slab.</li>
+      <li>The same corner chase carries the vent and the water riser to the roof, boxed in behind the end of the pantry counter.</li>
+      <li>The ground floor is being re-tiled anyway, so the main line goes in a trench under the new floor: ground T&amp;B, under the hollow old stair, through the dining area, to the car bay.</li>
+      <li>The septic tank sits at the front, so the desludging truck reaches it from the street and the outflow pipe to the street drain is short.</li>
+    </ul></div>
+    <div class="box"><h2>Pump system</h2><ul>
+      <li><b>Supply:</b> the city line comes in under the kitchen sink (meter is past the annex-side neighbour). The kitchen sink tap stays on direct city water, and a new line runs from there in the kitchen and dining ceiling to the tank.</li>
+      <li><b>Tank:</b> slim upright 500 L (about 0.7 m across, 1.4 m tall) on a 15 cm plinth against the car bay wall, between the panel and the partition. Float valve fills it from the city line.</li>
+      <li><b>Pump:</b> 0.5 HP constant-pressure (inverter) booster with built-in pressure control and dry-run cut-off, on rubber pads beside the tank. It pressurises the whole house, including the roof T&amp;B shower.</li>
+      <li><b>Bypass valve</b> so city water still reaches the taps during a brownout, plus a check valve and shut-off valves either side of the pump for servicing.</li>
+      <li><b>Hose bib</b> by the shutter on the city line, before the tank, for washing the car (that water goes to the street, not the septic).</li>
+      <li><b>Electrical:</b> dedicated 20 A circuit with RCD, 3.5 mm² wire, weatherproof outlet or isolator at 1.2 m beside the pump. Panel is about 1.5 m away. Sent to the electrical plan.</li>
+    </ul></div>
+  </div>
+
+  <div class="tbl"><table>
+    <thead><tr><th>Fixture</th><th>Where</th><th>Drain</th><th>Joins</th><th>Water</th></tr></thead>
+    <tbody>
+      <tr><td>Kitchen sink</td><td>Kitchen back wall</td><td class="n">50 mm</td><td>Under-sink grease trap, then the drain line</td><td>Cold ½″</td></tr>
+      <tr><td>Ground T&amp;B WC</td><td>Back wall</td><td class="n">100 mm</td><td>Drain line (cleanout here)</td><td>Cold ½″</td></tr>
+      <tr><td>Ground T&amp;B lavatory</td><td>Left wall</td><td class="n">50 mm</td><td>Drain line</td><td>Cold ½″</td></tr>
+      <tr><td>Ground T&amp;B shower floor drain</td><td>Back right corner</td><td class="n">50 mm</td><td>Drain line</td><td>Cold ½″</td></tr>
+      <tr><td>Roof T&amp;B WC (rear-outlet / P-trap type)</td><td>Front wall, next to the stack</td><td class="n">100 mm</td><td>Stack directly</td><td>Cold ½″</td></tr>
+      <tr><td>Roof T&amp;B lavatory</td><td>Front wall</td><td class="n">50 mm</td><td>Stack, above the slab in the raised floor</td><td>Cold ½″</td></tr>
+      <tr><td>Roof T&amp;B shower floor drain</td><td>Back outer corner</td><td class="n">50 mm</td><td>Stack, above the slab in the raised floor</td><td>Cold ½″</td></tr>
+      <tr><td>Hose bib</td><td>Car bay front</td><td class="n">n/a</td><td>Street</td><td>Cold ½″, before the tank</td></tr>
+    </tbody></table></div>
+
+  <div class="two">
+    <div class="box"><h2>Pipes and septic tank</h2><ul>
+      <li>Drain and vent: thick PVC sanitary pipe (Series 1000) under the slab and for the stack. Main 100 mm at a 2% fall (2 cm per metre); branches 50 mm; vents 50 mm.</li>
+      <li>Cleanouts at the start of the main, at the stack foot and at each bend; the inspection chamber where the lines meet.</li>
+      <li>Water: PPR, 25 mm (¾″) main from the pump, 20 mm (½″) to fixtures. Ground floor lines run in the hung ceilings and drop in the walls; the car bay stretch is painted surface pipe next to the electrical conduit.</li>
+      <li class="v2">Septic: 2 chambers, inside about 1.20 × 2.40 m and 1.2–1.5 m liquid depth (enough for about 8–10 people; plumber sizes it to the code). Watertight walls, car-rated cover slab, 2 sealed manholes in the walkway beside the car, not under the wheels.</li>
+      <li>No trap between the house and the septic, so the tank vents up through the stack. Plumber confirms if a separate tank vent is also needed.</li>
+      <li>Rain downspouts and the hose bib stay separate and go to the street. Never into the septic.</li>
+      <li>Roof room window AC (front wall): run its condensate in a small 16–20 mm hose to the nearest roof slab drain, so it doesn't drip and stain the open slab.</li>
+      <li class="v2">Old septic tank (under the kitchen) is SHARED with both neighbours, so it stays in service for them. We only disconnect and cap our own lines into it. Agree in writing how they reach its manhole for desludging, since it is under our kitchen.</li>
+    </ul></div>    <div class="box v2"><h2>Rough budget (ask for 2 quotes)</h2>
+      <div class="tbl" style="border:0"><table style="min-width:0">
+        <tbody>
+          <tr><td>Septic tank: dig, RC walls, car-rated cover, manholes</td><td class="n">₱60k–110k</td></tr>
+          <tr><td>Drain + vent pipes, fittings, grease trap, IC</td><td class="n">₱15k–25k</td></tr>
+          <tr><td>Water pipes + valves (PPR)</td><td class="n">₱10k–18k</td></tr>
+          <tr><td>500 L tank + 0.5 HP constant-pressure pump</td><td class="n">₱15k–30k</td></tr>
+          <tr><td>Roof slab core + stairwell chase boxing</td><td class="n">₱4k–8k</td></tr>
+          <tr><td>Plumber labour (incl. trenching, old tank closure)</td><td class="n">₱30k–55k</td></tr>
+          <tr><td><b>Total, excluding fixtures and tiles</b></td><td class="n"><b>₱134k–246k</b></td></tr>
+        </tbody></table></div>
+      <p class="sub">My rough estimate, not quoted. Pump electrical wiring is in the electrical budget.</p>
+    </div>
+  </div>
+
+  <div class="box flag"><h2>Check with your engineer and plumber</h2><ul>
+    <li class="v2"><span class="tag e">Structural</span> Septic tank under the car bay: cover slab and walls designed for the car's wheel load. Digging about 1.8 m deep near the party wall and the front columns can undermine footings; locate them first, the engineer sets the tank position.</li>
+    <li><span class="tag e">Structural</span> Core through the roof slab for the stack (about 150 mm): engineer marks it clear of the beam on the front column line and the party-wall beam.</li>
+    <li><span class="tag e">Structural</span> Raised floor and wet walls of the roof T&amp;B add load on the roof slab (already flagged for the room walls). Waterproof the T&amp;B floor before tiling.</li>
+    <li>Venting: ground T&amp;B and kitchen vent runs through the hung ceiling to the stairwell chase and joins the stack above the roof T&amp;B fixtures. If that is too long, the plumber may accept air admittance valves instead.</li>
+    <li>Septic outflow: confirm with the city whether effluent may go to the street drain or needs a leaching chamber, and what permit the new tank needs.</li>
+    <li>Keep the water tank sealed and above ground, away from the septic manholes.</li>
+  </ul></div>
+
+  <div class="box"><h2>Questions for you</h2><ol>
+    <li>Where does the ground T&amp;B drain run now (into the old tank under the kitchen)? If its pipe heads the right way, the plumber can reuse the T&amp;B end of it.</li>
+    <li>Is 500 L enough, or do you want more storage? A bigger tank would have to go on the rooftop slab (engineer check for the weight).</li>
+    <li>Car side: I put the tank and pump on the panel side and the septic in the walkway beside the car. If the car parks on the other side, I mirror it.</li>
+  </ol></div>
+</div>
+<script>
+(function(){
+const S=1.3, ML=70, MT=70, W=174.5, D=482;
+const X=x=>((x)*S+ML).toFixed(1), Y=y=>((y)*S+MT).toFixed(1);
+let o='<defs><marker id="ah" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L8,4 L0,8 z" style="fill:var(--fg)"/></marker></defs>';
+const m=v=>(v*0.0254).toFixed(2);
+const rect=(x0,x1,y0,y1,c)=>{o+=`<rect class="${c}" x="${X(Math.min(x0,x1))}" y="${Y(Math.min(y0,y1))}" width="${(Math.abs(x1-x0)*S).toFixed(1)}" height="${(Math.abs(y1-y0)*S).toFixed(1)}"/>`;};
+const line=(x0,y0,x1,y1,c)=>{o+=`<line class="${c}" x1="${X(x0)}" y1="${Y(y0)}" x2="${X(x1)}" y2="${Y(y1)}"/>`;};
+const text=(x,y,t,c='lbl',ex='')=>{o+=`<text class="${c}" x="${X(x)}" y="${Y(y)}" ${ex}>${t}</text>`;};
+const dimH=(x0,x1,y,inch,c='dim')=>{line(x0,y,x1,y,'dl');line(x0,y-3,x0,y+3,'dl');line(x1,y-3,x1,y+3,'dl');text((x0+x1)/2,y-3,`${inch}″ · ${m(x1-x0)}`,c);};
+const dimV=(y0,y1,x,inch,c='dim')=>{line(x,y0,x,y1,'dl');line(x-3,y0,x+3,y0,'dl');line(x-3,y1,x+3,y1,'dl');const ym=(y0+y1)/2;
+  o+=`<text class="${c}" x="${X(x)}" y="${Y(ym)}" transform="rotate(-90 ${X(x)} ${Y(ym)})" dy="-3">${inch}″ · ${m(y1-y0)} m</text>`;};
+const pin=()=>{};
+const P={
+ run:(pts,c='pw')=>{o+=`<polyline class="${c}" points="${pts.map(p=>X(p[0])+','+Y(p[1])).join(' ')}"/>`;},
+ stack:(x,y,l)=>{o+=`<circle class="stk" cx="${X(x)}" cy="${Y(y)}" r="5.5"/>`; if(l) text(x,y-9,l,'lw');},
+ co:(x,y,l)=>{o+=`<circle class="co" cx="${X(x)}" cy="${Y(y)}" r="3.4"/><line style="stroke:var(--waste);stroke-width:1" x1="${(+X(x)-2.4).toFixed(1)}" y1="${Y(y)}" x2="${(+X(x)+2.4).toFixed(1)}" y2="${Y(y)}"/>`; if(l) text(x,y+11,l,'lw');},
+ fd:(x,y)=>{o+=`<rect class="fd" x="${(+X(x)-3.5).toFixed(1)}" y="${(+Y(y)-3.5).toFixed(1)}" width="7" height="7"/><line style="stroke:var(--waste);stroke-width:.8" x1="${(+X(x)-3.5).toFixed(1)}" y1="${(+Y(y)-3.5).toFixed(1)}" x2="${(+X(x)+3.5).toFixed(1)}" y2="${(+Y(y)+3.5).toFixed(1)}"/>`;},
+ wc:(x,y,rot=0)=>{o+=`<g transform="rotate(${rot} ${X(x)} ${Y(y)})"><rect class="fx" x="${(+X(x)-6).toFixed(1)}" y="${(+Y(y)-9).toFixed(1)}" width="12" height="5" rx="1"/><ellipse class="fx" cx="${X(x)}" cy="${(+Y(y)+2).toFixed(1)}" rx="5.5" ry="7"/></g>`;},
+ lav:(x,y)=>{o+=`<ellipse class="fx" cx="${X(x)}" cy="${Y(y)}" rx="6.5" ry="4.5"/>`;},
+ ic:(x,y,l)=>{o+=`<rect class="mh" x="${(+X(x)-6).toFixed(1)}" y="${(+Y(y)-6).toFixed(1)}" width="12" height="12"/><text class="lw" x="${X(x)}" y="${(+Y(y)+2.5).toFixed(1)}">IC</text>`; if(l) text(x+14,y+2,l,'lw','style="text-anchor:start"');},
+ mh:(x,y)=>{o+=`<circle class="mh" cx="${X(x)}" cy="${Y(y)}" r="6"/><circle class="mh" cx="${X(x)}" cy="${Y(y)}" r="3"/>`;},
+ tank:(x,y,r,l)=>{o+=`<circle class="tk" cx="${X(x)}" cy="${Y(y)}" r="${(r*S).toFixed(1)}"/>`; if(l) text(x,y+3,l,'lc');},
+ pump:(x,y)=>{o+=`<rect class="pmp" x="${(+X(x)-8).toFixed(1)}" y="${(+Y(y)-6).toFixed(1)}" width="16" height="12" rx="2"/><text class="pmt" x="${X(x)}" y="${(+Y(y)+2.4).toFixed(1)}">P</text>`;},
+ ded:(x,y,l)=>{o+=`<rect class="ded" x="${(+X(x)-4.5).toFixed(1)}" y="${(+Y(y)-4.5).toFixed(1)}" width="9" height="9" transform="rotate(45 ${X(x)} ${Y(y)})"/>`; if(l) text(x,y-8,l,'le');},
+ valve:(x,y)=>{o+=`<path style="fill:var(--cold)" d="M${(+X(x)-4).toFixed(1)},${(+Y(y)-3).toFixed(1)} L${(+X(x)+4).toFixed(1)},${(+Y(y)+3).toFixed(1)} L${(+X(x)+4).toFixed(1)},${(+Y(y)-3).toFixed(1)} L${(+X(x)-4).toFixed(1)},${(+Y(y)+3).toFixed(1)} z"/>`;},
+ meter:(x,y,l)=>{o+=`<rect style="fill:var(--paper);stroke:var(--cold);stroke-width:1.4" x="${(+X(x)-7).toFixed(1)}" y="${(+Y(y)-5).toFixed(1)}" width="14" height="10" rx="2"/><text class="lc" x="${X(x)}" y="${(+Y(y)+2.5).toFixed(1)}">M</text>`; if(l) text(x,y-9,l,'lc');}
+};
+
+const svg=document.getElementById('g'); const VW=W*S+ML+50, VH=(545)*S+MT+20;
+svg.setAttribute('viewBox',`0 0 ${VW.toFixed(0)} ${VH.toFixed(0)}`); svg.setAttribute('role','img'); svg.setAttribute('aria-label','Ground floor plumbing plan');
+// floor + walls
+rect(0,W,0,D,'gar');
+rect(40,W,254,326,'hc'); text(95,266,'HIGH CEILING','street'); text(95,275,'open to 2nd floor, ≈ 3.4 × 1.85 m','dim');
+rect(-6,0,-4,D+5,'wall'); rect(W,W+6,-4,D+5,'wall');
+// front wall with openings 79 / 43 / 20 and two piers
+rect(-6,12,-4,0,'wall'); rect(169.5,W+6,-4,0,'wall');
+// gate v4: piers removed; 3.00 m roll-up shutter + 10 cm steel post + 0.90 m bay with 80x210 solid door (inward swing)
+line(12,-2,130.1,-2,'gate'); rect(130.1,134,-4,0,'wall'); rect(134,137.5,-3,-1,'wall');
+line(168,-1,168,30.5,'door'); o+=`<path class="arc" d="M${X(137.5)},${Y(-1)} A${(30.5*S).toFixed(1)},${(30.5*S).toFixed(1)} 0 0 0 ${X(168)},${Y(30.5)}"/>`;
+dimH(12,130.1,-14,'118','dp'); dimH(134,169.5,-14,'35.5','dp');
+text(152,40,'80 × 210','dim'); text(152,49,'solid door','dim'); text(71,8,'roll-up shutter','dim'); text(132,-24,'post','dim');
+line(-6,-43,W+6,-43,'furn'); text(W/2,-47,'line 43″ (1.09 m) out front: sidewalk edge or overhang?','dim');
+text(W/2,-58,'STREET','street');
+// rear wall, with 73" opening behind the back-right box
+rect(-6,W+6,D,D+5,'wall');
+dimH(0,W,D+60,'174.5');
+// nibs / column projections
+rect(0,20,96,102,'hc'); rect(W-20,W,96,102,'hc');
+rect(0,8,249,257,'wall'); rect(0,9,326,335,'wall');
+// right side: 3 treads up to first landing, then L turn
+rect(143,W,287,347,'rm');
+rect(143,W,287,324,'void'); line(143,287,W,287,'tread'); line(143,287,143,347,'tread');
+[324,332,340,347].forEach(y=>line(143,y,W,y,'tread'));
+o+=`<line class="arrow" x1="${X(159)}" y1="${Y(345)}" x2="${X(159)}" y2="${Y(328)}"/>`;
+text(159,360,'UP','dim'); text(158,303,'landing','dim'); text(158,372,'existing stair','dim'); text(158,382,'(not touched)','dim');
+o+=`<line class="arrow" style="stroke:var(--fg)" x1="${X(140)}" y1="${Y(305)}" x2="${X(60)}" y2="${Y(305)}"/>`;
+text(95,297,'L turn, up to 2nd floor','dim');
+// T&B back right 73 x 56
+rect(102,W,426,D,'wet'); text(130,452,'T&amp;B','lbl'); text(130,464,'1.85 × 1.42 m','dim');
+// T&B walls + 70 cm door (position assumed): front wall with door at its left end, swinging in
+rect(99,102,423,D,'wall'); rect(102,147,423,426,'wall');
+line(174,425,174,452.5,'door'); o+=`<path class="arc" d="M${X(146.5)},${Y(425)} A${(27.5*S).toFixed(1)},${(27.5*S).toFixed(1)} 0 0 0 ${X(174)},${Y(452.5)}"/>`;
+text(158,418,'70 cm door','dim');
+// kitchen back left
+rect(0,102,335,D,'rm');
+text(51,405,'Kitchen','lbl'); text(51,417,'≈ 2.60 × 3.63 m','dim');
+// kitchen fit-out: fridge -> prep -> stove on the left wall, sink by the T&B wall, trash pull-out beside the sink
+rect(0,17.7,325,368.3,'furn'); text(9,320,'bar','dim'); o+=`<circle class="furn" cx="${X(24.4)}" cy="${Y(336.6)}" r="${7*S}"/><circle class="furn" cx="${X(24.4)}" cy="${Y(358.3)}" r="${7*S}"/>`;
+rect(0,24.4,368.3,482,'furn'); rect(24.4,70,457.6,482,'furn'); rect(70.9,98.4,453.7,482,'furn'); text(84.6,470,'fridge','dim');
+rect(1.6,22.8,439.5,463.1,'wet'); text(12,453,'stove','dim'); text(12,404,'prep','dim');
+rect(39.4,68.9,461.5,478,'wet'); text(54,472,'sink','dim'); text(33,472,'bin','dim');
+// under the old stair flight: open storage shelves facing the kitchen
+rect(86,140,291,323,'furn'); text(113,316,'shelves','dim'); text(62,316,'open','dim');
+// dining zone between car and kitchen
+rect(4,135,206,282,'furn'); text(70,232,'Dining','lbl'); text(70,244,'to plan: ≈ 2.2 m deep','dim');
+// car bay / dining partition: full-height steel frame + 1.80 m sliding glass door, usually open for airflow
+rect(0,98,197,200,'wall'); line(98,197.6,136,197.6,'glass'); line(132,199.4,170,199.4,'glass'); rect(170,W,197,200,'wall');
+text(134,192,'1.80 m sliding glass door','dim'); text(49,192,'steel-frame partition','dim');
+// wheel stop (car bay vents through the perforated top of the shutter; side walls are party walls)
+rect(28,74,176,179,'wall'); text(51,172,'wheel stop','dim');
+
+// RAV4 4.60 x 1.86 m parked 30 cm inside the shutter
+rect(15,88,12,193,'furn'); text(51,100,'RAV4','lbl'); text(51,112,'4.60 × 1.86 m','dim');
+// dims
+dimV(0,D,-30,'482'); dimV(0,96,W+18,'96'); dimV(102,287,W+18,'185'); dimV(0,287,W+38,'287');
+dimV(287,324,W+18,'40'); dimV(257,326,-12,'71'); dimV(335,D,-12,'143'); dimV(426,D,96,'56');
+
+text(14,110,'nib: remove','dm'); text(W-14,110,'nib: remove','dm');
+text(110,150,'Car bay','lbl');
+
+// ---- PLUMBING LAYER (ground) ----
+// ground T&B fixtures: WC back wall, lav left wall, shower drain back right
+P.wc(116,474,180); P.lav(107,444); P.fd(160,468);
+P.run([[160,468],[132,462],[116,458]],'pb'); P.run([[107,444],[116,444]],'pb');
+// vent: T&B + kitchen vent through the hung-ceiling cavity to the stairwell chase
+P.run([[110,452],[106,420],[106,345],[158,270]],'pv'); text(84,385,'vent in ceiling','lv'); text(84,393,'cavity','lv');
+// water: city line enters under the kitchen sink (from the meter past the annex-side neighbour), runs in the ceiling to the tank
+P.run([[46,486],[46,474],[30,462],[30,204],[150,203],[168,192],[168,145]],'pc'); P.run([[168,145],[168,40]],'pc');
+text(30,498,'city line in (from meter)','lc'); text(22,262,'city line','lc',`transform="rotate(-90 ${X(22)} ${Y(262)})"`);
+P.valve(46,478); P.run([[168,140],[160,137]],'pc'); o+=`<circle style="fill:var(--cold)" cx="${X(168)}" cy="${Y(40)}" r="2.6"/>`;
+rect(144,174.5,120,176,'mh'); P.tank(159,137,14,'500 L'); P.pump(158,166);
+P.run([[166,166],[172,166],[172,196]],'pc');
+
+
+P.ded(174.5,152,''); 
+// bypass: city line straight into the house main when the power is out
+P.run([[168,196],[172,198]],'pc'); P.valve(170,200);
+o+=`<circle style="fill:var(--cold)" cx="${X(172)}" cy="${Y(40)}" r="2.6"/>`; 
+// distribution through the dining ceiling cavity
+P.run([[172,196],[172,240],[166,262]],'pc');
+P.run([[172,215],[130,240],[130,425],[118,470]],'pc');
+P.run([[130,425],[140,465],[158,470]],'pc');
+P.run([[130,330],[60,330],[60,470]],'pc');
+text(98,326,'cold water in ceiling','lc');
+o+='<g class="v2">';
+// septic tank: 2 chambers, inside ~1.20 x 2.40 m, under the walkway strip beside the car (position indicative, engineer sets it)
+rect(95,142,30,125,'sep'); line(95,62,142,62,'pb');
+text(118,84,'SEPTIC','lw'); text(118,92,'settling','lw'); text(118,52,'outlet','lw');
+P.mh(106,108); P.mh(106,44);
+P.run([[118,32],[118,-2],[118,-14]],'pw'); o+=`<line class="arrow" style="stroke:var(--waste)" x1="${X(118)}" y1="${Y(-6)}" x2="${X(118)}" y2="${Y(-20)}"/>`;
+text(86,-27,'effluent → street drain (city rule to confirm)','lw');
+// inspection chamber where all lines meet
+P.ic(118,168,''); P.run([[118,162],[118,125]]);
+// main under-floor line from ground T&B, under the hollow stair, through dining
+P.run([[116,452],[116,240],[118,174]]);
+P.co(116,446,''); text(124,436,'CO','lw');
+// roof stack base in the stairwell corner, joins the main
+P.run([[166,266],[150,240],[118,212]]);
+P.stack(166,266,''); text(166,280,'stack','lw'); P.co(152,246,'');
+// kitchen sink -> grease trap -> main
+P.run([[62,466],[100,466],[116,462]],'pb');
+// old septic tank under the kitchen (footprint unknown, to locate)
+rect(14,92,372,448,'hc'); text(53,381,'OLD SEPTIC','lw'); text(53,389,'shared: stays for neighbours','lw'); text(53,397,'our lines capped','lw');
+o+='</g>';
+// panel ref
+rect(W-6,W,62,92,'ded'); text(W-14,79,'panel','le','style="text-anchor:end"');
+text(110,150,'','lbl');
+
+svg.innerHTML=o;
+})();
+</script>
+<script>
+(function(){
+const S=1.3, ML=70, MT=70, W=174.5, D=482;
+const X=x=>((x)*S+ML).toFixed(1), Y=y=>((y)*S+MT).toFixed(1);
+let o='<defs><marker id="ah" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L8,4 L0,8 z" style="fill:var(--fg)"/></marker></defs>';
+const m=v=>(v*0.0254).toFixed(2);
+const rect=(x0,x1,y0,y1,c)=>{o+=`<rect class="${c}" x="${X(Math.min(x0,x1))}" y="${Y(Math.min(y0,y1))}" width="${(Math.abs(x1-x0)*S).toFixed(1)}" height="${(Math.abs(y1-y0)*S).toFixed(1)}"/>`;};
+const line=(x0,y0,x1,y1,c)=>{o+=`<line class="${c}" x1="${X(x0)}" y1="${Y(y0)}" x2="${X(x1)}" y2="${Y(y1)}"/>`;};
+const text=(x,y,t,c='lbl',ex='')=>{o+=`<text class="${c}" x="${X(x)}" y="${Y(y)}" ${ex}>${t}</text>`;};
+const dimH=(x0,x1,y,inch,c='dim')=>{line(x0,y,x1,y,'dl');line(x0,y-3,x0,y+3,'dl');line(x1,y-3,x1,y+3,'dl');text((x0+x1)/2,y-3,`${inch}″ · ${m(x1-x0)}`,c);};
+const dimV=(y0,y1,x,inch,c='dim')=>{line(x,y0,x,y1,'dl');line(x-3,y0,x+3,y0,'dl');line(x-3,y1,x+3,y1,'dl');const ym=(y0+y1)/2;
+  o+=`<text class="${c}" x="${X(x)}" y="${Y(ym)}" transform="rotate(-90 ${X(x)} ${Y(ym)})" dy="-3">${inch}″ · ${m(y1-y0)} m</text>`;};
+const pin=()=>{};
+const P={
+ run:(pts,c='pw')=>{o+=`<polyline class="${c}" points="${pts.map(p=>X(p[0])+','+Y(p[1])).join(' ')}"/>`;},
+ stack:(x,y,l)=>{o+=`<circle class="stk" cx="${X(x)}" cy="${Y(y)}" r="5.5"/>`; if(l) text(x,y-9,l,'lw');},
+ co:(x,y,l)=>{o+=`<circle class="co" cx="${X(x)}" cy="${Y(y)}" r="3.4"/><line style="stroke:var(--waste);stroke-width:1" x1="${(+X(x)-2.4).toFixed(1)}" y1="${Y(y)}" x2="${(+X(x)+2.4).toFixed(1)}" y2="${Y(y)}"/>`; if(l) text(x,y+11,l,'lw');},
+ fd:(x,y)=>{o+=`<rect class="fd" x="${(+X(x)-3.5).toFixed(1)}" y="${(+Y(y)-3.5).toFixed(1)}" width="7" height="7"/><line style="stroke:var(--waste);stroke-width:.8" x1="${(+X(x)-3.5).toFixed(1)}" y1="${(+Y(y)-3.5).toFixed(1)}" x2="${(+X(x)+3.5).toFixed(1)}" y2="${(+Y(y)+3.5).toFixed(1)}"/>`;},
+ wc:(x,y,rot=0)=>{o+=`<g transform="rotate(${rot} ${X(x)} ${Y(y)})"><rect class="fx" x="${(+X(x)-6).toFixed(1)}" y="${(+Y(y)-9).toFixed(1)}" width="12" height="5" rx="1"/><ellipse class="fx" cx="${X(x)}" cy="${(+Y(y)+2).toFixed(1)}" rx="5.5" ry="7"/></g>`;},
+ lav:(x,y)=>{o+=`<ellipse class="fx" cx="${X(x)}" cy="${Y(y)}" rx="6.5" ry="4.5"/>`;},
+ ic:(x,y,l)=>{o+=`<rect class="mh" x="${(+X(x)-6).toFixed(1)}" y="${(+Y(y)-6).toFixed(1)}" width="12" height="12"/><text class="lw" x="${X(x)}" y="${(+Y(y)+2.5).toFixed(1)}">IC</text>`; if(l) text(x+14,y+2,l,'lw','style="text-anchor:start"');},
+ mh:(x,y)=>{o+=`<circle class="mh" cx="${X(x)}" cy="${Y(y)}" r="6"/><circle class="mh" cx="${X(x)}" cy="${Y(y)}" r="3"/>`;},
+ tank:(x,y,r,l)=>{o+=`<circle class="tk" cx="${X(x)}" cy="${Y(y)}" r="${(r*S).toFixed(1)}"/>`; if(l) text(x,y+3,l,'lc');},
+ pump:(x,y)=>{o+=`<rect class="pmp" x="${(+X(x)-8).toFixed(1)}" y="${(+Y(y)-6).toFixed(1)}" width="16" height="12" rx="2"/><text class="pmt" x="${X(x)}" y="${(+Y(y)+2.4).toFixed(1)}">P</text>`;},
+ ded:(x,y,l)=>{o+=`<rect class="ded" x="${(+X(x)-4.5).toFixed(1)}" y="${(+Y(y)-4.5).toFixed(1)}" width="9" height="9" transform="rotate(45 ${X(x)} ${Y(y)})"/>`; if(l) text(x,y-8,l,'le');},
+ valve:(x,y)=>{o+=`<path style="fill:var(--cold)" d="M${(+X(x)-4).toFixed(1)},${(+Y(y)-3).toFixed(1)} L${(+X(x)+4).toFixed(1)},${(+Y(y)+3).toFixed(1)} L${(+X(x)+4).toFixed(1)},${(+Y(y)-3).toFixed(1)} L${(+X(x)-4).toFixed(1)},${(+Y(y)+3).toFixed(1)} z"/>`;},
+ meter:(x,y,l)=>{o+=`<rect style="fill:var(--paper);stroke:var(--cold);stroke-width:1.4" x="${(+X(x)-7).toFixed(1)}" y="${(+Y(y)-5).toFixed(1)}" width="14" height="10" rx="2"/><text class="lc" x="${X(x)}" y="${(+Y(y)+2.5).toFixed(1)}">M</text>`; if(l) text(x,y-9,l,'lc');}
+};
+
+const svg=document.getElementById('s'); const VW=W*S+ML+50, VH=(545)*S+MT+20;
+svg.setAttribute('viewBox',`0 0 ${VW.toFixed(0)} ${VH.toFixed(0)}`); svg.setAttribute('role','img'); svg.setAttribute('aria-label','2nd floor plumbing plan');
+const cm=v=>v/2.54; const BW=cm(418), BD=cm(367), LD=cm(440);
+const yB=D-BD, yW3=yB-4, yL=99;
+// shell
+rect(0,W,0,D,'rm');
+rect(-6,0,-4,255,'wall'); rect(-6,0,287,D+5,'wall'); rect(W,W+6,-4,D+5,'wall'); rect(-6,W+6,D,D+5,'wall');
+// door in left wall to steel stair room (80 cm, swings out of the stair room into the living room)
+rect(1,3,253,219,'wall'); line(2,288,2,212,'dl'); text(14,214,'barn door','dim');
+// steel stair annex outside the property (neighbour's provision): 1.23 m wide, entry 1.04 + run 2.46, rising toward the back (assumed)
+rect(-48.4-4,-6,245,383+4,'ply'); rect(-48.4,-6,249,383,'void');
+for(let i=0;i<=12;i++){const y=249+cm(104)+i*cm(20.5); line(-6-cm(100),y,-6,y,'tread');}
+o+=`<line class="arrow" x1="${X(-28)}" y1="${Y(295)}" x2="${X(-28)}" y2="${Y(375)}"/>`;
+text(-27,236,'steel stair','dm'); text(-27,243,'annex','dm');
+// front: terrace windows facing SW (sizes to confirm)
+rect(-6,12,-4,0,'wall'); rect(162,W+6,-4,0,'wall'); line(12,-2,162,-2,'glass');
+rect(-6,W+6,-15.7,-4,'furn'); for(let i=0;i<6;i++) o+=`<circle class="furn" cx="${X(12+i*30)}" cy="${Y(-9.8)}" r="${4*S}"/>`;
+text(87,-19,'40 cm slab ledge above entrance: potted bougainvilleas','dim');
+text(87,-29,'terrace jalousies (SW), size to confirm','dp'); text(W/2,-58,'STREET (SOUTHWEST)','street');
+
+// front zone (unknown)
+rect(0,W,0,yL-4,'out'); text(W/2,12,'Terrace','lbl'); text(W/2,92,'gate line to nibs, ≈ 2.5 m deep','dim');
+rect(W/2-cm(60),W/2+cm(60),49.5-cm(75),49.5+cm(75),'furn'); rect(W/2-cm(60),W/2+cm(60),49.5-cm(38),49.5+cm(38),'furn'); text(W/2,52,'picnic table 120 × 150 (4 seats)','dim');
+// terrace wall: wall-to-wall 4-panel aluminium slider (1 + 4 fixed, 2 + 3 slide, ~2.1 m clear)
+const q=W/4; line(0,yL-3,q,yL-3,'glass'); line(q,yL-1,2*q,yL-1,'glass'); line(2*q,yL-3,3*q,yL-3,'glass'); line(3*q,yL-1,W,yL-1,'glass');
+text(W/2,yL+9,'4-panel slider, 4.18 × 2.4 m (middle 2 slide)','dp');
+// living furniture (from living room brief)
+rect(W-cm(215),W,254-cm(65),254,'furn'); text(W-cm(107),254-cm(32)+3,'pantry counter','dim');
+rect(W-cm(90),W,yL+cm(102),yL+cm(262),'furn'); text(W-cm(45),yL+cm(182),'sofa bed','dim');
+rect(W-cm(85),W,yL+cm(15),yL+cm(100),'furn'); text(W-cm(42),yL+cm(58),'recliner','dim');
+rect(0,cm(40),yL+cm(40),yL+cm(200),'furn'); text(cm(20)+2,yL+cm(120),'TV','dim');
+rect(cm(150),cm(260),yL+cm(110),yL+cm(170),'furn'); text(cm(205),yL+cm(143),'coffee table','dim');
+rect(0,W,yB,D,'gar');
+// living room
+text(95,yL+cm(55),'Living room','lbl'); text(95,yL+cm(55)+12,'≈ 4.18 × 5.95 m (incl. 1.5 m strip)','dim');
+// stairwell void + guard rails (old L stair arriving at left wall)
+rect(40,W,254,326,'void');
+for(let i=0;i<=10;i++){const x=W-30-i*12; line(x,287,x,324,'tread dn');}
+line(40,254,W,254,'rail'); line(40,326,W,326,'rail');
+o+=`<line class="arrow" x1="${X(140)}" y1="${Y(312)}" x2="${X(46)}" y2="${Y(312)}"/>`; text(100,322,'old stair arrives (UP)','dim');
+text(110,270,'open to ground floor','dim');
+// wall 3: lower concrete / upper board, 100 cm door opening 35 cm from wall 4 (left)
+rect(0,cm(35),yW3,yB,'wall'); rect(cm(35)+cm(100),W,yW3,yB,'wall');
+const hx=cm(35)+cm(100)-cm(8), dw=cm(84);
+line(cm(35)+2,yB,cm(35)+2,yB+dw,'door'); o+=`<path class="arc" d="M${X(cm(35)+2+dw)},${Y(yB)} A${(dw*S).toFixed(1)},${(dw*S).toFixed(1)} 0 0 1 ${X(cm(35)+2)},${Y(yB+dw)}"/>`;
+// glass block strip + exhaust vent on wall 1 (back, NE)
+line(40,D+2.5,130,D+2.5,'glass'); rect(6,16,D,D+5,'hc'); text(11,D+16,'exhaust fan','dm'); text(85,D+16,'glass-block strip','dp');
+// furniture (reserved positions)
+const bx1=W-cm(42), bx0=bx1-cm(193); rect(bx0,bx1,D-cm(202),D,'furn'); text((bx0+bx1)/2,D-40,'King bed','dim');
+rect(0,cm(100),D-cm(200),D,'furn'); text(cm(50),D-42,'Bunk','dim');
+rect(W-cm(170),W,yB,yB+cm(60),'furn'); text(W-cm(85),yB+14,'Wardrobe','dim');
+rect(cm(35)+cm(100)+cm(15),cm(35)+cm(100)+cm(115),yB,yB+cm(55),'furn'); text(cm(35)+cm(165),yB+14,'Desk','dim');
+rect(W-4,W,D-cm(150),D-cm(100),'wall'); text(W-16,D-cm(125),'AC','dim');
+text(W/2,yB+60,'Master bedroom','lbl'); text(W/2,yB+72,'4.18 × 3.67 m (measured)','dm');
+// dims
+dimV(yB,D,W+16,(367/2.54).toFixed(0)); dimV(yL,yW3,W+16,(yW3-yL).toFixed(0)); dimV(0,D,W+34,'482');
+dimH(0,W,D+30,'174.5');
+text(W/2,D+44,'Back wall faces NE, above neighbour’s roof','dim');
+
+// ---- PLUMBING LAYER (2nd) ----
+rect(156,W,256,272,'mh');
+P.run([[166,266],[166,266.1]],'pw'); P.stack(166,266,'');
+o+=`<circle class="tk" cx="${X(170)}" cy="${Y(258.5)}" r="2.4"/>`;
+text(118,282,'boxed chase in the stairwell corner:','lw');
+text(118,291,'100 mm stack + vent + water riser','lw');
+text(118,300,'(passes the open void, no 2nd floor slab hole)','dim');
+text(60,240,'No plumbing on this floor (confirmed)','lc');
+
+svg.innerHTML=o;
+})();
+</script>
+<script>
+(function(){
+const S=1.3, ML=70, MT=70, W=174.5, D=482;
+const X=x=>((x)*S+ML).toFixed(1), Y=y=>((y)*S+MT).toFixed(1);
+let o='<defs><marker id="ah" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L8,4 L0,8 z" style="fill:var(--fg)"/></marker></defs>';
+const m=v=>(v*0.0254).toFixed(2);
+const rect=(x0,x1,y0,y1,c)=>{o+=`<rect class="${c}" x="${X(Math.min(x0,x1))}" y="${Y(Math.min(y0,y1))}" width="${(Math.abs(x1-x0)*S).toFixed(1)}" height="${(Math.abs(y1-y0)*S).toFixed(1)}"/>`;};
+const line=(x0,y0,x1,y1,c)=>{o+=`<line class="${c}" x1="${X(x0)}" y1="${Y(y0)}" x2="${X(x1)}" y2="${Y(y1)}"/>`;};
+const text=(x,y,t,c='lbl',ex='')=>{o+=`<text class="${c}" x="${X(x)}" y="${Y(y)}" ${ex}>${t}</text>`;};
+const dimH=(x0,x1,y,inch,c='dim')=>{line(x0,y,x1,y,'dl');line(x0,y-3,x0,y+3,'dl');line(x1,y-3,x1,y+3,'dl');text((x0+x1)/2,y-3,`${inch}″ · ${m(x1-x0)}`,c);};
+const dimV=(y0,y1,x,inch,c='dim')=>{line(x,y0,x,y1,'dl');line(x-3,y0,x+3,y0,'dl');line(x-3,y1,x+3,y1,'dl');const ym=(y0+y1)/2;
+  o+=`<text class="${c}" x="${X(x)}" y="${Y(ym)}" transform="rotate(-90 ${X(x)} ${Y(ym)})" dy="-3">${inch}″ · ${m(y1-y0)} m</text>`;};
+const pin=()=>{};
+const P={
+ run:(pts,c='pw')=>{o+=`<polyline class="${c}" points="${pts.map(p=>X(p[0])+','+Y(p[1])).join(' ')}"/>`;},
+ stack:(x,y,l)=>{o+=`<circle class="stk" cx="${X(x)}" cy="${Y(y)}" r="5.5"/>`; if(l) text(x,y-9,l,'lw');},
+ co:(x,y,l)=>{o+=`<circle class="co" cx="${X(x)}" cy="${Y(y)}" r="3.4"/><line style="stroke:var(--waste);stroke-width:1" x1="${(+X(x)-2.4).toFixed(1)}" y1="${Y(y)}" x2="${(+X(x)+2.4).toFixed(1)}" y2="${Y(y)}"/>`; if(l) text(x,y+11,l,'lw');},
+ fd:(x,y)=>{o+=`<rect class="fd" x="${(+X(x)-3.5).toFixed(1)}" y="${(+Y(y)-3.5).toFixed(1)}" width="7" height="7"/><line style="stroke:var(--waste);stroke-width:.8" x1="${(+X(x)-3.5).toFixed(1)}" y1="${(+Y(y)-3.5).toFixed(1)}" x2="${(+X(x)+3.5).toFixed(1)}" y2="${(+Y(y)+3.5).toFixed(1)}"/>`;},
+ wc:(x,y,rot=0)=>{o+=`<g transform="rotate(${rot} ${X(x)} ${Y(y)})"><rect class="fx" x="${(+X(x)-6).toFixed(1)}" y="${(+Y(y)-9).toFixed(1)}" width="12" height="5" rx="1"/><ellipse class="fx" cx="${X(x)}" cy="${(+Y(y)+2).toFixed(1)}" rx="5.5" ry="7"/></g>`;},
+ lav:(x,y)=>{o+=`<ellipse class="fx" cx="${X(x)}" cy="${Y(y)}" rx="6.5" ry="4.5"/>`;},
+ ic:(x,y,l)=>{o+=`<rect class="mh" x="${(+X(x)-6).toFixed(1)}" y="${(+Y(y)-6).toFixed(1)}" width="12" height="12"/><text class="lw" x="${X(x)}" y="${(+Y(y)+2.5).toFixed(1)}">IC</text>`; if(l) text(x+14,y+2,l,'lw','style="text-anchor:start"');},
+ mh:(x,y)=>{o+=`<circle class="mh" cx="${X(x)}" cy="${Y(y)}" r="6"/><circle class="mh" cx="${X(x)}" cy="${Y(y)}" r="3"/>`;},
+ tank:(x,y,r,l)=>{o+=`<circle class="tk" cx="${X(x)}" cy="${Y(y)}" r="${(r*S).toFixed(1)}"/>`; if(l) text(x,y+3,l,'lc');},
+ pump:(x,y)=>{o+=`<rect class="pmp" x="${(+X(x)-8).toFixed(1)}" y="${(+Y(y)-6).toFixed(1)}" width="16" height="12" rx="2"/><text class="pmt" x="${X(x)}" y="${(+Y(y)+2.4).toFixed(1)}">P</text>`;},
+ ded:(x,y,l)=>{o+=`<rect class="ded" x="${(+X(x)-4.5).toFixed(1)}" y="${(+Y(y)-4.5).toFixed(1)}" width="9" height="9" transform="rotate(45 ${X(x)} ${Y(y)})"/>`; if(l) text(x,y-8,l,'le');},
+ valve:(x,y)=>{o+=`<path style="fill:var(--cold)" d="M${(+X(x)-4).toFixed(1)},${(+Y(y)-3).toFixed(1)} L${(+X(x)+4).toFixed(1)},${(+Y(y)+3).toFixed(1)} L${(+X(x)+4).toFixed(1)},${(+Y(y)-3).toFixed(1)} L${(+X(x)-4).toFixed(1)},${(+Y(y)+3).toFixed(1)} z"/>`;},
+ meter:(x,y,l)=>{o+=`<rect style="fill:var(--paper);stroke:var(--cold);stroke-width:1.4" x="${(+X(x)-7).toFixed(1)}" y="${(+Y(y)-5).toFixed(1)}" width="14" height="10" rx="2"/><text class="lc" x="${X(x)}" y="${(+Y(y)+2.5).toFixed(1)}">M</text>`; if(l) text(x,y-9,l,'lc');}
+};
+
+const svg=document.getElementById('r'); const VW=W*S+ML+50, VH=(545)*S+MT+20;
+svg.setAttribute('viewBox',`0 0 ${VW.toFixed(0)} ${VH.toFixed(0)}`); svg.setAttribute('role','img'); svg.setAttribute('aria-label','Rooftop plumbing plan');
+const cm=v=>v/2.54;
+// ---- ROOFTOP sheet ----
+rect(0,W,0,D,'out');
+rect(-6,0,-4,D+5,'wall'); rect(W,W+6,-4,D+5,'wall'); rect(-6,W+6,D,D+5,'wall'); rect(-6,W+6,-4,0,'wall');
+text(W/2,-14,'STREET (SOUTHWEST)','street');
+text(W/2,110,'Open slab','lbl'); text(W/2,122,'roof overhangs ~1 m past the front columns','dim');
+// room
+rect(0,W,249,D,'rm'); rect(0,W,245,249,'wall'); rect(0,4,249,D,'wall');
+o+=`<line class="glass" x1="${X(43)}" y1="${Y(247)}" x2="${X(94)}" y2="${Y(247)}"/>`; text(68,240,'slider','dp');
+text(70,420,'Roof room','lbl'); text(70,432,'sleeper + storage','dim');
+rect(W-cm(152)-0,W,D-cm(190),D,'furn'); text(W-cm(76),D-30,'queen','dim');
+// T&B
+rect(111.5,W,253,320,'wet'); rect(108,111.5,249,320,'wall'); rect(111.5,W,320,323.5,'wall');
+line(110,286,110,316,'door'); text(124,330,'','dim');
+text(130,312,'T&amp;B 1.6 × 1.7','dim');
+o+=`<line class="glass" x1="${X(140)}" y1="${Y(247)}" x2="${X(163)}" y2="${Y(247)}"/>`; text(152,240,'frosted window','dp');
+// annex
+rect(-48.4-4,-6,245,383+4,'ply'); rect(-48.4,-6,249,383,'void'); text(-27,236,'annex','dm');
+for(let i=0;i<=12;i++){const y=249+cm(104)+i*cm(20.5); line(-6-cm(100),y,-6,y,'tread');}
+// fixtures
+P.wc(150,262,0); P.lav(126,257); rect(140,W,290,320,'furn'); text(157,297,'shower','dim'); P.fd(157,308);
+P.stack(166,266,''); 
+P.run([[157,308],[160,290],[166,270]],'pb'); P.run([[126,261],[138,266],[160,266]],'pb');
+o+=`<circle class="tk" cx="${X(172)}" cy="${Y(262)}" r="2.4"/>`;
+P.run([[172,262],[172,300],[165,305]],'pc'); P.run([[172,258],[126,253]],'pc');
+text(140,350,'1 core through roof slab','lw'); text(140,358,'≈150 mm, engineer marks it','lw');
+o+=`<line style="stroke:var(--waste);stroke-width:.8" x1="${X(140)}" y1="${Y(343)}" x2="${X(165)}" y2="${Y(272)}"/>`;
+text(60,290,'raised T&amp;B floor 10–15 cm','dim'); text(60,298,'branches run above the slab','dim');
+text(60,200,'Stack vent rises through the roof','lv'); text(60,208,'sheet, ≥ 30 cm above it','lv');
+dimH(0,W,D+20,'174.5');
+
+svg.innerHTML=o;
+})();
+</script>
+<script>
+(function(){
+// Section along the right-hand side (street on the left, back on the right). Heights indicative.
+const H=1.15, V=46, L=60, T=40, Z0=9.2; // px per inch (horizontal), px per metre (vertical), ground at z=0
+const X=y=>(y*H+L).toFixed(1), Z=z=>((Z0-z)*V+T).toFixed(1);
+const svg=document.getElementById('sec'); const VW=482*H+L+90, VH=(Z0+2.4)*V+T+10;
+svg.setAttribute('viewBox',`0 0 ${VW.toFixed(0)} ${VH.toFixed(0)}`); svg.setAttribute('role','img'); svg.setAttribute('aria-label','Section showing stack from roof T&B down the stairwell to the septic tank');
+let o='<defs><marker id="ah2" viewBox="0 0 8 8" refX="7" refY="4" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L8,4 L0,8 z" style="fill:var(--waste)"/></marker></defs>';
+const R=(y0,y1,z0,z1,c)=>{o+=`<rect class="${c}" x="${X(y0)}" y="${Z(z1)}" width="${((y1-y0)*H).toFixed(1)}" height="${((z1-z0)*V).toFixed(1)}"/>`;};
+const PL=(pts,c)=>{o+=`<polyline class="${c}" points="${pts.map(p=>X(p[0])+','+Z(p[1])).join(' ')}"/>`;};
+const TX=(y,z,t,c='dim',ex='')=>{o+=`<text class="${c}" x="${X(y)}" y="${Z(z)}" ${ex}>${t}</text>`;};
+const G=0, F2=3.0, RS=5.65, RF=8.4;
+R(-40,500,-2.3,0,'earth');
+// slabs
+R(0,482,-0.12,0,'slab');
+R(0,254,F2-0.15,F2,'slab'); R(326,482,F2-0.15,F2,'slab');
+R(0,482,RS-0.15,RS,'slab');
+// walls front/back
+R(-6,0,0,RS+1.0,'slab'); R(482,488,0,RS+1.0,'slab');
+// roof (mono pitch) + room walls
+o+=`<line style="stroke:var(--fg);stroke-width:2" x1="${X(210)}" y1="${Z(RF)}" x2="${X(488)}" y2="${Z(RF-0.35)}"/>`;
+R(247,251,RS,RF-0.05,'slab');
+TX(120,RF-0.3,'roof overhang','dim');
+// labels
+TX(-20,0.4,'STREET','street'); TX(100,1.5,'car bay','lbl'); TX(290,1.5,'stairwell (open to roof slab)','lbl'); TX(420,1.5,'T&amp;B','lbl');
+TX(100,F2+1.2,'terrace / living','lbl'); TX(420,F2+1.2,'bedroom','lbl'); TX(130,RS+1.2,'open slab','lbl'); TX(380,RS+1.4,'roof room','lbl');
+R(254,326,F2-0.15,F2,'void');
+o+='<g class="v2">';
+// septic tank
+R(30,125,-1.85,-0.15,'sep'); o+=`<line class="pb" x1="${X(62)}" y1="${Z(-0.25)}" x2="${X(62)}" y2="${Z(-1.6)}"/>`;
+TX(78,-1.15,'septic ≈1.5 m deep','lw'); TX(78,-1.45,'car-rated cover','lw');
+// IC + under-floor lines (slope 2%)
+R(144,156,-0.6,-0.12,'mh');
+PL([[266,-0.35],[160,-0.5],[150,-0.52]],'pw'); PL([[440,-0.3],[300,-0.42],[156,-0.55]],'pw');
+PL([[144,-0.58],[125,-0.62]],'pw');
+PL([[30,-0.7],[-30,-0.85]],'pw'); o+=`<line class="pb" style="marker-end:url(#ah2)" x1="${X(-10)}" y1="${Z(-0.8)}" x2="${X(-38)}" y2="${Z(-0.86)}"/>`;
+TX(150,-0.95,'IC','lw'); TX(330,-0.75,'main 100 mm, 2% fall','lw');
+o+='</g>';
+// stack: ground to above roof
+PL([[266,-0.35],[266,RF+0.5]],'pw'); TX(277,RF+0.55,'vent ≥ 30 cm above roof','lv','style="text-anchor:start"');
+o+=`<line class="pv" x1="${X(266)}" y1="${Z(RF-0.2)}" x2="${X(266)}" y2="${Z(RF+0.5)}"/>`;
+// roof T&B
+R(253,320,RS,RS+0.13,'wet'); TX(215,RS+0.35,'roof T&amp;B (raised floor)','lw');
+// ground T&B vent through ceiling to chase
+PL([[430,2.4],[300,2.55],[270,2.6],[270,RS+1.3]],'pv'); TX(370,2.7,'vent in hung ceiling','lv');
+// water
+R(128,172,0,1.4,'tk'); TX(150,0.75,'tank','lc'); R(130,145,0,0.25,'pmp');
+PL([[160,1.6],[160,2.65],[262,2.65],[262,RS+0.6]],'pc'); TX(205,1.9,'pump line in ceiling','lc');
+// dims
+TX(-30,F2,'≈3.0 m','dim'); TX(-30,RS,'≈5.65 m','dim'); TX(-30,RF,'≈8.4 m','dim');
+svg.innerHTML=o;
+})();
+</script>

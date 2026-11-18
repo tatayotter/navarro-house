@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Navarro House</title>
+<meta name="description" content="Plans, 3D model and progress for the Navarro House renovation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f6f1ea; --card:#fffdf9; --ink:#2b2622; --muted:#7a6f66; --line:#e6ddd2;
+  --accent:#8a5a3b; --accent-soft:#f1e4d8;
+  --done:#3f7d58; --done-bg:#e3f1e8; --wait:#a8701c; --wait-bg:#fbefd9; --work:#2f6690; --work-bg:#e1edf6;
+  --shadow:0 1px 2px rgba(60,40,20,.06),0 6px 20px rgba(60,40,20,.07);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#1b1815; --card:#25211d; --ink:#f1ebe4; --muted:#a99e94; --line:#3a332d;
+  --accent:#d9a07a; --accent-soft:#3a2c22;
+  --done:#7fc79a; --done-bg:#1f3227; --wait:#e8b45d; --wait-bg:#3a2e19; --work:#7fb6e0; --work-bg:#1c2c3a;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 6px 20px rgba(0,0,0,.25);
+}}
+:root[data-theme="dark"]{
+  --bg:#1b1815; --card:#25211d; --ink:#f1ebe4; --muted:#a99e94; --line:#3a332d;
+  --accent:#d9a07a; --accent-soft:#3a2c22;
+  --done:#7fc79a; --done-bg:#1f3227; --wait:#e8b45d; --wait-bg:#3a2e19; --work:#7fb6e0; --work-bg:#1c2c3a;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+header{padding:48px 0 28px}
+.eyebrow{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(34px,7vw,52px);line-height:1.05;margin:8px 0 12px}
+.lede{color:var(--muted);max-width:560px;margin:0}
+.updated{display:inline-block;margin-top:16px;font-size:13px;color:var(--muted);background:var(--card);border:1px solid var(--line);padding:6px 12px;border-radius:999px}
+h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:24px;margin:40px 0 6px}
+.sub{color:var(--muted);font-size:14px;margin:0 0 16px}
+.hero{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px}
+.card{display:flex;flex-direction:column;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;box-shadow:var(--shadow);transition:transform .15s,border-color .15s,box-shadow .15s;min-height:64px}
+.card:hover,.card:focus-visible{transform:translateY(-2px);border-color:var(--accent);outline:none}
+.card:active{transform:scale(.98)}
+.hero .card{padding:24px;min-height:190px}
+.ico{width:48px;height:48px;border-radius:14px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center;flex:none}
+.ico svg{width:26px;height:26px}
+.card h3{margin:0;font-size:18px;font-weight:600}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.go{margin-top:auto;font-size:14px;font-weight:600;color:var(--accent);display:flex;align-items:center;gap:6px}
+.row{display:flex;align-items:center;gap:14px}
+.card-txt{flex:1;min-width:0}
+.mini{flex-direction:row;align-items:center;padding:16px}
+.mini .ico{width:42px;height:42px}
+.mini .arrow{color:var(--muted);font-size:20px}
+.status{display:grid;gap:10px}
+.st{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px}
+.st b{display:block;font-weight:600}
+.st span.d{color:var(--muted);font-size:14px}
+.pill{flex:none;min-width:108px;text-align:center;font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;white-space:nowrap;margin-top:2px}
+.p-done{color:var(--done);background:var(--done-bg)}
+.p-wait{color:var(--wait);background:var(--wait-bg)}
+.p-work{color:var(--work);background:var(--work-bg)}
+.note{font-size:13px;color:var(--muted);margin:10px 0 0}
+footer{margin:48px 0 40px;padding-top:20px;border-top:1px solid var(--line);color:var(--muted);font-size:14px;display:flex;flex-wrap:wrap;gap:10px 20px}
+footer a{color:var(--accent);font-weight:500}
+.tog{position:fixed;top:14px;right:14px;width:40px;height:40px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;font-size:18px}
+@media (max-width:520px){.st{flex-direction:column;gap:6px}header{padding-top:36px}}
+</style>
+</head>
+<body>
+<button class="tog" id="tog" aria-label="Switch light or dark">◐</button>
+<div class="wrap">
+<header>
+  <div class="eyebrow">Family renovation</div>
+  <h1>Navarro House</h1>
+  <p class="lede">Plans, the 3D model and progress for our renovation, all in one place. Tap any card. Everything opens in your browser, on phone or computer. Prices are in pesos (₱).</p>
+  <span class="updated">Last updated 18 November 2026</span>
+</header>
+
+<section>
+  <h2>Explore the house</h2>
+  <p class="sub">Interactive. Drag to rotate, pinch or scroll to zoom.</p>
+  <div class="hero">
+    <a class="card" href="house/airflow-3d-v1.html">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 2 3 7v10l9 5 9-5V7z"/><path d="M3 7l9 5 9-5M12 12v10"/></svg></div>
+      <h3>3D model</h3>
+      <p>The whole house, floor by floor. Shows airflow, how hot each room gets, fans, wiring and plumbing.</p>
+      <span class="go">Open 3D →</span>
+    </a>
+    <a class="card" href="house/floor-plans-v1.html">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="1.5"/><path d="M3 12h8v9M11 3v5M15 12h6"/></svg></div>
+      <h3>Floor plans</h3>
+      <p>Ground floor, 2nd floor and rooftop, with room sizes.</p>
+      <span class="go">Open plans →</span>
+    </a>
+  </div>
+  <div class="grid" style="margin-top:14px">
+    <a class="card mini" href="house/electrical-layout-v1.html">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></div>
+      <div class="card-txt"><h3>Electrical</h3><p>Lights, switches, outlets</p></div><span class="arrow">›</span>
+    </a>
+    <a class="card mini" href="house/plumbing-layout-v1.html">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3s6 6.5 6 11a6 6 0 0 1-12 0c0-4.5 6-11 6-11z"/></svg></div>
+      <div class="card-txt"><h3>Plumbing</h3><p>Water, pump, new septic</p></div><span class="arrow">›</span>
+    </a>
+  </div>
+</section>
+
+<section>
+  <h2>Where we are</h2>
+  <p class="sub">What's done, what's next.</p>
+  <div class="status">
+    <div class="st"><span class="pill p-work">Building soon</span><div><b>Steel stair to the rooftop</b><span class="d">Final design done. Steel bought, welder hired.</span></div></div>
+    <div class="st"><span class="pill p-wait">Measuring</span><div><b>Rooftop room</b><span class="d">Room with its own T&amp;B, queen bed and window AC. Final site measurements coming.</span></div></div>
+    <div class="st"><span class="pill p-wait">Measuring</span><div><b>Front gate</b><span class="d">Roll-up car shutter plus a small door. Waiting on final measurements.</span></div></div>
+    <div class="st"><span class="pill p-wait">For checking</span><div><b>Electrical wiring</b><span class="d">Whole-house plan drafted. The electrician will check it.</span></div></div>
+    <div class="st"><span class="pill p-wait">Draft</span><div><b>Plumbing</b><span class="d">New septic tank under the car bay, water tank and booster pump.</span></div></div>
+    <div class="st"><span class="pill p-done">Planned</span><div><b>Master bedroom</b><span class="d">Plan and costing done, about ₱167k with buffer.</span></div></div>
+    <div class="st"><span class="pill p-done">Planned</span><div><b>Living room</b><span class="d">Design and cost estimate done, ₱228k to ₱370k.</span></div></div>
+  </div>
+</section>
+
+<section>
+  <h2>Steel stair</h2>
+  <div class="grid">
+    <a class="card mini" href="stairs/Stair_Works_Phase3_Plan_v3.3.pdf">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M4 20h4v-4h4v-4h4V8h4"/></svg></div>
+      <div class="card-txt"><h3>Full plan</h3><p>PDF, version 3.3</p></div><span class="arrow">›</span>
+    </a>
+    <a class="card mini" href="https://github.com/tatayotter/navarro-house/blob/main/stairs/stair-project-brief.md">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M9 11h7M9 15h7"/></svg></div>
+      <div class="card-txt"><h3>Project brief</h3><p>Design, costs, status</p></div><span class="arrow">›</span>
+    </a>
+    <a class="card mini" href="https://github.com/tatayotter/navarro-house/blob/main/stairs/shopping-list-14nov.md">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M9 6h11M9 12h11M9 18h11M4 6h.01M4 12h.01M4 18h.01"/></svg></div>
+      <div class="card-txt"><h3>Shopping list</h3><p>14 November</p></div><span class="arrow">›</span>
+    </a>
+  </div>
+</section>
+
+<section>
+  <h2>Front gate</h2>
+  <div class="grid">
+    <a class="card mini" href="gate/gate-elevation-draft.png">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 8h13M3 12h13M3 16h13M16 4v16"/></svg></div>
+      <div class="card-txt"><h3>Gate drawing</h3><p>Draft picture</p></div><span class="arrow">›</span>
+    </a>
+    <a class="card mini" href="https://github.com/tatayotter/navarro-house/blob/main/gate/gate-plan-draft.md">
+      <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M6 3h9l4 4v14H6z"/><path d="M9 11h7M9 15h7"/></svg></div>
+      <div class="card-txt"><h3>Gate plan</h3><p>Draft notes and costs</p></div><span class="arrow">›</span>
+    </a>
+  </div>
+</section>
+
+
+<footer>
+  <span>Want an email when something changes? On GitHub, tap <b>Watch</b>.</span>
+  <a href="https://github.com/tatayotter/navarro-house">GitHub page</a>
+  <a href="https://github.com/tatayotter/navarro-house/commits/main">Update history</a>
+</footer>
+</div>
+<script>
+(function(){var r=document.documentElement,k='nh-theme';try{var s=localStorage.getItem(k);if(s)r.dataset.theme=s}catch(e){}
+document.getElementById('tog').onclick=function(){var d=r.dataset.theme||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');r.dataset.theme=d==='dark'?'light':'dark';try{localStorage.setItem(k,r.dataset.theme)}catch(e){}}})();
+</script>
+</body>
+</html>

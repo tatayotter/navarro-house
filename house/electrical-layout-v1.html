@@ -80,7 +80,7 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
 <div class="wrap">
   <header>
     <h1>Navarro House electrical layout</h1>
-    <p class="sub">Sockets, switches and lights marked on the floor plans (street/southwest at the top, so left and right are swapped compared with standing in the street). Positions are a first draft to mark on site; exact spots move with the furniture. Everything is pending your licensed electrician. Full circuit list: <a href="https://claude.ai/artifact/EQyAeAgbSq4XyYVBuKaLtT">wiring plan</a>.</p>
+    <p class="sub">Sockets, switches and lights marked on the floor plans (street/southwest at the top, so left and right are swapped compared with standing in the street). Positions are a first draft to mark on site; exact spots move with the furniture. Everything is pending your licensed electrician.</p>
   </header>
   <div class="legend">
 <span class="lg"><svg viewBox="0 0 16 16"><circle cx="8" cy="8" r="6" fill="none" stroke="var(--sock)" stroke-width="1.6"/><line x1="6" y1="5" x2="6" y2="11" stroke="var(--sock)"/><line x1="10" y1="5" x2="10" y2="11" stroke="var(--sock)"/></svg>Duplex socket, 30 cm high (WP = weatherproof, ctr = counter 1.1 m)</span>
@@ -96,13 +96,15 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
 <section class="sheet"><h2>Ground floor <span>inside width 174.5 in = 4.43 m</span></h2><svg id="g"></svg></section>
 <section class="sheet"><h2>2nd floor <span>bedroom + living measured</span></h2><svg id="s"></svg></section>
 </div>
-  <div class="rooflist"><h2>Rooftop (updated 18 Nov: no deck, room enlarged to about 4.4 × 6.3 m)</h2><ul>
+  <div class="rooflist"><h2>Rooftop (updated 18 Nov: no deck, room about 4.4 × 5.9 m to the front column line, incl. a T&amp;B; roof overhangs about 1 m past the front columns)</h2><ul>
 <li>Feed arrives from the terrace ceiling, up under the terrace roof and over the parapet, then along the outside of the room's new front wall into the room.</li>
-<li>Roof room (sleeper + house storage): 2 ceiling LED lights (front half and back half), 4 sockets (bed side, opposite wall, beside the front slider, storage end at the back wall), 1 two-gang switch inside the door (room lights · outside front light).</li>
+<li>Roof room (sleeper + house storage): 2 ceiling LED lights (front half and back half), 4 sockets (desk on the annex-side wall, bed head on the back wall, dresser on the outer wall at 1.0 m, annex-side wall past the door for vacuum or a fan), 1 two-gang switch inside the door (room lights · outside front light).</li>
+<li>Roof T&amp;B (front corner of the room, about 1.6 × 1.7 m): 1 IP-rated ceiling LED light, 1 exhaust fan high on the outer wall near the shower, 1 two-gang switch on the room side next to the door (light · fan). No socket inside, no water heater.</li>
 <li>Stair landing (annex side of the room wall): 1 LED light under the roof, 1 one-gang switch at 1.3 m by the door.</li>
-<li>Outside the room's front wall (open slab): 1 weatherproof LED light and 1 weatherproof socket, both on the wall.</li>
+<li>Outside the room's front wall (open slab): 1 weatherproof LED light and 1 weatherproof socket, both on the wall under the roof overhang.</li>
 <li>Mesh node 3: inside the room, wired back to the router.</li>
-<li>Booster pump: on hold, it was for the rooftop washer (confirm if still needed).</li></ul>
+<li>Window-type aircon (Rowil, 18 Nov): sleeve high in the room's front wall left of the slider (sill 1.5 m, top 1.92 m, above the desk corner), blowing out to the open slab under the roof overhang. Its own outlet is on the annex-side wall at the front corner, about 1.8 m. Circuit 13, 20 A, 3.5 mm² (the old washer slot). The opening needs a lintel, and the back of the unit must face open air.</li>
+<li>Pump system: CONFIRMED by Rowil; it feeds the roof T&amp;B (circuit 14, 20 A, RCD, dedicated). 0.5 HP inverter booster in the car bay against the panel wall beside the 500 L slim tank; weatherproof outlet or isolator at 1.2 m, about 1.5 m from the panel via the car bay surface conduit (shown on the ground floor as PUMP).</li></ul>
 <p class="sub">Assumed: the panel is on the car bay wall on your left as you walk in from the street. Tell me if it's the other wall.</p></div>
   </div>
 </div>
@@ -200,7 +202,7 @@ E.run([[W-3,62],[W-3,4],[W-3,62]]);
 E.run([[W-3,92],[W-3,196]]); E.run([[W-3,196],[W-3,205],[110,205],[110,270]]);
 text(W-20,150,'exposed conduit','elr',`transform="rotate(-90 ${X(W-20)} ${Y(150)})"`);
 // car bay
-E.sock(W,112,'WP'); E.sock(0,185); E.lt(87,60); E.lt(87,150); E.lt(70,-8);
+E.sock(W,112,'WP'); E.ded(W,152,'PUMP'); E.sock(0,185); E.lt(87,60); E.lt(87,150); E.lt(70,-8);
 E.sw(W-8,44,'2','bay+out');
 // dining
 E.sock(0,232); E.sock(W,216); E.pend(105,244); E.lt(70,232);
@@ -210,7 +212,7 @@ E.net(30,205,'mesh node');
 // stair 1 light + bottom switch
 E.lt(100,300); 
 // kitchen
-E.sock(0,355,'bar ctr'); E.sock(0,392); E.sock(0,420); E.ded(0,445,'hood'); E.ded(10,451,'IND');
+E.sock(0,355,'bar ctr'); E.sock(97,420,'fan 2.1m'); E.sock(0,392); E.sock(0,420); E.ded(0,445,'hood'); E.ded(10,451,'IND');
 E.sock(28,482); E.ded(87,482,'fridge'); E.lt(45,410); E.lt(125,380);
 E.sw(30,340,'2','');
 // T&B

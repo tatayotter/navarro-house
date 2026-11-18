@@ -33,11 +33,6 @@ Last updated: 18 November 2026.
 - [Gate plan (draft)](gate/gate-plan-draft.md)
 - [Gate drawing (draft)](gate/gate-elevation-draft.png)
 
-### Rooms (online documents)
-These open on claude.ai and only work if Rowil has shared them with you.
-- Master bedroom: [plan](https://claude.ai/artifact/Snpjy216UyEdbb6Y1jFZyq) · [costing](https://claude.ai/artifact/JBCyfjd5oP7R7SB2eUFQ7u)
-- Living room: [cost estimate](https://claude.ai/artifact/1czyzm8yctQg4DxDGcoLQS)
-- Electrical: [wiring plan](https://claude.ai/artifact/EQyAeAgbSq4XyYVBuKaLtT)
 
 ## How to get updates
 - On [GitHub](https://github.com/tatayotter/navarro-house), click **Watch** (top right) → **All activity** to get an email (needs a free GitHub account) whenever something changes.
