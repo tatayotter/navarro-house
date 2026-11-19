@@ -726,12 +726,16 @@ pRun([[46,486,0.3],[46,486,GC+0.1],[30,462,GC+0.1],[30,206,GC+0.1],[140,206,GC+0
 {const t=cyl(20.5*IN,1.5,pmK,root,153*IN,0.9,-175.5*IN); t.renderOrder=4; plum.push(t);} pBox(132,174,154,196.5,0,0.15,pmP);   // 1,000 L upright tank (19 Nov)
 pBox(148,172,127,150,0,0.45,pmP);   // auto-stop inverter pump in a vented box
 pRun([[153,155,0.25],[160,150,0.25]],pmW,0.02);
-// bypass: city line straight to the pump main, valve at (156,206)
-pRun([[140,206,GC+0.1],[173,206,GC+0.1]],pmW,0.02); pBox(153,159,203,209,GC,GC+0.2,pmP);
+// direct city water to the kitchen + ground T&B (19 Nov): tee at (30,425), check valve, dining ceiling to (130,425)
+pRun([[30,425,GC+0.1],[130,425,GC+0.1]],pmW,0.022); pBox(37,43,422,428,GC,GC+0.2,pmP);
+pRun([[60,425,GC+0.1],[60,470,GC+0.1],[60,470,0.9]],pmW,0.02);   // kitchen sink drop
+pRun([[130,425,GC+0.1],[130,431,GC+0.1],[132,431,0.85]],pmW,0.02); pRun([[130,425,GC+0.1],[130,466,GC+0.1],[152,474,0.3]],pmW,0.02); pRun([[130,466,GC+0.1],[110,480,1.1]],pmW,0.02);
 // pump main up to the ceiling, along the wall to the stairwell chase; ground branches from (173,215)
 pRun([[168,138,0.4],[168,138,GC+0.15],[173.5,146,GC+0.15],[173.5,240,GC+0.15],[166,262,GC+0.15]],pmW,0.025);
-pRun([[173,215,GC+0.15],[130,240,GC+0.1],[116,266,0.4]],pmW,0.02);
-pRun([[116,266,0.4],[116,466,0.4]],pmW,0.02); pRun([[116,431,0.4],[132,431,0.85]],pmW,0.02); pRun([[116,466,0.4],[152,474,0.3]],pmW,0.02); pRun([[116,466,0.4],[110,480,1.1]],pmW,0.02); pRun([[116,420,0.4],[54,440,0.9],[54,466,0.95]],pmW,0.02);
+// crossover pump riser -> city branch, normally CLOSED (dashed), valve (130,247) + check valve (130,255)
+{const D=(a,b)=>{const n=Math.max(2,Math.round(Math.hypot(b[0]-a[0],b[1]-a[1])/8));for(let k=0;k<n;k+=2){const t0=k/n,t1=Math.min(1,(k+1)/n);pRun([a.map((v,i)=>v+(b[i]-v)*t0),a.map((v,i)=>v+(b[i]-v)*t1)],pmW,0.016);}};
+ D([173,215,GC+0.15],[130,240,GC+0.1]); D([130,240,GC+0.1],[130,425,GC+0.1]);}
+pBox(127,133,244,250,GC,GC+0.2,pmP); pBox(127,133,252,258,GC,GC+0.2,pmP);
 // roof T&B riser up the chase
 pRun([[166,262,GC+0.15],[166,266,RF+1.0]],pmW,0.025); pRun([[166,266,RF+1.0],[172,290,RF+1.0],[172,306,RF+0.5]],pmW,0.02); pRun([[166,266,RF+1.0],[124,257,RF+0.85]],pmW,0.02); pRun([[166,266,RF+1.0],[172,272,RF+1.0]],pmW,0.02);
 // terrace hose faucet (19 Nov, v2): tee off the pump main, painted surface pipe on the car bay ceiling, ~32 mm core up through the 2nd floor slab, stub to the bib
@@ -740,8 +744,8 @@ pTag('Terrace hose bib',172,32,Y2+0.85,2); pTag('Terrace faucet valve',150,120,Y
 // rooftop outdoor faucet (19 Nov): tee off the T&B supply, through the front wall to a bib outside, by the WP socket
 pRun([[166,266,RF+1.0],[172,258,RF+0.8],[168,250,RF+0.6],[168,243,RF+0.6]],pmW,0.018); pTag('Roof hose bib',168,240,RF+0.85,3);
 // hose bib on the partition, car side
-pRun([[100,206,GC+0.1],[100,194,GC+0.1],[100,194,0.6]],pmW,0.02);
-pTag('City water in',46,486,0.6,1); pTag('Hose bib',100,194,0.85,1); pTag('Water tank 1,000 L',153,175.5,1.85,1); pTag('Pump (auto-stop inverter)',160,138.5,0.7,1); pTag('Bypass valve',156,206,GC+0.35,1);
+pRun([[173.5,200,GC+0.15],[100,200,GC+0.1],[100,194,GC+0.1],[100,194,0.6]],pmW,0.02);   // car bay hose bib on the pump
+pTag('City water in',46,486,0.6,1); pTag('Hose bib',100,194,0.85,1); pTag('Water tank 1,000 L',153,175.5,1.85,1); pTag('Pump (auto-stop inverter)',160,138.5,0.7,1); pTag('Check valve (city branch)',40,425,GC+0.35,1); pTag('Crossover valve (normally closed)',130,247,GC+0.35,1);
 function applyLevels(){L2.visible=level>=2;L3.visible=level>=3;cutables.forEach(m=>m.visible=!cut); elec.forEach(m=>m.visible=elecOn); plum.forEach(m=>m.visible=plumOn&&(!m.userData.v||m.userData.v===pv)); document.getElementById('pleg').hidden=!plumOn; document.getElementById('eleg').hidden=!elecOn; OP.forEach(o=>mk[o.id].visible=o.pos[1]<Y2||level>=(o.pos[1]<RF?2:3));
   document.querySelectorAll('[data-l]').forEach(b=>b.setAttribute('aria-pressed',+b.dataset.l===level));}
 document.querySelectorAll('[data-l]').forEach(b=>b.addEventListener('click',()=>{level=+b.dataset.l;applyLevels();}));
