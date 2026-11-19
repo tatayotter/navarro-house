@@ -92,8 +92,8 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
 <div class="wrap" id="wrap" data-opt="2">
   <header>
     <h1>Navarro House plumbing layout</h1>
-    <p class="sub">Draft v2, 18 Nov (decided: new septic tank). All our waste goes to our own new septic tank under the car bay; the old tank under the kitchen is shared with both neighbours, so it stays for them and we cap our lines. All water goes through a tank and booster pump. Plans have the street (southwest) at the top, like the electrical layout, so left and right are swapped compared with standing in the street. Positions are a first draft: your plumber and engineer set the final ones.</p>    <div class="flow v2"><span>Roof T&amp;B</span><b>→</b><span>stack down the stairwell corner</span><b>→</b><span>main under the floor</span><b>←</b><span>ground T&amp;B + kitchen (grease trap)</span><b>→</b><span>inspection chamber</span><b>→</b><span>2-chamber septic</span><b>→</b><span>street drain</span></div>
-    <div class="flow"><span>City line (in under the kitchen sink)</span><b>→</b><span>500 L tank</span><b>→</b><span>booster pump</span><b>→</b><span>ceiling lines + stairwell riser</span><b>→</b><span>kitchen, both T&amp;Bs</span><b>·</b><span>bypass for brownouts</span></div>
+    <p class="sub">Draft v3, 19 Nov (decided: new septic tank, rooftop gravity water tank). All our waste goes to our own new septic tank under the car bay; the old tank under the kitchen is shared with both neighbours, so it stays for them and we cap our lines. Water is pumped once a day to a tank on the roof and comes down by gravity. Plans have the street (southwest) at the top, like the electrical layout, so left and right are swapped compared with standing in the street. Positions are a first draft: your plumber and engineer set the final ones.</p>    <div class="flow v2"><span>Roof T&amp;B</span><b>→</b><span>stack down the stairwell corner</span><b>→</b><span>main under the floor</span><b>←</b><span>ground T&amp;B + kitchen (grease trap)</span><b>→</b><span>inspection chamber</span><b>→</b><span>2-chamber septic</span><b>→</b><span>street drain</span></div>
+    <div class="flow"><span>City line (in under the kitchen sink)</span><b>→</b><span>fill pump, daily top-up</span><b>→</b><span>500 L tank on the roof</span><b>→</b><span>gravity down the stairwell chase</span><b>→</b><span>kitchen, both T&amp;Bs</span><b>·</b><span>kitchen sink tap on direct city water</span></div>
   </header>
   <div class="legend">
 <span class="lg"><svg viewBox="0 0 22 16"><line x1="1" y1="8" x2="21" y2="8" stroke="var(--waste)" stroke-width="3"/></svg>Main drain 100 mm PVC</span>
@@ -103,13 +103,13 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
 <span class="lg"><svg viewBox="0 0 22 16"><rect x="7" y="4" width="8" height="8" fill="var(--paper)" stroke="var(--waste)" stroke-width="1.3"/><line x1="7" y1="4" x2="15" y2="12" stroke="var(--waste)"/></svg>Floor drain</span>
 <span class="lg"><svg viewBox="0 0 22 16"><line x1="1" y1="8" x2="21" y2="8" stroke="var(--vent)" stroke-width="1.6" stroke-dasharray="4 2.5"/></svg>Vent 50 mm</span>
 <span class="lg"><svg viewBox="0 0 22 16"><line x1="1" y1="8" x2="21" y2="8" stroke="var(--cold)" stroke-width="1.6"/></svg>Cold water PPR</span>
-<span class="lg"><svg viewBox="0 0 22 16"><rect x="3" y="2" width="16" height="12" rx="2" fill="var(--pump)"/></svg>Booster pump</span>
+<span class="lg"><svg viewBox="0 0 22 16"><rect x="3" y="2" width="16" height="12" rx="2" fill="var(--pump)"/></svg>Fill pump</span>
 <span class="lg"><svg viewBox="0 0 22 16"><rect x="7" y="4" width="8" height="8" fill="var(--ded)" transform="rotate(45 11 8)"/></svg>Pump outlet (electrical)</span>
 </div>
   <div class="plans">
-<section class="sheet"><h2>Ground floor <span>septic, pump, main line</span></h2><svg id="g"></svg></section>
+<section class="sheet"><h2>Ground floor <span>septic, fill pump, main line</span></h2><svg id="g"></svg></section>
 <section class="sheet"><h2>2nd floor <span>stack passes through the void</span></h2><svg id="s"></svg></section>
-<section class="sheet"><h2>Rooftop <span>roof T&amp;B, one slab core</span></h2><svg id="r"></svg></section>
+<section class="sheet"><h2>Rooftop <span>roof T&amp;B, water tank, one slab core</span></h2><svg id="r"></svg></section>
 </div>
   <section class="sheet"><h2>Section along the right-hand wall <span>heights are estimates, not measured</span></h2><div class="secwrap"><svg id="sec"></svg></div></section>
 
@@ -119,13 +119,14 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
       <li>The ground floor is being re-tiled anyway, so the main line goes in a trench under the new floor: ground T&amp;B, under the hollow old stair, through the dining area, to the car bay.</li>
       <li>The septic tank sits at the front, so the desludging truck reaches it from the street and the outflow pipe to the street drain is short.</li>
     </ul></div>
-    <div class="box"><h2>Pump system</h2><ul>
-      <li><b>Supply:</b> the city line comes in under the kitchen sink (meter is past the annex-side neighbour). The kitchen sink tap stays on direct city water, and a new line runs from there in the kitchen and dining ceiling to the tank.</li>
-      <li><b>Tank:</b> slim upright 500 L (about 0.7 m across, 1.4 m tall) on a 15 cm plinth against the car bay wall, between the panel and the partition. Float valve fills it from the city line.</li>
-      <li><b>Pump:</b> 0.5 HP constant-pressure (inverter) booster with built-in pressure control and dry-run cut-off, on rubber pads beside the tank. It pressurises the whole house, including the roof T&amp;B shower.</li>
-      <li><b>Bypass valve</b> so city water still reaches the taps during a brownout, plus a check valve and shut-off valves either side of the pump for servicing.</li>
-      <li><b>Hose bib</b> by the shutter on the city line, before the tank, for washing the car (that water goes to the street, not the septic).</li>
-      <li><b>Electrical:</b> dedicated 20 A circuit with RCD, 3.5 mm² wire, weatherproof outlet or isolator at 1.2 m beside the pump. Panel is about 1.5 m away. Sent to the electrical plan.</li>
+    <div class="box"><h2>Water: roof tank with gravity feed</h2><ul>
+      <li><b>Supply:</b> the city line comes in under the kitchen sink (meter is past the annex-side neighbour). The kitchen sink tap stays on direct city water for drinking.</li>
+      <li><b>Fill pump:</b> a small 0.5 HP transfer pump at the car-side corner by the partition tops up the roof tank once a day (about 10–20 minutes, daytime only). It sits in a vented box on rubber pads with flexible hoses, not fixed to the party wall, so noise stays low and short.</li>
+      <li><b>Roof tank:</b> slim 500 L food-grade tank with a sealed lid on a 1.2 m galvanised steel stand, outside the roof room's front wall next to the T&amp;B, over the front outer column and under the roof overhang. A float switch (or a smart level sensor) stops the pump when the tank is full.</li>
+      <li><b>Gravity feed:</b> water comes down the stairwell chase and runs through the hung ceilings to the kitchen and ground T&amp;B with about 6 m of head, so there's steady pressure, no pump noise when a tap opens, and water during brownouts.</li>
+      <li><b>Roof T&amp;B:</b> it sits nearly level with the tank, so gravity alone gives only weak pressure there. Fine for the toilet, lavatory and a tabo bath. For a proper shower, add a small automatic inline booster (about 120 W) on that one line; it only runs while the roof shower is on.</li>
+      <li><b>Hose bib</b> by the shutter on the city side of the pump, for washing the car (that water goes to the street, not the septic).</li>
+      <li><b>Electrical:</b> fill pump on the 20 A RCD circuit, weatherproof outlet at 1.2 m by the pump on the car-side wall; float switch cable (or wireless level sensor) from the roof tank down the chase. Optional roof booster on the roof room circuit.</li>
     </ul></div>
   </div>
 
@@ -139,14 +140,14 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
       <tr><td>Roof T&amp;B WC (rear-outlet / P-trap type)</td><td>Front wall, next to the stack</td><td class="n">100 mm</td><td>Stack directly</td><td>Cold ½″</td></tr>
       <tr><td>Roof T&amp;B lavatory</td><td>Front wall</td><td class="n">50 mm</td><td>Stack, above the slab in the raised floor</td><td>Cold ½″</td></tr>
       <tr><td>Roof T&amp;B shower floor drain</td><td>Back outer corner</td><td class="n">50 mm</td><td>Stack, above the slab in the raised floor</td><td>Cold ½″</td></tr>
-      <tr><td>Hose bib</td><td>Car bay front</td><td class="n">n/a</td><td>Street</td><td>Cold ½″, before the tank</td></tr>
+      <tr><td>Hose bib</td><td>Car bay front, car side</td><td class="n">n/a</td><td>Street</td><td>Cold ½″, city side of the pump</td></tr>
     </tbody></table></div>
 
   <div class="two">
     <div class="box"><h2>Pipes and septic tank</h2><ul>
       <li>Drain and vent: thick PVC sanitary pipe (Series 1000) under the slab and for the stack. Main 100 mm at a 2% fall (2 cm per metre); branches 50 mm; vents 50 mm.</li>
       <li>Cleanouts at the start of the main, at the stack foot and at each bend; the inspection chamber where the lines meet.</li>
-      <li>Water: PPR, 25 mm (¾″) main from the pump, 20 mm (½″) to fixtures. Ground floor lines run in the hung ceilings and drop in the walls; the car bay stretch is painted surface pipe next to the electrical conduit.</li>
+      <li>Water: PPR, 25 mm (¾″) fill line up and gravity main down the stairwell chase, 20 mm (½″) to fixtures. Ground floor lines run in the hung ceilings and drop in the walls; the car bay stretch is painted surface pipe next to the electrical conduit.</li>
       <li class="v2">Septic: 2 chambers, inside about 1.20 × 2.40 m and 1.2–1.5 m liquid depth (enough for about 8–10 people; plumber sizes it to the code). Watertight walls, car-rated cover slab, 2 sealed manholes in the walkway beside the car, not under the wheels.</li>
       <li>No trap between the house and the septic, so the tank vents up through the stack. Plumber confirms if a separate tank vent is also needed.</li>
       <li>Rain downspouts and the hose bib stay separate and go to the street. Never into the septic.</li>
@@ -157,14 +158,14 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
         <tbody>
           <tr><td>Septic tank materials (cement, sand, gravel, rebar, covers)</td><td class="n">₱41k–52k</td></tr>
           <tr><td>Drain + vent pipes, fittings, grease trap, IC</td><td class="n">₱14k–25k</td></tr>
-          <tr><td>Water pipes + valves (PPR)</td><td class="n">₱10k–17k</td></tr>
-          <tr><td>500 L tank + 0.5 HP constant-pressure pump + plinth</td><td class="n">₱16k–28k</td></tr>
+          <tr><td>Water pipes + valves (PPR)</td><td class="n">₱11k–18k</td></tr>
+          <tr><td>500 L roof tank + 1.2 m steel stand + fill pump + float switch (+ optional roof booster)</td><td class="n">₱17k–33k</td></tr>
           <tr><td>Roof T&amp;B raised floor, waterproofing, chase boxing</td><td class="n">₱5k–9k</td></tr>
           <tr><td>Plumber labour (digging, septic build, trenching, pipe work)</td><td class="n">₱30k–55k</td></tr>
           <tr><td>Roof slab core drilling (service)</td><td class="n">₱2.5k–4k</td></tr>
-          <tr><td><b>Total, excluding fixtures and tiles</b></td><td class="n"><b>₱119k–189k</b></td></tr>
+          <tr><td><b>Total, excluding fixtures and tiles</b></td><td class="n"><b>₱121k–195k</b></td></tr>
         </tbody></table></div>
-      <p class="sub">Online estimates, not yet quoted locally. The itemised material list (quantities per item, ₱86k–130k) is on the family site. Pump electrical wiring is in the electrical budget.</p>
+      <p class="sub">Online estimates, not yet quoted locally. The itemised material list (quantities per item, ₱88k–136k) is on the family site. Pump electrical wiring is in the electrical budget.</p>
     </div>
   </div>
 
@@ -174,13 +175,14 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
     <li><span class="tag e">Structural</span> Raised floor and wet walls of the roof T&amp;B add load on the roof slab (already flagged for the room walls). Waterproof the T&amp;B floor before tiling.</li>
     <li>Venting: ground T&amp;B and kitchen vent runs through the hung ceiling to the stairwell chase and joins the stack above the roof T&amp;B fixtures. If that is too long, the plumber may accept air admittance valves instead.</li>
     <li>Septic outflow: confirm with the city whether effluent may go to the street drain or needs a leaching chamber, and what permit the new tank needs.</li>
-    <li>Keep the water tank sealed and above ground, away from the septic manholes.</li>
+    <li><span class="tag e">Structural</span> Roof tank: about 600 kg full with its stand. Engineer confirms it sits over the front outer column and how the stand is anchored against wind.</li>
+    <li>Roof tank: opaque food-grade tank with a sealed lid (no algae or mosquitoes); clean it once a year.</li>
   </ul></div>
 
   <div class="box"><h2>Questions for you</h2><ol>
     <li>Where does the ground T&amp;B drain run now (into the old tank under the kitchen)? If its pipe heads the right way, the plumber can reuse the T&amp;B end of it.</li>
-    <li>Is 500 L enough, or do you want more storage? A bigger tank would have to go on the rooftop slab (engineer check for the weight).</li>
-    <li>Car side: I put the tank and pump on the panel side and the septic in the walkway beside the car. If the car parks on the other side, I mirror it.</li>
+    <li>Is 500 L enough for a day? A 1,000 L tank doubles the roof load and needs the engineer's OK.</li>
+    <li>Car side: the septic is in the walkway beside the car and the fill pump is in the car-side corner by the partition. If the car parks on the other side, I mirror it.</li>
   </ol></div>
 </div>
 <script>
@@ -280,24 +282,22 @@ P.wc(116,474,180); P.lav(107,444); P.fd(160,468);
 P.run([[160,468],[132,462],[116,458]],'pb'); P.run([[107,444],[116,444]],'pb');
 // vent: T&B + kitchen vent through the hung-ceiling cavity to the stairwell chase
 P.run([[110,452],[106,420],[106,345],[158,270]],'pv'); text(84,385,'vent in ceiling','lv'); text(84,393,'cavity','lv');
-// water: city line enters under the kitchen sink (from the meter past the annex-side neighbour), runs in the ceiling to the tank
-P.run([[46,486],[46,474],[30,462],[30,204],[150,203],[168,192],[168,145]],'pc'); P.run([[168,145],[168,40]],'pc');
+// water: city line enters under the kitchen sink, runs in the ceiling to the fill pump at the car-side corner by the partition
+P.run([[46,486],[46,474],[30,462],[30,204],[16,194]],'pc');
 text(30,498,'city line in (from meter)','lc'); text(22,262,'city line','lc',`transform="rotate(-90 ${X(22)} ${Y(262)})"`);
-P.valve(46,478); P.run([[168,140],[160,137]],'pc'); o+=`<circle style="fill:var(--cold)" cx="${X(168)}" cy="${Y(40)}" r="2.6"/>`;
-rect(144,174.5,120,176,'mh'); P.tank(159,137,14,'500 L'); P.pump(158,166);
-P.run([[166,166],[172,166],[172,196]],'pc');
-
-
-P.ded(174.5,152,''); 
-// bypass: city line straight into the house main when the power is out
-P.run([[168,196],[172,198]],'pc'); P.valve(170,200);
-o+=`<circle style="fill:var(--cold)" cx="${X(172)}" cy="${Y(40)}" r="2.6"/>`; 
-// distribution through the dining ceiling cavity
-P.run([[172,196],[172,240],[166,262]],'pc');
-P.run([[172,215],[130,240],[130,425],[118,470]],'pc');
+P.valve(46,478);
+// fill pump in a vented box on rubber pads, NOT fixed to the party wall; runs ~10-20 min a day to top up the roof tank
+rect(1,18,178,197,'mh'); P.pump(9.5,187.5); text(22,160,'fill pump (daily top-up)','lp','style="text-anchor:start"');
+P.ded(0,170,'');
+// hose bib on the city side of the pump
+P.run([[3,178],[3,40]],'pc'); o+=`<circle style="fill:var(--cold)" cx="${X(3)}" cy="${Y(40)}" r="2.6"/>`; text(8,36,'hose bib','lc','style="text-anchor:start"');
+// fill line up to the roof tank, through the dining ceiling to the stairwell chase
+P.run([[18,192],[44,214],[150,236],[162,262]],'pc'); text(92,220,'fill line to roof tank','lc');
+// gravity down-feed from the roof tank comes down the chase and feeds the house through the hung ceilings
+P.run([[170,262],[174,240],[174,215],[130,240],[130,425],[118,470]],'pc');
 P.run([[130,425],[140,465],[158,470]],'pc');
 P.run([[130,330],[60,330],[60,470]],'pc');
-text(98,326,'cold water in ceiling','lc');
+text(98,326,'gravity water in ceiling','lc');
 o+='<g class="v2">';
 // septic tank: 2 chambers, inside ~1.20 x 2.40 m, under the walkway strip beside the car (position indicative, engineer sets it)
 rect(95,142,30,125,'sep'); line(95,62,142,62,'pb');
@@ -485,6 +485,10 @@ text(140,350,'1 core through roof slab','lw'); text(140,358,'≈150 mm, engineer
 o+=`<line style="stroke:var(--waste);stroke-width:.8" x1="${X(140)}" y1="${Y(343)}" x2="${X(165)}" y2="${Y(272)}"/>`;
 text(60,290,'raised T&amp;B floor 10–15 cm','dim'); text(60,298,'branches run above the slab','dim');
 text(60,200,'Stack vent rises through the roof','lv'); text(60,208,'sheet, ≥ 30 cm above it','lv');
+// rooftop gravity tank: 500 L on a 1.2 m steel stand over the front outer column, under the roof overhang
+rect(142,174.5,212,245,'mh'); P.tank(158,228,14,'500 L');
+text(118,166,'roof tank on 1.2 m stand','lc'); text(118,174,'(over the front column)','lc');
+P.run([[164,240],[170,252],[172,262]],'pc');
 dimH(0,W,D+20,'174.5');
 
 svg.innerHTML=o;
@@ -532,12 +536,15 @@ o+='</g>';
 PL([[266,-0.35],[266,RF+0.5]],'pw'); TX(277,RF+0.55,'vent ≥ 30 cm above roof','lv','style="text-anchor:start"');
 o+=`<line class="pv" x1="${X(266)}" y1="${Z(RF-0.2)}" x2="${X(266)}" y2="${Z(RF+0.5)}"/>`;
 // roof T&B
-R(253,320,RS,RS+0.13,'wet'); TX(215,RS+0.35,'roof T&amp;B (raised floor)','lw');
+R(253,320,RS,RS+0.13,'wet'); TX(380,RS+0.35,'roof T&amp;B (raised floor)','lw');
 // ground T&B vent through ceiling to chase
 PL([[430,2.4],[300,2.55],[270,2.6],[270,RS+1.3]],'pv'); TX(370,2.7,'vent in hung ceiling','lv');
 // water
-R(128,172,0,1.4,'tk'); TX(150,0.75,'tank','lc'); R(130,145,0,0.25,'pmp');
-PL([[160,1.6],[160,2.65],[262,2.65],[262,RS+0.6]],'pc'); TX(205,1.9,'pump line in ceiling','lc');
+R(180,196,0,0.3,'pmp'); TX(188,0.5,'fill pump','lp');
+PL([[190,0.3],[190,2.65],[260,2.65],[260,RS+0.2],[226,RS+0.2],[226,RS+1.25]],'pc'); TX(150,2.3,'fill line','lc');
+o+=`<line style="stroke:var(--fg);stroke-width:1.5" x1="${X(214)}" y1="${Z(RS)}" x2="${X(214)}" y2="${Z(RS+1.2)}"/><line style="stroke:var(--fg);stroke-width:1.5" x1="${X(244)}" y1="${Z(RS)}" x2="${X(244)}" y2="${Z(RS+1.2)}"/>`;
+R(214,244,RS+1.2,RS+2.6,'tk'); TX(229,RS+1.9,'500 L','lc'); TX(180,RS+2.2,'roof tank','lc');
+PL([[236,RS+1.25],[236,RS+0.35],[264,RS+0.35],[264,0.4]],'pc'); TX(300,1.0,'gravity down-feed','lc');
 // dims
 TX(-30,F2,'≈3.0 m','dim'); TX(-30,RS,'≈5.65 m','dim'); TX(-30,RF,'≈8.4 m','dim');
 svg.innerHTML=o;
