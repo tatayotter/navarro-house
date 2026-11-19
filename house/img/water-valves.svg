@@ -1,0 +1,157 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 621 901" font-family="Helvetica,Arial,sans-serif"><rect width="100%" height="100%" fill="#fff"/>
+<text x="40.0" y="22.0" font-size="14" fill="#222" text-anchor="start" font-weight="bold">Ground floor: where each valve is</text>
+<text x="40.0" y="36.0" font-size="9.5" fill="#777" text-anchor="start" font-weight="normal">Street (southwest) at the top, like the other plans</text>
+<rect x="40.0" y="46.0" width="200.7" height="554.3" fill="#faf8f3" stroke="#2b2b2b" stroke-width="5"/>
+<polyline points="40.0,276.0 120.5,276.0" fill="none" stroke="#2b2b2b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="166.5,276.0 240.7,276.0" fill="none" stroke="#2b2b2b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="155.0" y="534.8" width="85.7" height="65.5" fill="#e9f1f8" stroke="#2b2b2b" stroke-width="1.5"/>
+<rect x="233.8" y="117.3" width="6.9" height="34.5" fill="#d33" stroke="#d33" stroke-width="1"/>
+<text x="230.3" y="138.0" font-size="8.5" fill="#b91c1c" text-anchor="end" font-weight="normal">panel</text>
+<text x="86.0" y="172.5" font-size="10" fill="#777" text-anchor="middle" font-weight="bold">CAR BAY</text>
+<text x="109.0" y="391.0" font-size="10" fill="#777" text-anchor="middle" font-weight="bold">DINING</text>
+<text x="91.8" y="506.0" font-size="10" fill="#777" text-anchor="middle" font-weight="bold">KITCHEN</text>
+<text x="197.5" y="565.8" font-size="9" fill="#777" text-anchor="middle" font-weight="bold">T&amp;B</text>
+<text x="86.0" y="271.4" font-size="8" fill="#777" text-anchor="middle" font-weight="normal">partition</text>
+<circle cx="215.9" cy="247.8" r="23.6" fill="#e6f6f4" stroke="#0d9488" stroke-width="1.5"/>
+<text x="215.9" y="250.7" font-size="8.5" fill="#0d9488" text-anchor="middle" font-weight="bold">1,000 L</text>
+<rect x="210.2" y="192.0" width="27.6" height="26.5" fill="#f1f5f4" stroke="#0d9488" stroke-width="1.2"/>
+<text x="224.0" y="208.1" font-size="8" fill="#0d9488" text-anchor="middle" font-weight="normal">pump</text>
+<polyline points="92.9,614.1 92.9,591.1 74.5,577.3 74.5,282.9 201.0,282.9 217.1,273.7" fill="none" stroke="#1f6fd1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="92.9,591.1 109.0,591.1 109.0,534.8 189.5,534.8" fill="none" stroke="#1f6fd1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="189.5,534.8 175.7,586.5" fill="none" stroke="#1f6fd1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="189.5,534.8 207.9,586.5 214.8,593.4" fill="none" stroke="#1f6fd1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="189.5,534.8 159.6,558.9 159.6,591.1" fill="none" stroke="#1f6fd1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="224.0,224.2 224.0,218.5" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="233.2,204.7 239.5,213.9 239.5,347.3" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="239.5,276.0 155.0,276.0 155.0,269.1" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="238.9,241.5 212.5,230.0 212.5,103.5 229.7,87.4" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="239.5,289.8 235.5,301.3 189.5,322.0 189.5,534.8" fill="none" stroke="#0d9488" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 4"/>
+<text x="69.9" y="437.0" font-size="8.5" fill="#1f6fd1" text-anchor="middle" font-weight="normal">city line</text>
+<text x="92.9" y="622.3" font-size="8.5" fill="#1f6fd1" text-anchor="middle" font-weight="normal">from meter</text>
+<text x="184.9" y="425.5" font-size="8.5" fill="#0d9488" text-anchor="end" font-weight="normal">crossover</text>
+<text x="184.9" y="438.1" font-size="8" fill="#0d9488" text-anchor="end" font-weight="normal">(dashed)</text>
+<text x="209.0" y="110.4" font-size="8.5" fill="#0d9488" text-anchor="end" font-weight="normal">to terrace</text>
+<text x="234.3" y="363.4" font-size="8.5" fill="#0d9488" text-anchor="end" font-weight="normal">up to roof</text>
+<polyline points="92.9,600.3 65.3,586.5" fill="none" stroke="#c2410c" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M87.9,596.3 L97.9,604.3 L97.9,596.3 L87.9,604.3 z" fill="#c2410c"/>
+<circle cx="65.3" cy="586.5" r="8" fill="#c2410c" stroke="#fff" stroke-width="1.5"/>
+<text x="65.3" y="590.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">1</text>
+<polyline points="100.9,591.1 129.7,577.3" fill="none" stroke="#c2410c" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M95.94999999999999,587.0999999999999 L105.94999999999999,595.0999999999999 L105.94999999999999,587.0999999999999 L95.94999999999999,595.0999999999999 z" fill="#c2410c"/>
+<circle cx="129.7" cy="577.3" r="8" fill="#c2410c" stroke="#fff" stroke-width="1.5"/>
+<text x="129.7" y="580.8" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">2</text>
+<polyline points="215.9,266.8 175.7,255.3" fill="none" stroke="#c2410c" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M210.95,262.79999999999995 L220.95,270.79999999999995 L220.95,262.79999999999995 L210.95,270.79999999999995 z" fill="#c2410c"/>
+<circle cx="175.7" cy="255.3" r="8" fill="#c2410c" stroke="#fff" stroke-width="1.5"/>
+<text x="175.7" y="258.8" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">3</text>
+<polyline points="224.0,220.8 175.7,230.0" fill="none" stroke="#c2410c" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M219.0,216.79999999999998 L229.0,224.79999999999998 L229.0,216.79999999999998 L219.0,224.79999999999998 z" fill="#c2410c"/>
+<circle cx="175.7" cy="230.0" r="8" fill="#c2410c" stroke="#fff" stroke-width="1.5"/>
+<text x="175.7" y="233.5" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">4</text>
+<polyline points="230.9,195.5 175.7,204.7" fill="none" stroke="#c2410c" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M225.89999999999998,191.5 L235.89999999999998,199.5 L235.89999999999998,191.5 L225.89999999999998,199.5 z" fill="#c2410c"/>
+<circle cx="175.7" cy="204.7" r="8" fill="#c2410c" stroke="#fff" stroke-width="1.5"/>
+<text x="175.7" y="208.2" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">5</text>
+<polyline points="235.5,301.3 166.5,303.6" fill="none" stroke="#c2410c" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M230.49999999999997,297.29999999999995 L240.49999999999997,305.29999999999995 L240.49999999999997,297.29999999999995 L230.49999999999997,305.29999999999995 z" fill="#c2410c"/>
+<circle cx="166.5" cy="303.6" r="8" fill="#c2410c" stroke="#fff" stroke-width="1.5"/>
+<text x="166.5" y="307.1" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">6</text>
+<polyline points="239.5,317.4 166.5,331.2" fill="none" stroke="#c2410c" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M234.52499999999998,313.4 L244.52499999999998,321.4 L244.52499999999998,313.4 L234.52499999999998,321.4 z" fill="#c2410c"/>
+<circle cx="166.5" cy="331.2" r="8" fill="#c2410c" stroke="#fff" stroke-width="1.5"/>
+<text x="166.5" y="334.7" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">7</text>
+<polyline points="212.5,184.0 175.7,174.8" fill="none" stroke="#c2410c" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M207.5,180.0 L217.5,188.0 L217.5,180.0 L207.5,188.0 z" fill="#c2410c"/>
+<circle cx="175.7" cy="174.8" r="8" fill="#c2410c" stroke="#fff" stroke-width="1.5"/>
+<text x="175.7" y="178.3" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">8</text>
+<polyline points="155.0,269.1 132.0,253.0" fill="none" stroke="#c2410c" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M150.0,265.1 L160.0,273.1 L160.0,265.1 L150.0,273.1 z" fill="#c2410c"/>
+<circle cx="132.0" cy="253.0" r="8" fill="#c2410c" stroke="#fff" stroke-width="1.5"/>
+<text x="132.0" y="256.5" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">9</text>
+<circle cx="109.0" cy="586.5" r="3" fill="#fff" stroke="#c2410c" stroke-width="1.6"/>
+<circle cx="214.8" cy="593.4" r="3" fill="#fff" stroke="#c2410c" stroke-width="1.6"/>
+<circle cx="191.8" cy="541.6" r="3" fill="#fff" stroke="#c2410c" stroke-width="1.6"/>
+<circle cx="159.6" cy="591.1" r="3" fill="#fff" stroke="#c2410c" stroke-width="1.6"/>
+<text x="197.5" y="611.8" font-size="8.5" fill="#c2410c" text-anchor="middle" font-weight="normal">○ = angle valve at each fixture</text>
+<text x="290.7" y="44.5" font-size="12.5" fill="#222" text-anchor="start" font-weight="bold">A  Kitchen sink cabinet</text>
+<text x="290.7" y="58.5" font-size="9" fill="#777" text-anchor="start" font-weight="normal">door open, looking at the back wall</text>
+<polyline points="284.7,261.0 540.7,261.0" fill="none" stroke="#2b2b2b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="330.7" y="198.0" width="56.0" height="63.0" fill="#fbf6ee" stroke="#2b2b2b" stroke-width="1.2"/>
+<rect x="337.7" y="192.4" width="42.0" height="5.6" fill="#ddd" stroke="#2b2b2b" stroke-width="1"/>
+<text x="358.7" y="188.4" font-size="8.5" fill="#777" text-anchor="middle" font-weight="normal">sink</text>
+<polyline points="341.2,261.0 341.2,240.0 355.2,240.0" fill="none" stroke="#1f6fd1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="341.2,240.0 341.2,201.5 330.7,201.5 313.2,201.5 313.2,82.5" fill="none" stroke="#1f6fd1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="311.1" y="121.0" font-size="8.5" fill="#1f6fd1" text-anchor="end" font-weight="normal">to tank</text>
+<text x="311.1" y="131.5" font-size="8" fill="#1f6fd1" text-anchor="end" font-weight="normal">(in wall)</text>
+<polyline points="355.2,240.0 372.7,240.0 372.7,222.5" fill="none" stroke="#1f6fd1" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="372.7,240.0 397.2,240.0 397.2,82.5" fill="none" stroke="#1f6fd1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="400.7" y="121.0" font-size="8.5" fill="#1f6fd1" text-anchor="start" font-weight="normal">to ground T&amp;B</text>
+<text x="400.7" y="131.5" font-size="8" fill="#1f6fd1" text-anchor="start" font-weight="normal">(dining ceiling)</text>
+<path d="M336.17499999999995,244.4 L346.17499999999995,252.4 L346.17499999999995,244.4 L336.17499999999995,252.4 z" fill="#c2410c"/>
+<circle cx="327.2" cy="248.4" r="8" fill="#c2410c" stroke="#fff" stroke-width="1.5"/>
+<text x="327.2" y="251.9" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">1</text>
+<path d="M353.67499999999995,236.0 L363.67499999999995,244.0 L363.67499999999995,236.0 L353.67499999999995,244.0 z" fill="#c2410c"/>
+<circle cx="358.7" cy="254.0" r="8" fill="#c2410c" stroke="#fff" stroke-width="1.5"/>
+<text x="358.7" y="257.5" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">2</text>
+<circle cx="372.7" cy="222.5" r="3" fill="#fff" stroke="#c2410c" stroke-width="1.6"/>
+<polyline points="302.7,82.5 442.7,82.5" fill="none" stroke="#777" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 3"/>
+<text x="442.7" y="78.5" font-size="8" fill="#777" text-anchor="end" font-weight="normal">ceiling</text>
+<polyline points="432.2,261.0 432.2,240.0" fill="none" stroke="#777" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="435.7" y="253.5" font-size="9" fill="#777" text-anchor="start" font-weight="normal">0.3 m</text>
+<text x="290.7" y="344.5" font-size="12.5" fill="#222" text-anchor="start" font-weight="bold">B  Wall just inside the partition</text>
+<text x="290.7" y="358.5" font-size="9" fill="#777" text-anchor="start" font-weight="normal">dining side, beside the stairwell (panel-side wall)</text>
+<polyline points="284.7,561.0 540.7,561.0" fill="none" stroke="#2b2b2b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="302.7,382.5 463.7,382.5" fill="none" stroke="#777" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 3"/>
+<text x="463.7" y="378.5" font-size="8" fill="#777" text-anchor="end" font-weight="normal">PVC ceiling</text>
+<polyline points="337.7,368.5 337.7,382.5" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="309.7,389.5 442.7,389.5" fill="none" stroke="#0d9488" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="308.3" y="392.5" font-size="8.5" fill="#0d9488" text-anchor="end" font-weight="normal">pump line</text>
+<polyline points="351.7,389.5 351.7,477.0 379.7,477.0 379.7,382.5 379.7,368.5" fill="none" stroke="#0d9488" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 4"/>
+<text x="383.9" y="407.0" font-size="8.5" fill="#0d9488" text-anchor="start" font-weight="normal">crossover</text>
+<text x="383.9" y="418.0" font-size="8.5" fill="#0d9488" text-anchor="start" font-weight="normal">to ground floor</text>
+<path d="M346.67499999999995,473.0 L356.67499999999995,481.0 L356.67499999999995,473.0 L346.67499999999995,481.0 z" fill="#c2410c"/>
+<circle cx="336.7" cy="477.0" r="8" fill="#c2410c" stroke="#fff" stroke-width="1.5"/>
+<text x="336.7" y="480.5" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">6</text>
+<path d="M360.67499999999995,472.0 L370.67499999999995,477.0 L360.67499999999995,482.0 z" fill="#c2410c"/>
+<text x="365.7" y="493.0" font-size="8.5" fill="#c2410c" text-anchor="middle" font-weight="normal">check</text>
+<polyline points="442.7,389.5 442.7,494.5" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="442.7" y="506.5" font-size="8.5" fill="#0d9488" text-anchor="middle" font-weight="normal">riser to roof</text>
+<text x="442.7" y="517.5" font-size="8" fill="#0d9488" text-anchor="middle" font-weight="normal">(in wall)</text>
+<path d="M437.67499999999995,473.0 L447.67499999999995,481.0 L447.67499999999995,473.0 L437.67499999999995,481.0 z" fill="#c2410c"/>
+<circle cx="457.7" cy="477.0" r="8" fill="#c2410c" stroke="#fff" stroke-width="1.5"/>
+<text x="457.7" y="480.5" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">7</text>
+<polyline points="477.7,561.0 477.7,477.0" fill="none" stroke="#777" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="481.2" y="522.0" font-size="9" fill="#777" text-anchor="start" font-weight="normal">1.2 m</text>
+<text x="302.7" y="578.5" font-size="8.5" fill="#777" text-anchor="start" font-weight="normal">Handles at chest height: closed normally, open during water schedules.</text>
+<text x="290.7" y="644.5" font-size="12.5" fill="#222" text-anchor="start" font-weight="bold">C  Tank and pump, car bay</text>
+<text x="290.7" y="658.5" font-size="9" fill="#777" text-anchor="start" font-weight="normal">panel-side wall, partition end</text>
+<polyline points="284.7,861.0 540.7,861.0" fill="none" stroke="#2b2b2b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<rect x="400.7" y="749.0" width="73.5" height="105.0" fill="#e6f6f4" stroke="#0d9488" stroke-width="1.4"/>
+<rect x="397.2" y="854.0" width="80.5" height="7.0" fill="#ddd" stroke="#2b2b2b" stroke-width="1"/>
+<text x="437.1" y="798.0" font-size="10" fill="#0d9488" text-anchor="middle" font-weight="bold">1,000 L</text>
+<polyline points="498.7,682.5 460.2,749.0" fill="none" stroke="#1f6fd1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="498.7,682.5 498.7,668.5" fill="none" stroke="#1f6fd1" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="502.2" y="693.0" font-size="8.5" fill="#1f6fd1" text-anchor="start" font-weight="normal">city fill</text>
+<path d="M455.17499999999995,750.6 L465.17499999999995,758.6 L465.17499999999995,750.6 L455.17499999999995,758.6 z" fill="#c2410c"/>
+<circle cx="460.2" cy="740.6" r="8" fill="#c2410c" stroke="#fff" stroke-width="1.5"/>
+<text x="460.2" y="744.1" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">3</text>
+<polyline points="400.7,843.5 383.2,843.5 376.2,840.0" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M383.07499999999993,839.5 L393.07499999999993,847.5 L393.07499999999993,839.5 L383.07499999999993,847.5 z" fill="#c2410c"/>
+<circle cx="388.1" cy="829.5" r="8" fill="#c2410c" stroke="#fff" stroke-width="1.5"/>
+<text x="388.1" y="833.0" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">4</text>
+<rect x="330.7" y="819.0" width="43.4" height="42.0" fill="#f1f5f4" stroke="#0d9488" stroke-width="1.2" stroke-dasharray="4 3"/>
+<text x="352.4" y="814.8" font-size="8" fill="#0d9488" text-anchor="middle" font-weight="normal">vented box</text>
+<circle cx="355.9" cy="843.5" r="11.9" fill="#fff" stroke="#0d9488" stroke-width="1.5"/>
+<text x="355.9" y="846.5" font-size="8" fill="#0d9488" text-anchor="middle" font-weight="normal">pump</text>
+<polyline points="355.9,831.6 355.9,826.0 355.9,668.5" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M350.87499999999994,823.4 L360.87499999999994,831.4 L360.87499999999994,823.4 L350.87499999999994,831.4 z" fill="#c2410c"/>
+<circle cx="340.9" cy="827.4" r="8" fill="#c2410c" stroke="#fff" stroke-width="1.5"/>
+<text x="340.9" y="830.9" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">5</text>
+<text x="351.7" y="756.0" font-size="8.5" fill="#0d9488" text-anchor="end" font-weight="normal">to house</text>
+<polyline points="302.7,682.5 512.7,682.5" fill="none" stroke="#777" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="3 3"/>
+<text x="365.7" y="693.5" font-size="8" fill="#777" text-anchor="start" font-weight="normal">car bay ceiling</text>
+<polyline points="491.7,861.0 491.7,756.0" fill="none" stroke="#777" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="495.2" y="811.5" font-size="9" fill="#777" text-anchor="start" font-weight="normal">1.5 m</text>
+<polyline points="316.7,861.0 316.7,843.5" fill="none" stroke="#777" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="313.2" y="855.6" font-size="9" fill="#777" text-anchor="end" font-weight="normal">0.25 m</text>
+</svg>
