@@ -666,7 +666,7 @@ ceil(0,W/IN,0,99,LC,L2); ceil(0,W/IN,99,254,LC,L2); ceil(0,40,254,326,LC,L2); ce
  // roof T&B (electrical layout v17): socket moved to the bedside, IP light, exhaust fan, 2-gang switch outside the door
  eBox(L3,W-0.03,RF+1.0,-356*IN,0.08,0.11,0.08,em.sock);  eBox(L1,W-0.04,1.2,-151.5*IN,0.08,0.16,0.12,em.ded); eTag('Pump outlet (WP, RCD)',W-0.3,1.45,-151.5*IN,1); eBox(L3,0.23,RF+1.8,-258*IN,0.08,0.16,0.12,em.ded); eTag('AC outlet',0.4,RF+2.05,-258*IN,3);  // window AC outlet, layout v24  // booster pump dedicated outlet, layout v22
  // roof room sockets per layout v18 (bed-head one shifted to x 102 for the queen bed)
- eBox(L3,W-0.04,RF+2.2,-305*IN,0.06,0.22,0.22,EM(0x7f8c8d)); eTag('Exhaust fan',W-0.3,RF+2.45,-305*IN,3);
+ eBox(L3,W-0.04,RF+2.2,-272*IN,0.06,0.22,0.22,EM(0x7f8c8d)); eTag('Exhaust fan',W-0.3,RF+2.45,-272*IN,3);
  eBox(L3,105*IN,RF+1.3,-281*IN,0.09,0.12,0.09,em.sw);
  {const [a,b]=RP(10,450); eBox(L3,a,RF+2.1,b,0.16,0.05,0.24,em.net); eTag('Mesh node 3',a+0.2,RF+2.35,b,3);}
 // switch -> light connections (gang mapping from the electrical thread): up from the switch, across the ceiling, down to each load
@@ -675,7 +675,7 @@ ceil(0,W/IN,0,99,LC,L2); ceil(0,W/IN,99,254,LC,L2); ceil(0,40,254,326,LC,L2); ce
   [1,'Car bay 2G',W/IN,44,[[[87,60,C1],[87,150,C1]],[[70,-8,Y2-0.17]]]],
   [1,'Dining 2G',W/IN,208,[[[70,232,GC]],[[70,244,GC-0.5]]]],
   [1,'Kitchen 2G',30,340,[[[45,410,GC],[125,380,GC]],[[60,478,1.45]]]],
-  [1,'T&B 2G',142,416,[[[138,454,GC]],[[162,465,2.1]]]],
+  [1,'T&B 2G',142,416,[[[138,454,GC]],[[110,474,2.1]]]],
   [2,'Stair top 3G',6,296,[[[100,300,2.4-Y2]],[[87,118,2.3],[130,215,2.3],[20,300,2.3]],[[120,245,1.8],[155,245,1.8]]]],
   [2,'Terrace 1G',W/IN,106,[[[87,48,2.3]]]],
   [2,'Annex 1G',6,205,[[[-3,232,2.3]]]],
@@ -690,7 +690,7 @@ ceil(0,W/IN,0,99,LC,L2); ceil(0,W/IN,99,254,LC,L2); ceil(0,40,254,326,LC,L2); ce
   // kitchen under-cabinet LED strip (gang 2 of the kitchen switch)
   eBox(L1,1.45,1.48,-D+0.32,1.7,0.02,0.04,em.lt);
   // roof: deck switch -> 2 deck lights, room switch -> room light
-  const rm=EM(gcol[0]),rm2=EM(gcol[1]); [[[-3*IN,RF+1.3,-375*IN],[[-25*IN,-400*IN]],rm],[[10*IN,RF+1.3,-380*IN],[[87*IN,-300*IN],[87*IN,-420*IN]],rm],[[10*IN+0.04,RF+1.3,-380*IN],[[87*IN,-246*IN]],rm2],[[105*IN,RF+1.3,-281*IN],[[126*IN,-300*IN]],rm],[[105*IN+0.04,RF+1.3,-281*IN],[[W-0.04,-305*IN]],rm2]].forEach(([s0,ls,mm])=>ls.forEach(([x,z])=>{
+  const rm=EM(gcol[0]),rm2=EM(gcol[1]); [[[-3*IN,RF+1.3,-375*IN],[[-25*IN,-400*IN]],rm],[[10*IN,RF+1.3,-380*IN],[[87*IN,-300*IN],[87*IN,-420*IN]],rm],[[10*IN+0.04,RF+1.3,-380*IN],[[87*IN,-246*IN]],rm2],[[105*IN,RF+1.3,-281*IN],[[126*IN,-300*IN]],rm],[[105*IN+0.04,RF+1.3,-281*IN],[[W-0.04,-272*IN]],rm2]].forEach(([s0,ls,mm])=>ls.forEach(([x,z])=>{
    const a=s0,b=[s0[0],RF+2.45,s0[2]],c=[x,RF+2.45,z]; [[a,b],[b,c]].forEach(([p0,p1])=>{const me=bar(p0,p1,0.014,mm,L3);me.userData.run=1;elec.push(me);});}));
   tag('Landing 1G',-3*IN,RF+1.55,-375*IN,3);tags[tags.length-1].el=1; tag('Room 2G',6*IN+0.2,RF+1.55,-380*IN,3);tags[tags.length-1].el=1; tag('T&B 2G',105*IN-0.2,RF+1.55,-281*IN,3);tags[tags.length-1].el=1;}
  elec.forEach(m=>{m.visible=false; if(!m.userData.run&&m.material!==em.cord&&m.geometry.type!=='BoxGeometry'||m.geometry.type==='BoxGeometry'&&m.material!==em.ded||m.geometry.parameters.depth<0.5) if(!m.userData.run&&m.material!==em.cord) m.scale.multiplyScalar(1.5);});
