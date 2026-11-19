@@ -443,15 +443,15 @@ B(RWX0+0.04,(RWX0+RWX1)/2+0.02,RF+0.06,RF+2.06,RZ2-0.01,RZ2-0.02,mat.glass,L3);
 const rwP=new THREE.Group(); L3.add(rwP); B((RWX0+RWX1)/2-0.02,RWX1-0.04,RF+0.06,RF+2.06,RZ2-0.04,RZ2-0.05,mat.glass,rwP); B((RWX0+RWX1)/2-0.02,(RWX0+RWX1)/2+0.01,RF+0.06,RF+2.06,RZ2-0.03,RZ2-0.06,M(0x2a2c2e),rwP);
 // WPC deck removed: that area is now inside the room (Rowil 18 Nov)
 // roof T&B (Rowil 18 Nov, size my choice): 1.6 x 1.7 m inside, front corner on the outer side wall.
-// Fixtures per the plumbing draft v1 (stack at the front-outer corner): WC and lav on the front wall, shower at the back on the outer wall, door at the back of its inner wall.
+// Fixtures per plumbing re-layout (19 Nov, no splash on the door): shower zone in the front-outer corner diagonal from the door, WC on the outer wall facing in, lav at the front-wall inner corner.
 {const TX0=W-1.6, TB0=RZ2-0.15, TB1=TB0-1.7, wt=M(0xe9e6df), por=M(0xf7f7f5,{roughness:.3});
  B(TX0-0.1,W,RF,RF+2.4,TB1,TB1-0.1,wt,L3);                                  // back wall (bed head side)
  B(TX0-0.1,TX0,RF,RF+2.4,TB0,TB1+0.85,wt,L3); B(TX0-0.1,TX0,RF+2.1,RF+2.4,TB1+0.85,TB1+0.1,wt,L3); B(TX0-0.1,TX0,RF,RF+2.4,TB1+0.1,TB1-0.1,wt,L3);
  const tbC=B(TX0-0.1,W,RF+2.4,RF+2.43,TB0,TB1-0.1,wt,L3); cutables.push(tbC);  // T&B ceiling
  const tdH=new THREE.Group(); tdH.position.set(TX0-0.05,RF,TB1+0.1); tdH.rotation.y=1.0;  /* swings into the T&B, keeps the aisle clear */ L3.add(tdH); B(-0.02,0.02,0,2.05,0,0.72,M(0x3a3633),tdH);
- B(W-0.9,W,RF,RF+0.05,TB1+0.85,TB1,M(0xbfc4c6),L3);   // shower at the back (drain ~157,308), open, no glass screen (Rowil 18 Nov)
- B(150*IN-0.2,150*IN+0.2,RF,RF+0.4,TB0-0.2,TB0-0.65,por,L3); B(150*IN-0.2,150*IN+0.2,RF+0.4,RF+0.8,TB0,TB0-0.18,por,L3); // rear-outlet WC (150,262) + tank
- B(126*IN-0.22,126*IN+0.22,RF+0.8,RF+0.88,TB0,TB0-0.4,por,L3);            // lav on the front wall (126,257)
+ B(136*IN,W,RF,RF+0.015,TB0,-289*IN,M(0xbfc4c6),L3);   // shower zone x136-174.5, y253-289, drain (150,276), open, no glass screen, 2-3 cm lower
+ B(W-0.65,W-0.2,RF,RF+0.4,-306*IN+0.2,-306*IN-0.2,por,L3); B(W-0.18,W,RF+0.4,RF+0.8,-306*IN+0.2,-306*IN-0.2,por,L3); // WC on the outer wall (168,306) facing the inner wall
+ B(124*IN-0.22,124*IN+0.22,RF+0.8,RF+0.88,TB0,TB0-0.4,por,L3);            // lav at the front-wall inner corner (124,257)
  setTimeout(()=>tag('Roof T&B',W-0.8,RF+1.2,(TB0+TB1)/2,3),0);}
 // room fit-out: single bed (90x190) by the SW window, 60 cm deep full-height storage along the back wall
 // (mattresses on the bottom bay, boxes above), tall cleaning cabinet on the left wall
@@ -705,8 +705,8 @@ const pp=(x,y,h)=>[x*IN,h,-y*IN];
 function pRun(pts,m,r){for(let i=1;i<pts.length;i++){const me=bar(pp(...pts[i-1]),pp(...pts[i]),r||0.035,m,root); me.renderOrder=5; me.userData.v=curV; plum.push(me);}}
 function pBox(x0,x1,y0,y1,h0,h1,m){const me=B(x0*IN,x1*IN,h0,h1,-y0*IN,-y1*IN,m,root); me.renderOrder=4; me.userData.v=curV; plum.push(me); return me;}
 function pTag(t,x,y,h,lv){tag(t,x*IN,h,-y*IN,lv);tags[tags.length-1].pl=1; tags[tags.length-1].pv=curV;}
-// common: ground T&B WC stub + lav + floor drain branches onto the x116 line
-pRun([[116,474,-0.25],[116,452,-0.3]],pmD,0.05); pRun([[107,444,-0.25],[116,444,-0.28]],pmD); pRun([[160,468,-0.22],[116,468,-0.27]],pmD);
+// common: ground T&B (19 Nov re-layout: shower diagonal from the door) WC (152,474), shower drain (114,466), lav (132,431) onto the x116 line
+pRun([[152,474,-0.22],[116,474,-0.25],[116,452,-0.3]],pmD,0.05); pRun([[114,466,-0.2],[116,466,-0.27]],pmD); pRun([[132,431,-0.22],[116,431,-0.31]],pmD);
 pBox(46,62,458,474,-0.3,0.02,pmP); pTag('Grease trap',54,466,0.3,1);
 // new septic tank under the car bay (Rowil: the only plan; old shared tank stays for the neighbours), 2 manholes, inspection chamber, 100 mm main
 curV=2;
@@ -719,7 +719,7 @@ pBox(14,92,372,448,-1.4,-0.06,PM(0x495057,{opacity:.3})); pTag('Old septic: shar
 curV=0;
 // roof T&B stack + water riser + vent in a boxed chase up the stairwell corner, through one slab core
 pRun([[166,266,-0.45],[166,266,RF+0.05]],pmD,0.05); pRun([[166,266,RF+0.05],[166,266,RF+RH+0.45]],pmV,0.03);
-pRun([[150,262,RF+0.08],[166,266,RF+0.08]],pmD); pRun([[126,257,RF+0.08],[166,266,RF+0.08]],pmD); pRun([[157,308,RF+0.06],[166,266,RF+0.07]],pmD);
+pRun([[168,306,RF+0.08],[166,266,RF+0.08]],pmD); pRun([[124,257,RF+0.08],[166,266,RF+0.08]],pmD); pRun([[150,276,RF+0.06],[166,266,RF+0.07]],pmD);
 pTag('Stack + riser (chase)',166,266,Y2+1.2,2); pTag('Roof T&B drains',150,285,RF+0.3,3);
 // water (plumbing v4, 19 Nov: roof tank dropped). City line in under the kitchen sink, through the ceiling to the ground tank in the car bay
 pRun([[46,486,0.3],[46,486,GC+0.1],[30,462,GC+0.1],[30,206,GC+0.1],[140,206,GC+0.1],[158,198,GC+0.1],[158,198,1.5]],pmW,0.025);
@@ -731,9 +731,9 @@ pRun([[140,206,GC+0.1],[173,206,GC+0.1]],pmW,0.02); pBox(153,159,203,209,GC,GC+0
 // pump main up to the ceiling, along the wall to the stairwell chase; ground branches from (173,215)
 pRun([[168,151,0.4],[168,151,GC+0.15],[173,160,GC+0.15],[173,240,GC+0.15],[166,262,GC+0.15]],pmW,0.025);
 pRun([[173,215,GC+0.15],[130,240,GC+0.1],[116,266,0.4]],pmW,0.02);
-pRun([[116,266,0.4],[116,444,0.4],[107,444,0.85]],pmW,0.02); pRun([[116,452,0.4],[116,474,0.3]],pmW,0.02); pRun([[116,420,0.4],[54,440,0.9],[54,466,0.95]],pmW,0.02);
+pRun([[116,266,0.4],[116,466,0.4]],pmW,0.02); pRun([[116,431,0.4],[132,431,0.85]],pmW,0.02); pRun([[116,466,0.4],[152,474,0.3]],pmW,0.02); pRun([[116,466,0.4],[110,480,1.1]],pmW,0.02); pRun([[116,420,0.4],[54,440,0.9],[54,466,0.95]],pmW,0.02);
 // roof T&B riser up the chase
-pRun([[166,262,GC+0.15],[166,266,RF+1.0]],pmW,0.025); pRun([[166,266,RF+1.0],[150,262,RF+0.5]],pmW,0.02); pRun([[166,266,RF+1.0],[126,257,RF+0.85]],pmW,0.02); pRun([[166,266,RF+1.0],[157,316,RF+1.0]],pmW,0.02);
+pRun([[166,262,GC+0.15],[166,266,RF+1.0]],pmW,0.025); pRun([[166,266,RF+1.0],[172,290,RF+1.0],[172,306,RF+0.5]],pmW,0.02); pRun([[166,266,RF+1.0],[124,257,RF+0.85]],pmW,0.02); pRun([[166,266,RF+1.0],[172,272,RF+1.0]],pmW,0.02);
 // terrace hose faucet (19 Nov, v2): tee off the pump main, painted surface pipe on the car bay ceiling, ~32 mm core up through the 2nd floor slab, stub to the bib
 pRun([[173,170,GC+0.15],[173,170,Y2-0.15],[150,160,Y2-0.15],[150,50,Y2-0.15],[165,36,Y2-0.15],[165,36,Y2+0.1],[174.5,32,Y2+0.1],[174.5,32,Y2+0.6]],pmW,0.018); pBox(147,153,117,123,Y2-0.3,Y2-0.08,pmP);
 pTag('Terrace hose bib',172,32,Y2+0.85,2); pTag('Terrace faucet valve',150,120,Y2-0.45,1);
