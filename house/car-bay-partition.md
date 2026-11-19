@@ -24,7 +24,7 @@ The old plan was a steel frame with a 1.80 m sliding glass door. The new plan is
 | Wood door frame | 2.39 to 3.30 m (the walkway) | 0.90 m frame, 0.80 × 2.10 m door | Top 2.10 m |
 | Solid wall (water tank on the car side) | 3.30 to 4.43 m | 1.13 m | Full height |
 
-- **The door swings into the dining side.** On the car side it would hit the tank or the car. It is hinged on the tank side.
+- **The door swings into the dining side.** On the car side it would hit the tank or the car. It is **hinged on the window side** (decided 19 Nov), so the open door rests beside the window and the dining light switch and water valves on the right wall stay easy to reach.
 - **Keep clear on the dining side:** the crossover valve and roof riser shut-off at 1.2 m on the side wall just inside the partition, and the dining light switch near them. The dining table should sit left of the door swing (about 0.9 m deep into the dining).
 - **The 0.80 m door matches the front pedestrian door**, so anything that fits through the front fits through here. Bigger items come in through the car shutter.
 
@@ -77,7 +77,6 @@ The window is also counted in the glass and aluminium total, so don't add it twi
 ## Questions to settle
 
 - Wood: mahogany or tanguile, and natural finish or painted?
-- Hinge side: hinged on the tank side (current plan), or on the window side so the open door doesn't stand between you and the dining light switch and the crossover valve? The window side is easier to use; it's a small change to the plans.
 - Measure on site: the walkway width between the car and the tank plinth, and the ceiling height at the partition.
 
 <!-- Leave a blank line before and after every table, or the site shows it as plain text. -->
