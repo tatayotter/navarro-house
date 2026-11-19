@@ -1,7 +1,7 @@
 ---
 title: Plumbing materials
 status: Draft
-cost: "₱89k–135k materials"
+cost: "₱92k–140k materials"
 price_source: online
 updated: 19 Nov 2026
 summary: Material list for the plumbing plan (new septic tank under the car bay, ground water tank with an auto-stop inverter pump, roof T&B, terrace and rooftop faucets). Quantities come from the plumbing layout; every price is an online estimate until a local shop quotes it.
@@ -16,9 +16,9 @@ See the [plumbing layout](plumbing-layout-v1.html) for where everything goes. Qu
 | Septic tank | 40,820–51,900 | Online |
 | Drain and vent pipes | 14,190–24,950 | Online |
 | Water supply | 12,390–21,000 | Online |
-| Tank and pump | 16,500–29,000 | Online |
+| Tank and pump | 19,500–34,000 | Online |
 | Roof T&B and chase | 5,000–8,500 | Online |
-| **Materials total** | **88,900–135,350** | |
+| **Materials total** | **91,900–140,350** | |
 
 ## Septic tank (2 chambers, inside about 1.20 × 2.40 m, 1.8 m deep, car-rated cover)
 
@@ -78,10 +78,10 @@ See the [plumbing layout](plumbing-layout-v1.html) for where everything goes. Qu
 
 | Item | Qty | Price (₱) | Source |
 |---|---|---|---|
-| Water tank 500 L, slim upright, opaque food-grade PE, sealed lid | 1 | 5,000–8,000 | Online |
+| Water tank 1,000 L, upright, opaque food-grade PE, sealed lid | 1 | 8,000–13,000 | Online |
 | Pump 0.5 HP constant-pressure inverter: starts when a tap opens, stops when all are closed, dry-run cut-off | 1 | 10,000–18,000 | Online |
 | Plinth, rubber anti-vibration pads, vented box with acoustic lining | lot | 1,500–3,000 | Online |
-| **Subtotal** | | **16,500–29,000** | |
+| **Subtotal** | | **19,500–34,000** | |
 
 ## Roof T&B and chase
 
@@ -94,7 +94,7 @@ See the [plumbing layout](plumbing-layout-v1.html) for where everything goes. Qu
 
 ## Not in this list
 
-With labour and core drilling, the whole plumbing job comes to about ₱122k–195k before fixtures and tiles (online estimate).
+With labour and core drilling, the whole plumbing job comes to about ₱125k–200k before fixtures and tiles (online estimate).
 
 
 | Item | Price (₱) | Source |
