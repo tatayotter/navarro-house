@@ -1,10 +1,10 @@
 ---
 title: Plumbing materials
 status: Draft
-cost: "₱92k–140k materials"
+cost: "₱93k–142k materials"
 price_source: online
 updated: 19 Nov 2026
-summary: Material list for the plumbing plan (new septic tank under the car bay, ground water tank with an auto-stop inverter pump, roof T&B, terrace and rooftop faucets). Quantities come from the plumbing layout; every price is an online estimate until a local shop quotes it.
+summary: Material list for the plumbing plan (new septic tank under the car bay, kitchen and ground T&B on city water, car bay tank with an auto-stop inverter pump for the rest plus a crossover for water schedules, roof T&B, terrace and rooftop faucets). Quantities come from the plumbing layout; every price is an online estimate until a local shop quotes it.
 ---
 
 See the [plumbing layout](plumbing-layout-v1.html) for where everything goes. Quantities include a little extra for cuts and mistakes. Fixtures (toilets, lavatories, shower sets, faucets), tiles, labour and the pump's electrical wiring are not included.
@@ -15,10 +15,10 @@ See the [plumbing layout](plumbing-layout-v1.html) for where everything goes. Qu
 |---|---|---|
 | Septic tank | 40,820–51,900 | Online |
 | Drain and vent pipes | 14,190–24,950 | Online |
-| Water supply | 12,390–21,000 | Online |
+| Water supply | 13,190–22,400 | Online |
 | Tank and pump | 19,500–34,000 | Online |
 | Roof T&B and chase | 5,000–8,500 | Online |
-| **Materials total** | **91,900–140,350** | |
+| **Materials total** | **92,700–141,750** | |
 
 ## Septic tank (2 chambers, inside about 1.20 × 2.40 m, 1.8 m deep, car-rated cover)
 
@@ -61,18 +61,18 @@ See the [plumbing layout](plumbing-layout-v1.html) for where everything goes. Qu
 | PPR pipe 25 mm (¾″) × 4 m: city line, pump main, riser (about 32 m) | 9 lengths | 2,970–4,050 | Online |
 | PPR pipe 20 mm (½″) × 4 m: drops to fixtures (about 20 m) | 5 lengths | 1,100–1,500 | Online |
 | PPR fittings (elbows, tees, adaptors) | 50 | 1,250–3,500 | Online |
-| Ball valves 25 mm (main, pump in/out, bypass, riser) | 5 | 1,750–2,750 | Online |
-| Check valve 25 mm | 1 | 400–700 | Online |
+| Ball valves 25 mm (main, pump in/out, crossover, riser) | 5 | 1,750–2,750 | Online |
+| Check valves 25 mm (pump, ground-floor city line, crossover) | 3 | 1,200–2,100 | Online |
 | Float valve 25 mm | 1 | 500–1,000 | Online |
 | Angle valves for fixtures | 6 | 1,080–1,800 | Online |
-| Hose bib | 1 | 300–500 | Online |
+| Car bay hose bib (on the pump) | 1 | 300–500 | Online |
 | Flexible hoses for the pump | 2 | 500–800 | Online |
 | Terrace hose faucet: PPR 20 mm × 4 m (car bay ceiling + up through the slab, about 7 m) | 2 lengths | 440–600 | Online |
 | Terrace hose faucet: fittings, sealed sleeve for the small slab core | lot | 300–500 | Online |
 | Terrace hose faucet: ½″ hose bib with vacuum breaker + shut-off valve | 1 set | 600–1,100 | Online |
 | Rooftop outdoor faucet: ½″ hose bib with vacuum breaker, shut-off valve, short PPR + fittings through the T&B wall | 1 set | 800–1,500 | Online |
 | Pipe clips, Teflon tape | lot | 400–700 | Online |
-| **Subtotal** | | **12,390–21,000** | |
+| **Subtotal** | | **13,190–22,400** | |
 
 ## Tank and pump (car bay, auto-stop)
 
@@ -94,7 +94,7 @@ See the [plumbing layout](plumbing-layout-v1.html) for where everything goes. Qu
 
 ## Not in this list
 
-With labour and core drilling, the whole plumbing job comes to about ₱125k–200k before fixtures and tiles (online estimate).
+With labour and core drilling, the whole plumbing job comes to about ₱126k–202k before fixtures and tiles (online estimate).
 
 
 | Item | Price (₱) | Source |

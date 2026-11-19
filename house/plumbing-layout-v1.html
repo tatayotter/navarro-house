@@ -92,8 +92,8 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
 <div class="wrap" id="wrap" data-opt="2">
   <header>
     <h1>Navarro House plumbing layout</h1>
-    <p class="sub">Draft v4, 19 Nov (decided: new septic tank; ground water tank with an auto-stop pump). All our waste goes to our own new septic tank under the car bay; the old tank under the kitchen is shared with both neighbours, so it stays for them and we cap our lines. Water goes from a tank in the car bay through a pump that only runs while a tap is open. Plans have the street (southwest) at the top, like the electrical layout, so left and right are swapped compared with standing in the street. Positions are a first draft: your plumber and engineer set the final ones.</p>    <div class="flow v2"><span>Roof T&amp;B</span><b>→</b><span>stack down the stairwell corner</span><b>→</b><span>main under the floor</span><b>←</b><span>ground T&amp;B + kitchen (grease trap)</span><b>→</b><span>inspection chamber</span><b>→</b><span>2-chamber septic</span><b>→</b><span>street drain</span></div>
-    <div class="flow"><span>City line (in under the kitchen sink)</span><b>→</b><span>1,000 L tank in the car bay</span><b>→</b><span>auto-stop inverter pump</span><b>→</b><span>ceiling lines + stairwell riser</span><b>→</b><span>kitchen, both T&amp;Bs</span><b>·</b><span>bypass for brownouts</span></div>
+    <p class="sub">Draft v5, 19 Nov (decided: new septic tank; kitchen and ground T&amp;B on city water; tank with an auto-stop pump for the rest). All our waste goes to our own new septic tank under the car bay; the old tank under the kitchen is shared with both neighbours, so it stays for them and we cap our lines. The kitchen and ground T&amp;B run on city water; everything else comes from a tank in the car bay through a pump that only runs while a tap is open. Plans have the street (southwest) at the top, like the electrical layout, so left and right are swapped compared with standing in the street. Positions are a first draft: your plumber and engineer set the final ones.</p>    <div class="flow v2"><span>Roof T&amp;B</span><b>→</b><span>stack down the stairwell corner</span><b>→</b><span>main under the floor</span><b>←</b><span>ground T&amp;B + kitchen (grease trap)</span><b>→</b><span>inspection chamber</span><b>→</b><span>2-chamber septic</span><b>→</b><span>street drain</span></div>
+    <div class="flow"><span>City line (in under the kitchen sink)</span><b>→</b><span>1,000 L tank in the car bay</span><b>→</b><span>auto-stop inverter pump</span><b>→</b><span>ceiling lines + stairwell riser</span><b>→</b><span>roof T&amp;B, rooftop + terrace + car bay hoses</span><b>·</b><span>kitchen + ground T&amp;B on direct city water</span></div>
   </header>
   <div class="legend">
 <span class="lg"><svg viewBox="0 0 22 16"><line x1="1" y1="8" x2="21" y2="8" stroke="var(--waste)" stroke-width="3"/></svg>Main drain 100 mm PVC</span>
@@ -119,13 +119,14 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
       <li>The ground floor is being re-tiled anyway, so the main line goes in a trench under the new floor: ground T&amp;B, under the hollow old stair, through the dining area, to the car bay.</li>
       <li>The septic tank sits at the front, so the desludging truck reaches it from the street and the outflow pipe to the street drain is short.</li>
     </ul></div>
-    <div class="box"><h2>Water: ground tank + auto-stop pump</h2><ul>
-      <li><b>Supply:</b> the city line comes in under the kitchen sink (meter is past the annex-side neighbour). The kitchen sink tap stays on direct city water; the line continues in the dining ceiling to the tank. A float valve fills the tank.</li>
+    <div class="box"><h2>Water: city water downstairs, tank + pump for the rest</h2><ul>
+      <li><b>Supply:</b> the city line comes in under the kitchen sink (meter is past the annex-side neighbour). The kitchen and the ground T&amp;B stay on direct city water (pressure downstairs is good enough), through a check valve. The line continues in the dining ceiling to the tank, and a float valve fills it.</li>
       <li><b>Where:</b> 1,000 L tank (about 1.05 m across, 1.5 m tall, about 1 t full) on a plinth at the partition end of the panel-side car bay wall, with the pump in front of it, about 0.9 m clear of the panel. The walkway beside the car stays about 1.1 m wide, and the tank stays off the septic and the inspection chamber. Both stand about 5 cm off the party wall. The partition door then opens on its car-side half.</li>
       <li><b>Pump:</b> 0.5 HP constant-pressure inverter pump. It starts when a tap opens and stops by itself when every fixture is closed (pressure and flow sensing), with dry-run protection. No pressure-tank clicking, and it only runs while someone uses water.</li>
       <li><b>Low noise:</b> rubber anti-vibration pads, flexible hoses on both pump ends, a vented box lined with acoustic foam, pipe clips with rubber inserts, nothing bolted to the party wall.</li>
-      <li><b>Bypass valve</b> so city water still reaches the taps in a brownout, plus check and shut-off valves around the pump.</li>
-      <li><b>Hose bib</b> on the city line at the partition, car side, for washing the car (that water goes to the street, not the septic).</li>
+      <li><b>On the pump:</b> roof T&amp;B, rooftop faucet, terrace hose faucet and the car bay hose bib (at the partition, car side, for washing the car; that water goes to the street, not the septic). Washing the car doesn't drop the pressure downstairs.</li>
+      <li><b>Crossover valve (normally closed)</b> between the pump line and the ground floor line, with a check valve. During rotational water schedules, open it and the tank feeds the kitchen and ground T&amp;B too; close it when city water returns. The tank refills by itself. A brownout doesn't affect the ground floor.</li>
+      <li>Check and shut-off valves around the pump.</li>
       <li><b>Electrical:</b> dedicated 20 A circuit with RCD, weatherproof outlet at 1.2 m on the wall beside the pump. Sent to the electrical plan.</li>
     </ul></div>
   </div>
@@ -143,14 +144,14 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
   <div class="tbl"><table>
     <thead><tr><th>Fixture</th><th>Where</th><th>Drain</th><th>Joins</th><th>Water</th></tr></thead>
     <tbody>
-      <tr><td>Kitchen sink</td><td>Kitchen back wall</td><td class="n">50 mm</td><td>Under-sink grease trap, then the drain line</td><td>Cold ½″</td></tr>
-      <tr><td>Ground T&amp;B WC</td><td>Back wall, middle</td><td class="n">100 mm</td><td>Drain line (cleanout here)</td><td>Cold ½″</td></tr>
-      <tr><td>Ground T&amp;B lavatory</td><td>Front wall, beside the door (dry side)</td><td class="n">50 mm</td><td>Drain line</td><td>Cold ½″</td></tr>
-      <tr><td>Ground T&amp;B shower floor drain</td><td>Back left corner, farthest from the door</td><td class="n">50 mm</td><td>Drain line</td><td>Cold ½″</td></tr>
+      <tr><td>Kitchen sink</td><td>Kitchen back wall</td><td class="n">50 mm</td><td>Under-sink grease trap, then the drain line</td><td>Cold ½″, city water</td></tr>
+      <tr><td>Ground T&amp;B WC</td><td>Back wall, middle</td><td class="n">100 mm</td><td>Drain line (cleanout here)</td><td>Cold ½″, city water</td></tr>
+      <tr><td>Ground T&amp;B lavatory</td><td>Front wall, beside the door (dry side)</td><td class="n">50 mm</td><td>Drain line</td><td>Cold ½″, city water</td></tr>
+      <tr><td>Ground T&amp;B shower floor drain</td><td>Back left corner, farthest from the door</td><td class="n">50 mm</td><td>Drain line</td><td>Cold ½″, city water</td></tr>
       <tr><td>Roof T&amp;B WC</td><td>Outer wall, back half (near the door, dry side)</td><td class="n">100 mm</td><td>Stack, in the raised floor (about 1 m run)</td><td>Cold ½″</td></tr>
       <tr><td>Roof T&amp;B lavatory</td><td>Front wall, inner corner</td><td class="n">50 mm</td><td>Stack, above the slab in the raised floor</td><td>Cold ½″</td></tr>
       <tr><td>Roof T&amp;B shower floor drain</td><td>Front outer corner, farthest from the door, next to the stack</td><td class="n">50 mm</td><td>Stack, above the slab in the raised floor</td><td>Cold ½″</td></tr>
-      <tr><td>Hose bib</td><td>Car bay, at the partition</td><td class="n">n/a</td><td>Street</td><td>Cold ½″, on the city line</td></tr>
+      <tr><td>Hose bib</td><td>Car bay, at the partition</td><td class="n">n/a</td><td>Street</td><td>Cold ½″, on the pump (tank water)</td></tr>
       <tr><td>Rooftop outdoor faucet (with vacuum breaker)</td><td>Outside the roof room front wall, in front of the T&amp;B, 0.6 m, ≥ 30 cm from the outdoor socket</td><td class="n">n/a</td><td>Open slab roof drains</td><td>Cold ½″, tee off the roof T&amp;B supply, own shut-off valve</td></tr>
       <tr><td>Terrace hose faucet (with vacuum breaker)</td><td>Terrace side wall, front corner, 0.6 m</td><td class="n">n/a</td><td>None (watering plants only)</td><td>Cold ½″, from the pump main via a small slab core, own shut-off valve</td></tr>
     </tbody></table></div>
@@ -172,14 +173,14 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
         <tbody>
           <tr><td>Septic tank materials (cement, sand, gravel, rebar, covers)</td><td class="n">₱41k–52k</td></tr>
           <tr><td>Drain + vent pipes, fittings, grease trap, IC</td><td class="n">₱14k–25k</td></tr>
-          <tr><td>Water pipes + valves (PPR), incl. terrace and rooftop faucets</td><td class="n">₱12k–21k</td></tr>
+          <tr><td>Water pipes + valves (PPR), crossover, terrace and rooftop faucets</td><td class="n">₱13k–22k</td></tr>
           <tr><td>1,000 L tank + 0.5 HP auto-stop inverter pump + plinth, pads, vented box</td><td class="n">₱20k–34k</td></tr>
           <tr><td>Roof T&amp;B raised floor, waterproofing, chase boxing</td><td class="n">₱5k–9k</td></tr>
           <tr><td>Plumber labour (digging, septic build, trenching, pipe work)</td><td class="n">₱30k–55k</td></tr>
           <tr><td>Roof slab core drilling (service)</td><td class="n">₱2.5k–4k</td></tr>
-          <tr><td><b>Total, excluding fixtures and tiles</b></td><td class="n"><b>₱125k–200k</b></td></tr>
+          <tr><td><b>Total, excluding fixtures and tiles</b></td><td class="n"><b>₱126k–202k</b></td></tr>
         </tbody></table></div>
-      <p class="sub">Online estimates, not yet quoted locally. The itemised material list (quantities per item, ₱92k–140k) is on the family site. Pump electrical wiring is in the electrical budget.</p>
+      <p class="sub">Online estimates, not yet quoted locally. The itemised material list (quantities per item, ₱93k–142k) is on the family site. Pump electrical wiring is in the electrical budget.</p>
     </div>
   </div>
 
@@ -297,7 +298,7 @@ P.wc(152,474,180); P.lav(132,431);
 P.run([[114,466],[116,456]],'pb'); P.run([[152,470],[126,460],[116,456]],'pb'); P.run([[132,434],[118,442]],'pb');
 // vent: T&B + kitchen vent through the hung-ceiling cavity to the stairwell chase
 P.run([[110,452],[106,420],[106,345],[158,270]],'pv'); text(84,385,'vent in ceiling','lv'); text(84,393,'cavity','lv');
-// water: city line enters under the kitchen sink, runs in the dining ceiling to the tank in the car bay
+// water: city line enters under the kitchen sink; kitchen + ground T&B stay on direct city water; the line continues in the dining ceiling to fill the tank in the car bay
 P.run([[46,486],[46,474],[30,462],[30,206],[140,206],[154,198]],'pc');
 text(30,498,'city line in (from meter)','lc'); text(22,262,'city line','lc',`transform="rotate(-90 ${X(22)} ${Y(262)})"`);
 P.valve(46,478);
@@ -307,17 +308,18 @@ rect(148,172,127,150,'mh'); P.pump(160,138.5); text(144,124,'auto-stop pump','lp
 P.run([[160,155],[160,145]],'pc'); P.ded(174.5,138.5,'');
 // pump main up to the dining ceiling, then riser + branches
 P.run([[168,138],[173.5,146],[173.5,240],[166,262]],'pc');
-P.run([[173,215],[130,240],[130,425],[118,470]],'pc');
-P.run([[130,425],[146,470],[152,476]],'pc'); P.run([[130,425],[104,446],[104,474]],'pc');
-P.run([[130,330],[60,330],[60,470]],'pc');
-text(98,326,'cold water in ceiling','lc');
+// ground floor on direct city water: tee off the city line at the kitchen (check valve), dining ceiling to the ground T&B
+P.run([[30,425],[130,425]],'pc'); o+=`<circle style="fill:var(--cold)" cx="${X(40)}" cy="${Y(425)}" r="2.4"/>`; text(34,437,'check valve','lc');
+P.run([[130,425],[118,470]],'pc'); P.run([[60,425],[60,470]],'pc'); P.run([[130,425],[146,470],[152,476]],'pc'); P.run([[130,425],[104,446],[104,474]],'pc');
+text(84,437,'city water to ground T&B','lc');
+// crossover (normally closed): during water schedules, open it so the tank + pump feed the ground floor; check valve stops pumped water flowing back
+o+=`<polyline class="pc" style="stroke-dasharray:5 3" points="${[[173,215],[130,240],[130,425]].map(p=>X(p[0])+','+Y(p[1])).join(' ')}"/>`; P.valve(130,247); o+=`<circle style="fill:var(--cold)" cx="${X(130)}" cy="${Y(255)}" r="2.4"/>`;
+text(127,215,'crossover valve + check valve','lc','style="text-anchor:end"'); text(127,223,'(closed unless city water is off)','lc','style="text-anchor:end"');
 // terrace faucet feed: tee off the pump main, painted surface pipe on the car bay ceiling kept ~0.8 m off the panel wall, up through a small slab core
 P.run([[173,170],[150,160],[150,50],[165,36]],'pc'); P.valve(150,120); o+=`<circle class="co" cx="${X(165)}" cy="${Y(36)}" r="3.2"/>`;
 text(147,104,'to terrace faucet','lc','style="text-anchor:end"');
-// bypass: city line straight into the house main when the power is out
-P.run([[140,206],[173,206]],'pc'); P.valve(156,206);
-// hose bib on the city line at the partition, car side
-P.run([[100,206],[100,197]],'pc'); o+=`<circle style="fill:var(--cold)" cx="${X(100)}" cy="${Y(194)}" r="2.6"/>`; text(96,188,'hose bib','lc','style="text-anchor:end"');
+// car bay hose bib on the pump (tank water) at the partition, car side
+P.run([[173.5,200],[100,200],[100,197]],'pc'); o+=`<circle style="fill:var(--cold)" cx="${X(100)}" cy="${Y(194)}" r="2.6"/>`; text(96,188,'hose bib','lc','style="text-anchor:end"');
 o+='<g class="v2">';
 // septic tank: 2 chambers, inside ~1.20 x 2.40 m, under the walkway strip beside the car (position indicative, engineer sets it)
 rect(95,142,30,125,'sep'); line(95,62,142,62,'pb');
