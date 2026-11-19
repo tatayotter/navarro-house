@@ -141,6 +141,7 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
       <tr><td>Roof T&amp;B lavatory</td><td>Front wall</td><td class="n">50 mm</td><td>Stack, above the slab in the raised floor</td><td>Cold ½″</td></tr>
       <tr><td>Roof T&amp;B shower floor drain</td><td>Back outer corner</td><td class="n">50 mm</td><td>Stack, above the slab in the raised floor</td><td>Cold ½″</td></tr>
       <tr><td>Hose bib</td><td>Car bay, at the partition</td><td class="n">n/a</td><td>Street</td><td>Cold ½″, on the city line</td></tr>
+      <tr><td>Rooftop outdoor faucet (with vacuum breaker)</td><td>Outside the roof room front wall, in front of the T&amp;B, 0.6 m, ≥ 30 cm from the outdoor socket</td><td class="n">n/a</td><td>Open slab roof drains</td><td>Cold ½″, tee off the roof T&amp;B supply, own shut-off valve</td></tr>
       <tr><td>Terrace hose faucet (with vacuum breaker)</td><td>Terrace side wall, front corner, 0.6 m</td><td class="n">n/a</td><td>None (watering plants only)</td><td>Cold ½″, from the pump main via a small slab core, own shut-off valve</td></tr>
     </tbody></table></div>
 
@@ -161,14 +162,14 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
         <tbody>
           <tr><td>Septic tank materials (cement, sand, gravel, rebar, covers)</td><td class="n">₱41k–52k</td></tr>
           <tr><td>Drain + vent pipes, fittings, grease trap, IC</td><td class="n">₱14k–25k</td></tr>
-          <tr><td>Water pipes + valves (PPR), incl. terrace faucet</td><td class="n">₱12k–20k</td></tr>
+          <tr><td>Water pipes + valves (PPR), incl. terrace and rooftop faucets</td><td class="n">₱12k–21k</td></tr>
           <tr><td>500 L tank + 0.5 HP auto-stop inverter pump + plinth, pads, vented box</td><td class="n">₱17k–29k</td></tr>
           <tr><td>Roof T&amp;B raised floor, waterproofing, chase boxing</td><td class="n">₱5k–9k</td></tr>
           <tr><td>Plumber labour (digging, septic build, trenching, pipe work)</td><td class="n">₱30k–55k</td></tr>
           <tr><td>Roof slab core drilling (service)</td><td class="n">₱2.5k–4k</td></tr>
-          <tr><td><b>Total, excluding fixtures and tiles</b></td><td class="n"><b>₱121k–194k</b></td></tr>
+          <tr><td><b>Total, excluding fixtures and tiles</b></td><td class="n"><b>₱122k–195k</b></td></tr>
         </tbody></table></div>
-      <p class="sub">Online estimates, not yet quoted locally. The itemised material list (quantities per item, ₱88k–134k) is on the family site. Pump electrical wiring is in the electrical budget.</p>
+      <p class="sub">Online estimates, not yet quoted locally. The itemised material list (quantities per item, ₱89k–135k) is on the family site. Pump electrical wiring is in the electrical budget.</p>
     </div>
   </div>
 
@@ -493,6 +494,9 @@ P.stack(166,266,'');
 P.run([[157,308],[160,290],[166,270]],'pb'); P.run([[126,261],[138,266],[160,266]],'pb');
 o+=`<circle class="tk" cx="${X(172)}" cy="${Y(262)}" r="2.4"/>`;
 P.run([[172,262],[172,300],[165,305]],'pc'); P.run([[172,258],[126,253]],'pc');
+// outdoor faucet on the outside of the room front wall, in front of the T&B, tee off the T&B supply
+P.run([[172,258],[168,250],[168,244]],'pc'); o+=`<circle style="fill:var(--cold)" cx="${X(168)}" cy="${Y(243)}" r="3"/>`;
+text(164,236,'outdoor faucet 0.6 m','lc','style="text-anchor:end"');
 text(140,350,'1 core through roof slab','lw'); text(140,358,'≈150 mm, engineer marks it','lw');
 o+=`<line style="stroke:var(--waste);stroke-width:.8" x1="${X(140)}" y1="${Y(343)}" x2="${X(165)}" y2="${Y(272)}"/>`;
 text(60,290,'raised T&amp;B floor 10–15 cm','dim'); text(60,298,'branches run above the slab','dim');
