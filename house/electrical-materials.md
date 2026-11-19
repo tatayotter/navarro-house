@@ -119,6 +119,7 @@ All prices are online estimates (Nov 2026) and need local quotes. Quantities are
 
 - Buy wire by the 150 m box, not by the metre, except for the short 5.5 mm² induction run. Stick to one known brand of THHN with PS/ICC marks.
 - Buy all touch switches in one order from the same seller, so the faceplates match and each comes with its no-neutral bypass add-on.
+- The bedroom, living, kitchen and dining ceilings are PVC panels, so hang the living ceiling fan and the pendants from the slab with anchored hooks or boxes, not from the panels. There are no cove lights.
 - Use deep boxes everywhere, since the smart switches are thicker than regular ones and the walls get WPC panels.
 - Reuse existing in-wall pipes where the electrician finds them sound. That can cut the PVC conduit count a lot.
 
