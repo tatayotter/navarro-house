@@ -725,11 +725,11 @@ pTag('Stack + riser (chase)',166,266,Y2+1.2,2); pTag('Roof T&B drains',150,285,R
 pRun([[46,486,0.3],[46,486,GC+0.1],[30,462,GC+0.1],[30,204,GC+0.1],[9.5,187.5,GC+0.1],[9.5,187.5,0.5]],pmW,0.025);
 pBox(1,18,178,197,0,0.6,pmP); pTag('Fill pump',9.5,187.5,0.85,1);
 // fill line: pump -> ceiling -> stairwell chase -> up to the roof tank
-pRun([[9.5,187.5,0.5],[9.5,187.5,GC+0.15],[44,214,GC+0.15],[150,236,GC+0.15],[162,262,GC+0.15],[162,262,RF+2.2],[158,236,RF+2.2],[158,228.5,RF+2.55]],pmW,0.025);
-// 500 L slim tank on a 1.2 m steel stand, open slab outside the roof room front wall
-{const t=cyl(14*IN,1.4,pmK,root,158.25*IN,RF+1.9,-228.5*IN); t.renderOrder=4; plum.push(t);}
-[[143,213],[173.5,213],[143,244],[173.5,244]].forEach(([x,y])=>pBox(x-1,x+1,y-1,y+1,RF,RF+1.2,pmP)); pBox(142,174.5,212,245,RF+1.15,RF+1.2,pmP);
-pTag('Roof tank 500 L (gravity)',158,228.5,RF+2.8,3);
+pRun([[9.5,187.5,0.5],[9.5,187.5,GC+0.15],[44,214,GC+0.15],[150,236,GC+0.15],[162,262,GC+0.15],[162,262,RF+2.05],[155,236,RF+2.05],[155,225,RF+2.1]],pmW,0.025);
+// 500 L LOW WIDE tank (~1.0 m dia, 0.9 m tall) on a 1.2 m steel stand, top ~2.1 m, under the purlins, open slab outside the roof room front wall
+{const t=cyl(19*IN,0.9,pmK,root,155*IN,RF+1.65,-225*IN); t.renderOrder=4; plum.push(t);}
+[[135,206],[173.5,206],[135,244],[173.5,244]].forEach(([x,y])=>pBox(x-1,x+1,y-1,y+1,RF,RF+1.2,pmP)); pBox(134,174.5,205,245,RF+1.15,RF+1.2,pmP);
+pTag('Roof tank 500 L, low wide (gravity)',155,225,RF+2.3,3);
 // gravity down-feed: tank -> into the T&B -> chase -> roof T&B fixtures and down to the ground floor
 pRun([[164,236,RF+1.25],[172,248,RF+1.25],[172,262,RF+1.25]],pmW,0.025);
 pRun([[172,262,RF+1.25],[150,262,RF+0.5]],pmW,0.02); pRun([[172,262,RF+1.25],[126,257,RF+0.85]],pmW,0.02); pRun([[172,262,RF+1.25],[157,316,RF+1.0]],pmW,0.02);
