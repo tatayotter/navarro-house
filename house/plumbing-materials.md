@@ -68,7 +68,7 @@ See the [plumbing layout](plumbing-layout-v1.html) for where everything goes. Qu
 | Hose bib | 1 | 300–500 | Online |
 | Flexible hoses for the pump | 2 | 500–800 | Online |
 | Terrace hose faucet: PPR 20 mm × 4 m (about 8 m) | 2 lengths | 440–600 | Online |
-| Terrace hose faucet: fittings, sleeve through the wall above the slider | lot | 300–500 | Online |
+| Terrace hose faucet: fittings, own sleeve through the wall above the slider (separate from the electrical hole) | lot | 300–500 | Online |
 | Terrace hose faucet: ½″ hose bib with vacuum breaker + shut-off valve | 1 set | 600–1,100 | Online |
 | Pipe clips, Teflon tape | lot | 400–700 | Online |
 | **Subtotal** | | **11,590–19,500** | |

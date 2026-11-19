@@ -151,7 +151,7 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
       <li>Water: PPR, 25 mm (¾″) main from the pump, up the stairwell chase to the roof, 20 mm (½″) to fixtures. Ground floor lines run in the hung ceilings and drop in the walls; the car bay stretch is painted surface pipe next to the electrical conduit.</li>
       <li class="v2">Septic: 2 chambers, inside about 1.20 × 2.40 m and 1.2–1.5 m liquid depth (enough for about 8–10 people; plumber sizes it to the code). Watertight walls, car-rated cover slab, 2 sealed manholes in the walkway beside the car, not under the wheels.</li>
       <li>No trap between the house and the septic, so the tank vents up through the stack. Plumber confirms if a separate tank vent is also needed.</li>
-      <li>Terrace hose faucet: ½″ PPR tees off the riser in the stairwell chase, runs in the living room hung ceiling, passes the wall above the slider through the same sleeve as the electrical feed (engineer marks it clear of the beam), and drops down the terrace side wall. Pumped pressure, so it works like the ground floor taps.</li>
+      <li>Terrace hose faucet: ½″ PPR tees off the riser in the stairwell chase, runs in the living room hung ceiling, passes the wall above the slider in its own sleeve, at least 15 cm from the electrical feed's hole (never in the same hole; engineer marks both clear of the beam), and drops down the terrace side wall. Heat-fused PPR joints only above the ceiling (no threaded joints), pressure-test before the ceiling is closed, and an access panel at the shut-off valve. Pumped pressure, so it works like the ground floor taps.</li>
       <li>Terrace drainage: the terrace has no drain now. Simplest is to slope the floor slightly to the front and add a small scupper through the base of the front wall onto the ledge, so hose and mop water runs outside to the street, not into the septic. A floor drain would need a hole through the 2nd floor slab into the car bay.</li>
       <li>Rain downspouts and the hose bib stay separate and go to the street. Never into the septic.</li>
       <li>Roof room window AC (front wall): run its condensate in a small 16–20 mm hose to the nearest roof slab drain, so it doesn't drip and stain the open slab.</li>
@@ -425,7 +425,7 @@ o+=`<circle class="tk" cx="${X(170)}" cy="${Y(258.5)}" r="2.4"/>`;
 text(118,282,'boxed chase in the stairwell corner:','lw');
 text(118,291,'100 mm stack + vent + water riser','lw');
 text(118,300,'(passes the open void, no 2nd floor slab hole)','dim');
-// terrace hose faucet: tee off the riser in the chase, through the living hung ceiling, through the wall above the slider (same sleeve as the electrical feed), drop on the terrace side wall
+// terrace hose faucet: tee off the riser in the chase, through the living hung ceiling, through the wall above the slider (own sleeve, separate from the electrical feed), drop on the terrace side wall
 P.run([[170,258],[170,110],[170,96],[172,40],[174,34]],'pc');
 P.valve(170,240); o+=`<circle style="fill:var(--cold)" cx="${X(174.5)}" cy="${Y(32)}" r="3"/>`;
 text(166,26,'hose faucet 0.6 m','lc','style="text-anchor:end"');
