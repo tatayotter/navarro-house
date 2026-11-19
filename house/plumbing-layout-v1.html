@@ -120,13 +120,13 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
       <li>The septic tank sits at the front, so the desludging truck reaches it from the street and the outflow pipe to the street drain is short.</li>
     </ul></div>
     <div class="box"><h2>Water: city water downstairs, tank + pump for the rest</h2><ul>
-      <li><b>Supply:</b> the city line comes in under the kitchen sink (meter is past the annex-side neighbour). The kitchen and the ground T&amp;B stay on direct city water (pressure downstairs is good enough), through a check valve. The line continues in the dining ceiling to the tank, and a float valve fills it.</li>
+      <li><b>Supply:</b> the city line comes in under the kitchen sink (meter is past the annex-side neighbour). The kitchen and the ground T&amp;B stay on direct city water (pressure downstairs is good enough), through a check valve inside the kitchen sink cabinet. The line continues in the dining ceiling to the tank, and a float valve fills it.</li>
       <li><b>Where:</b> 1,000 L tank (about 1.05 m across, 1.5 m tall, about 1 t full) on a plinth at the partition end of the panel-side car bay wall, with the pump in front of it, about 0.9 m clear of the panel. The walkway beside the car stays about 1.1 m wide, and the tank stays off the septic and the inspection chamber. Both stand about 5 cm off the party wall. The partition door then opens on its car-side half.</li>
       <li><b>Pump:</b> 0.5 HP constant-pressure inverter pump. It starts when a tap opens and stops by itself when every fixture is closed (pressure and flow sensing), with dry-run protection. No pressure-tank clicking, and it only runs while someone uses water.</li>
       <li><b>Low noise:</b> rubber anti-vibration pads, flexible hoses on both pump ends, a vented box lined with acoustic foam, pipe clips with rubber inserts, nothing bolted to the party wall.</li>
       <li><b>On the pump:</b> roof T&amp;B, rooftop faucet, terrace hose faucet and the car bay hose bib (at the partition, car side, for washing the car; that water goes to the street, not the septic). Washing the car doesn't drop the pressure downstairs.</li>
-      <li><b>Crossover valve (normally closed)</b> between the pump line and the ground floor line, with a check valve. During rotational water schedules, open it and the tank feeds the kitchen and ground T&amp;B too; close it when city water returns. The tank refills by itself. A brownout doesn't affect the ground floor.</li>
-      <li>Check and shut-off valves around the pump.</li>
+      <li><b>Crossover valve (normally closed)</b> between the pump line and the ground floor line, with a check valve, at 1.2 m on the wall just inside the partition (dining side, by the stairwell), so you can reach it without opening the ceiling. During rotational water schedules, open it and the tank feeds the kitchen and ground T&amp;B too; close it when city water returns. The tank refills by itself. A brownout doesn't affect the ground floor.</li>
+      <li><b>Every valve within reach:</b> main shut-off and the ground-floor check valve in the kitchen sink cabinet; crossover at 1.2 m on the wall; pump valves and check valve inside the pump box (lift-off lid); angle valves under each fixture; terrace faucet shut-off on the exposed car bay ceiling pipe (step stool); rooftop faucet shut-off beside the faucet. No valve sits above the PVC ceiling, so no access hatch is needed.</li>
       <li><b>Electrical:</b> dedicated 20 A circuit with RCD, weatherproof outlet at 1.2 m on the wall beside the pump. Sent to the electrical plan.</li>
     </ul></div>
   </div>
@@ -308,13 +308,14 @@ rect(148,172,127,150,'mh'); P.pump(160,138.5); text(144,124,'auto-stop pump','lp
 P.run([[160,155],[160,145]],'pc'); P.ded(174.5,138.5,'');
 // pump main up to the dining ceiling, then riser + branches
 P.run([[168,138],[173.5,146],[173.5,240],[166,262]],'pc');
-// ground floor on direct city water: tee off the city line at the kitchen (check valve), dining ceiling to the ground T&B
-P.run([[30,425],[130,425]],'pc'); o+=`<circle style="fill:var(--cold)" cx="${X(40)}" cy="${Y(425)}" r="2.4"/>`; text(34,437,'check valve','lc');
-P.run([[130,425],[118,470]],'pc'); P.run([[60,425],[60,470]],'pc'); P.run([[130,425],[146,470],[152,476]],'pc'); P.run([[130,425],[104,446],[104,474]],'pc');
+// ground floor on direct city water: tee under the kitchen sink, check valve inside the sink cabinet (reachable), up into the dining ceiling to the ground T&B
+P.run([[46,474],[60,474],[60,425],[130,425]],'pc'); o+=`<circle style="fill:var(--cold)" cx="${X(53)}" cy="${Y(474)}" r="2.4"/>`; text(64,452,'check valve in sink cabinet','lc');
+P.run([[130,425],[118,470]],'pc'); P.run([[130,425],[146,470],[152,476]],'pc'); P.run([[130,425],[104,446],[104,474]],'pc');
 text(84,437,'city water to ground T&B','lc');
 // crossover (normally closed): during water schedules, open it so the tank + pump feed the ground floor; check valve stops pumped water flowing back
-o+=`<polyline class="pc" style="stroke-dasharray:5 3" points="${[[173,215],[130,240],[130,425]].map(p=>X(p[0])+','+Y(p[1])).join(' ')}"/>`; P.valve(130,247); o+=`<circle style="fill:var(--cold)" cx="${X(130)}" cy="${Y(255)}" r="2.4"/>`;
-text(127,215,'crossover valve + check valve','lc','style="text-anchor:end"'); text(127,223,'(closed unless city water is off)','lc','style="text-anchor:end"');
+// crossover drops to hand height (1.2 m) on the wall just inside the partition, dining side, then back up into the ceiling
+o+=`<polyline class="pc" style="stroke-dasharray:5 3" points="${[[173.5,212],[170,222],[130,240],[130,425]].map(p=>X(p[0])+','+Y(p[1])).join(' ')}"/>`; P.valve(170,222); o+=`<circle style="fill:var(--cold)" cx="${X(160)}" cy="${Y(226.5)}" r="2.4"/>`;
+text(166,214,'crossover (normally closed), 1.2 m on wall','lc','style="text-anchor:end"');
 // terrace faucet feed: tee off the pump main, painted surface pipe on the car bay ceiling kept ~0.8 m off the panel wall, up through a small slab core
 P.run([[173,170],[150,160],[150,50],[165,36]],'pc'); P.valve(150,120); o+=`<circle class="co" cx="${X(165)}" cy="${Y(36)}" r="3.2"/>`;
 text(147,104,'to terrace faucet','lc','style="text-anchor:end"');
