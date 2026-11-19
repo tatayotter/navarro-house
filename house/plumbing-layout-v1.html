@@ -122,7 +122,7 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
     <div class="box"><h2>Water: roof tank with gravity feed</h2><ul>
       <li><b>Supply:</b> the city line comes in under the kitchen sink (meter is past the annex-side neighbour). The kitchen sink tap stays on direct city water for drinking.</li>
       <li><b>Fill pump:</b> a small 0.5 HP transfer pump at the car-side corner by the partition tops up the roof tank once a day (about 10–20 minutes, daytime only). It sits in a vented box on rubber pads with flexible hoses, not fixed to the party wall, so noise stays low and short.</li>
-      <li><b>Roof tank:</b> slim 500 L food-grade tank with a sealed lid on a 1.2 m galvanised steel stand, outside the roof room's front wall next to the T&amp;B, over the front outer column and under the roof overhang. A float switch (or a smart level sensor) stops the pump when the tank is full.</li>
+      <li><b>Roof tank:</b> low, wide 500 L food-grade tank (about 1.0 m across, 0.9 m tall) with a sealed lid on a 1.2 m galvanised steel stand, so it clears the purlins under the roof overhang (roof heights still to measure), outside the roof room's front wall next to the T&amp;B, over the front outer column and under the roof overhang. A float switch (or a smart level sensor) stops the pump when the tank is full.</li>
       <li><b>Gravity feed:</b> water comes down the stairwell chase and runs through the hung ceilings to the kitchen and ground T&amp;B with about 6 m of head, so there's steady pressure, no pump noise when a tap opens, and water during brownouts.</li>
       <li><b>Roof T&amp;B:</b> it sits nearly level with the tank, so gravity alone gives only weak pressure there. Fine for the toilet, lavatory and a tabo bath. For a proper shower, add a small automatic inline booster (about 120 W) on that one line; it only runs while the roof shower is on.</li>
       <li><b>Hose bib</b> by the shutter on the city side of the pump, for washing the car (that water goes to the street, not the septic).</li>
@@ -486,7 +486,7 @@ o+=`<line style="stroke:var(--waste);stroke-width:.8" x1="${X(140)}" y1="${Y(343
 text(60,290,'raised T&amp;B floor 10–15 cm','dim'); text(60,298,'branches run above the slab','dim');
 text(60,200,'Stack vent rises through the roof','lv'); text(60,208,'sheet, ≥ 30 cm above it','lv');
 // rooftop gravity tank: 500 L on a 1.2 m steel stand over the front outer column, under the roof overhang
-rect(142,174.5,212,245,'mh'); P.tank(158,228,14,'500 L');
+rect(134,174.5,205,245,'mh'); P.tank(155,225,19,'500 L');
 text(118,166,'roof tank on 1.2 m stand','lc'); text(118,174,'(over the front column)','lc');
 P.run([[164,240],[170,252],[172,262]],'pc');
 dimH(0,W,D+20,'174.5');
@@ -542,8 +542,8 @@ PL([[430,2.4],[300,2.55],[270,2.6],[270,RS+1.3]],'pv'); TX(370,2.7,'vent in hung
 // water
 R(180,196,0,0.3,'pmp'); TX(188,0.5,'fill pump','lp');
 PL([[190,0.3],[190,2.65],[260,2.65],[260,RS+0.2],[226,RS+0.2],[226,RS+1.25]],'pc'); TX(150,2.3,'fill line','lc');
-o+=`<line style="stroke:var(--fg);stroke-width:1.5" x1="${X(214)}" y1="${Z(RS)}" x2="${X(214)}" y2="${Z(RS+1.2)}"/><line style="stroke:var(--fg);stroke-width:1.5" x1="${X(244)}" y1="${Z(RS)}" x2="${X(244)}" y2="${Z(RS+1.2)}"/>`;
-R(214,244,RS+1.2,RS+2.6,'tk'); TX(229,RS+1.9,'500 L','lc'); TX(180,RS+2.2,'roof tank','lc');
+o+=`<line style="stroke:var(--fg);stroke-width:1.5" x1="${X(207)}" y1="${Z(RS)}" x2="${X(207)}" y2="${Z(RS+1.2)}"/><line style="stroke:var(--fg);stroke-width:1.5" x1="${X(244)}" y1="${Z(RS)}" x2="${X(244)}" y2="${Z(RS+1.2)}"/>`;
+R(206,244,RS+1.2,RS+2.1,'tk'); TX(225,RS+1.6,'500 L','lc'); TX(180,RS+2.2,'roof tank','lc');
 PL([[236,RS+1.25],[236,RS+0.35],[264,RS+0.35],[264,0.4]],'pc'); TX(300,1.0,'gravity down-feed','lc');
 // dims
 TX(-30,F2,'≈3.0 m','dim'); TX(-30,RS,'≈5.65 m','dim'); TX(-30,RF,'≈8.4 m','dim');

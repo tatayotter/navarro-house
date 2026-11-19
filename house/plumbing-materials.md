@@ -74,7 +74,7 @@ See the [plumbing layout](plumbing-layout-v1.html) for where everything goes. Qu
 
 | Item | Qty | Price (₱) | Source |
 |---|---|---|---|
-| Water tank 500 L, slim, opaque food-grade PE, sealed lid | 1 | 5,000–8,000 | Online |
+| Water tank 500 L, low and wide (about 1.0 m across, 0.9 m tall), opaque food-grade PE, sealed lid | 1 | 5,000–8,000 | Online |
 | Steel stand 1.2 m for the tank: galvanised angle bar, base plate, anchors, paint | 1 | 4,000–8,000 | Online |
 | Fill pump 0.5 HP (transfer type) | 1 | 4,000–8,000 | Online |
 | Float switch or smart level sensor for the roof tank | 1 | 500–1,000 | Online |
