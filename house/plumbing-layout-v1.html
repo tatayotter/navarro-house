@@ -141,7 +141,7 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
       <tr><td>Roof T&amp;B lavatory</td><td>Front wall</td><td class="n">50 mm</td><td>Stack, above the slab in the raised floor</td><td>Cold ½″</td></tr>
       <tr><td>Roof T&amp;B shower floor drain</td><td>Back outer corner</td><td class="n">50 mm</td><td>Stack, above the slab in the raised floor</td><td>Cold ½″</td></tr>
       <tr><td>Hose bib</td><td>Car bay, at the partition</td><td class="n">n/a</td><td>Street</td><td>Cold ½″, on the city line</td></tr>
-      <tr><td>Terrace hose faucet (with vacuum breaker)</td><td>Terrace side wall, front corner, 0.6 m</td><td class="n">n/a</td><td>See terrace drainage below</td><td>Cold ½″, tee off the riser with its own shut-off valve</td></tr>
+      <tr><td>Terrace hose faucet (with vacuum breaker)</td><td>Terrace side wall, front corner, 0.6 m</td><td class="n">n/a</td><td>See terrace drainage below</td><td>Cold ½″, from the pump main via a small slab core, own shut-off valve</td></tr>
     </tbody></table></div>
 
   <div class="two">
@@ -151,7 +151,7 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
       <li>Water: PPR, 25 mm (¾″) main from the pump, up the stairwell chase to the roof, 20 mm (½″) to fixtures. Ground floor lines run in the hung ceilings and drop in the walls; the car bay stretch is painted surface pipe next to the electrical conduit.</li>
       <li class="v2">Septic: 2 chambers, inside about 1.20 × 2.40 m and 1.2–1.5 m liquid depth (enough for about 8–10 people; plumber sizes it to the code). Watertight walls, car-rated cover slab, 2 sealed manholes in the walkway beside the car, not under the wheels.</li>
       <li>No trap between the house and the septic, so the tank vents up through the stack. Plumber confirms if a separate tank vent is also needed.</li>
-      <li>Terrace hose faucet: ½″ PPR tees off the riser in the stairwell chase, runs in the living room hung ceiling, passes the wall above the slider in its own sleeve, at least 15 cm from the electrical feed's hole (never in the same hole; engineer marks both clear of the beam), and drops down the terrace side wall. Heat-fused PPR joints only above the ceiling (no threaded joints), pressure-test before the ceiling is closed, and an access panel at the shut-off valve. Pumped pressure, so it works like the ground floor taps.</li>
+      <li>Terrace hose faucet: ½″ PPR tees off the pump main in the car bay (with a shut-off valve), runs as a painted surface pipe on the car bay ceiling kept about 0.6 m away from the panel wall, then goes up through a small core (about 32 mm) in the 2nd floor slab right under the faucet. Short, few joints, and all visible. The core gets a sleeve sealed against water on the terrace side; engineer marks it clear of the wall beam. Pumped pressure, so it works like the ground floor taps.</li>
       <li>Terrace drainage: the terrace has no drain now. Simplest is to slope the floor slightly to the front and add a small scupper through the base of the front wall onto the ledge, so hose and mop water runs outside to the street, not into the septic. A floor drain would need a hole through the 2nd floor slab into the car bay.</li>
       <li>Rain downspouts and the hose bib stay separate and go to the street. Never into the septic.</li>
       <li>Roof room window AC (front wall): run its condensate in a small 16–20 mm hose to the nearest roof slab drain, so it doesn't drip and stain the open slab.</li>
@@ -174,6 +174,7 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
 
   <div class="box flag"><h2>Check with your engineer and plumber</h2><ul>
     <li class="v2"><span class="tag e">Structural</span> Septic tank under the car bay: cover slab and walls designed for the car's wheel load. Digging about 1.8 m deep near the party wall and the front columns can undermine footings; locate them first, the engineer sets the tank position.</li>
+    <li><span class="tag e">Structural</span> Small core (about 32 mm) through the 2nd floor slab for the terrace faucet line, near the front corner on the panel side: engineer marks it clear of the wall beam.</li>
     <li><span class="tag e">Structural</span> Core through the roof slab for the stack (about 150 mm): engineer marks it clear of the beam on the front column line and the party-wall beam.</li>
     <li><span class="tag e">Structural</span> Raised floor and wet walls of the roof T&amp;B add load on the roof slab (already flagged for the room walls). Waterproof the T&amp;B floor before tiling.</li>
     <li>Venting: ground T&amp;B and kitchen vent runs through the hung ceiling to the stairwell chase and joins the stack above the roof T&amp;B fixtures. If that is too long, the plumber may accept air admittance valves instead.</li>
@@ -299,6 +300,9 @@ P.run([[173,215],[130,240],[130,425],[118,470]],'pc');
 P.run([[130,425],[140,465],[158,470]],'pc');
 P.run([[130,330],[60,330],[60,470]],'pc');
 text(98,326,'cold water in ceiling','lc');
+// terrace faucet feed: tee off the pump main, painted surface pipe on the car bay ceiling kept ~0.8 m off the panel wall, up through a small slab core
+P.run([[173,170],[150,160],[150,50],[165,36]],'pc'); P.valve(150,120); o+=`<circle class="co" cx="${X(165)}" cy="${Y(36)}" r="3.2"/>`;
+text(147,104,'to terrace faucet','lc','style="text-anchor:end"');
 // bypass: city line straight into the house main when the power is out
 P.run([[140,206],[173,206]],'pc'); P.valve(156,206);
 // hose bib on the city line at the partition, car side
@@ -425,11 +429,10 @@ o+=`<circle class="tk" cx="${X(170)}" cy="${Y(258.5)}" r="2.4"/>`;
 text(118,282,'boxed chase in the stairwell corner:','lw');
 text(118,291,'100 mm stack + vent + water riser','lw');
 text(118,300,'(passes the open void, no 2nd floor slab hole)','dim');
-// terrace hose faucet: tee off the riser in the chase, through the living hung ceiling, through the wall above the slider (own sleeve, separate from the electrical feed), drop on the terrace side wall
-P.run([[170,258],[170,110],[170,96],[172,40],[174,34]],'pc');
-P.valve(170,240); o+=`<circle style="fill:var(--cold)" cx="${X(174.5)}" cy="${Y(32)}" r="3"/>`;
-text(166,26,'hose faucet 0.6 m','lc','style="text-anchor:end"');
-text(164,150,'½″ line in ceiling','lc','style="text-anchor:end"');
+// terrace hose faucet: ½" line comes up through a small core in the 2nd floor slab from the car bay below, straight to the faucet
+o+=`<circle class="co" cx="${X(165)}" cy="${Y(36)}" r="3.2"/>`; P.run([[165,36],[174,32]],'pc');
+o+=`<circle style="fill:var(--cold)" cx="${X(174.5)}" cy="${Y(32)}" r="3"/>`;
+text(166,26,'hose faucet 0.6 m','lc','style="text-anchor:end"'); text(160,46,'up from car bay (small slab core)','lc','style="text-anchor:end"');
 text(60,240,'Only plumbing here: terrace hose faucet','lc');
 
 svg.innerHTML=o;
