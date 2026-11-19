@@ -4,7 +4,7 @@ status: Draft
 cost: "₱208k–348k"
 price_source: online
 updated: 18 Nov 2026
-summary: The closed room on the rooftop under the existing shed roof, with its own T&B, a queen bed, a desk and a window aircon. Walls: 1 m concrete half wall, then container-van style steel outside and Hardiflex inside up to the roof. This page costs the walls, floor, ceiling, doors and windows, and T&B finishes.
+summary: "The closed room on the rooftop under the existing shed roof, with its own T&B, a queen bed, a desk and a window aircon. Walls: 1 m concrete half wall, then container-van style steel outside and Hardiflex inside up to the roof. This page costs the walls, floor, ceiling, doors and windows, and T&B finishes."
 ---
 
 All prices are online estimates (Sept–Nov 2026) and need local quotes. Sizes are provisional until the site measurements on 19 Nov: room about **4.4 m wide × 5.9 m deep**, walls up to the roof (about 2.65 m at the front, about 3.0 m at the back).

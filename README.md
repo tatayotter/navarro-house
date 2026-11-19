@@ -1,7 +1,7 @@
 # Navarro House renovation
 
 Plans, costs and progress for our house renovation. Prices are in Philippine pesos (₱).
-Last updated: 18 November 2026.
+Last updated: 19 November 2026.
 
 > **For family:** open the website **https://tatayotter.github.io/navarro-house/** and tap any link.
 > The 3D model and plans open right in your phone or computer browser.
@@ -33,6 +33,7 @@ Last updated: 18 November 2026.
 ### Steel stair (Phase 3)
 - [Project brief: design, costs, status](stairs/stair-project-brief.md)
 - [Full plan PDF v3.3](stairs/Stair_Works_Phase3_Plan_v3.3.pdf)
+- [Welding details with measurements](stairs/weld-details.md) (19 Nov)
 - [Shopping list (14 Nov)](stairs/shopping-list-14nov.md)
 
 ### Front gate

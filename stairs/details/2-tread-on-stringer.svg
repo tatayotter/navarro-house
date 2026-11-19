@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 860 770" width="860" height="770" font-family="Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif">
+<defs><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#d9d3ca"/><line x1="0" y1="0" x2="0" y2="8" stroke="#9b9388" stroke-width="1"/></pattern></defs>
+<rect width="860" height="770" fill="#ffffff"/>
+<text x="24" y="34" font-size="19" font-weight="700" fill="#2b2622">2 · How each tread sits on the stringer (side view, from the railing side)</text>
+<polygon points="176.0,570.2 620.0,154.3 620.0,236.5 176.0,652.4" fill="#3d4349" stroke="#2b2622" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="176.0,576.2 620.0,160.3 620.0,230.5 176.0,646.4" fill="#50575f" stroke-linejoin="round"/>
+<polygon points="203.6,411.0 340.4,411.0 340.4,382.8 203.6,382.8" fill="#c9ced3" stroke="#8a929a" stroke-width="0.8" stroke-linejoin="round"/>
+<polygon points="200.0,412.8 203.6,412.8 203.6,382.8 200.0,382.8" fill="#3d4349" stroke-linejoin="round"/>
+<polygon points="200.0,386.4 230.0,386.4 230.0,382.8 200.0,382.8" fill="#3d4349" stroke-linejoin="round"/>
+<polygon points="340.4,412.8 344.0,412.8 344.0,382.8 340.4,382.8" fill="#3d4349" stroke-linejoin="round"/>
+<polygon points="314.0,386.4 344.0,386.4 344.0,382.8 314.0,382.8" fill="#3d4349" stroke-linejoin="round"/>
+<polygon points="200.0,382.8 344.0,382.8 344.0,382.0 200.0,382.0" fill="#2f6fa8" stroke-linejoin="round"/>
+<polygon points="200.0,382.0 344.0,382.0 344.0,379.6 200.0,379.6" fill="#3a3a3a" stroke-linejoin="round"/>
+<polygon points="200.0,382.0 215.0,382.0 215.0,379.3 200.0,379.3" fill="#e3b23c" stroke-linejoin="round"/>
+<polygon points="326.6,295.8 463.4,295.8 463.4,267.6 326.6,267.6" fill="#c9ced3" stroke="#8a929a" stroke-width="0.8" stroke-linejoin="round"/>
+<polygon points="323.0,297.6 326.6,297.6 326.6,267.6 323.0,267.6" fill="#3d4349" stroke-linejoin="round"/>
+<polygon points="323.0,271.2 353.0,271.2 353.0,267.6 323.0,267.6" fill="#3d4349" stroke-linejoin="round"/>
+<polygon points="463.4,297.6 467.0,297.6 467.0,267.6 463.4,267.6" fill="#3d4349" stroke-linejoin="round"/>
+<polygon points="437.0,271.2 467.0,271.2 467.0,267.6 437.0,267.6" fill="#3d4349" stroke-linejoin="round"/>
+<polygon points="323.0,267.6 467.0,267.6 467.0,266.8 323.0,266.8" fill="#2f6fa8" stroke-linejoin="round"/>
+<polygon points="323.0,266.8 467.0,266.8 467.0,264.4 323.0,264.4" fill="#3a3a3a" stroke-linejoin="round"/>
+<polygon points="323.0,266.8 338.0,266.8 338.0,264.1 323.0,264.1" fill="#e3b23c" stroke-linejoin="round"/>
+<polygon points="449.6,180.6 586.4,180.6 586.4,152.4 449.6,152.4" fill="#c9ced3" stroke="#8a929a" stroke-width="0.8" stroke-linejoin="round"/>
+<polygon points="446.0,182.4 449.6,182.4 449.6,152.4 446.0,152.4" fill="#3d4349" stroke-linejoin="round"/>
+<polygon points="446.0,156.0 476.0,156.0 476.0,152.4 446.0,152.4" fill="#3d4349" stroke-linejoin="round"/>
+<polygon points="586.4,182.4 590.0,182.4 590.0,152.4 586.4,152.4" fill="#3d4349" stroke-linejoin="round"/>
+<polygon points="560.0,156.0 590.0,156.0 590.0,152.4 560.0,152.4" fill="#3d4349" stroke-linejoin="round"/>
+<polygon points="446.0,152.4 590.0,152.4 590.0,151.6 446.0,151.6" fill="#2f6fa8" stroke-linejoin="round"/>
+<polygon points="446.0,151.6 590.0,151.6 590.0,149.2 446.0,149.2" fill="#3a3a3a" stroke-linejoin="round"/>
+<polygon points="446.0,151.6 461.0,151.6 461.0,148.9 446.0,148.9" fill="#e3b23c" stroke-linejoin="round"/>
+<polygon points="344.0,412.8 374.0,384.7 374.0,297.6 344.0,297.6" fill="#5d6670" stroke="#2b2622" stroke-width="1" stroke-linejoin="round"/>
+<polygon points="467.0,297.6 497.0,269.5 497.0,182.4 467.0,182.4" fill="#5d6670" stroke="#2b2622" stroke-width="1" stroke-linejoin="round"/>
+<path d="M336.0,412.8 l8,0 l0,8 z" fill="#a8701c"/>
+<path d="M459.0,297.6 l8,0 l0,8 z" fill="#a8701c"/>
+<path d="M582.0,182.4 l8,0 l0,8 z" fill="#a8701c"/>
+<line x1="323.0" y1="263.8" x2="323.0" y2="73.6" stroke="#8a929a" stroke-width="0.8" stroke-dasharray="3 3" stroke-linecap="round"/>
+<line x1="446.0" y1="148.6" x2="446.0" y2="73.6" stroke="#8a929a" stroke-width="0.8" stroke-dasharray="3 3" stroke-linecap="round"/>
+<line x1="323.0" y1="85.6" x2="446.0" y2="85.6" stroke="#5b6570" stroke-width="1" stroke-linecap="round"/>
+<line x1="319.0" y1="89.6" x2="327.0" y2="81.6" stroke="#5b6570" stroke-width="1.4"/>
+<line x1="442.0" y1="89.6" x2="450.0" y2="81.6" stroke="#5b6570" stroke-width="1.4"/>
+<text x="384.5" y="80.6" font-size="12" fill="#5b6570" font-weight="600" text-anchor="middle">20.5 going</text>
+<line x1="446.0" y1="121.6" x2="590.0" y2="121.6" stroke="#5b6570" stroke-width="1" stroke-linecap="round"/>
+<line x1="442.0" y1="125.6" x2="450.0" y2="117.6" stroke="#5b6570" stroke-width="1.4"/>
+<line x1="586.0" y1="125.6" x2="594.0" y2="117.6" stroke="#5b6570" stroke-width="1.4"/>
+<text x="518.0" y="116.6" font-size="12" fill="#5b6570" font-weight="600" text-anchor="middle">24 tread</text>
+<line x1="323.0" y1="266.8" x2="242.0" y2="266.8" stroke="#8a929a" stroke-width="0.8" stroke-dasharray="3 3" stroke-linecap="round"/>
+<line x1="446.0" y1="151.6" x2="242.0" y2="151.6" stroke="#8a929a" stroke-width="0.8" stroke-dasharray="3 3" stroke-linecap="round"/>
+<line x1="254.0" y1="266.8" x2="254.0" y2="151.6" stroke="#5b6570" stroke-width="1" stroke-linecap="round"/>
+<line x1="250.0" y1="270.8" x2="258.0" y2="262.8" stroke="#5b6570" stroke-width="1.4"/>
+<line x1="250.0" y1="155.6" x2="258.0" y2="147.6" stroke="#5b6570" stroke-width="1.4"/>
+<text x="247.0" y="213.2" font-size="12" fill="#5b6570" font-weight="600" text-anchor="end">19.2 step</text>
+<line x1="323.0" y1="318.6" x2="344.0" y2="318.6" stroke="#5b6570" stroke-width="1" stroke-linecap="round"/>
+<line x1="319.0" y1="322.6" x2="327.0" y2="314.6" stroke="#5b6570" stroke-width="1.4"/>
+<line x1="340.0" y1="322.6" x2="348.0" y2="314.6" stroke="#5b6570" stroke-width="1.4"/>
+<text x="333.5" y="337.6" font-size="11" fill="#5b6570" font-weight="600" text-anchor="middle">3.5</text>
+<line x1="248.0" y1="380.5" x2="158.0" y2="304.0" stroke="#6f655c" stroke-width="1" stroke-linecap="round"/>
+<circle cx="248.0" cy="380.5" r="2.2" fill="#6f655c"/>
+<text x="154.0" y="308.0" font-size="12.5" fill="#2b2622" font-weight="400" text-anchor="end">Vinyl tread + nosing</text>
+<line x1="201.8" y1="397.0" x2="158.0" y2="370.0" stroke="#6f655c" stroke-width="1" stroke-linecap="round"/>
+<circle cx="201.8" cy="397.0" r="2.2" fill="#6f655c"/>
+<text x="154.0" y="374.0" font-size="12.5" fill="#2b2622" font-weight="400" text-anchor="end">Front angle ¼″×2″</text>
+<text x="154.0" y="389.0" font-size="12.5" fill="#2b2622" font-weight="400" text-anchor="end">(frame 5 cm tall)</text>
+<line x1="272.0" y1="403.0" x2="158.0" y2="466.0" stroke="#6f655c" stroke-width="1" stroke-linecap="round"/>
+<circle cx="272.0" cy="403.0" r="2.2" fill="#6f655c"/>
+<text x="154.0" y="470.0" font-size="12.5" fill="#2b2622" font-weight="400" text-anchor="end">End cross support</text>
+<text x="154.0" y="485.0" font-size="12.5" fill="#2b2622" font-weight="400" text-anchor="end">(sits over the stringer)</text>
+<line x1="482.0" y1="223.6" x2="644.0" y2="220.0" stroke="#6f655c" stroke-width="1" stroke-linecap="round"/>
+<circle cx="482.0" cy="223.6" r="2.2" fill="#6f655c"/>
+<text x="648.0" y="224.0" font-size="12.5" fill="#2b2622" font-weight="400" text-anchor="start">Front leg: 2×2 tubular ~17 cm,</text>
+<text x="648.0" y="239.0" font-size="12.5" fill="#2b2622" font-weight="400" text-anchor="start">ends cut to the slope, welded</text>
+<text x="648.0" y="254.0" font-size="12.5" fill="#2b2622" font-weight="400" text-anchor="start">to stringer top + tread frame</text>
+<line x1="590.0" y1="182.4" x2="644.0" y2="112.0" stroke="#6f655c" stroke-width="1" stroke-linecap="round"/>
+<circle cx="590.0" cy="182.4" r="2.2" fill="#6f655c"/>
+<text x="648.0" y="116.0" font-size="12.5" fill="#2b2622" font-weight="400" text-anchor="start">Back corner rests on the</text>
+<text x="648.0" y="131.0" font-size="12.5" fill="#2b2622" font-weight="400" text-anchor="start">stringer top: weld here</text>
+<line x1="536.0" y1="275.0" x2="644.0" y2="334.0" stroke="#6f655c" stroke-width="1" stroke-linecap="round"/>
+<circle cx="536.0" cy="275.0" r="2.2" fill="#6f655c"/>
+<text x="648.0" y="338.0" font-size="12.5" fill="#2b2622" font-weight="400" text-anchor="start">C-channel 2×4 stringer</text>
+<text x="648.0" y="353.0" font-size="12.5" fill="#2b2622" font-weight="400" text-anchor="start">(10 cm deep), slope ~43°</text>
+<path d="M636.0,421.0 l8,0 l0,8 z" fill="#a8701c"/>
+<text x="659.0" y="430.0" font-size="12.5" fill="#a8701c" font-weight="700" text-anchor="start">= weld points</text>
+<text x="24.0" y="700.0" font-size="12.5" fill="#6f655c" font-weight="400" text-anchor="start">Every tread: back corners rest on the two stringers, front corners stand on two short legs. Each leg stands 3.5 cm behind</text>
+<text x="24.0" y="717.5" font-size="12.5" fill="#6f655c" font-weight="400" text-anchor="start">the nosing, right behind the step below. Rise 19.2 cm, going 20.5 cm, tread 24 cm, so each nosing overhangs the step below</text>
+<text x="24.0" y="735.0" font-size="12.5" fill="#6f655c" font-weight="400" text-anchor="start">by 3.5 cm. Cut each leg to fit on site (~17 cm).</text>
+</svg>
