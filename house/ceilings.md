@@ -1,7 +1,7 @@
 ---
 title: Ceilings
 status: Planned
-cost: "₱71k–105k"
+cost: "₱69k–102k"
 price_source: online
 updated: 19 Nov 2026
 summary: "The hung ceilings in five rooms. Decided: White Oak PVC ceiling panels in the master bedroom, living room, kitchen and dining. The terrace stays gypsum because of the heat under its metal roof. The car bay has no hung ceiling."
@@ -32,11 +32,10 @@ Panels include 12% wastage, because the 2.9 m panels are shorter than every room
 |---|---|---|---|---|---|---|
 | Master bedroom (PVC) | 15.3 m² | 24 | 8 | 13,500 | 19,700 | Online |
 | Living room (PVC) | 22 m² | 34 | 10 | 19,200 | 27,900 | Online |
-| Living room LED cove in aluminium profile | 1 lot | | | 1,500 | 3,000 | Online |
 | Kitchen + dining (PVC) | 23 m² | 36 | 16 | 20,700 | 30,300 | Online |
 | Terrace (gypsum, painted) | 10.5 m² | | | 9,500 | 14,500 | Online |
-| **Total** | **70.8 m²** | **94** | **34** | **64,400** | **95,400** | |
-| **With 10% buffer** | | | | **70,800** | **105,000** | |
+| **Total** | **70.8 m²** | **94** | **34** | **62,900** | **92,400** | |
+| **With 10% buffer** | | | | **69,200** | **101,600** | |
 
 Panels alone: 94 × ₱236.25 = ₱22,208 on sale (₱29,610 at the regular price). Online.
 
@@ -48,6 +47,7 @@ For comparison, gypsum in the same four rooms would have been about ₱64k–98k
 
 - **Furring:** metal only, not wood, at 40 cm or closer, running across the panels.
 - **Expansion:** leave a 5–10 mm gap inside the wall trims.
+- **No cove lights** anywhere (decided 19 Nov). Flat ceilings with downlights and the pendants only.
 - **Lights:** add a small furring frame round each recessed downlight hole so the hollow panel does not crack.
 - **Fan and pendants:** hang the living room hugger fan and all pendants from the slab, never from the panels.
 - **Before closing up:** mark every light, junction box and the wiring route on the furring. Panels can be cut out later for access.

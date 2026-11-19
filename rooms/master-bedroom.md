@@ -35,7 +35,7 @@ The roof slab is waterproofed and covered by the rooftop roof, so the ceiling is
 - **Door:** rehung to swing toward Wall 4 with a stop at 90°.
 - **Floor:** self-levelling layer, then light-oak SPC vinyl.
 
-**Ceiling and lighting:** drop ceiling at the beam underside (about 218 cm), hiding beams, slab damage and wiring. **Changed 19 Nov:** White Oak PVC ceiling panels (24 pieces, about ₱13.5k–19.7k installed, Online) instead of gypsum, about the same cost, so the total is unchanged. No ceiling painting needed. See the [ceilings page](../house/ceilings.html). 4 recessed downlights, 2 paper-lantern pendants over the bedside shelves, and hidden LED strips (under bed, shelves, wardrobe plinth, desk shelf, top bunk, fluted-wall cove).
+**Ceiling and lighting:** drop ceiling at the beam underside (about 218 cm), hiding beams, slab damage and wiring. **Changed 19 Nov:** White Oak PVC ceiling panels (24 pieces, about ₱13.5k–19.7k installed, Online) instead of gypsum, about the same cost, so the total is unchanged. No ceiling painting needed. See the [ceilings page](../house/ceilings.html). 4 recessed downlights, 2 paper-lantern pendants over the bedside shelves, and hidden LED strips (under bed, shelves, wardrobe plinth, desk shelf, top bunk). No cove lights in the ceiling or walls (dropped 19 Nov).
 
 ## Work order
 
