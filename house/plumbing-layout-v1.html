@@ -121,10 +121,10 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
     </ul></div>
     <div class="box"><h2>Water: city water downstairs, tank + pump for the rest</h2><ul>
       <li><b>Supply:</b> the city line comes in under the kitchen sink (meter is past the annex-side neighbour). The kitchen and the ground T&amp;B stay on direct city water (pressure downstairs is good enough), through a check valve inside the kitchen sink cabinet. The line continues in the dining ceiling to the tank, and a float valve fills it.</li>
-      <li><b>Where:</b> 1,000 L tank (about 1.05 m across, 1.5 m tall, about 1 t full) on a plinth at the partition end of the panel-side car bay wall, with the pump in front of it, about 0.9 m clear of the panel. The walkway beside the car stays about 1.1 m wide, and the tank stays off the septic and the inspection chamber. Both stand about 5 cm off the party wall. The partition door then opens on its car-side half.</li>
+      <li><b>Where:</b> 1,000 L tank (about 1.05 m across, 1.5 m tall, about 1 t full) on a plinth at the partition end of the panel-side car bay wall, with the pump in front of it, about 0.9 m clear of the panel. The walkway beside the car stays about 1.1 m wide, and the tank stays off the septic and the inspection chamber. Both stand about 5 cm off the party wall. The partition's wood door sits in the walkway just beside the tank and swings into the dining side, so it never hits the tank.</li>
       <li><b>Pump:</b> 0.5 HP constant-pressure inverter pump. It starts when a tap opens and stops by itself when every fixture is closed (pressure and flow sensing), with dry-run protection. No pressure-tank clicking, and it only runs while someone uses water.</li>
       <li><b>Low noise:</b> rubber anti-vibration pads, flexible hoses on both pump ends, a vented box lined with acoustic foam, pipe clips with rubber inserts, nothing bolted to the party wall.</li>
-      <li><b>On the pump:</b> roof T&amp;B, rooftop faucet, terrace hose faucet and the car bay hose bib (at the partition, car side, for washing the car; that water goes to the street, not the septic). Washing the car doesn't drop the pressure downstairs.</li>
+      <li><b>On the pump:</b> roof T&amp;B, rooftop faucet, terrace hose faucet and the car bay hose bib (on the partition between the window and the door, car side, at 0.6 m; its pipe crosses above the door at ceiling height; for washing the car; that water goes to the street, not the septic). Washing the car doesn't drop the pressure downstairs.</li>
       <li><b>Crossover valve (normally closed)</b> between the pump line and the ground floor line, with a check valve, at 1.2 m on the wall just inside the partition (dining side, by the stairwell), so you can reach it without opening the ceiling. During rotational water schedules, open it and the tank feeds the kitchen and ground T&amp;B too; close it when city water returns. The tank refills by itself. A brownout doesn't affect the ground floor.</li>
       <li><b>Every valve within reach:</b> main shut-off and the ground-floor check valve in the kitchen sink cabinet; crossover at 1.2 m on the wall; pump valves and check valve inside the pump box (lift-off lid); angle valves under each fixture; terrace faucet shut-off on the exposed car bay ceiling pipe (step stool); rooftop faucet shut-off beside the faucet. No valve sits above the PVC ceiling, so no access hatch is needed.</li>
       <li><b>Electrical:</b> dedicated 20 A circuit with RCD, weatherproof outlet at 1.2 m on the wall beside the pump. Sent to the electrical plan.</li>
@@ -151,7 +151,7 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
       <tr><td>Roof T&amp;B WC</td><td>Outer wall, back half (near the door, dry side)</td><td class="n">100 mm</td><td>Stack, in the raised floor (about 1 m run)</td><td>Cold ½″</td></tr>
       <tr><td>Roof T&amp;B lavatory</td><td>Front wall, inner corner</td><td class="n">50 mm</td><td>Stack, above the slab in the raised floor</td><td>Cold ½″</td></tr>
       <tr><td>Roof T&amp;B shower floor drain</td><td>Front outer corner, farthest from the door, next to the stack</td><td class="n">50 mm</td><td>Stack, above the slab in the raised floor</td><td>Cold ½″</td></tr>
-      <tr><td>Hose bib</td><td>Car bay, at the partition</td><td class="n">n/a</td><td>Street</td><td>Cold ½″, on the pump (tank water)</td></tr>
+      <tr><td>Hose bib</td><td>Car bay partition, between the window and the door, 0.6 m</td><td class="n">n/a</td><td>Street</td><td>Cold ½″, on the pump (tank water)</td></tr>
       <tr><td>Rooftop outdoor faucet (with vacuum breaker)</td><td>Outside the roof room front wall, in front of the T&amp;B, 0.6 m, ≥ 30 cm from the outdoor socket</td><td class="n">n/a</td><td>Open slab roof drains</td><td>Cold ½″, tee off the roof T&amp;B supply, own shut-off valve</td></tr>
       <tr><td>Terrace hose faucet (with vacuum breaker)</td><td>Terrace side wall, front corner, 0.6 m</td><td class="n">n/a</td><td>None (watering plants only)</td><td>Cold ½″, from the pump main via a small slab core, own shut-off valve</td></tr>
     </tbody></table></div>
@@ -276,9 +276,10 @@ rect(39.4,68.9,461.5,478,'wet'); text(54,472,'sink','dim'); text(33,472,'bin','d
 rect(86,140,291,323,'furn'); text(113,316,'shelves','dim'); text(62,316,'open','dim');
 // dining zone between car and kitchen
 rect(4,135,206,282,'furn'); text(70,232,'Dining','lbl'); text(70,244,'to plan: ≈ 2.2 m deep','dim');
-// car bay / dining partition: full-height steel frame + 1.80 m sliding glass door, usually open for airflow
-rect(0,98,197,200,'wall'); line(98,197.6,136,197.6,'glass'); line(132,199.4,170,199.4,'glass'); rect(170,W,197,200,'wall');
-text(134,192,'1.80 m sliding glass door','dim'); text(49,192,'steel-frame partition','dim');
+// car bay / dining partition (Rowil 19 Nov): solid wall with a sliding window over the car (watch the car, open for air) + solid wood door at the walkway, swinging into the dining side (positions provisional)
+rect(0,20,197,200,'wall'); line(20,197.8,52,197.8,'glass'); line(48,199.2,80,199.2,'glass'); rect(80,94,197,200,'wall'); rect(130,W,197,200,'wall');
+line(130,200,130,236,'door'); o+=`<path class="arc" d="M${X(94)},${Y(200)} A${(36*S).toFixed(1)},${(36*S).toFixed(1)} 0 0 0 ${X(130)},${Y(236)}"/>`;
+text(50,192,'sliding window ≈1.5 m','dim'); text(112,192,'wood door','dim');
 // wheel stop (car bay vents through the perforated top of the shutter; side walls are party walls)
 rect(28,74,176,179,'wall'); text(51,172,'wheel stop','dim');
 
@@ -319,8 +320,8 @@ text(166,214,'crossover (normally closed), 1.2 m on wall','lc','style="text-anch
 // terrace faucet feed: tee off the pump main, painted surface pipe on the car bay ceiling kept ~0.8 m off the panel wall, up through a small slab core
 P.run([[173,170],[150,160],[150,50],[165,36]],'pc'); P.valve(150,120); o+=`<circle class="co" cx="${X(165)}" cy="${Y(36)}" r="3.2"/>`;
 text(147,104,'to terrace faucet','lc','style="text-anchor:end"');
-// car bay hose bib on the pump (tank water) at the partition, car side
-P.run([[173.5,200],[100,200],[100,197]],'pc'); o+=`<circle style="fill:var(--cold)" cx="${X(100)}" cy="${Y(194)}" r="2.6"/>`; text(96,188,'hose bib','lc','style="text-anchor:end"');
+// car bay hose bib on the pump (tank water) on the partition between the window and the door, car side; pipe crosses the door at ceiling height
+P.run([[173.5,200],[88,200],[88,197]],'pc'); o+=`<circle style="fill:var(--cold)" cx="${X(88)}" cy="${Y(194)}" r="2.6"/>`; text(86,186,'hose bib','lc','style="text-anchor:end"');
 o+='<g class="v2">';
 // septic tank: 2 chambers, inside ~1.20 x 2.40 m, under the walkway strip beside the car (position indicative, engineer sets it)
 rect(95,142,30,125,'sep'); line(95,62,142,62,'pb');

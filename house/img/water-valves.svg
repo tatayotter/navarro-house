@@ -2,8 +2,13 @@
 <text x="40.0" y="22.0" font-size="14" fill="#222" text-anchor="start" font-weight="bold">Ground floor: where each valve is</text>
 <text x="40.0" y="36.0" font-size="9.5" fill="#777" text-anchor="start" font-weight="normal">Street (southwest) at the top, like the other plans</text>
 <rect x="40.0" y="46.0" width="200.7" height="554.3" fill="#faf8f3" stroke="#2b2b2b" stroke-width="5"/>
-<polyline points="40.0,276.0 120.5,276.0" fill="none" stroke="#2b2b2b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="166.5,276.0 240.7,276.0" fill="none" stroke="#2b2b2b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="40.0,276.0 63.0,276.0" fill="none" stroke="#2b2b2b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="132.0,276.0 148.1,276.0" fill="none" stroke="#2b2b2b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="189.5,276.0 240.7,276.0" fill="none" stroke="#2b2b2b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="63.0,274.9 99.8,274.9" fill="none" stroke="#5b9bd5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="95.2,277.1 132.0,277.1" fill="none" stroke="#5b9bd5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="189.5,276.0 189.5,317.4" fill="none" stroke="#2b2b2b" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M148.1,276.0 A41.4,41.4 0 0 0 189.5,317.4" fill="none" stroke="#999" stroke-dasharray="2 2"/>
 <rect x="155.0" y="534.8" width="85.7" height="65.5" fill="#e9f1f8" stroke="#2b2b2b" stroke-width="1.5"/>
 <rect x="233.8" y="117.3" width="6.9" height="34.5" fill="#d33" stroke="#d33" stroke-width="1"/>
 <text x="230.3" y="138.0" font-size="8.5" fill="#b91c1c" text-anchor="end" font-weight="normal">panel</text>
@@ -11,7 +16,8 @@
 <text x="109.0" y="391.0" font-size="10" fill="#777" text-anchor="middle" font-weight="bold">DINING</text>
 <text x="91.8" y="506.0" font-size="10" fill="#777" text-anchor="middle" font-weight="bold">KITCHEN</text>
 <text x="197.5" y="565.8" font-size="9" fill="#777" text-anchor="middle" font-weight="bold">T&amp;B</text>
-<text x="86.0" y="271.4" font-size="8" fill="#777" text-anchor="middle" font-weight="normal">partition</text>
+<text x="97.5" y="269.1" font-size="8" fill="#777" text-anchor="middle" font-weight="normal">sliding window</text>
+<text x="168.8" y="269.1" font-size="8" fill="#777" text-anchor="middle" font-weight="normal">wood door</text>
 <circle cx="215.9" cy="247.8" r="23.6" fill="#e6f6f4" stroke="#0d9488" stroke-width="1.5"/>
 <text x="215.9" y="250.7" font-size="8.5" fill="#0d9488" text-anchor="middle" font-weight="bold">1,000 L</text>
 <rect x="210.2" y="192.0" width="27.6" height="26.5" fill="#f1f5f4" stroke="#0d9488" stroke-width="1.2"/>
@@ -23,7 +29,7 @@
 <polyline points="189.5,534.8 159.6,558.9 159.6,591.1" fill="none" stroke="#1f6fd1" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
 <polyline points="224.0,224.2 224.0,218.5" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
 <polyline points="233.2,204.7 239.5,213.9 239.5,347.3" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-<polyline points="239.5,276.0 155.0,276.0 155.0,269.1" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="239.5,276.0 141.2,276.0 141.2,269.1" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
 <polyline points="238.9,241.5 212.5,230.0 212.5,103.5 229.7,87.4" fill="none" stroke="#0d9488" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
 <polyline points="239.5,289.8 235.5,301.3 189.5,322.0 189.5,534.8" fill="none" stroke="#0d9488" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="6 4"/>
 <text x="69.9" y="437.0" font-size="8.5" fill="#1f6fd1" text-anchor="middle" font-weight="normal">city line</text>
@@ -64,10 +70,10 @@
 <path d="M207.5,180.0 L217.5,188.0 L217.5,180.0 L207.5,188.0 z" fill="#c2410c"/>
 <circle cx="175.7" cy="174.8" r="8" fill="#c2410c" stroke="#fff" stroke-width="1.5"/>
 <text x="175.7" y="178.3" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">8</text>
-<polyline points="155.0,269.1 132.0,253.0" fill="none" stroke="#c2410c" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M150.0,265.1 L160.0,273.1 L160.0,265.1 L150.0,273.1 z" fill="#c2410c"/>
-<circle cx="132.0" cy="253.0" r="8" fill="#c2410c" stroke="#fff" stroke-width="1.5"/>
-<text x="132.0" y="256.5" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">9</text>
+<polyline points="141.2,269.1 122.8,250.7" fill="none" stroke="#c2410c" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M136.2,265.1 L146.2,273.1 L146.2,265.1 L136.2,273.1 z" fill="#c2410c"/>
+<circle cx="122.8" cy="250.7" r="8" fill="#c2410c" stroke="#fff" stroke-width="1.5"/>
+<text x="122.8" y="254.2" font-size="10" fill="#fff" text-anchor="middle" font-weight="bold">9</text>
 <circle cx="109.0" cy="586.5" r="3" fill="#fff" stroke="#c2410c" stroke-width="1.6"/>
 <circle cx="214.8" cy="593.4" r="3" fill="#fff" stroke="#c2410c" stroke-width="1.6"/>
 <circle cx="191.8" cy="541.6" r="3" fill="#fff" stroke="#c2410c" stroke-width="1.6"/>

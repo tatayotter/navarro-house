@@ -25,7 +25,7 @@ Blue is city water. Green is tank water from the pump. The dashed green line is 
 | 6 | Crossover shut-off + check valve | Wall just inside the partition, dining side, by the stairwell | 1.2 m | Open during water schedules, close when city water is back |
 | 7 | Roof riser shut-off | Same wall, beside 6 | 1.2 m | Repairs on the roof T&amp;B or rooftop faucet |
 | 8 | Terrace faucet shut-off | Exposed pipe on the car bay ceiling | ceiling | Rarely; step stool |
-| 9 | Car bay hose bib | Partition, car side | 0.6 m | Washing the car (tank water) |
+| 9 | Car bay hose bib | Partition, car side, between the window and the door | 0.6 m | Washing the car (tank water) |
 | ○ | Angle valves | Under each kitchen and T&amp;B fixture | 0.2–0.5 m | Fixture repairs |
 
 Upstairs (not drawn): the terrace hose faucet at 0.6 m on the terrace side wall, the rooftop faucet with its own shut-off at 0.6 m outside the roof room, and angle valves under the roof T&amp;B fixtures.
