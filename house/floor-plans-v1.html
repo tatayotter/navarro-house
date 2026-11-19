@@ -71,7 +71,7 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
     <h1>Navarro House floor plans</h1>
     <p class="sub">Ground floor redrawn from your CAD (inches converted to metres). 2nd floor from your master bedroom notes, with the rest still to confirm. Street (southwest) at the top, seen from above like your CAD, so left and right are swapped compared with standing in the street: the stair annex is on your right when you face the house. Orange items are what I still need you to confirm.</p>
   </header>
-  <div class="flag"><b>Airflow:</b> in daily use the partition door, the 2nd floor sliding doors and the 2nd floor stair room door stay open, so air runs from the shutter through the dining and kitchen, up the stairwell and out upstairs. Close the partition door while the car is running.<br><b>Front gate (decided, v4):</b> old piers removed, one opening ≈ 157 in ≈ 4.01 m. 3.00 m manual roll-up shutter + 10 cm steel post + 0.90 m bay with an 80 × 210 cm solid door, swinging in. <a href="airflow-3d-v1.html">See it in 3D</a>.</div>
+  <div class="flag"><b>Airflow:</b> in daily use the partition door and window, the 2nd floor sliding doors and the 2nd floor stair room door stay open, so air runs from the shutter through the dining and kitchen, up the stairwell and out upstairs. Close the partition door and window while the car is running.<br><b>Front gate (decided, v4):</b> old piers removed, one opening ≈ 157 in ≈ 4.01 m. 3.00 m manual roll-up shutter + 10 cm steel post + 0.90 m bay with an 80 × 210 cm solid door, swinging in. <a href="airflow-3d-v1.html">See it in 3D</a>.</div>
   <div class="plans">
 <section class="sheet"><h2>Ground floor <span>inside width 174.5 in = 4.43 m</span></h2><svg id="g"></svg></section>
 <section class="sheet"><h2>2nd floor <span>bedroom + living measured</span></h2><svg id="s"></svg></section>
@@ -145,9 +145,10 @@ rect(39.4,68.9,461.5,478,'wet'); text(54,472,'sink','dim'); text(33,472,'bin','d
 rect(86,140,291,323,'furn'); text(113,316,'shelves','dim'); text(62,316,'open','dim');
 // dining zone between car and kitchen
 rect(4,135,206,282,'furn'); text(70,232,'Dining','lbl'); text(70,244,'to plan: ≈ 2.2 m deep','dim');
-// car bay / dining partition: full-height steel frame + 1.80 m sliding glass door, usually open for airflow
-rect(0,98,197,200,'wall'); line(98,197.6,136,197.6,'glass'); line(132,199.4,170,199.4,'glass'); rect(170,W,197,200,'wall');
-text(134,192,'1.80 m sliding glass door','dim'); text(49,192,'steel-frame partition','dim');
+// car bay / dining partition (Rowil 19 Nov): solid wall with a sliding window over the car (watch the car, open for air) + solid wood door at the walkway, swinging into the dining side (positions provisional)
+rect(0,20,197,200,'wall'); line(20,197.8,52,197.8,'glass'); line(48,199.2,80,199.2,'glass'); rect(80,94,197,200,'wall'); rect(130,W,197,200,'wall');
+line(130,200,130,236,'door'); o+=`<path class="arc" d="M${X(94)},${Y(200)} A${(36*S).toFixed(1)},${(36*S).toFixed(1)} 0 0 0 ${X(130)},${Y(236)}"/>`;
+text(50,192,'sliding window ≈1.5 m','dim'); text(112,192,'wood door','dim');
 // wheel stop (car bay vents through the perforated top of the shutter; side walls are party walls)
 rect(28,74,176,179,'wall'); text(51,172,'wheel stop','dim');
 

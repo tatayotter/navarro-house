@@ -167,9 +167,10 @@ rect(39.4,68.9,461.5,478,'wet'); text(54,472,'sink','dim'); text(33,472,'bin','d
 rect(86,140,291,323,'furn'); text(113,316,'shelves','dim'); text(62,316,'open','dim');
 // dining zone between car and kitchen
 rect(4,135,206,282,'furn'); text(70,232,'Dining','lbl'); text(70,244,'to plan: ≈ 2.2 m deep','dim');
-// car bay / dining partition: full-height steel frame + 1.80 m sliding glass door, usually open for airflow
-rect(0,98,197,200,'wall'); line(98,197.6,136,197.6,'glass'); line(132,199.4,170,199.4,'glass'); rect(170,W,197,200,'wall');
-text(134,192,'1.80 m sliding glass door','dim'); text(49,192,'steel-frame partition','dim');
+// car bay / dining partition (Rowil 19 Nov): solid wall with a sliding window over the car (watch the car, open for air) + solid wood door at the walkway, swinging into the dining side (positions provisional)
+rect(0,20,197,200,'wall'); line(20,197.8,52,197.8,'glass'); line(48,199.2,80,199.2,'glass'); rect(80,94,197,200,'wall'); rect(130,W,197,200,'wall');
+line(130,200,130,236,'door'); o+=`<path class="arc" d="M${X(94)},${Y(200)} A${(36*S).toFixed(1)},${(36*S).toFixed(1)} 0 0 0 ${X(130)},${Y(236)}"/>`;
+text(50,192,'sliding window ≈1.5 m','dim'); text(112,192,'wood door','dim');
 // wheel stop (car bay vents through the perforated top of the shutter; side walls are party walls)
 rect(28,74,176,179,'wall'); text(51,172,'wheel stop','dim');
 
