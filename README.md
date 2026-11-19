@@ -13,7 +13,7 @@ Last updated: 19 November 2026.
 | Front gate | Design settled (roll-up car shutter + small door). Waiting on final measurements. |
 | Master bedroom | Plan and costing done (about ₱167k with buffer). |
 | Living room | Design and cost estimate done (₱228k–370k). |
-| Electrical wiring | Whole-house plan drafted: 20 ceiling lights + 5 pendants, 32 outlets, 12 smart switch plates. Booster pump and roof room window aircon have their own circuits. Materials about ₱113k–179k (online estimate). Waiting for the electrician to check. |
+| Electrical wiring | Whole-house plan drafted: 20 ceiling lights + 5 pendants, 32 outlets, 12 smart switch plates. The roof tank fill pump and roof room window aircon have their own circuits. Materials about ₱114k–180k (online estimate). Waiting for the electrician to check. |
 | 3D model | Whole house in 3D with airflow, electrical layer and phone view. Kitchen re-arranged (bar counter, fridge by the T&B). |
 | Rooftop | Roof room enlarged to take in the old deck area: no deck, no hallway; door at the top of the steel stair. Walls decided: 1 m concrete half wall all round, then container-van style steel outside, insulation and Hardiflex inside up to the roof; tiled floor, gypsum ceiling, about ₱208k–348k with buffer (online estimate), see `rooms/rooftop-room.md`. Slab load confirmed OK; engineer to check wall anchoring. |
 | Glass and aluminium | Schedule of all windows, sliding doors, the terrace jalousie (now 6 bays) for supplier quotes, about ₱118k–185k (online estimate); see `house/glass-aluminium.md`. Sizes provisional until measured. |

@@ -1,9 +1,9 @@
 ---
 title: Electrical materials
 status: Draft
-cost: "₱113k–₱179k"
+cost: "₱114k–₱180k"
 price_source: online
-updated: 18 Nov 2026
+updated: 19 Nov 2026
 summary: Material list for rewiring the whole house to the electrical plan, with quantities counted from the layout. Materials only; labour, permit and appliances are not included.
 ---
 
@@ -15,15 +15,15 @@ All prices are online estimates (Nov 2026) and need local quotes. Quantities are
 |---|---|---|---|
 | Panel and protection | 18,950 | 33,100 | Online |
 | Wire (THHN, copper) | 36,675 | 48,575 | Online |
-| Conduit and boxes | 16,650 | 26,550 | Online |
+| Conduit and boxes | 17,150 | 27,450 | Online |
 | Switches and outlets | 14,350 | 23,230 | Online |
 | Lights and fans | 12,230 | 24,350 | Online |
 | Network | 2,040 | 3,350 | Online |
 | Sundries | 2,000 | 3,500 | Online |
-| **Total before contingency** | **102,895** | **162,655** | |
-| **With 10% contingency** | **113,185** | **178,920** | |
+| **Total before contingency** | **103,395** | **163,555** | |
+| **With 10% contingency** | **113,735** | **179,910** | |
 
-**Not included:** labour, the electrical permit and inspection, the meter or service drop from the power company, the bedroom aircon, the roof window aircon, the booster pump, the induction cooktop, the router and mesh units, stand and wall fans, and the living room ceiling fan.
+**Not included:** labour, the electrical permit and inspection, the meter or service drop from the power company, the bedroom aircon, the roof window aircon, the fill pump and float switch, the induction cooktop, the router and mesh units, stand and wall fans, and the living room ceiling fan.
 
 **Overlap with the room costings:** the master bedroom and living room costings each have their own electrical line. This list already covers the whole house, so do not add those lines on top when totalling.
 
@@ -31,13 +31,14 @@ All prices are online estimates (Nov 2026) and need local quotes. Quantities are
 
 | Item | Count |
 |---|---|
-| Circuits | 14 (2 lighting, outlets by area, bedroom aircon, roof window aircon, induction, booster pump) |
-| General outlets | 32, plus dedicated outlets for the aircons, fridge, hood, induction and pump |
+| Circuits | 14 (2 lighting, outlets by area, bedroom aircon, roof window aircon, induction, tank fill pump) |
+| General outlets | 32, plus dedicated outlets for the aircons, fridge, hood, induction and fill pump |
 | Ceiling lights | 20, plus 5 smart pendants and 1 under-cabinet strip |
 | Smart switch plates | 12 (4 one-gang, 7 two-gang, 1 three-gang = 21 gangs) |
 | Network | Router at the 2nd-floor counter, 3 wired mesh nodes |
 
 ## Item list
+
 
 ### Panel and protection
 
@@ -72,7 +73,8 @@ All prices are online estimates (Nov 2026) and need local quotes. Quantities are
 | Deep utility boxes (sockets and switches) | 50 | 1,750 | 3,000 | Online |
 | Junction and octagonal ceiling boxes | 30 | 900 | 1,650 | Online |
 | Weatherproof boxes with covers (outdoor, roof, pump) | 6 | 1,800 | 3,300 | Online |
-| **Subtotal** | | **16,650** | **26,550** | |
+| Control cable for the roof tank float switch, 2-core, per metre (stairwell chase) | 20 | 500 | 900 | Online |
+| **Subtotal** | | **17,150** | **27,450** | |
 
 ### Switches and outlets
 

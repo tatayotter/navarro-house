@@ -103,7 +103,7 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
 <li>Outside the room's front wall (open slab): 1 weatherproof LED light and 1 weatherproof socket, both on the wall under the roof overhang.</li>
 <li>Mesh node 3: inside the room, wired back to the router.</li>
 <li>Window-type aircon (Rowil, 18 Nov): sleeve high in the room's front wall left of the slider (sill 1.5 m, top 1.92 m, above the desk corner), blowing out to the open slab under the roof overhang. Its own outlet is on the annex-side wall at the front corner, about 1.8 m. Circuit 13, 20 A, 3.5 mm² (the old washer slot). The opening needs a lintel, and the back of the unit must face open air.</li>
-<li>Pump system: CONFIRMED by Rowil; it feeds the roof T&amp;B (circuit 14, 20 A, RCD, dedicated). 0.5 HP inverter booster in the car bay against the panel wall beside the 500 L slim tank; weatherproof outlet or isolator at 1.2 m, about 1.5 m from the panel via the car bay surface conduit (shown on the ground floor as PUMP).</li></ul>
+<li>Water (changed 19 Nov): 500 L tank on a 1.2 m stand on the open slab outside the room's front wall, by the T&amp;B, feeding the house by gravity. A small 0.5 HP fill pump sits on the ground floor in the car-side corner by the partition, with a weatherproof outlet at 1.2 m on the car-side wall (circuit 14, 20 A, RCD). A float switch in the tank controls the pump, either by a control cable down the stairwell chase or a wireless Tuya level sensor and smart relay (Rowil's choice). Optional: a small inline booster (about 120 W) for the roof T&amp;B shower, on the roof room circuit.</li></ul>
 <p class="sub">Assumed: the panel is on the car bay wall on your left as you walk in from the street. Tell me if it's the other wall.</p></div>
   </div>
 </div>
@@ -201,7 +201,7 @@ E.run([[W-3,62],[W-3,4],[W-3,62]]);
 E.run([[W-3,92],[W-3,196]]); E.run([[W-3,196],[W-3,205],[110,205],[110,270]]);
 text(W-20,150,'exposed conduit','elr',`transform="rotate(-90 ${X(W-20)} ${Y(150)})"`);
 // car bay
-E.sock(W,112,'WP'); E.ded(W,152,'PUMP'); E.sock(0,185); E.lt(87,60); E.lt(87,150); E.lt(70,-8);
+E.sock(W,112,'WP'); E.sock(0,185); E.ded(0,170,'PUMP'); E.lt(87,60); E.lt(87,150); E.lt(70,-8);
 E.sw(W-8,44,'2','bay+out');
 // dining
 E.sock(0,232); E.sock(W,216); E.pend(105,244); E.lt(70,232);
