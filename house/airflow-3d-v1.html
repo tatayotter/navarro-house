@@ -734,6 +734,9 @@ pRun([[173,215,GC+0.15],[130,240,GC+0.1],[116,266,0.4]],pmW,0.02);
 pRun([[116,266,0.4],[116,444,0.4],[107,444,0.85]],pmW,0.02); pRun([[116,452,0.4],[116,474,0.3]],pmW,0.02); pRun([[116,420,0.4],[54,440,0.9],[54,466,0.95]],pmW,0.02);
 // roof T&B riser up the chase
 pRun([[166,262,GC+0.15],[166,266,RF+1.0]],pmW,0.025); pRun([[166,266,RF+1.0],[150,262,RF+0.5]],pmW,0.02); pRun([[166,266,RF+1.0],[126,257,RF+0.85]],pmW,0.02); pRun([[166,266,RF+1.0],[157,316,RF+1.0]],pmW,0.02);
+// terrace hose faucet (19 Nov): 1/2" tee off the riser at the 2nd floor, shut-off valve, living + terrace ceiling, down the terrace side wall
+pRun([[166,262,LC+0.1],[170,258,LC+0.1],[170,240,LC+0.1],[170,96,LC+0.1],[172,40,LC+0.1],[174.5,32,LC+0.1],[174.5,32,Y2+0.6]],pmW,0.018); pBox(167,173,237,243,LC,LC+0.2,pmP);
+pTag('Terrace hose bib',172,32,Y2+0.85,2); pTag('Shut-off valve',170,240,LC+0.35,2);
 // hose bib on the partition, car side
 pRun([[100,206,GC+0.1],[100,194,GC+0.1],[100,194,0.6]],pmW,0.02);
 pTag('City water in',46,486,0.6,1); pTag('Hose bib',100,194,0.85,1); pTag('Water tank 500 L',160,181,1.75,1); pTag('Pump (auto-stop inverter)',160,151.5,0.7,1); pTag('Bypass valve',156,206,GC+0.35,1);
