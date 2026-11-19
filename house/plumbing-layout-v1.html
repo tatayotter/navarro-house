@@ -130,16 +130,26 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
     </ul></div>
   </div>
 
+  <div class="box"><h2>T&amp;B layouts: keep the shower away from the door</h2><ul>
+      <li><b>Rule used in both:</b> the shower goes in the corner diagonally opposite the door, the toilet sits between them, and the lavatory stays on the door side. The door never faces the spray.</li>
+      <li><b>Ground T&amp;B (about 1.84 × 1.42 m):</b> door at the front right, shower zone about 0.85 × 1.0 m in the back left corner, toilet in the middle of the back wall, compact lavatory on the front wall beside the door.</li>
+      <li><b>Roof T&amp;B (about 1.60 × 1.70 m):</b> door at the back of the inner wall, shower zone about 1.0 × 0.9 m in the front outer corner (under the high frosted window, next to the stack and the exhaust fan), toilet on the outer wall near the door, lavatory on the front wall's inner corner.</li>
+      <li><b>Shower head:</b> a ceiling or wall-arm rain head that falls straight down, plus a handheld on a slide bar. Avoid a fixed head that sprays sideways toward the room.</li>
+      <li><b>Keep water in the shower zone:</b> slope the floor 1–2% to the shower drain, and make the shower zone 2–3 cm lower than the rest of the floor (or a 5 cm tiled curb). No glass screen needed.</li>
+      <li><b>Door:</b> waterproof PVC or aluminium door with a small threshold. Ground T&amp;B door can swing out into the passage so it never sits wet inside.</li>
+      <li>Optional: a ceiling-track shower curtain (about ₱1–2k) if guests splash a lot.</li>
+    </ul></div>
+
   <div class="tbl"><table>
     <thead><tr><th>Fixture</th><th>Where</th><th>Drain</th><th>Joins</th><th>Water</th></tr></thead>
     <tbody>
       <tr><td>Kitchen sink</td><td>Kitchen back wall</td><td class="n">50 mm</td><td>Under-sink grease trap, then the drain line</td><td>Cold ½″</td></tr>
-      <tr><td>Ground T&amp;B WC</td><td>Back wall</td><td class="n">100 mm</td><td>Drain line (cleanout here)</td><td>Cold ½″</td></tr>
-      <tr><td>Ground T&amp;B lavatory</td><td>Left wall</td><td class="n">50 mm</td><td>Drain line</td><td>Cold ½″</td></tr>
-      <tr><td>Ground T&amp;B shower floor drain</td><td>Back right corner</td><td class="n">50 mm</td><td>Drain line</td><td>Cold ½″</td></tr>
-      <tr><td>Roof T&amp;B WC (rear-outlet / P-trap type)</td><td>Front wall, next to the stack</td><td class="n">100 mm</td><td>Stack directly</td><td>Cold ½″</td></tr>
-      <tr><td>Roof T&amp;B lavatory</td><td>Front wall</td><td class="n">50 mm</td><td>Stack, above the slab in the raised floor</td><td>Cold ½″</td></tr>
-      <tr><td>Roof T&amp;B shower floor drain</td><td>Back outer corner</td><td class="n">50 mm</td><td>Stack, above the slab in the raised floor</td><td>Cold ½″</td></tr>
+      <tr><td>Ground T&amp;B WC</td><td>Back wall, middle</td><td class="n">100 mm</td><td>Drain line (cleanout here)</td><td>Cold ½″</td></tr>
+      <tr><td>Ground T&amp;B lavatory</td><td>Front wall, beside the door (dry side)</td><td class="n">50 mm</td><td>Drain line</td><td>Cold ½″</td></tr>
+      <tr><td>Ground T&amp;B shower floor drain</td><td>Back left corner, farthest from the door</td><td class="n">50 mm</td><td>Drain line</td><td>Cold ½″</td></tr>
+      <tr><td>Roof T&amp;B WC</td><td>Outer wall, back half (near the door, dry side)</td><td class="n">100 mm</td><td>Stack, in the raised floor (about 1 m run)</td><td>Cold ½″</td></tr>
+      <tr><td>Roof T&amp;B lavatory</td><td>Front wall, inner corner</td><td class="n">50 mm</td><td>Stack, above the slab in the raised floor</td><td>Cold ½″</td></tr>
+      <tr><td>Roof T&amp;B shower floor drain</td><td>Front outer corner, farthest from the door, next to the stack</td><td class="n">50 mm</td><td>Stack, above the slab in the raised floor</td><td>Cold ½″</td></tr>
       <tr><td>Hose bib</td><td>Car bay, at the partition</td><td class="n">n/a</td><td>Street</td><td>Cold ½″, on the city line</td></tr>
       <tr><td>Rooftop outdoor faucet (with vacuum breaker)</td><td>Outside the roof room front wall, in front of the T&amp;B, 0.6 m, ≥ 30 cm from the outdoor socket</td><td class="n">n/a</td><td>Open slab roof drains</td><td>Cold ½″, tee off the roof T&amp;B supply, own shut-off valve</td></tr>
       <tr><td>Terrace hose faucet (with vacuum breaker)</td><td>Terrace side wall, front corner, 0.6 m</td><td class="n">n/a</td><td>None (watering plants only)</td><td>Cold ½″, from the pump main via a small slab core, own shut-off valve</td></tr>
@@ -248,7 +258,7 @@ text(159,360,'UP','dim'); text(158,303,'landing','dim'); text(158,372,'existing 
 o+=`<line class="arrow" style="stroke:var(--fg)" x1="${X(140)}" y1="${Y(305)}" x2="${X(60)}" y2="${Y(305)}"/>`;
 text(95,297,'L turn, up to 2nd floor','dim');
 // T&B back right 73 x 56
-rect(102,W,426,D,'wet'); text(130,452,'T&amp;B','lbl'); text(130,464,'1.85 × 1.42 m','dim');
+rect(102,W,426,D,'wet'); text(158,447,'T&amp;B','lbl'); text(158,457,'1.85 × 1.42 m','dim');
 // T&B walls + 70 cm door (position assumed): front wall with door at its left end, swinging in
 rect(99,102,423,D,'wall'); rect(102,147,423,426,'wall');
 line(174,425,174,452.5,'door'); o+=`<path class="arc" d="M${X(146.5)},${Y(425)} A${(27.5*S).toFixed(1)},${(27.5*S).toFixed(1)} 0 0 0 ${X(174)},${Y(452.5)}"/>`;
@@ -281,9 +291,10 @@ text(14,110,'nib: remove','dm'); text(W-14,110,'nib: remove','dm');
 text(110,150,'Car bay','lbl');
 
 // ---- PLUMBING LAYER (ground) ----
-// ground T&B fixtures: WC back wall, lav left wall, shower drain back right
-P.wc(116,474,180); P.lav(107,444); P.fd(160,468);
-P.run([[160,468],[132,462],[116,458]],'pb'); P.run([[107,444],[116,444]],'pb');
+// ground T&B: door front-right -> shower in the far back-left corner (diagonal from the door), WC on the back wall in between, lav on the front wall by the door (dry zone)
+rect(102,135,442,482,'furn'); text(118,447,'shower','dim'); P.fd(114,466);
+P.wc(152,474,180); P.lav(132,431);
+P.run([[114,466],[116,456]],'pb'); P.run([[152,470],[126,460],[116,456]],'pb'); P.run([[132,434],[118,442]],'pb');
 // vent: T&B + kitchen vent through the hung-ceiling cavity to the stairwell chase
 P.run([[110,452],[106,420],[106,345],[158,270]],'pv'); text(84,385,'vent in ceiling','lv'); text(84,393,'cavity','lv');
 // water: city line enters under the kitchen sink, runs in the dining ceiling to the tank in the car bay
@@ -297,7 +308,7 @@ P.run([[160,168],[160,158]],'pc'); P.ded(174.5,151.5,'');
 // pump main up to the dining ceiling, then riser + branches
 P.run([[168,151],[173,160],[173,240],[166,262]],'pc');
 P.run([[173,215],[130,240],[130,425],[118,470]],'pc');
-P.run([[130,425],[140,465],[158,470]],'pc');
+P.run([[130,425],[146,470],[152,476]],'pc'); P.run([[130,425],[104,446],[104,474]],'pc');
 P.run([[130,330],[60,330],[60,470]],'pc');
 text(98,326,'cold water in ceiling','lc');
 // terrace faucet feed: tee off the pump main, painted surface pipe on the car bay ceiling kept ~0.8 m off the panel wall, up through a small slab core
@@ -489,14 +500,16 @@ o+=`<line class="glass" x1="${X(140)}" y1="${Y(247)}" x2="${X(163)}" y2="${Y(247
 rect(-48.4-4,-6,245,383+4,'ply'); rect(-48.4,-6,249,383,'void'); text(-27,236,'annex','dm');
 for(let i=0;i<=12;i++){const y=249+cm(104)+i*cm(20.5); line(-6-cm(100),y,-6,y,'tread');}
 // fixtures
-P.wc(150,262,0); P.lav(126,257); rect(140,W,290,320,'furn'); text(157,297,'shower','dim'); P.fd(157,308);
-P.stack(166,266,''); 
-P.run([[157,308],[160,290],[166,270]],'pb'); P.run([[126,261],[138,266],[160,266]],'pb');
+// door at back of the inner wall -> shower in the far front-outer corner (diagonal), WC on the outer wall at the back, lav on the front wall near the door side
+rect(136,W,253,289,'furn'); text(150,286,'shower','dim'); P.fd(150,276);
+P.lav(124,257); P.wc(168,306,90);
+P.stack(166,266,'');
+P.run([[150,276],[161,269]],'pb'); P.run([[160,306],[164,292],[166,272]],'pb'); P.run([[124,261],[140,264],[160,266]],'pb');
 o+=`<circle class="tk" cx="${X(172)}" cy="${Y(262)}" r="2.4"/>`;
-P.run([[172,262],[172,300],[165,305]],'pc'); P.run([[172,258],[126,253]],'pc');
+P.run([[172,262],[172,300],[168,300]],'pc'); P.run([[172,258],[124,253]],'pc'); P.run([[172,262],[172,278]],'pc');
 // outdoor faucet on the outside of the room front wall, in front of the T&B, tee off the T&B supply
 P.run([[172,258],[168,250],[168,244]],'pc'); o+=`<circle style="fill:var(--cold)" cx="${X(168)}" cy="${Y(243)}" r="3"/>`;
-text(164,236,'outdoor faucet 0.6 m','lc','style="text-anchor:end"');
+text(164,226,'outdoor faucet 0.6 m','lc','style="text-anchor:end"');
 text(140,350,'1 core through roof slab','lw'); text(140,358,'≈150 mm, engineer marks it','lw');
 o+=`<line style="stroke:var(--waste);stroke-width:.8" x1="${X(140)}" y1="${Y(343)}" x2="${X(165)}" y2="${Y(272)}"/>`;
 text(60,290,'raised T&amp;B floor 10–15 cm','dim'); text(60,298,'branches run above the slab','dim');
