@@ -133,7 +133,7 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
   <div class="box"><h2>T&amp;B layouts: keep the shower away from the door</h2><ul>
       <li><b>Rule used in both:</b> the shower goes in the corner diagonally opposite the door, the toilet sits between them, and the lavatory stays on the door side. The door never faces the spray.</li>
       <li><b>Ground T&amp;B (about 1.84 × 1.42 m):</b> door at the front right, shower zone about 0.85 × 1.0 m in the back left corner, toilet in the middle of the back wall, compact lavatory on the front wall beside the door.</li>
-      <li><b>Roof T&amp;B (about 1.60 × 1.70 m):</b> door at the back of the inner wall, shower zone about 1.0 × 0.9 m in the front outer corner (under the high frosted window, next to the stack and the exhaust fan), toilet on the outer wall near the door, lavatory on the front wall's inner corner.</li>
+      <li><b>Roof T&amp;B (about 1.60 × 1.70 m):</b> door at the back of the inner wall, shower zone about 1.0 × 0.9 m in the front outer corner (under the high window, next to the stack and the exhaust fan), toilet on the outer wall near the door, lavatory on the front wall's inner corner.</li>
       <li><b>Shower head:</b> a ceiling or wall-arm rain head that falls straight down, plus a handheld on a slide bar. Avoid a fixed head that sprays sideways toward the room.</li>
       <li><b>Keep water in the shower zone:</b> slope the floor 1–2% to the shower drain, and make the shower zone 2–3 cm lower than the rest of the floor (or a 5 cm tiled curb). No glass screen needed.</li>
       <li><b>Door:</b> waterproof PVC or aluminium door with a small threshold. Ground T&amp;B door can swing out into the passage so it never sits wet inside.</li>
@@ -495,7 +495,7 @@ rect(W-cm(152)-0,W,D-cm(190),D,'furn'); text(W-cm(76),D-30,'queen','dim');
 rect(111.5,W,253,320,'wet'); rect(108,111.5,249,320,'wall'); rect(111.5,W,320,323.5,'wall');
 line(110,286,110,316,'door'); text(124,330,'','dim');
 text(130,312,'T&amp;B 1.6 × 1.7','dim');
-o+=`<line class="glass" x1="${X(140)}" y1="${Y(247)}" x2="${X(163)}" y2="${Y(247)}"/>`; text(152,240,'frosted window','dp');
+o+=`<line class="glass" x1="${X(140)}" y1="${Y(247)}" x2="${X(163)}" y2="${Y(247)}"/>`; text(152,240,'high window','dp');
 // annex
 rect(-48.4-4,-6,245,383+4,'ply'); rect(-48.4,-6,249,383,'void'); text(-27,236,'annex','dm');
 for(let i=0;i<=12;i++){const y=249+cm(104)+i*cm(20.5); line(-6-cm(100),y,-6,y,'tread');}
