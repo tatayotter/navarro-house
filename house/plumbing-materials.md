@@ -1,10 +1,10 @@
 ---
 title: Plumbing materials
 status: Draft
-cost: "₱88k–136k materials"
+cost: "₱87k–132k materials"
 price_source: online
 updated: 19 Nov 2026
-summary: Material list for the plumbing plan (new septic tank under the car bay, rooftop water tank with gravity feed and a daily fill pump, roof T&B). Quantities come from the plumbing layout; every price is an online estimate until a local shop quotes it.
+summary: Material list for the plumbing plan (new septic tank under the car bay, ground water tank with an auto-stop inverter pump, roof T&B). Quantities come from the plumbing layout; every price is an online estimate until a local shop quotes it.
 ---
 
 See the [plumbing layout](plumbing-layout-v1.html) for where everything goes. Quantities include a little extra for cuts and mistakes. Fixtures (toilets, lavatories, shower sets, faucets), tiles, labour and the pump's electrical wiring are not included.
@@ -15,10 +15,10 @@ See the [plumbing layout](plumbing-layout-v1.html) for where everything goes. Qu
 |---|---|---|
 | Septic tank | 40,820–51,900 | Online |
 | Drain and vent pipes | 14,190–24,950 | Online |
-| Water supply | 10,910–18,200 | Online |
-| Tank and pump | 17,300–32,500 | Online |
+| Water supply | 10,250–17,300 | Online |
+| Tank and pump | 16,500–29,000 | Online |
 | Roof T&B and chase | 5,000–8,500 | Online |
-| **Materials total** | **88,220–136,050** | |
+| **Materials total** | **86,760–131,650** | |
 
 ## Septic tank (2 chambers, inside about 1.20 × 2.40 m, 1.8 m deep, car-rated cover)
 
@@ -58,29 +58,26 @@ See the [plumbing layout](plumbing-layout-v1.html) for where everything goes. Qu
 
 | Item | Qty | Price (₱) | Source |
 |---|---|---|---|
-| PPR pipe 25 mm (¾″) × 4 m: city line, fill line up, gravity main down (about 40 m) | 11 lengths | 3,630–4,950 | Online |
+| PPR pipe 25 mm (¾″) × 4 m: city line, pump main, riser (about 32 m) | 9 lengths | 2,970–4,050 | Online |
 | PPR pipe 20 mm (½″) × 4 m: drops to fixtures (about 20 m) | 5 lengths | 1,100–1,500 | Online |
 | PPR fittings (elbows, tees, adaptors) | 50 | 1,250–3,500 | Online |
-| Ball valves 25 mm (main, pump in/out, tank out, roof T&B) | 5 | 1,750–2,750 | Online |
+| Ball valves 25 mm (main, pump in/out, bypass, riser) | 5 | 1,750–2,750 | Online |
 | Check valve 25 mm | 1 | 400–700 | Online |
 | Float valve 25 mm | 1 | 500–1,000 | Online |
 | Angle valves for fixtures | 6 | 1,080–1,800 | Online |
 | Hose bib | 1 | 300–500 | Online |
 | Flexible hoses for the pump | 2 | 500–800 | Online |
 | Pipe clips, Teflon tape | lot | 400–700 | Online |
-| **Subtotal** | | **10,910–18,200** | |
+| **Subtotal** | | **10,250–17,300** | |
 
-## Tank and pump (rooftop tank, gravity feed)
+## Tank and pump (car bay, auto-stop)
 
 | Item | Qty | Price (₱) | Source |
 |---|---|---|---|
-| Water tank 500 L, low and wide (about 1.0 m across, 0.9 m tall), opaque food-grade PE, sealed lid | 1 | 5,000–8,000 | Online |
-| Steel stand 1.2 m for the tank: galvanised angle bar, base plate, anchors, paint | 1 | 4,000–8,000 | Online |
-| Fill pump 0.5 HP (transfer type) | 1 | 4,000–8,000 | Online |
-| Float switch or smart level sensor for the roof tank | 1 | 500–1,000 | Online |
-| Vented pump box + rubber pads | lot | 800–1,500 | Online |
-| Inline auto booster ~120 W for the roof T&B shower (optional) | 1 | 3,000–6,000 | Online |
-| **Subtotal** | | **17,300–32,500** | |
+| Water tank 500 L, slim upright, opaque food-grade PE, sealed lid | 1 | 5,000–8,000 | Online |
+| Pump 0.5 HP constant-pressure inverter: starts when a tap opens, stops when all are closed, dry-run cut-off | 1 | 10,000–18,000 | Online |
+| Plinth, rubber anti-vibration pads, vented box with acoustic lining | lot | 1,500–3,000 | Online |
+| **Subtotal** | | **16,500–29,000** | |
 
 ## Roof T&B and chase
 
@@ -93,7 +90,7 @@ See the [plumbing layout](plumbing-layout-v1.html) for where everything goes. Qu
 
 ## Not in this list
 
-With labour and core drilling, the whole plumbing job comes to about ₱121k–195k before fixtures and tiles (online estimate).
+With labour and core drilling, the whole plumbing job comes to about ₱119k–191k before fixtures and tiles (online estimate).
 
 
 | Item | Price (₱) | Source |
@@ -107,6 +104,6 @@ With labour and core drilling, the whole plumbing job comes to about ₱121k–1
 
 - Ask your plumber and engineer to confirm the septic size, rebar and concrete mix; the numbers here assume a simple 2-chamber tank.
 - Buy pipes and fittings from the same brand so they fit, and keep receipts: prices then change from Online to Local.
-- Get the fill pump model first, then confirm its wattage with the electrician. Ask the engineer to OK the roof tank position (about 600 kg full, over the front column) before buying the stand.
+- Get the pump model first, then confirm its wattage with the electrician. Pick one rated quiet (around 50 dB or less) with automatic start/stop.
 
 <!-- Rules: no city name, street address or GPS coordinates on any page. Tag every price Local or Online. -->
