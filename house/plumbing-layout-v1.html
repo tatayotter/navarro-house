@@ -141,6 +141,7 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
       <tr><td>Roof T&amp;B lavatory</td><td>Front wall</td><td class="n">50 mm</td><td>Stack, above the slab in the raised floor</td><td>Cold ½″</td></tr>
       <tr><td>Roof T&amp;B shower floor drain</td><td>Back outer corner</td><td class="n">50 mm</td><td>Stack, above the slab in the raised floor</td><td>Cold ½″</td></tr>
       <tr><td>Hose bib</td><td>Car bay, at the partition</td><td class="n">n/a</td><td>Street</td><td>Cold ½″, on the city line</td></tr>
+      <tr><td>Terrace hose faucet (with vacuum breaker)</td><td>Terrace side wall, front corner, 0.6 m</td><td class="n">n/a</td><td>See terrace drainage below</td><td>Cold ½″, tee off the riser with its own shut-off valve</td></tr>
     </tbody></table></div>
 
   <div class="two">
@@ -150,6 +151,8 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
       <li>Water: PPR, 25 mm (¾″) main from the pump, up the stairwell chase to the roof, 20 mm (½″) to fixtures. Ground floor lines run in the hung ceilings and drop in the walls; the car bay stretch is painted surface pipe next to the electrical conduit.</li>
       <li class="v2">Septic: 2 chambers, inside about 1.20 × 2.40 m and 1.2–1.5 m liquid depth (enough for about 8–10 people; plumber sizes it to the code). Watertight walls, car-rated cover slab, 2 sealed manholes in the walkway beside the car, not under the wheels.</li>
       <li>No trap between the house and the septic, so the tank vents up through the stack. Plumber confirms if a separate tank vent is also needed.</li>
+      <li>Terrace hose faucet: ½″ PPR tees off the riser in the stairwell chase, runs in the living room hung ceiling, passes the wall above the slider through the same sleeve as the electrical feed (engineer marks it clear of the beam), and drops down the terrace side wall. Pumped pressure, so it works like the ground floor taps.</li>
+      <li>Terrace drainage: the terrace has no drain now. Simplest is to slope the floor slightly to the front and add a small scupper through the base of the front wall onto the ledge, so hose and mop water runs outside to the street, not into the septic. A floor drain would need a hole through the 2nd floor slab into the car bay.</li>
       <li>Rain downspouts and the hose bib stay separate and go to the street. Never into the septic.</li>
       <li>Roof room window AC (front wall): run its condensate in a small 16–20 mm hose to the nearest roof slab drain, so it doesn't drip and stain the open slab.</li>
       <li class="v2">Old septic tank (under the kitchen) is SHARED with both neighbours, so it stays in service for them. We only disconnect and cap our own lines into it. Agree in writing how they reach its manhole for desludging, since it is under our kitchen.</li>
@@ -158,14 +161,14 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
         <tbody>
           <tr><td>Septic tank materials (cement, sand, gravel, rebar, covers)</td><td class="n">₱41k–52k</td></tr>
           <tr><td>Drain + vent pipes, fittings, grease trap, IC</td><td class="n">₱14k–25k</td></tr>
-          <tr><td>Water pipes + valves (PPR)</td><td class="n">₱10k–17k</td></tr>
+          <tr><td>Water pipes + valves (PPR), incl. terrace faucet</td><td class="n">₱12k–20k</td></tr>
           <tr><td>500 L tank + 0.5 HP auto-stop inverter pump + plinth, pads, vented box</td><td class="n">₱17k–29k</td></tr>
           <tr><td>Roof T&amp;B raised floor, waterproofing, chase boxing</td><td class="n">₱5k–9k</td></tr>
           <tr><td>Plumber labour (digging, septic build, trenching, pipe work)</td><td class="n">₱30k–55k</td></tr>
           <tr><td>Roof slab core drilling (service)</td><td class="n">₱2.5k–4k</td></tr>
-          <tr><td><b>Total, excluding fixtures and tiles</b></td><td class="n"><b>₱119k–191k</b></td></tr>
+          <tr><td><b>Total, excluding fixtures and tiles</b></td><td class="n"><b>₱121k–194k</b></td></tr>
         </tbody></table></div>
-      <p class="sub">Online estimates, not yet quoted locally. The itemised material list (quantities per item, ₱87k–132k) is on the family site. Pump electrical wiring is in the electrical budget.</p>
+      <p class="sub">Online estimates, not yet quoted locally. The itemised material list (quantities per item, ₱88k–134k) is on the family site. Pump electrical wiring is in the electrical budget.</p>
     </div>
   </div>
 
@@ -179,6 +182,7 @@ td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
   </ul></div>
 
   <div class="box"><h2>Questions for you</h2><ol>
+    <li>Terrace: is a small scupper through the front wall OK for hose water, or do you only want the faucet for the plants on the ledge (no drain)?</li>
     <li>Where does the ground T&amp;B drain run now (into the old tank under the kitchen)? If its pipe heads the right way, the plumber can reuse the T&amp;B end of it.</li>
     <li>Is 500 L enough? The car bay corner has no room for a bigger one.</li>
     <li>Car side: the septic is in the walkway beside the car, and the tank and pump are at the partition end of the panel-side wall. If the car parks on the other side, I mirror it.</li>
@@ -421,7 +425,12 @@ o+=`<circle class="tk" cx="${X(170)}" cy="${Y(258.5)}" r="2.4"/>`;
 text(118,282,'boxed chase in the stairwell corner:','lw');
 text(118,291,'100 mm stack + vent + water riser','lw');
 text(118,300,'(passes the open void, no 2nd floor slab hole)','dim');
-text(60,240,'No plumbing on this floor (confirmed)','lc');
+// terrace hose faucet: tee off the riser in the chase, through the living hung ceiling, through the wall above the slider (same sleeve as the electrical feed), drop on the terrace side wall
+P.run([[170,258],[170,110],[170,96],[172,40],[174,34]],'pc');
+P.valve(170,240); o+=`<circle style="fill:var(--cold)" cx="${X(174.5)}" cy="${Y(32)}" r="3"/>`;
+text(166,26,'hose faucet 0.6 m','lc','style="text-anchor:end"');
+text(164,150,'½″ line in ceiling','lc','style="text-anchor:end"');
+text(60,240,'Only plumbing here: terrace hose faucet','lc');
 
 svg.innerHTML=o;
 })();

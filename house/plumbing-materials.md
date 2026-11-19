@@ -1,10 +1,10 @@
 ---
 title: Plumbing materials
 status: Draft
-cost: "₱87k–132k materials"
+cost: "₱88k–134k materials"
 price_source: online
 updated: 19 Nov 2026
-summary: Material list for the plumbing plan (new septic tank under the car bay, ground water tank with an auto-stop inverter pump, roof T&B). Quantities come from the plumbing layout; every price is an online estimate until a local shop quotes it.
+summary: Material list for the plumbing plan (new septic tank under the car bay, ground water tank with an auto-stop inverter pump, roof T&B, terrace hose faucet). Quantities come from the plumbing layout; every price is an online estimate until a local shop quotes it.
 ---
 
 See the [plumbing layout](plumbing-layout-v1.html) for where everything goes. Quantities include a little extra for cuts and mistakes. Fixtures (toilets, lavatories, shower sets, faucets), tiles, labour and the pump's electrical wiring are not included.
@@ -15,10 +15,10 @@ See the [plumbing layout](plumbing-layout-v1.html) for where everything goes. Qu
 |---|---|---|
 | Septic tank | 40,820–51,900 | Online |
 | Drain and vent pipes | 14,190–24,950 | Online |
-| Water supply | 10,250–17,300 | Online |
+| Water supply | 11,590–19,500 | Online |
 | Tank and pump | 16,500–29,000 | Online |
 | Roof T&B and chase | 5,000–8,500 | Online |
-| **Materials total** | **86,760–131,650** | |
+| **Materials total** | **88,100–133,850** | |
 
 ## Septic tank (2 chambers, inside about 1.20 × 2.40 m, 1.8 m deep, car-rated cover)
 
@@ -67,8 +67,11 @@ See the [plumbing layout](plumbing-layout-v1.html) for where everything goes. Qu
 | Angle valves for fixtures | 6 | 1,080–1,800 | Online |
 | Hose bib | 1 | 300–500 | Online |
 | Flexible hoses for the pump | 2 | 500–800 | Online |
+| Terrace hose faucet: PPR 20 mm × 4 m (about 8 m) | 2 lengths | 440–600 | Online |
+| Terrace hose faucet: fittings, sleeve through the wall above the slider | lot | 300–500 | Online |
+| Terrace hose faucet: ½″ hose bib with vacuum breaker + shut-off valve | 1 set | 600–1,100 | Online |
 | Pipe clips, Teflon tape | lot | 400–700 | Online |
-| **Subtotal** | | **10,250–17,300** | |
+| **Subtotal** | | **11,590–19,500** | |
 
 ## Tank and pump (car bay, auto-stop)
 
@@ -90,7 +93,7 @@ See the [plumbing layout](plumbing-layout-v1.html) for where everything goes. Qu
 
 ## Not in this list
 
-With labour and core drilling, the whole plumbing job comes to about ₱119k–191k before fixtures and tiles (online estimate).
+With labour and core drilling, the whole plumbing job comes to about ₱121k–194k before fixtures and tiles (online estimate).
 
 
 | Item | Price (₱) | Source |
