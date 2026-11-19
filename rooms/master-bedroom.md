@@ -3,7 +3,7 @@ title: Master bedroom
 status: Planned
 cost: "≈ ₱167k with buffer"
 price_source: online
-updated: 18 Nov 2026
+updated: 19 Nov 2026
 summary: About 418 × 367 cm (15.3 m²) on the 2nd floor, sleeping 2 adults, 2 teens and 1 infant. Prep is mostly DIY, with hired help for masonry, the self-levelling pour, electrical and the double wall.
 ---
 
@@ -35,7 +35,7 @@ The roof slab is waterproofed and covered by the rooftop roof, so the ceiling is
 - **Door:** rehung to swing toward Wall 4 with a stop at 90°.
 - **Floor:** self-levelling layer, then light-oak SPC vinyl.
 
-**Ceiling and lighting:** gypsum drop ceiling at the beam underside (about 218 cm), hiding beams, slab damage and wiring. 4 recessed downlights, 2 paper-lantern pendants over the bedside shelves, and hidden LED strips (under bed, shelves, wardrobe plinth, desk shelf, top bunk, fluted-wall cove).
+**Ceiling and lighting:** drop ceiling at the beam underside (about 218 cm), hiding beams, slab damage and wiring. **Changed 19 Nov:** White Oak PVC ceiling panels (24 pieces, about ₱13.5k–19.7k installed, Online) instead of gypsum, about the same cost, so the total is unchanged. No ceiling painting needed. See the [ceilings page](../house/ceilings.html). 4 recessed downlights, 2 paper-lantern pendants over the bedside shelves, and hidden LED strips (under bed, shelves, wardrobe plinth, desk shelf, top bunk, fluted-wall cove).
 
 ## Work order
 
@@ -49,7 +49,7 @@ The roof slab is waterproofed and covered by the rooftop roof, so the ceiling is
 | 6 | Double wall on Wall 1 | Carpenter / drywall |
 | 7 | Floor prep | DIY |
 | 8 | Self-levelling pour | Hired |
-| 9 | Paint walls and ceiling | DIY or hired |
+| 9 | Paint walls; PVC ceiling panels | DIY or hired |
 | 10 | Rehang and trim door | Carpenter |
 | 11 | Wardrobe | Carpenter |
 | 12 | SPC vinyl flooring | Hired or DIY |
