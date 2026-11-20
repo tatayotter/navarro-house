@@ -1,10 +1,10 @@
 ---
 title: Plumbing materials
 status: Draft
-cost: "₱93k–142k materials"
+cost: "₱97k–149k materials"
 price_source: online
-updated: 19 Nov 2026
-summary: Material list for the plumbing plan (new septic tank under the car bay, kitchen and ground T&B on city water, car bay tank with an auto-stop inverter pump for the rest plus a crossover for water schedules, roof T&B, terrace and rooftop faucets). Quantities come from the plumbing layout; every price is an online estimate until a local shop quotes it.
+updated: 20 Nov 2026
+summary: Material list for the plumbing plan (new septic tank under the car bay, kitchen and ground T&B on city water, car bay tank with an auto-stop inverter pump for the rest plus a crossover for water schedules, roof T&B, terrace and rooftop faucets, terrace washing machine drain). Quantities come from the plumbing layout; every price is an online estimate until a local shop quotes it.
 ---
 
 See the [plumbing layout](plumbing-layout-v1.html) for where everything goes. Quantities include a little extra for cuts and mistakes. Fixtures (toilets, lavatories, shower sets, faucets), tiles, labour and the pump's electrical wiring are not included.
@@ -15,10 +15,11 @@ See the [plumbing layout](plumbing-layout-v1.html) for where everything goes. Qu
 |---|---|---|
 | Septic tank | 40,820–51,900 | Online |
 | Drain and vent pipes | 14,190–24,950 | Online |
-| Water supply | 13,190–22,400 | Online |
+| Water supply | 13,490–23,100 | Online |
 | Tank and pump | 19,500–34,000 | Online |
 | Roof T&B and chase | 5,000–8,500 | Online |
-| **Materials total** | **92,700–141,750** | |
+| Terrace washing machine drain | 3,500–6,500 | Online |
+| **Materials total** | **96,500–148,950** | |
 
 ## Septic tank (2 chambers, inside about 1.20 × 2.40 m, 1.8 m deep, car-rated cover)
 
@@ -69,10 +70,10 @@ See the [plumbing layout](plumbing-layout-v1.html) for where everything goes. Qu
 | Flexible hoses for the pump | 2 | 500–800 | Online |
 | Terrace hose faucet: PPR 20 mm × 4 m (car bay ceiling + up through the slab, about 7 m) | 2 lengths | 440–600 | Online |
 | Terrace hose faucet: fittings, sealed sleeve for the small slab core | lot | 300–500 | Online |
-| Terrace hose faucet: ½″ hose bib with vacuum breaker + shut-off valve | 1 set | 600–1,100 | Online |
+| Terrace dual-outlet tap (washer hose + garden hose) with vacuum breaker + shut-off valve | 1 set | 900–1,800 | Online |
 | Rooftop outdoor faucet: ½″ hose bib with vacuum breaker, shut-off valve, short PPR + fittings through the T&B wall | 1 set | 800–1,500 | Online |
 | Pipe clips, Teflon tape | lot | 400–700 | Online |
-| **Subtotal** | | **13,190–22,400** | |
+| **Subtotal** | | **13,490–23,100** | |
 
 ## Tank and pump (car bay, auto-stop)
 
@@ -92,9 +93,20 @@ See the [plumbing layout](plumbing-layout-v1.html) for where everything goes. Qu
 | Lightweight fill for the raised floor (10–15 cm) | lot | 1,500–2,500 | Online |
 | **Subtotal** | | **5,000–8,500** | |
 
+## Terrace washing machine drain
+
+| Item | Qty | Price (₱) | Source |
+|---|---|---|---|
+| Washer standpipe 50 mm with P-trap | 1 | 500–900 | Online |
+| Floor drain 50 mm, stainless, for the washer tray | 1 | 300–600 | Online |
+| PVC sanitary pipe 50 mm × 3 m: along the wall base + facade downpipe (about 8 m) | 3 lengths | 900–1,500 | Online |
+| Fittings, cleanout at the foot, wall sleeve, pipe clips | lot | 600–1,000 | Online |
+| Washer tray: 5 cm curb, waterproofing membrane, tile channel cover | lot | 1,200–2,500 | Online |
+| **Subtotal** | | **3,500–6,500** | |
+
 ## Not in this list
 
-With labour and core drilling, the whole plumbing job comes to about ₱126k–202k before fixtures and tiles (online estimate).
+With labour and core drilling, the whole plumbing job comes to about ₱132k–213k before fixtures and tiles (online estimate).
 
 
 | Item | Price (₱) | Source |

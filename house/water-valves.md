@@ -3,7 +3,7 @@ title: Water valves
 status: Draft
 cost: ""
 price_source: online
-updated: 19 Nov 2026
+updated: 20 Nov 2026
 summary: Where every water valve sits and how high, so each one can be reached without opening a ceiling. Positions follow the plumbing layout; the plumber sets the final spots on site.
 ---
 
@@ -28,7 +28,7 @@ Blue is city water. Green is tank water from the pump. The dashed green line is 
 | 9 | Car bay hose bib | Partition, car side, between the window and the door | 0.6 m | Washing the car (tank water) |
 | ○ | Angle valves | Under each kitchen and T&amp;B fixture | 0.2–0.5 m | Fixture repairs |
 
-Upstairs (not drawn): the terrace hose faucet at 0.6 m on the terrace side wall, the rooftop faucet with its own shut-off at 0.6 m outside the roof room, and angle valves under the roof T&amp;B fixtures.
+Upstairs (not drawn): the terrace dual tap (washer hose + garden hose) at 1.0 m on the terrace side wall, the rooftop faucet with its own shut-off at 0.6 m outside the roof room, and angle valves under the roof T&amp;B fixtures.
 
 ## Notes
 
