@@ -1,7 +1,7 @@
 # Navarro House renovation
 
 Plans, costs and progress for our house renovation. Prices are in Philippine pesos (₱).
-Last updated: 19 November 2026.
+Last updated: 20 November 2026.
 
 > **For family:** open the website **https://tatayotter.github.io/navarro-house/** and tap any link.
 > The 3D model and plans open right in your phone or computer browser.
@@ -11,7 +11,7 @@ Last updated: 19 November 2026.
 |---|---|
 | Build sequence | Master plan from the stair to the last fixture: 6 phases, who does each step, "done when" checks and engineer/electrician gates, labour anchor 30–40% of materials per job, about ₱1.14M–1.81M before contingency; ceilings, partitions and glass+doors each done in one go (mostly online estimates); see `house/build-sequence.md`. Now: Phase 1, step 1.1. |
 | Buy list: other items | Materials for jobs without their own plan page (demolition contract, terrace side walls, terrace frontage, ground T&B tiles, fixtures), about ₱52k–108k (online estimate); see `house/extra-materials.md`. Each build sequence phase links its buy lists. |
-| Steel stair (Phase 3) | Final design done (v3.3). Steel bought. Welder hired, starting soon. |
+| Steel stair (Phase 3) | Plan v3.4: slab edge cut back ~20 cm for headroom (engineer OK). Steel bought. Welder hired, starting soon. |
 | Front gate | Design settled (roll-up car shutter + small door). Waiting on final measurements. |
 | Master bedroom | Plan and costing done (about ₱167k with buffer). |
 | Living room | Design and cost estimate done (₱228k–370k). |
@@ -35,7 +35,7 @@ Last updated: 19 November 2026.
 
 ### Steel stair (Phase 3)
 - [Project brief: design, costs, status](stairs/stair-project-brief.md)
-- [Full plan PDF v3.3](stairs/Stair_Works_Phase3_Plan_v3.3.pdf)
+- [Full plan PDF v3.4](stairs/Stair_Works_Phase3_Plan_v3.4.pdf)
 - [Welding details with measurements](stairs/weld-details.md) (19 Nov)
 - [Shopping list (14 Nov)](stairs/shopping-list-14nov.md)
 

@@ -3,26 +3,26 @@ title: "Steel stair: project brief"
 status: Building soon
 cost: "₱33,284 projected"
 price_source: mixed
-updated: 18 Nov 2026
+updated: 20 Nov 2026
 ---
 
-Home project. Steel stair from the ground floor up through a 2nd floor opening.
+Home project. Steel stair from the 2nd floor up through the rooftop slab opening (the old L stair, ground to 2nd, stays untouched).
 Owner manages directly: buys materials and hires a welder instead of the architect's contract.
-Source of truth: Stair_Works_Phase3_Plan_v3.3.pdf.
+Source of truth: Stair_Works_Phase3_Plan_v3.4.pdf.
 
-## Status (17 Nov 2026)
-- Final design done from site measurements (v3.3)
+## Status (20 Nov 2026)
+- Final design done from site measurements (v3.3); v3.4 adds the ~20 cm slab edge cut (engineer approved 20 Nov)
 - Steel, primer, rods, discs bought and delivered 16 Nov
 - Welder: PHP 7,000 labor agreed; scope/days to confirm
 - Next: buy 1 angle bar + anchors + extra rods, check ceiling stains, pay 30%, start
 
 ## Site measurements
-- Floor to 2nd floor slab top: 250 cm (left) / 249 cm (right); slab 10.5 cm (underside 239.5)
-- Opening: 102 × 194 cm; 19 cm from the left wall, flush with the far wall
+- Floor to rooftop slab top: 250 cm (left) / 249 cm (right); slab 10.5 cm (underside 239.5)
+- Opening: 102 × 194 cm, being cut to ~102 × 214 (bottom end cut back ~20 cm); 19 cm from the left wall, flush with the far wall
 - Run available: ~246 cm (first step just past the column to slab edge)
 - Beam near column: underside 218 cm, extends 12 cm past the column
 - Column: 28 cm wide, sticks out 15–17 cm (not square)
-- Door: 80 cm, swings OUT of the stair room; entry depth 104 cm (door to plywood wall)
+- Door: 80 cm, becoming a sliding barn door on the living-room side (18 Nov); entry depth 104 cm (door to plywood wall)
 - Room width: 121 cm at first step, 125 cm at top end
 - Left wall concrete; FAR wall (across the stair) and entry walls are PLYWOOD on timber frame; floor finish vinyl
 - Tallest regular user: 5'10"; existing home stairs feel comfortable at 19 cm rise / 24 cm tread
@@ -34,9 +34,9 @@ Source of truth: Stair_Works_Phase3_Plan_v3.3.pdf.
 - Railing RIGHT side only (handrail 90 cm + mid-rail, posts at treads 1,3,5,7,9,11,12), ends at top step. No left handrail (19 cm slab strip above the left edge)
 - Support: left stringer bolted to left wall (4 points); ONE black 2×2 post under the top of the right stringer (nothing attaches to the plywood far wall); optional mid-span post if it bounces. Feet clipped to floor; top tied to slab edge with ⅜" anchors
 - Angle clips (cut from ¼" angle) instead of thick plates
-- Top: stair ends on the 2nd floor slab, turn LEFT. Right turn left open for future construction; temporary barrier upstairs. Guard rails on open edges of the opening upstairs
+- Top: stair ends on the rooftop slab, turn LEFT. Right turn left open for future construction; temporary barrier upstairs. Guard rails on open edges of the opening upstairs
 - Beam (218) sits over step 1 only: ~199 cm clear
-- Slab edge over step 3: ~182 cm clear → OK up to ~5'9" (176 cm). Decision: NO slab trimming for now (open to 10–15 cm trim later, engineer to design). Pad + bright paint + good lighting on that edge
+- Slab edge at the bottom end of the opening is cut back ~20 cm (engineer approved 20 Nov), by the demolition contractor BEFORE welding. Headroom ~200 cm over step 2; the beam over step 1 (~199 cm) is now the lowest point. Pad + bright paint + good lighting on the new edge. Upstairs guard rail along that edge ~20 cm longer (spare tubular, no extra cost)
 
 ## Costs
 Spent 16 Nov (receipt 18,240 + 250 delivery = 18,490):
@@ -59,7 +59,7 @@ Stress (walk, jump lightly, two people, push/pull railing) · Noise (no rattles)
 2. Check ceiling bubbling/peeling (possible leak) and stain/crack at beam–column joint
 3. Extra rods quantity
 4. Upstairs guard rails and temporary barrier (who builds, when)
-5. Optional later: trim slab edge 10–15 cm (engineer)
+5. Slab edge cut (~20 cm) done by the demolition contractor before welding starts
 
 ## Change log
 - 13 Nov: Plan v1 (own materials, direct welder, solid plate treads)
@@ -68,3 +68,6 @@ Stress (walk, jump lightly, two people, push/pull railing) · Noise (no rattles)
 - 17 Nov: Far wall is plywood → tie arms dropped, support post back under right stringer top; gap fully clear. Projected 33,185.
 - 17 Nov: Underside access dropped; stair widened to 110 cm for elbow room. +2 angle bars total, 120 cm vinyl. Projected 35,085.
 - 17 Nov: Settled on 100 cm width (fits 7 angle bars, 100 cm vinyl). Projected 33,185.
+- 18 Nov: Wording fix: stair runs 2nd floor → rooftop (old L stair untouched). Annex door → sliding barn door. No stair change.
+- 19 Nov: Welding details drawn (tread legs, wall anchor points, top ledger tie). Kept 12 treads + slab step = 13 steps (20 Nov).
+- 20 Nov: Slab edge at the bottom end of the opening cut back ~20 cm (engineer approved), in the demolition contract before welding. Headroom ~182 → ~200 cm. Guard rail +20 cm from spare tubular. Plan v3.4. Projected 33,284.
