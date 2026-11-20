@@ -1,9 +1,9 @@
 ---
 title: Electrical materials
 status: Draft
-cost: "₱113k–₱179k"
+cost: "₱118k–₱188k"
 price_source: online
-updated: 19 Nov 2026
+updated: 20 Nov 2026
 summary: Material list for rewiring the whole house to the electrical plan, with quantities counted from the layout. Materials only; labour, permit and appliances are not included.
 ---
 
@@ -13,17 +13,17 @@ All prices are online estimates (Nov 2026) and need local quotes. Quantities are
 
 | Section | Low (₱) | High (₱) | Source |
 |---|---|---|---|
-| Panel and protection | 18,950 | 33,100 | Online |
-| Wire (THHN, copper) | 36,675 | 48,575 | Online |
-| Conduit and boxes | 16,650 | 26,550 | Online |
+| Panel and protection | 20,750 | 36,100 | Online |
+| Wire (THHN, copper) | 38,775 | 51,575 | Online |
+| Conduit and boxes | 16,950 | 27,100 | Online |
 | Switches and outlets | 14,350 | 23,230 | Online |
-| Lights and fans | 12,230 | 24,350 | Online |
+| Lights and fans | 12,730 | 25,650 | Online |
 | Network | 2,040 | 3,350 | Online |
 | Sundries | 2,000 | 3,500 | Online |
-| **Total before contingency** | **102,895** | **162,655** | |
-| **With 10% contingency** | **113,185** | **178,920** | |
+| **Total before contingency** | **107,595** | **170,505** | |
+| **With 10% contingency** | **118,355** | **187,556** | |
 
-**Not included:** labour, the electrical permit and inspection, the meter or service drop from the power company, the bedroom aircon, the roof window aircon, the water pump, the induction cooktop, the router and mesh units, stand and wall fans, and the living room ceiling fan.
+**Not included:** labour, the electrical permit and inspection, the meter or service drop from the power company, the bedroom aircon, the roof window aircon, the water pump, the washing machine, the induction cooktop, the router and mesh units, stand and wall fans, and the living room ceiling fan.
 
 **Overlap with the room costings:** the master bedroom and living room costings each have their own electrical line. This list already covers the whole house, so do not add those lines on top when totalling.
 
@@ -31,9 +31,9 @@ All prices are online estimates (Nov 2026) and need local quotes. Quantities are
 
 | Item | Count |
 |---|---|
-| Circuits | 14 (2 lighting, outlets by area, bedroom aircon, roof window aircon, induction, water pump) |
-| General outlets | 32, plus dedicated outlets for the aircons, fridge, hood, induction and water pump |
-| Ceiling lights | 20, plus 5 smart pendants and 1 under-cabinet strip |
+| Circuits | 15 (2 lighting, outlets by area, bedroom aircon, roof window aircon, induction, water pump, terrace washer) |
+| General outlets | 32, plus dedicated outlets for the aircons, fridge, hood, induction, water pump and terrace washer |
+| Ceiling lights | 20, plus 5 smart pendants and 1 motion-sensor under-cabinet strip |
 | Smart switch plates | 12 (4 one-gang, 7 two-gang, 1 three-gang = 21 gangs) |
 | Network | Router at the 2nd-floor counter, 3 wired mesh nodes |
 
@@ -47,10 +47,10 @@ All prices are online estimates (Nov 2026) and need local quotes. Quantities are
 | 18-way plug-in panel board | 1 | 3,500 | 6,000 | Online |
 | Main breaker 60 A, 2-pole | 1 | 900 | 1,600 | Online |
 | Branch breakers 15–30 A (lighting, rooms, aircon, induction) | 9 | 3,150 | 5,400 | Online |
-| RCBO 20 A, 30 mA (car bay, kitchen counter, pump, roof) | 5 | 9,000 | 15,000 | Online |
+| RCBO 20 A, 30 mA (car bay, kitchen counter, pump, roof, terrace washer) | 6 | 10,800 | 18,000 | Online |
 | Grounding rod, clamp and ground bar | 1 | 900 | 1,600 | Online |
 | Surge protector (optional) | 1 | 1,500 | 3,500 | Online |
-| **Subtotal** | | **18,950** | **33,100** | |
+| **Subtotal** | | **20,750** | **36,100** | |
 
 ### Wire (THHN, copper)
 
@@ -58,9 +58,10 @@ All prices are online estimates (Nov 2026) and need local quotes. Quantities are
 |---|---|---|---|---|
 | 2.0 mm² lighting wire, 150 m box (black, white, green) | 3 | 8,700 | 11,400 | Online |
 | 3.5 mm² outlet wire, 150 m box (2 black, 2 white, 1 green) | 5 | 23,000 | 30,000 | Online |
+| 3.5 mm² washer circuit to the terrace, per metre (3 conductors × ~20 m) | 60 | 2,100 | 3,000 | Online |
 | 5.5 mm² induction circuit, per metre (3 conductors × ~15 m) | 45 | 2,475 | 3,375 | Online |
 | Service feeder from meter to panel (14 mm² + 8 mm² ground), per metre | 10 | 2,500 | 3,800 | Online |
-| **Subtotal** | | **36,675** | **48,575** | |
+| **Subtotal** | | **38,775** | **51,575** | |
 
 ### Conduit and boxes
 
@@ -72,8 +73,8 @@ All prices are online estimates (Nov 2026) and need local quotes. Quantities are
 | Fittings, couplings, clips, connectors (lot) | 1 | 2,500 | 4,000 | Online |
 | Deep utility boxes (sockets and switches) | 50 | 1,750 | 3,000 | Online |
 | Junction and octagonal ceiling boxes | 30 | 900 | 1,650 | Online |
-| Weatherproof boxes with covers (outdoor, roof, pump) | 6 | 1,800 | 3,300 | Online |
-| **Subtotal** | | **16,650** | **26,550** | |
+| Weatherproof boxes with covers (outdoor, roof, pump, washer) | 7 | 2,100 | 3,850 | Online |
+| **Subtotal** | | **16,950** | **27,100** | |
 
 ### Switches and outlets
 
@@ -97,8 +98,9 @@ All prices are online estimates (Nov 2026) and need local quotes. Quantities are
 | Pendant cord sets for E27 (5) | 5 | 1,500 | 3,500 | Online |
 | Smart E27 bulbs for the pendants | 5 | 1,750 | 3,250 | Online |
 | Under-cabinet LED strip with driver (kitchen) | 1 | 900 | 1,800 | Online |
+| Motion sensor for the counter strip (Tuya PIR or wired PIR switch) | 1 | 500 | 1,300 | Online |
 | Exhaust fans (ground T&B and roof T&B) | 2 | 1,800 | 3,600 | Online |
-| **Subtotal** | | **12,230** | **24,350** | |
+| **Subtotal** | | **12,730** | **25,650** | |
 
 ### Network
 
