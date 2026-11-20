@@ -715,7 +715,7 @@ pBox(46,62,458,474,-0.3,0.02,pmP); pTag('Grease trap',54,466,0.3,1);
 // new septic tank under the car bay (Rowil: the only plan; old shared tank stays for the neighbours), 2 manholes, inspection chamber, 100 mm main
 curV=2;
 pBox(95,142,30,125,-1.5,-0.06,pmT); [[106,108],[106,44]].forEach(([x,y])=>pBox(x-10,x+10,y-10,y+10,-0.06,0.02,pmP)); pBox(112,124,162,174,-0.6,0.02,pmT);
-pTag('Septic tank (new)',118,78,-0.4,1); pRun([[118,30,-0.6],[118,-8,-0.6]],pmD,0.05); pTag('Outflow: existing sidewalk pipe to corner basin',118,-8,-0.2,1); pTag('Inspection chamber',118,168,0.25,1);
+pTag('Septic tank (new)',118,78,-0.4,1); pRun([[118,32,-0.6],[118,-31,-0.45],[-2,-31,-0.45],[-60,-31,-0.45]],pmD,0.05); pTag('Outflow: existing sidewalk pipe → corner sewage basin',30,-31,-0.1,1); pTag('Inspection chamber',118,168,0.25,1);
 pRun([[116,452,-0.3],[116,240,-0.45],[118,168,-0.55],[118,125,-0.6]],pmD,0.05);
 pRun([[54,466,-0.2],[54,456,-0.22],[116,456,-0.29]],pmD);
 pRun([[166,266,-0.45],[116,250,-0.45]],pmD,0.05);
