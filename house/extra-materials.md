@@ -1,7 +1,7 @@
 ---
 title: "Buy list: items without a plan page"
 status: Draft
-cost: "₱75k–139k materials"
+cost: "₱66k–126k materials"
 price_source: online
 updated: 20 Nov 2026
 summary: Materials for the jobs added to the build sequence that have no plan page of their own yet. They cover the demolition contract, the terrace side walls, the terrace frontage, the ground T&B remodel and the fixtures. Quantities are estimates; measure on site before buying. Labour is budgeted separately at 30–40% of materials on the build sequence page.
@@ -31,9 +31,9 @@ About 12 m² for both walls (2 × about 2.5 × 2.4 m). Measure before buying.
 | Skim coat for the finish | lot | 500 | 1,000 | Online |
 | **Subtotal** | | **9,200** | **14,800** | |
 
-## Rooftop slab extension over the terrace, and the frontage cladding (Phase 2)
+## Terrace frontage cladding and new terrace roof (Phase 2)
 
-The cladding strip runs above the jalousie, up to the new slab edge, wall to wall: about 2.5–3.5 m² (measure). Same materials as the rooftop room walls, bought together; it matches the rooftop room's exterior cladding. **Changed 20 Nov:** instead of a new sheet roof, the rooftop slab and its 1 m half wall are extended over the terrace to the front edge (about 1.6 m of new slab beyond the ~84 cm there now). The slab lines are a **placeholder until the engineer designs it**: buy only from his rebar and concrete schedule.
+The strip above the jalousie, up to the terrace roof, wall to wall: about 2.5–3.5 m² (measure). Same materials as the rooftop room walls, bought together. The new terrace roof replaces the old sheets and the rusted framing (20 Nov), matching the rooftop roof; the cladding matches the rooftop room's exterior cladding.
 
 | Item | Qty | Low (₱) | High (₱) | Source |
 |---|---|---|---|---|
@@ -41,11 +41,12 @@ The cladding strip runs above the jalousie, up to the new slab edge, wall to wal
 | Metal cladding, container-van style, pre-painted (with laps and waste) | 3–4 m² | 875 | 1,925 | Online |
 | Breathable wrap behind the cladding | 2.5–3.5 m² | 125 | 315 | Online |
 | Flashings at the roof, trims, screws, sealant | lot | 425 | 980 | Online |
-| Slab extension, about 1.6 × 4.3 m (≈ 7 m²): concrete, rebar, tie wire, dowels into the existing slab, formwork and prop rental | ≈ 7 m² | 11,200 | 16,800 | Online |
-| Beam or support along the front edge (concrete, rebar, forms) | ~4.3 m | 6,000 | 9,500 | Online |
-| Waterproofing on top of the new slab, with fall to a drain | ≈ 7 m² | 1,750 | 3,150 | Online |
-| 1 m 4″ CHB half walls on the slab edges (front and both sides), plastered | ≈ 7.5 m² | 9,800 | 13,900 | Online |
-| **Subtotal** | | **30,800** | **47,970** | |
+| New terrace roof sheets matching the rooftop roof, with laps | ~14 m² | 4,900 | 7,700 | Online |
+| New rafters and purlins (tubular and C-purlins) | lot | 10,000 | 14,000 | Online |
+| Insulation under the sheets, like the rooftop | ~13 m² | 1,300 | 2,300 | Online |
+| Flashing at the wall, gutter, roof screws, sealant | lot | 2,000 | 4,000 | Online |
+| Primer and enamel for the new framing | lot | 1,500 | 2,500 | Online |
+| **Subtotal** | | **21,750** | **35,120** | |
 
 ## Terrace frontage strip, inner face (Phase 5)
 
@@ -82,6 +83,6 @@ The rooftop T&B fixtures are on the [rooftop room page](../rooms/rooftop-room.ht
 
 | | Low (₱) | High (₱) |
 |---|---|---|
-| **Total on this page** | **75,030** | **139,220** |
+| **Total on this page** | **65,980** | **126,370** |
 
 <!-- Rules: no city name, street address or GPS coordinates on any page. Tag every price Local or Online. -->
