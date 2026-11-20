@@ -1,7 +1,7 @@
 ---
 title: Build sequence
 status: Building
-cost: "≈ ₱1.16M–1.85M with labour"
+cost: "≈ ₱1.18M–1.87M with labour"
 price_source: mixed
 updated: 20 Nov 2026
 summary: The order of the whole renovation, from the steel stair to the last fixture, with the induction cooktop added after fit-out. Each step says who does it and when it counts as done, so after every finished step you know exactly what comes next. This is the master plan; the room and system pages hold the details.
@@ -26,13 +26,13 @@ summary: The order of the whole renovation, from the steel stair to the last fix
 | Phase | What | Main trades | Materials (₱) | Labour anchor 30–40% (₱) | Supplier-installed, equipment, demolition (₱) | Phase budget (₱) |
 |---|---|---|---|---|---|---|
 | 1 | Demolition contract, then the steel stair | Demolition crew, welder | 34,784–45,284 | 11,050–16,100 (welder 8,500 agreed) | 20,000–41,000 | **65,834–102,384** |
-| 2 | Weatherproof the rooftop room, re-roof the terrace, clad the terrace frontage | Mason, steel fabricator | 71,700–112,870 | 21,510–45,148 | 3,000–5,000 | **96,210–163,018** |
+| 2 | Extend the rooftop slab over the terrace, weatherproof the rooftop room, clad the terrace frontage | Mason, steel fabricator | 80,750–125,720 | 24,225–50,288 | 3,000–5,000 | **107,975–181,008** |
 | 3 | New CHB walls (terrace side walls, car bay partition), front gate | Mason, welder, shutter shop | 36,570–51,670 | 10,971–20,668 | 17,000–27,000 | **64,541–99,338** |
 | 4 | Plumbing and electrical rough-in, ground floor included | Plumber, electrician | 169,965–256,775 | 50,990–102,710 | 2,500–4,000 | **223,455–363,485** |
 | 5 | Close up: partitions and double walls, ceilings in one go, glass and doors in one go, floors, paint | Partition supplier, ceiling crew, glass supplier, carpenter, tiler, painter | 291,540–383,700 | 87,462–153,480 | 168,400–259,900 | **547,402–797,080** |
 | 6 | Final fit-out | Electrician, plumber, carpenter, AC tech | 98,380–189,520 | 29,514–75,808 | 38,632–63,632 | **166,526–328,960** |
-| | **Total before contingency** | | **702,939–1,039,819** | **211,497–413,914** | **249,532–400,532** | **≈ 1,164,000–1,854,000** |
-| | **With 10% contingency on the Online part** | | | | | **≈ 1,276,000–2,035,000** |
+| | **Total before contingency** | | **711,989–1,052,669** | **214,212–419,054** | **249,532–400,532** | **≈ 1,176,000–1,872,000** |
+| | **With 10% contingency on the Online part** | | | | | **≈ 1,291,000–2,057,000** |
 
 After fit-out: the induction cooktop (its 30 A circuit goes in at Phase 4). Optional: kitchen and dining clean-up. Neither is in the total.
 
@@ -62,7 +62,7 @@ Do not start the step after a 🔒 gate until the check is done and written down
 | Gate | Before | Who | What they check |
 |---|---|---|---|
 | 🔒 G1 | Demolition and welding start (step 1.1) | Engineer | Stair v3.5 [welding details](../stairs/weld-details.html): tread mount, 1.4 mm plate, right stringer span, wall anchors. ✅ **Slab headroom cut: approved by the engineer (20 Nov).** **Rooftop door opening:** any tie beam or rebar cut, header over the door. **Terrace to living room wall:** lintel size, props, and the order (lintel cured before the wall below comes out). **Terrace counter:** whether it ties into the wall or slab. |
-| 🔒 G2 | Rooftop walls, terrace frontage cladding, terrace roof steel (step 2.3) | Engineer | **New terrace roof:** the old roof and its badly rusted framing are replaced (20 Nov). Size of the new rafters and purlins, how they fix to the wall and beam, and typhoon uplift on the new sheets. **Terrace frontage:** how the cladding strip above the jalousie fixes to the roof framing and the half wall, and typhoon wind on the street face. Dowels for the new half walls without breaking the roof waterproofing, anchors into the old parapets, top fixing at the purlins of the existing roof, typhoon fixings, core holes and roof drains, the T&B corner. See the [rooftop room page](../rooms/rooftop-room.html#for-the-engineer). |
+| 🔒 G2 | Slab extension, rooftop walls, terrace frontage cladding (step 2.3) | Engineer | ⚠️ **Rooftop slab extended over the terrace (20 Nov):** about 1.6 m of new slab beyond the ~84 cm that reaches over the terrace now, out to the front edge, plus the 1 m half walls on it. Needs his design: a beam or support along the front, rebar and thickness, how it ties into the existing slab, the half wall load on the front wall, props and stripping time, and waterproofing. **Terrace frontage:** how the cladding strip above the jalousie fixes to the new slab edge and the half wall, and typhoon wind on the street face. Dowels for the new half walls without breaking the roof waterproofing, anchors into the old parapets, top fixing at the purlins of the existing roof, typhoon fixings, core holes and roof drains, the T&B corner. See the [rooftop room page](../rooms/rooftop-room.html#for-the-engineer). |
 | 🔒 G3 | New CHB walls and the gate (steps 3.2 to 3.5) | Engineer | **Terrace side walls:** that the terrace slab (and any cantilever) carries about 2 t of new CHB walls or that they sit on beams; dowels into the slab, ties into the columns and the shared walls, a top tie to the beam or roof framing, typhoon wind;  car bay partition lintel and tie-in to the shared side walls; gate demolition (beam not resting on the hollow-block piers, new post base and anchors). |
 | 🔒 G4 | The septic dig (step 4.2) | Engineer and plumber | Septic size, rebar and concrete mix, distance from the party wall and front column footings, car-rated cover. |
 | 🔒 G5 | Any wire is pulled (step 4.6) | Licensed electrical engineer (PEE) | The [electrical sign-off set](electrical-signoff.html) (single-line diagram, load schedule, panel schedule, layout): load calculation, wire and breaker sizes, main breaker, grounding, RCDs, no-neutral switches with bypass, permit. |
@@ -121,29 +121,30 @@ Do not start the step after a 🔒 gate until the check is done and written down
 
 **Starts when:** the stair is done (1.10) and the rooftop room and terrace frontage are measured. **Unlocks:** a dry rooftop, so leaks into the 2nd floor stop before any ceiling goes up below.
 The rooftop roof and its columns are **already built**; no roof extension is needed. This phase closes the walls under the existing roof.
-🛒 **Buy lists:** [rooftop walls, half walls and T&B block courses](../rooms/rooftop-room.html#walls) · [terrace frontage outer skin](extra-materials.html#terrace-frontage-outer-skin-with-metal-cladding-phase-2)
+🛒 **Buy lists:** [rooftop walls, half walls and T&B block courses](../rooms/rooftop-room.html#walls) · [slab extension over the terrace and frontage cladding](extra-materials.html#rooftop-slab-extension-over-the-terrace-and-the-frontage-cladding-phase-2)
 
-**Cost (Online, from the [rooftop room page](../rooms/rooftop-room.html)):** phase budget **₱96,210–163,018** before contingency. The door opening was cut in the demolition contract (1.4). **Terrace frontage (confirmed 20 Nov):** the front is a 28 cm concrete half wall. The new jalousie sits on its front edge and runs wall to wall, replacing the old aluminium slider window. The **double wall with metal cladding** is the strip above the jalousie, up to the terrace roof. The same steel fabricator puts up the strip's frame and cladding in this phase, in the same visit as the rooftop steel, and **replaces the terrace roof** at the same time: the old sheets and the rusted framing come off, and new framing and sheets go on, matching the rooftop roof. The cladding matches the rooftop room's exterior cladding; the strip's inner face comes with the partition supplier at 5.3.
+**Cost (Online, from the [rooftop room page](../rooms/rooftop-room.html)):** phase budget **₱107,975–181,008** before contingency. The door opening was cut in the demolition contract (1.4). **Terrace frontage (confirmed 20 Nov):** the front is a 28 cm concrete half wall. The new jalousie sits on its front edge and runs wall to wall, replacing the old aluminium slider window. The **double wall with metal cladding** is the strip above the jalousie, up to the underside of the new slab. **Rooftop slab extension (20 Nov):** instead of a new sheet roof, the rooftop slab and its 1 m half wall are extended forward over the terrace to the front edge (about 1.6 m of new slab); the old terrace roof and its rusted framing are torn out first. The same steel fabricator puts up the strip's frame and cladding in the same visit as the rooftop steel. The cladding matches the rooftop room's exterior cladding; the strip's inner face comes with the partition supplier at 5.3.
 
 | Trade | Materials (₱) | Labour anchor 30–40% (₱) |
 |---|---|---|
 | Mason: new half walls, parapet patch, skim and paint, T&B block courses, curb | 19,500–28,850 | 5,850–11,540 |
 | Steel fabricator: light steel frame, container-van steel, breathable wrap, flashings and trims | 30,450–48,900 | 9,135–19,560 |
 | Steel fabricator, same visit: terrace frontage strip above the jalousie: frame, metal cladding, wrap, flashings, jalousie head framed (about 2.5–3.5 m²; measure) | 2,050–4,620 | 615–1,848 |
-| Steel fabricator, same visit: new terrace roof (about 13–14 m², measure): new rafters and purlins primed and painted, roof sheets matching the rooftop roof, insulation under the sheets like the rooftop, flashing at the wall, gutter, screws | 19,700–30,500 | 5,910–12,200 |
+| Mason: rooftop slab extension over the terrace, about 1.6 × 4.3 m (≈ 7 m²), with a beam along the front, rebar, formwork and props, top waterproofing, plus the 1 m CHB half walls on its edges (≈ 7.5 m²). Placeholder until the engineer designs it | 28,750–43,350 | 8,625–17,340 |
 | Labour only: take off the old terrace roof sheets and rusted framing, haul (lump sum) | — | 3,000–5,000 |
 
 | Status | # | Step | Who | Done when |
 |---|---|---|---|---|
-| ⬜ | 2.1 | Measure the rooftop room: front wall to back wall, inside width, roof height at the front and back of the room, slab slope, roof drains, annex position; terrace frontage width wall to wall, half wall height, and the height of the strip above the window up to the terrace roof | Rowil | Numbers sent; 3D model and rooftop page updated with them. |
+| ⬜ | 2.1 | Measure the rooftop room: front wall to back wall, inside width, roof height at the front and back of the room, slab slope, roof drains, annex position; terrace frontage width wall to wall, half wall height, and the height from the half wall top to the underside of the existing slab over the terrace; how far the existing slab reaches out (about 84 cm) | Rowil | Numbers sent; 3D model and rooftop page updated with them. |
 | ⬜ | 2.2 | Plan the sleeves: mark where the T&B drain and water pipes and every wall conduit pass through the new walls | Plumber, electrician, Rowil | Sleeve and conduit positions marked on the slab and on the drawing. |
-| 🔒 | 2.3 | Engineer check (gate G2) | Engineer | Anchors, dowels, top fixing, typhoon fixings and core holes signed off. |
-| ⬜ | 2.4 | Build the new 1 m 4″ CHB half wall on the front (and on any line that has no half wall yet); patch the old parapets on the back and outer side. Set pipe sleeves and conduit into the blocks as they go up | Mason (plumber and electrician on call) | Half walls up and plastered; every sleeve and conduit stub in place and capped. |
-| ⬜ | 2.5 | T&B: 3 courses of block on all four walls (the framed fibre-cement above them comes at 5.3) | Mason | Block courses up with dowels, drain and water sleeves through. |
-| ⬜ | 2.6 | Steel frame on top of the half walls up to the existing roof purlins, wrap, container-van steel outside, flashing caps, trims and opening frames | Steel fabricator | Outer skin closed except the openings; caps over every half wall top; no daylight where the walls meet the roof. |
-| ⬜ | 2.7 | Terrace, same visit, in a dry spell: (a) take off the old roof sheets and rusted framing; put up new primed and painted framing and new roof sheets matching the rooftop roof, with insulation, flashing at the wall and a gutter; (b) frame and clad the frontage strip above the window line to match the rooftop room's cladding, head of the future jalousie framed level | Steel fabricator | (a) New roof on, no daylight and no drips in the hose test, water runs to the gutter; (b) strip fully clad, no water behind it, jalousie head level and straight wall to wall. |
-| ⬜ | 2.8 | Close the slider, window, aircon and door openings temporarily (plywood or tarp) | Steel fabricator or Rowil | Openings sealed against rain until glass and doors go in at 5.5. |
-| ⬜ | 2.9 | Water test: hose the rooftop walls, the terrace frontage cladding and the joints where the walls meet the roof | Rowil | No water inside after a hard hose-down (and after the next heavy rain). |
+| 🔒 | 2.3 | Engineer check (gate G2) | Engineer | Slab extension design (beam or support, rebar, tie-in, props) given in writing; anchors, dowels, top fixing, typhoon fixings and core holes signed off. |
+| ⬜ | 2.4 | **Extend the rooftop slab over the terrace:** tear out the old terrace sheet roof and rusted framing, prop and form, set the engineer's beam and rebar tied into the existing slab, cast, cure, waterproof the top with a fall to a drain | Mason (engineer checks the rebar before the pour) | Engineer has seen the rebar before the pour; slab cast to the front edge; props left in for the time the engineer set; top waterproofed and flood tested; terrace below dry. |
+| ⬜ | 2.5 | Build the new 1 m 4″ CHB half walls on the front of the rooftop room, along the edges of the new slab extension (front and both sides), and on any line that has no half wall yet; patch the old parapets on the back and outer side. Set pipe sleeves and conduit into the blocks as they go up | Mason (plumber and electrician on call) | Half walls up and plastered; every sleeve and conduit stub in place and capped. |
+| ⬜ | 2.6 | T&B: 3 courses of block on all four walls (the framed fibre-cement above them comes at 5.3) | Mason | Block courses up with dowels, drain and water sleeves through. |
+| ⬜ | 2.7 | Steel frame on top of the half walls up to the existing roof purlins, wrap, container-van steel outside, flashing caps, trims and opening frames | Steel fabricator | Outer skin closed except the openings; caps over every half wall top; no daylight where the walls meet the roof. |
+| ⬜ | 2.8 | Terrace frontage, same visit: frame and clad the strip above the window line, up to the new slab edge, to match the rooftop room's cladding; head of the future jalousie framed level | Steel fabricator | Strip fully clad, no water behind it in the hose test, jalousie head level and straight wall to wall. |
+| ⬜ | 2.9 | Close the slider, window, aircon and door openings temporarily (plywood or tarp) | Steel fabricator or Rowil | Openings sealed against rain until glass and doors go in at 5.5. |
+| ⬜ | 2.10 | Water test: hose the rooftop walls, the new slab over the terrace, the terrace frontage cladding and the joints where the walls meet the roof | Rowil | No water inside after a hard hose-down (and after the next heavy rain). |
 
 ## Phase 3: Other structural work
 
@@ -190,14 +191,14 @@ The rooftop roof and its columns are **already built**; no roof extension is nee
 | ⬜ | 4.4 | Drains and vents: strip out the old ground T&B (fixtures, tiles, old pipes) and re-lay its drains for the new layout; kitchen sink via a grease trap; roof T&B stack down the stairwell corner; terrace washing machine drain to the facade; cap our old lines into the shared tank | Plumber | All drains run to the new tank; old lines capped; water poured in every drain reaches the tank. |
 | ⬜ | 4.5 | Water: 1,000 L car bay tank and its plinth, city water to the kitchen and ground T&B with the crossover, PPR to the roof T&B, the terrace washer faucet and the hose faucets, every valve at its marked height | Plumber | **Pressure test held for 24 hours** with no drop; valves match the [water valves page](water-valves.html). |
 | 🔒 | 4.6 | Engineer checks and signs the [electrical sign-off set](electrical-signoff.html) (gate G5) | Licensed electrical engineer (PEE), electrician | Signed and sealed set; permit filed. |
-| ⬜ | 4.7 | New panel on the car bay left wall, conduits and boxes in every room, wires pulled, roof feed through the terrace ceiling and under the terrace roof, the 30 A induction circuit (cooktop comes later), pump and washer RCD circuits | Electrician | Every box has its wires; **insulation test passed on every circuit**; panel labelled. |
+| ⬜ | 4.7 | New panel on the car bay left wall, conduits and boxes in every room, wires pulled, roof feed through the terrace ceiling and up to the rooftop (route to re-check with the electrician now that the terrace gets a slab), the 30 A induction circuit (cooktop comes later), pump and washer RCD circuits | Electrician | Every box has its wires; **insulation test passed on every circuit**; panel labelled. |
 | ⬜ | 4.8 | Rooftop T&B floor: raised fill with fall to the drain, membrane, **flood test 24 hours** | Plumber, mason | No leak below after 24 hours of standing water. |
 
 ## Phase 5: Close up
 
 **Starts when:** every test in Phase 4 has passed. **Unlocks:** fit-out.
 **Order inside this phase:** plaster and waterproofing, then the partition supplier (one job), then the ceiling crew (all rooms in one go), then glass and doors (one go), then floors and paint.
-🛒 **Buy lists:** [ceilings, all rooms](ceilings.html#cost-by-room) · [glass and aluminium, all 6 items](glass-aluminium.html#rough-cost) · [rooftop room floor, ceiling and T&B](../rooms/rooftop-room.html#tb-build) · [terrace frontage inner wall and ground T&B tiles](extra-materials.html#terrace-frontage-inner-wall-phase-5) · [car bay partition door](car-bay-partition.html#rough-cost) · [living room floor and paint](../rooms/living-room.html#cost-by-section) · [master bedroom](../rooms/master-bedroom.html#cost)
+🛒 **Buy lists:** [ceilings, all rooms](ceilings.html#cost-by-room) · [glass and aluminium, all 6 items](glass-aluminium.html#rough-cost) · [rooftop room floor, ceiling and T&B](../rooms/rooftop-room.html#tb-build) · [terrace frontage inner wall and ground T&B tiles](extra-materials.html#terrace-frontage-strip-inner-face-phase-5) · [car bay partition door](car-bay-partition.html#rough-cost) · [living room floor and paint](../rooms/living-room.html#cost-by-section) · [master bedroom](../rooms/master-bedroom.html#cost)
 
 **Cost (Online):** phase budget **₱547,402–797,080** before contingency.
 
