@@ -1,7 +1,7 @@
 ---
 title: Electrical materials
 status: Draft
-cost: "₱118k–₱188k"
+cost: "₱118k–₱187k"
 price_source: online
 updated: 20 Nov 2026
 summary: Material list for rewiring the whole house to the electrical plan, with quantities counted from the layout. Materials only; labour, permit and appliances are not included.
@@ -16,12 +16,12 @@ All prices are online estimates (Nov 2026) and need local quotes. Quantities are
 | Panel and protection | 20,750 | 36,100 | Online |
 | Wire (THHN, copper) | 38,775 | 51,575 | Online |
 | Conduit and boxes | 16,950 | 27,100 | Online |
-| Switches and outlets | 14,350 | 23,230 | Online |
+| Switches and outlets | 14,200 | 22,970 | Online |
 | Lights and fans | 12,730 | 25,650 | Online |
 | Network | 2,040 | 3,350 | Online |
 | Sundries | 2,000 | 3,500 | Online |
-| **Total before contingency** | **107,595** | **170,505** | |
-| **With 10% contingency** | **118,355** | **187,556** | |
+| **Total before contingency** | **107,445** | **170,245** | |
+| **With 10% contingency** | **118,190** | **187,270** | |
 
 **Not included:** labour, the electrical permit and inspection, the meter or service drop from the power company, the bedroom aircon, the roof window aircon, the water pump, the washing machine, the induction cooktop, the router and mesh units, stand and wall fans, and the living room ceiling fan.
 
@@ -32,7 +32,7 @@ All prices are online estimates (Nov 2026) and need local quotes. Quantities are
 | Item | Count |
 |---|---|
 | Circuits | 15 (2 lighting, outlets by area, bedroom aircon, roof window aircon, induction, water pump, terrace washer) |
-| General outlets | 32, plus dedicated outlets for the aircons, fridge, hood, induction, water pump and terrace washer |
+| General outlets | 31, plus dedicated outlets for the aircons, fridge, hood, induction, water pump and terrace washer |
 | Ceiling lights | 20, plus 5 smart pendants and 1 motion-sensor under-cabinet strip |
 | Smart switch plates | 12 (4 one-gang, 7 two-gang, 1 three-gang = 21 gangs) |
 | Network | Router at the 2nd-floor counter, 3 wired mesh nodes |
@@ -83,11 +83,11 @@ All prices are online estimates (Nov 2026) and need local quotes. Quantities are
 | Tuya no-neutral touch switch, 1-gang (with bypass add-on) | 4 | 2,200 | 3,400 | Online |
 | Tuya no-neutral touch switch, 2-gang | 7 | 4,550 | 6,650 | Online |
 | Tuya no-neutral touch switch, 3-gang | 1 | 750 | 1,100 | Online |
-| Duplex universal outlet with ground | 28 | 4,200 | 7,280 | Online |
+| Duplex universal outlet with ground | 27 | 4,050 | 7,020 | Online |
 | Duplex outlet with USB-A + C (sofa ends, bedsides) | 4 | 1,800 | 3,200 | Online |
 | Aircon outlets (bedroom split, roof window AC) | 2 | 400 | 700 | Online |
 | 30 A induction outlet or isolator | 1 | 450 | 900 | Online |
-| **Subtotal** | | **14,350** | **23,230** | |
+| **Subtotal** | | **14,200** | **22,970** | |
 
 ### Lights and fans
 
