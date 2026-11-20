@@ -389,9 +389,15 @@ B(AX0-0.2,AX0-0.05,ARF,RF+1.0,AZr,AZr-0.15,mat.wall,annex);
 // roof slab over 2nd floor
 B(-T,W+T,C2,RF,yL+0.84,-D-T,mat.slab,L3);   // slab reaches 84 cm out over the terrace (Rowil measured 20 Nov), then the terrace lean-to roof
 // terrace: no roof slab above; light sheet roof assumed
-{const zA=yL+0.84, yA=RF+0.45, zB=0.3, yB2=Y2+2.55, L=Math.hypot(zB-zA,yA-yB2);   // lean-to: high at the house, sloping down to the street (~11 deg)
- const tr=new THREE.Mesh(new THREE.BoxGeometry(W+2*T,0.05,L),M(0x2a2c2e,{metalness:.3,roughness:.5}));   // new sheets matching the rooftop roof (Rowil 20 Nov) tr.position.set(W/2,(yA+yB2)/2,(zA+zB)/2);
- tr.rotation.x=Math.atan2(yA-yB2,zB-zA); L3.add(tr);}
+// terrace roof (Rowil 20 Nov): same design as the rooftop roof (dark sheets on red purlins, dark fascia), mono-pitch from under the
+// 84 cm slab edge down to the street, ~0.3 m past the front wall
+{const zA=yL+0.84, yA=C2-0.02, zB=0.3, yB2=Y2+2.45, L=Math.hypot(zB-zA,yA-yB2), ang=Math.atan2(yA-yB2,zB-zA), x0=-T, x1=W+T;
+ const g=new THREE.Group(); g.position.set((x0+x1)/2,(yA+yB2)/2,(zA+zB)/2); g.rotation.x=ang; L2.add(g);
+ const sheet=new THREE.Mesh(new THREE.BoxGeometry(x1-x0,0.04,L),M(0x2a2c2e,{metalness:.3,roughness:.5})); sheet.castShadow=true; g.add(sheet);
+ const pr=M(0xb3261e,{roughness:.6});
+ for(let k=-1;k<=1;k++){const p=new THREE.Mesh(new THREE.BoxGeometry(x1-x0,0.08,0.05),pr); p.position.set(0,-0.06,k*L*0.38); g.add(p);}
+ [x0+0.05,(x0+x1)/2,x1-0.05].forEach(x=>{const r=new THREE.Mesh(new THREE.BoxGeometry(0.05,0.08,L),pr); r.position.set(x-(x0+x1)/2,-0.14,0); g.add(r);});
+ const fa=new THREE.Mesh(new THREE.BoxGeometry(x1-x0,0.12,0.03),M(0x2a2c2e,{metalness:.3,roughness:.5})); fa.position.set(0,0,L/2); g.add(fa);}
 
 // ---------- ROOF (L3) ----------
 // rooftop per Rowil's sketch (18 Nov): closed room in the back-right corner (window faces SW, door on its
