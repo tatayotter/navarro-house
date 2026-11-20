@@ -330,9 +330,10 @@ rect(95,142,30,125,'sep'); line(95,62,142,62,'pb');
 text(118,84,'SEPTIC','lw'); text(118,92,'settling','lw'); text(118,52,'outlet','lw');
 P.mh(106,108); P.mh(106,44);
 // terrace washer drain: downpipe on the facade (panel-side pier) to grade, straight into the street drain (Rowil 20 Nov), cleanout at the foot
-P.run([[173,-6],[173,-16]],'pb'); o+=`<circle class="co" cx="${X(173)}" cy="${Y(-6)}" r="3.2"/>`; text(170,-14,'washer → street drain','lw','style="text-anchor:end"');
-P.run([[118,32],[118,-2],[118,-14]],'pw'); o+=`<line class="arrow" style="stroke:var(--waste)" x1="${X(118)}" y1="${Y(-6)}" x2="${X(118)}" y2="${Y(-20)}"/>`;
-text(86,-27,'effluent → existing sidewalk pipe → corner basin','lw');
+P.run([[173,-6],[173,-16]],'pb'); o+=`<circle class="co" cx="${X(173)}" cy="${Y(-6)}" r="3.2"/>`; text(177,-9,'washer','lw','style="text-anchor:start"'); text(177,-2,'→ drain','lw','style="text-anchor:start"');
+// outflow reuses the existing sidewalk pipe: out under the post to the sidewalk, then along the sidewalk to the main basin at the corner street (Rowil 20 Nov)
+P.run([[118,32],[118,-2],[118,-31],[-2,-31]],'pw'); o+=`<line class="arrow" style="stroke:var(--waste)" x1="${X(10)}" y1="${Y(-31)}" x2="${X(-6)}" y2="${Y(-31)}"/>`;
+text(2,-34,'existing sidewalk pipe → corner basin','lw','style="text-anchor:start"');
 // inspection chamber where all lines meet
 P.ic(118,168,''); P.run([[118,162],[118,125]]);
 // main under-floor line from ground T&B, under the hollow stair, through dining
