@@ -9,6 +9,7 @@ Last updated: 19 November 2026.
 ## What's happening now
 | Part | Status |
 |---|---|
+| Build sequence | Master plan from the stair to the last fixture: 6 phases, who does each step, "done when" checks and engineer/electrician gates, about ₱0.93M–1.38M before contingency (mostly online estimates); see `house/build-sequence.md`. Now: Phase 1, step 1.1. |
 | Steel stair (Phase 3) | Final design done (v3.3). Steel bought. Welder hired, starting soon. |
 | Front gate | Design settled (roll-up car shutter + small door). Waiting on final measurements. |
 | Master bedroom | Plan and costing done (about ₱167k with buffer). |
