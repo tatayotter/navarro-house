@@ -158,8 +158,10 @@ Each opening gets a steel frame (costed under the walls).
 | Room door from the stair landing, weatherproof (WPC or uPVC) with jamb and lockset | 0.8 × 2.1 m | 8,500 | 16,500 | Online |
 | T&B door, PVC or WPC with jamb | 0.7 × 2.1 m | 3,500 | 7,000 | Online |
 | T&B awning window, clear glass (privacy by curtain) | 0.9 × 0.45 m | 3,000 | 5,500 | Online |
-| Framed opening and bracket for the window aircon | 1 | 1,500 | 3,000 | Online |
+| Framed opening and bracket for the window aircon (door wall, between the stair door and the firewall) | 1 | 1,500 | 3,000 | Online |
 | **Subtotal** | | **34,500** | **62,000** | |
+
+**Window aircon position (moved 20 Nov):** on the door wall (annex side), between the door to the stair and the back firewall, about 0.7–1.3 m from the firewall, sill about 1.5 m. It sits in the framed part of the wall above the 1 m half wall. The front wall now has only the slider and the T&B window. Two things to check on site: there must be at least about 50 cm of open air behind the unit on the stair side so the hot air can escape, and the hot air blows toward the stair landing. Keep the storage wall below the unit or stop it short of that corner.
 
 Laminated glass on the slider for typhoons adds about ₱4,000–7,000 (Online). The room door faces the open-air stair, so it must be a waterproof type, not a plain wooden door.
 
