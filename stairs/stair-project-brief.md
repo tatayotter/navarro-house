@@ -1,7 +1,7 @@
 ---
 title: "Steel stair: project brief"
 status: Building soon
-cost: "₱33,284 projected"
+cost: "₱34,784 projected"
 price_source: mixed
 updated: 20 Nov 2026
 ---
@@ -13,7 +13,7 @@ Source of truth: Stair_Works_Phase3_Plan_v3.4.pdf.
 ## Status (20 Nov 2026)
 - Final design done from site measurements (v3.3); v3.4 adds the ~20 cm slab edge cut (engineer approved 20 Nov)
 - Steel, primer, rods, discs bought and delivered 16 Nov
-- Welder: PHP 7,000 labor agreed; scope/days to confirm
+- Welder: NEW welder hired 20 Nov, PHP 8,500 labor quote; payment split, scope and days to confirm
 - Next: buy 1 angle bar + anchors + extra rods, check ceiling stains, pay 30%, start
 
 ## Site measurements
@@ -46,10 +46,10 @@ Spent 17 Nov: Metrosan 99 (item TBD)
 
 Still to buy (~7,695): angle bar ×1 1,100 · ½"×4" anchors ~16 640 · ⅜"×3" anchors ×3 75 · extra rods 400 · flap disc 80 · black enamel 1,400 · vinyl treads 100 cm ×12 3,000 · adhesive 400 · caulk 200 · edge padding + paint 400
 
-Projected total: 18,589 + 7,695 + 7,000 labor = **PHP 33,284** (budget 35,000; architect quote 64,850)
+Projected total: 18,589 + 7,695 + 8,500 labor = **PHP 34,784** (budget 35,000, leaves only ~216; architect quote 64,850)
 
 ## Welder terms
-PHP 7,000 fixed; 30% start (2,100), 70% at turnover (4,900). Owner supplies materials and consumables + electricity. Welder brings machine, grinder, hammer drill + ½"/⅜" masonry bits + 9/16" metal bit. Rework of failed checks free.
+PHP 8,500 fixed (new welder, 20 Nov). If the 30/70 split is kept: 30% start (2,550), 70% at turnover (5,950). Owner supplies materials and consumables + electricity. Welder brings machine, grinder, hammer drill + ½"/⅜" masonry bits + 9/16" metal bit. Rework of failed checks free.
 
 ## Turnover checks
 Stress (walk, jump lightly, two people, push/pull railing) · Noise (no rattles) · Visual (full welds ground smooth, full paint coverage, level treads) · Measure (risers 19.2 within ~6 mm incl. first/last; equal spacing) · Safety (edge padded/painted, temporary barrier upstairs)
@@ -72,3 +72,4 @@ Stress (walk, jump lightly, two people, push/pull railing) · Noise (no rattles)
 - 19 Nov: Welding details drawn (tread legs, wall anchor points, top ledger tie). Kept 12 treads + slab step = 13 steps (20 Nov).
 - 20 Nov: Slab edge at the bottom end of the opening cut back ~20 cm (engineer approved), in the demolition contract before welding. Headroom ~182 → ~200 cm. Guard rail +20 cm from spare tubular. Plan v3.4. Projected 33,284.
 - 20 Nov: Height rechecked: 249 cm annex floor to top of slab → 13 risers of ~19.15 cm (welder marks 249 ÷ 13). No design change.
+- 20 Nov: New welder hired; labor 7,000 → 8,500 (+1,500). Projected 33,284 → 34,784; buffer to the 35,000 budget ~216. PDF v3.5 needed (cost + welder agreement pages) once the new welder's terms are confirmed.

@@ -22,7 +22,7 @@ Last updated: 20 November 2026.
 | Car bay partition | Solid wall with a solid wood main door and a sliding window over the car (changed 19 Nov), about ₱35k–64k (online estimate); see `house/car-bay-partition.md`. Wood undecided; local door + jamb quote pending. |
 
 ## Where the prices come from
-- **Local receipts and quotes:** steel stair materials already bought (₱18,589, store receipt), welder labour (₱7,000), architect's stair quote (₱64,850, for comparison).
+- **Local receipts and quotes:** steel stair materials already bought (₱18,589, store receipt), welder labour (₱8,500, new welder), architect's stair quote (₱64,850, for comparison).
 - **Online estimates (no local quote yet):** stair items still to buy (≈₱7,695), front gate, master bedroom, living room, plumbing and septic.
 
 ## Plans and documents

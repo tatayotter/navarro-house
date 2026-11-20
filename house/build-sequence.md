@@ -25,18 +25,18 @@ summary: The order of the whole renovation, from the steel stair to the last fix
 
 | Phase | What | Main trades | Materials (₱) | Labour anchor 30–40% (₱) | Supplier-installed, equipment, demolition (₱) | Phase budget (₱) |
 |---|---|---|---|---|---|---|
-| 1 | Demolition contract, then the steel stair | Demolition crew, welder | 34,784–45,284 | 9,550–14,600 (welder 7,000 agreed) | 20,000–41,000 | **64,334–100,884** |
+| 1 | Demolition contract, then the steel stair | Demolition crew, welder | 34,784–45,284 | 11,050–16,100 (welder 8,500 agreed) | 20,000–41,000 | **65,834–102,384** |
 | 2 | Weatherproof the rooftop room, re-roof the terrace, clad the terrace frontage | Mason, steel fabricator | 71,700–112,870 | 21,510–45,148 | 3,000–5,000 | **96,210–163,018** |
 | 3 | New CHB walls (terrace side walls, car bay partition), front gate | Mason, welder, shutter shop | 36,570–51,670 | 10,971–20,668 | 17,000–27,000 | **64,541–99,338** |
 | 4 | Plumbing and electrical rough-in, ground floor included | Plumber, electrician | 169,965–256,775 | 50,990–102,710 | 2,500–4,000 | **223,455–363,485** |
 | 5 | Close up: partitions and double walls, ceilings in one go, glass and doors in one go, floors, paint | Partition supplier, ceiling crew, glass supplier, carpenter, tiler, painter | 291,540–383,700 | 87,462–153,480 | 168,400–259,900 | **547,402–797,080** |
 | 6 | Final fit-out | Electrician, plumber, carpenter, AC tech | 98,380–189,520 | 29,514–75,808 | 38,632–63,632 | **166,526–328,960** |
-| | **Total before contingency** | | **702,939–1,039,819** | **209,997–412,414** | **249,532–400,532** | **≈ 1,162,000–1,853,000** |
+| | **Total before contingency** | | **702,939–1,039,819** | **211,497–413,914** | **249,532–400,532** | **≈ 1,164,000–1,854,000** |
 | | **With 10% contingency on the Online part** | | | | | **≈ 1,276,000–2,035,000** |
 
 After fit-out: the induction cooktop (its 30 A circuit goes in at Phase 4). Optional: kitchen and dining clean-up. Neither is in the total.
 
-Sources: the stair materials already bought and the welder's ₱7,000 are Local (receipts and an agreed price). Everything else is Online, from the plan pages, split by phase so nothing is counted twice.
+Sources: the stair materials already bought and the welder's ₱8,500 are Local (receipts and an agreed price). Everything else is Online, from the plan pages, split by phase so nothing is counted twice.
 
 ### The labour anchor (30–40% of materials)
 
@@ -44,7 +44,7 @@ Sources: the stair materials already bought and the welder's ₱7,000 are Local 
 
 - **Materials** means the plan pages' estimates with their own labour lines taken out, so labour is never counted twice.
 - **Supplier-installed and equipment** items are priced by the shop with installation included (glass and aluminium, the roll-up shutter, the ceiling package, curtains, core drilling), or are machines (pump, aircon). No labour markup is added to them; negotiate them as one installed price.
-- **Example:** the stair welder agreed ₱7,000, which is 27% of the ₱26,284 stair materials, below even the 30% end (₱7,885) and well under 40% (₱10,514).
+- **Example:** the new stair welder quoted ₱8,500 (20 Nov), which is 32% of the ₱26,284 stair materials: inside the 30–40% range (₱7,885–10,514).
 - When a real quote comes in, write it next to the anchor in the phase and change its tag to Local.
 
 ### One crew per trade, one visit each
@@ -77,11 +77,11 @@ Do not start the step after a 🔒 gate until the check is done and written down
 
 🛒 **Buy lists:** [stair: still to buy](../stairs/stair-project-brief.html#costs) · [stair: original shopping list](../stairs/shopping-list-14nov.html) · [demolition contract materials](extra-materials.html#demolition-contract-materials-phase-1)
 
-**Cost:** phase budget **₱64,334–100,884** before contingency. **Every demolition price includes touch-up and finishing:** cut edges plastered and squared, rebar ends treated, debris hauled, ready for the next trade.
+**Cost:** phase budget **₱65,834–102,384** before contingency. **Every demolition price includes touch-up and finishing:** cut edges plastered and squared, rebar ends treated, debris hauled, ready for the next trade.
 
 | Part | Materials (₱) | Labour (₱) | Source |
 |---|---|---|---|
-| Steel stair: materials (₱18,589 spent, ₱7,695 still to buy) and welder | 26,284 | 7,000 agreed (anchor 7,885–10,514) | Local + Online |
+| Steel stair: materials (₱18,589 spent, ₱7,695 still to buy) and welder | 26,284 | 8,500 agreed (anchor 7,885–10,514) | Local + Online |
 | Demolition contract, labour only (lump sum, touch-up and finishing included): slab cut 5,000–12,000; rooftop door opening 2,000–4,000; terrace counter 3,000–6,000; terrace to living room wall 10,000–19,000 | — | 20,000–41,000 | Online |
 | Demolition contract, materials: terrace lintel (placeholder until the engineer sizes it), new slab edge (rebar, epoxy, form, mortar), plaster and patching for the touch-up of every cut | 8,500–19,000 | 2,550–7,600 (30–40%) | Online |
 
@@ -110,12 +110,12 @@ Do not start the step after a 🔒 gate until the check is done and written down
 | ⬜ | 1.2 | Get the demolition contract quoted as one lump sum, with the job list above, touch-up and finishing of every cut, debris haul and clean-up included | Rowil | Two quotes in; one crew chosen; price tagged Local. Open below the Online guess. |
 | ⬜ | 1.3 | Buy the last stair items: angle bar, ½″ and ⅜″ anchors, extra rods, flap disc; check the ceiling stains and the beam to column crack | Rowil | Everything on the stair "still to buy" list is on site except the paint and vinyl; leak cause known (or ruled out). |
 | ⬜ | 1.4 | **Demolition visit 1:** slab cut and new edge, rooftop door opening, terrace counter, prop and cast the terrace lintel, marked core holes | Demolition crew | Slab edge cut to the engineer's approved size and re-formed; door opening and counter done and their edges plastered and squared; floor patched where the counter stood; lintel cast with props in; debris hauled. |
-| ⬜ | 1.5 | Pay the welder's 30% (₱2,100) once visit 1 is cleaned up | Rowil | Stair room clear of debris, new slab edge finished; 30% paid; receipt kept. |
+| ⬜ | 1.5 | Pay the welder's 30% (₱2,550, if the new welder keeps the 30/70 split) once visit 1 is cleaned up | Rowil | Stair room clear of debris, new slab edge finished; 30% paid; receipt kept. |
 | ⬜ | 1.6 | Build the stair: stringers, treads, post, top tie at the top end of the opening, railing | Welder | All 12 treads in, left stringer bolted at 4 points, post under the right stringer, top tied to the slab edge; headroom over step 3 measured at about 200 cm. |
 | ⬜ | 1.7 | **Demolition visit 2** (can overlap with 1.6): open the terrace to living room wall under the cured lintel, plaster the edges, cover it | Demolition crew | Opening at the slider size with edges plastered, square and plumb (ready for the glass supplier to measure); props out only when the engineer says so; covered against rain. |
 | ⬜ | 1.8 | Upstairs guard rails on the open edges of the (now about 20 cm longer) opening, plus a temporary barrier | Welder | Nobody can fall into the opening from the rooftop side. |
 | ⬜ | 1.9 | Grind, prime, black enamel, vinyl treads; paint the new slab edge a bright colour | Welder, Rowil | Full paint coverage; vinyl on all 12 treads with contrasting nosing; headroom at step 3 written in the brief. |
-| ⬜ | 1.10 | Turnover checks, then pay the 70% (₱4,900) | Rowil, welder | Stress, noise, visual, measure (every riser 19.2 cm within about 6 mm) and safety checks all pass. Brief and site updated to "Done". |
+| ⬜ | 1.10 | Turnover checks, then pay the 70% (₱5,950) | Rowil, welder | Stress, noise, visual, measure (every riser 19.2 cm within about 6 mm) and safety checks all pass. Brief and site updated to "Done". |
 
 ## Phase 2: Weatherproof the rooftop
 
