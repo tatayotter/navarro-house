@@ -405,13 +405,13 @@ B(-T,W+T,RF,RF+1.0,yL+0.84,yL+0.69,mat.wall,L3);   // half wall along the slab's
 // neighbour's rooftop slab (annex side), renovated and shared with us (Rowil 18 Nov): same level, about the
 // same width as our house, from the front parapet line to the back; our side parapet is removed so the decks join
 const NX0=-T-1.2*W;  // corner unit, about 1.2x our width (Rowil 18 Nov); its outer side faces the side street (SE)
-B(NX0,-T,RF-0.15,RF,yL,AZr,mat.slab,L3);                               // walkable part: front, up to the annex front wall
+B(NX0,-T,RF-0.15,RF,yL+0.84,AZr,mat.slab,L3);                               // walkable part: front, up to the annex front wall
 // back part beside the annex: no slab any more, corrugated roofing (not walkable), raised flush with our roof slab (Rowil 18 Nov), ringed by a concrete half wall
 const corr=M(0x9aa3a8,{metalness:.5,roughness:.45});
 for(let x=NX0+0.05;x<AX0-0.2;x+=0.15) B(x,x+0.07,RF-0.04,RF,AZr-0.15,-D,corr,L3);
 B(NX0,AX0-0.15,RF-0.08,RF-0.04,AZr-0.15,-D,corr,L3);
 B(NX0,AX0-0.05,RF,RF+1.0,AZr,AZr-0.15,mat.wall,L3); B(AX0-0.2,AX0-0.05,RF,RF+1.0,AZr-0.15,-D,mat.wall,L3);
-B(NX0-0.15,NX0,RF-0.15,RF+1.0,yL,-D-T,mat.wall,L3); B(NX0-0.15,0,RF,RF+1.0,-D,-D-T,mat.wall,L3); B(NX0-0.15,-T,RF,RF+1.0,yL,yL-0.15,mat.wall,L3);
+B(NX0-0.15,NX0,RF-0.15,RF+1.0,yL+0.84,-D-T,mat.wall,L3); B(NX0-0.15,0,RF,RF+1.0,-D,-D-T,mat.wall,L3); B(NX0-0.15,-T,RF,RF+1.0,yL+0.84,yL+0.69,mat.wall,L3);   // one building split between 2 siblings: slab edge + half wall continuous at 84 cm over the terrace (Rowil 20 Nov)
 // right-side neighbour's unit: same layout as ours but ~1.2x wider (corner unit); ghost outline
 B(NX0,AX0-0.05,0,RF-0.15,yL,-D,mat.ghost,L3); B(AX0-0.05,-T,0,RF-0.15,yL,AZr,mat.ghost,L3); B(NX0,-T,0,Y2+2.55,0,yL,mat.ghost,L3);
 B(AX0-0.05,-T,ARF-0.105,ARF,AZ1-1.2,-D-T,mat.slab,L3);                    // annex landing continues to the back edge at the stair's top-step level (Rowil 20 Nov)
