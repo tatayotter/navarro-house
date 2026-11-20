@@ -1,7 +1,7 @@
 ---
 title: Build sequence
 status: Building
-cost: "≈ ₱1.14M–1.81M with labour"
+cost: "≈ ₱1.14M–1.82M with labour"
 price_source: mixed
 updated: 20 Nov 2026
 summary: The order of the whole renovation, from the steel stair to the last fixture, with the induction cooktop added after fit-out. Each step says who does it and when it counts as done, so after every finished step you know exactly what comes next. This is the master plan; the room and system pages hold the details.
@@ -28,11 +28,11 @@ summary: The order of the whole renovation, from the steel stair to the last fix
 | 1 | Demolition contract, then the steel stair | Demolition crew, welder | 34,784–45,284 | 9,550–14,600 (welder 7,000 agreed) | 20,000–41,000 | **64,334–100,884** |
 | 2 | Weatherproof the rooftop room and clad the terrace frontage | Mason, steel fabricator | 55,690–89,630 | 16,707–35,852 | — | **72,397–125,482** |
 | 3 | New CHB walls (terrace side walls, car bay partition), front gate | Mason, welder, shutter shop | 36,570–51,670 | 10,971–20,668 | 17,000–27,000 | **64,541–99,338** |
-| 4 | Plumbing and electrical rough-in, ground floor included | Plumber, electrician | 167,015–252,575 | 50,104–101,030 | 2,500–4,000 | **219,619–357,605** |
+| 4 | Plumbing and electrical rough-in, ground floor included | Plumber, electrician | 169,965–256,775 | 50,990–102,710 | 2,500–4,000 | **223,455–363,485** |
 | 5 | Close up: partitions and double walls, ceilings in one go, glass and doors in one go, floors, paint | Partition supplier, ceiling crew, glass supplier, carpenter, tiler, painter | 294,040–388,490 | 88,212–155,396 | 166,400–255,900 | **548,652–799,786** |
 | 6 | Final fit-out | Electrician, plumber, carpenter, AC tech | 98,380–189,520 | 29,514–75,808 | 38,632–63,632 | **166,526–328,960** |
-| | **Total before contingency** | | **686,479–1,017,169** | **205,058–403,354** | **244,532–391,532** | **≈ 1,136,000–1,812,000** |
-| | **With 10% contingency on the Online part** | | | | | **≈ 1,247,000–1,991,000** |
+| | **Total before contingency** | | **689,429–1,021,369** | **205,944–405,034** | **244,532–391,532** | **≈ 1,140,000–1,818,000** |
+| | **With 10% contingency on the Online part** | | | | | **≈ 1,251,000–1,997,000** |
 
 After fit-out: the induction cooktop (its 30 A circuit goes in at Phase 4). Optional: kitchen and dining clean-up. Neither is in the total.
 
@@ -85,7 +85,7 @@ Do not start the step after a 🔒 gate until the check is done and written down
 | Demolition contract, labour only (lump sum, touch-up and finishing included): slab cut 5,000–12,000; rooftop door opening 2,000–4,000; terrace counter 3,000–6,000; terrace to living room wall 10,000–19,000 | — | 20,000–41,000 | Online |
 | Demolition contract, materials: terrace lintel (placeholder until the engineer sizes it), new slab edge (rebar, epoxy, form, mortar), plaster and patching for the touch-up of every cut | 8,500–19,000 | 2,550–7,600 (30–40%) | Online |
 
-**Stair brief change:** the brief says "no slab trimming for now". With the cut in this contract, add to its change log: *"20 Nov: slab edge over step 3 to be cut back about 20 cm (approved by the engineer) in the demolition contract, before welding. Headroom over step 3 goes from ~182 to ~200 cm. Upstairs guard rail along that edge gets about 20 cm longer."* The PDF needs a **v3.4** with the approved cut size, because the headroom figures and the opening size change.
+**Stair brief:** ✅ updated to v3.4 (20 Nov) with the approved ~20 cm cut; see the [stair brief](../stairs/stair-project-brief.html).
 
 ### What goes in the demolition contract
 
@@ -172,12 +172,12 @@ The rooftop roof and its columns are **already built**; no roof extension is nee
 **One plumbing package (confirmed 20 Nov):** one plumber takes the ground T&B strip-out and remodel, the new septic tank and all the piping in the house as a single contract, quoted together. **Includes the ground floor:** the ground T&B is remodelled to the new layout, the kitchen sink stays on city water, and all ground floor drains go to the new septic tank. **Includes the washing machine's hook-up** (faucet, drain, RCD outlet); the machine itself is a household purchase, not part of the build.
 🛒 **Buy lists:** [plumbing materials](plumbing-materials.html#summary) (septic, pipes, tank) · [electrical materials](electrical-materials.html#item-list) (panel, wire, conduit and boxes, network, sundries)
 
-**Cost (Online):** phase budget **₱219,619–357,605** before contingency. The electrical permit is not costed yet. See [plumbing materials](plumbing-materials.html) and [electrical materials](electrical-materials.html).
+**Cost (Online):** phase budget **₱223,455–363,485** before contingency. The electrical permit is not costed yet. See [plumbing materials](plumbing-materials.html) and [electrical materials](electrical-materials.html).
 
 | Trade | Materials (₱) | Labour anchor 30–40% (₱) |
 |---|---|---|
 | Plumber, one package: ground T&B strip-out and remodel piping, septic, drains and vents, water lines, tank (pump comes in Phase 6). The plumbing page guessed ₱30,000–55,000 labour | 86,500–130,950 | 25,950–52,380 |
-| Electrician: panel, wire, conduit and boxes, network, sundries | 80,515–121,625 | 24,155–48,650 |
+| Electrician: panel (70 A main, RCBOs), wire incl. the heavier feeder, conduit and boxes, network, sundries; washer circuit included (updated 20 Nov) | 83,465–125,825 | 25,040–50,330 |
 | Core drilling service through the roof slab | 2,500–4,000 | included |
 
 | Status | # | Step | Who | Done when |
