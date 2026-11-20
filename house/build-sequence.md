@@ -1,7 +1,7 @@
 ---
 title: Build sequence
 status: Building
-cost: "≈ ₱1.12M–1.78M with labour"
+cost: "≈ ₱1.14M–1.81M with labour"
 price_source: mixed
 updated: 20 Nov 2026
 summary: The order of the whole renovation, from the steel stair to the last fixture, with the induction cooktop added after fit-out. Each step says who does it and when it counts as done, so after every finished step you know exactly what comes next. This is the master plan; the room and system pages hold the details.
@@ -24,13 +24,13 @@ summary: The order of the whole renovation, from the steel stair to the last fix
 | Phase | What | Main trades | Materials (₱) | Labour anchor 30–40% (₱) | Supplier-installed, equipment, demolition (₱) | Phase budget (₱) |
 |---|---|---|---|---|---|---|
 | 1 | Demolition contract, then the steel stair | Demolition crew, welder | 34,784–45,284 | 9,550–14,600 (welder 7,000 agreed) | 20,000–41,000 | **64,334–100,884** |
-| 2 | Weatherproof the rooftop room | Mason, steel fabricator | 49,950–77,750 | 14,985–31,100 | — | **64,935–108,850** |
+| 2 | Weatherproof the rooftop room and clad the terrace frontage | Mason, steel fabricator | 55,690–89,630 | 16,707–35,852 | — | **72,397–125,482** |
 | 3 | New CHB walls (terrace side walls, car bay partition), front gate | Mason, welder, shutter shop | 36,570–51,670 | 10,971–20,668 | 17,000–27,000 | **64,541–99,338** |
 | 4 | Plumbing and electrical rough-in, ground floor included | Plumber, electrician | 167,015–252,575 | 50,104–101,030 | 2,500–4,000 | **219,619–357,605** |
-| 5 | Close up: partitions and double walls, ceilings in one go, glass and doors in one go, floors, paint | Partition supplier, ceiling crew, glass supplier, carpenter, tiler, painter | 290,150–380,650 | 87,045–152,260 | 166,400–255,900 | **543,595–788,810** |
+| 5 | Close up: partitions and double walls, ceilings in one go, glass and doors in one go, floors, paint | Partition supplier, ceiling crew, glass supplier, carpenter, tiler, painter | 294,040–388,490 | 88,212–155,396 | 166,400–255,900 | **548,652–799,786** |
 | 6 | Final fit-out | Electrician, plumber, carpenter, AC tech | 98,380–189,520 | 29,514–75,808 | 38,632–63,632 | **166,526–328,960** |
-| | **Total before contingency** | | **676,849–997,449** | **202,169–395,466** | **244,532–391,532** | **≈ 1,124,000–1,784,000** |
-| | **With 10% contingency on the Online part** | | | | | **≈ 1,233,000–1,960,000** |
+| | **Total before contingency** | | **686,479–1,017,169** | **205,058–403,354** | **244,532–391,532** | **≈ 1,136,000–1,812,000** |
+| | **With 10% contingency on the Online part** | | | | | **≈ 1,247,000–1,991,000** |
 
 After fit-out: the induction cooktop (its 30 A circuit goes in at Phase 4). Optional: kitchen and dining clean-up. Neither is in the total.
 
@@ -48,7 +48,7 @@ Sources: the stair materials already bought and the welder's ₱7,000 are Local 
 ### One crew per trade, one visit each
 
 - **Ceilings:** every hung ceiling in the house is done **in one go** by one crew (step 5.4): PVC in the bedroom, living room, kitchen and dining, gypsum on the terrace and in the rooftop room. One mobilisation saves labour.
-- **Partitions and double walls:** **one supplier** does all framed partition and double-wall work in one job (step 5.3): the rooftop room's insulation and Hardiflex lining, the rooftop T&B framed fibre-cement, and the bedroom Wall 1 double wall. Before leaving, they **set the provisions for the glass and door installers**: framed openings, backing and fixing points.
+- **Partitions and double walls:** **one supplier** does all framed partition and double-wall work in one job (step 5.3): the rooftop room's insulation and Hardiflex lining, the rooftop T&B framed fibre-cement, the terrace frontage inner wall, and the bedroom Wall 1 double wall. Before leaving, they **set the provisions for the glass and door installers**: framed openings, backing and fixing points.
 - **Glass and doors:** every window, slider and door is installed **in one go** after that (step 5.5). Until then the rooftop openings are closed temporarily with plywood or tarp.
 
 **Demolition** is labour only, so the 30–40% rule has nothing to anchor to: get it quoted as a lump sum (Online guesses are in Phase 1). **Not costed yet:** the electrical permit, the annex barn door. The ground T&B tiles and fixtures are estimated at the same rate as the rooftop T&B until it is measured. The master bedroom total includes its own ceiling, wiring and double wall, which also appear in Phases 4 and 5, so the grand total overlaps by roughly ₱20k–40k.
@@ -60,7 +60,7 @@ Do not start the step after a 🔒 gate until the check is done and written down
 | Gate | Before | Who | What they check |
 |---|---|---|---|
 | 🔒 G1 | Demolition and welding start (step 1.1) | Engineer | Stair v3.3 [welding details](../stairs/weld-details.html): tread mount, 1.4 mm plate, right stringer span, wall anchors. **Slab headroom cut:** about 20 cm off the bottom-end edge of the opening (over step 3) for about 2.0 m headroom; the cut rebar, the new edge detail, and the slab span after the cut. **Rooftop door opening:** any tie beam or rebar cut, header over the door. **Terrace to living room wall:** lintel size, props, and the order (lintel cured before the wall below comes out). **Terrace counter:** whether it ties into the wall or slab. |
-| 🔒 G2 | Rooftop walls go up (step 2.3) | Engineer | Dowels for the new half walls without breaking the roof waterproofing, anchors into the old parapets, top fixing at the purlins of the existing roof, typhoon fixings, core holes and roof drains, the T&B corner. See the [rooftop room page](../rooms/rooftop-room.html#for-the-engineer). |
+| 🔒 G2 | Rooftop walls and terrace frontage cladding (step 2.3) | Engineer | **Terrace frontage:** how the cladding frame fixes to the existing front wall and slab edge, and typhoon wind on the street face. Dowels for the new half walls without breaking the roof waterproofing, anchors into the old parapets, top fixing at the purlins of the existing roof, typhoon fixings, core holes and roof drains, the T&B corner. See the [rooftop room page](../rooms/rooftop-room.html#for-the-engineer). |
 | 🔒 G3 | New CHB walls and the gate (steps 3.2 to 3.5) | Engineer | **Terrace side walls:** that the terrace slab (and any cantilever) carries about 2 t of new CHB walls or that they sit on beams; dowels into the slab, ties into the columns and the shared walls, a top tie to the beam or roof framing, typhoon wind;  car bay partition lintel and tie-in to the shared side walls; gate demolition (beam not resting on the hollow-block piers, new post base and anchors). |
 | 🔒 G4 | The septic dig (step 4.2) | Engineer and plumber | Septic size, rebar and concrete mix, distance from the party wall and front column footings, car-rated cover. |
 | 🔒 G5 | Any wire is pulled (step 4.6) | Licensed electrician | The whole [electrical plan](electrical-materials.html): load calculation, wire and breaker sizes, main breaker, grounding, RCDs, no-neutral switches with bypass, permit. |
@@ -115,25 +115,27 @@ Do not start the step after a 🔒 gate until the check is done and written down
 
 ## Phase 2: Weatherproof the rooftop
 
-**Starts when:** the stair is done (1.10) and the rooftop room is measured. **Unlocks:** a dry rooftop, so leaks into the 2nd floor stop before any ceiling goes up below.
+**Starts when:** the stair is done (1.10) and the rooftop room and terrace frontage are measured. **Unlocks:** a dry rooftop, so leaks into the 2nd floor stop before any ceiling goes up below.
 The rooftop roof and its columns are **already built**; no roof extension is needed. This phase closes the walls under the existing roof.
-**Cost (Online, from the [rooftop room page](../rooms/rooftop-room.html)):** phase budget **₱64,935–108,850** before contingency. The door opening was cut in the demolition contract (1.4).
+**Cost (Online, from the [rooftop room page](../rooms/rooftop-room.html)):** phase budget **₱72,397–125,482** before contingency. The door opening was cut in the demolition contract (1.4). **Terrace frontage (20 Nov):** a double wall with metal cladding outside. The same steel fabricator puts up its outer frame and cladding in this phase, in the same visit as the rooftop steel, so the front is weathertight early; the inner wall comes with the partition supplier at 5.3.
 
 | Trade | Materials (₱) | Labour anchor 30–40% (₱) |
 |---|---|---|
 | Mason: new half walls, parapet patch, skim and paint, T&B block courses, curb | 19,500–28,850 | 5,850–11,540 |
 | Steel fabricator: light steel frame, container-van steel, breathable wrap, flashings and trims | 30,450–48,900 | 9,135–19,560 |
+| Steel fabricator, same visit: terrace frontage outer frame, metal cladding, wrap, flashings, jalousie opening framed (about 7–9 m² after the jalousie opening; measure) | 5,740–11,880 | 1,722–4,752 |
 
 | Status | # | Step | Who | Done when |
 |---|---|---|---|---|
-| ⬜ | 2.1 | Measure the rooftop room: front wall to back wall, inside width, roof height at the front and back of the room, slab slope, roof drains, annex position | Rowil | Numbers sent; 3D model and rooftop page updated with them. |
+| ⬜ | 2.1 | Measure the rooftop room: front wall to back wall, inside width, roof height at the front and back of the room, slab slope, roof drains, annex position; terrace frontage width and height and the jalousie opening | Rowil | Numbers sent; 3D model and rooftop page updated with them. |
 | ⬜ | 2.2 | Plan the sleeves: mark where the T&B drain and water pipes and every wall conduit pass through the new walls | Plumber, electrician, Rowil | Sleeve and conduit positions marked on the slab and on the drawing. |
 | 🔒 | 2.3 | Engineer check (gate G2) | Engineer | Anchors, dowels, top fixing, typhoon fixings and core holes signed off. |
 | ⬜ | 2.4 | Build the new 1 m 4″ CHB half wall on the front (and on any line that has no half wall yet); patch the old parapets on the back and outer side. Set pipe sleeves and conduit into the blocks as they go up | Mason (plumber and electrician on call) | Half walls up and plastered; every sleeve and conduit stub in place and capped. |
 | ⬜ | 2.5 | T&B: 3 courses of block on all four walls (the framed fibre-cement above them comes at 5.3) | Mason | Block courses up with dowels, drain and water sleeves through. |
 | ⬜ | 2.6 | Steel frame on top of the half walls up to the existing roof purlins, wrap, container-van steel outside, flashing caps, trims and opening frames | Steel fabricator | Outer skin closed except the openings; caps over every half wall top; no daylight where the walls meet the roof. |
-| ⬜ | 2.7 | Close the slider, window, aircon and door openings temporarily (plywood or tarp) | Steel fabricator or Rowil | Openings sealed against rain until glass and doors go in at 5.5. |
-| ⬜ | 2.8 | Water test: hose the walls and the joints where the walls meet the roof | Rowil | No water inside after a hard hose-down (and after the next heavy rain). |
+| ⬜ | 2.7 | Terrace frontage, same visit: outer steel frame, wrap and metal cladding on the street face, flashing at the top and sill, jalousie opening framed | Steel fabricator | Front face fully clad, jalousie opening square at the size on the glass list, no water behind the cladding in the hose test. |
+| ⬜ | 2.8 | Close the slider, window, aircon and door openings temporarily (plywood or tarp) | Steel fabricator or Rowil | Openings sealed against rain until glass and doors go in at 5.5. |
+| ⬜ | 2.9 | Water test: hose the rooftop walls, the terrace frontage cladding and the joints where the walls meet the roof | Rowil | No water inside after a hard hose-down (and after the next heavy rain). |
 
 ## Phase 3: Other structural work
 
@@ -183,11 +185,12 @@ The rooftop roof and its columns are **already built**; no roof extension is nee
 
 **Starts when:** every test in Phase 4 has passed. **Unlocks:** fit-out.
 **Order inside this phase:** plaster and waterproofing, then the partition supplier (one job), then the ceiling crew (all rooms in one go), then glass and doors (one go), then floors and paint.
-**Cost (Online):** phase budget **₱543,595–788,810** before contingency.
+**Cost (Online):** phase budget **₱548,652–799,786** before contingency.
 
 | Trade or part | Materials (₱) | Labour anchor 30–40% (₱) |
 |---|---|---|
 | Partition and double-wall supplier, one job: rooftop insulation and Hardiflex lining, rooftop T&B framed fibre-cement (bedroom double wall is inside the bedroom line below) | 16,100–24,150 | 4,830–9,660 |
+| Partition and double-wall supplier, same job: terrace frontage inner wall (frame, insulation, Hardiflex), about 7–9 m² | 3,890–7,840 | 1,167–3,136 |
 | Ceiling crew, all rooms in one go: rooftop room gypsum and vents | 15,000–24,000 | 4,500–9,600 |
 | Ceiling crew, same visit, installed package: PVC in four rooms and terrace gypsum ([ceilings page](ceilings.html)) | 62,900–92,400 | included |
 | Glass supplier, installed, one go: all 6 items on the [glass and aluminium](glass-aluminium.html) list | 103,500–163,500 | included |
@@ -202,7 +205,7 @@ The rooftop roof and its columns are **already built**; no roof extension is nee
 |---|---|---|---|---|
 | ⬜ | 5.1 | Plaster and patch every chase and opening; bedroom crack repair after the engineer has opened a rust-streaked crack to check the rebar | Mason, engineer | Walls flat and dry; no open chases. |
 | ⬜ | 5.2 | Waterproofing: ground T&B floor and shower walls (new layout), kitchen splash zone, terrace washer area | Mason or tiler | Flood test passed on each wet floor. |
-| ⬜ | 5.3 | **Partition and double-wall supplier, one job:** rooftop insulation and Hardiflex lining, rooftop T&B framed fibre-cement above the block courses, bedroom Wall 1 double wall, backing for the annex barn door track. Then set the provisions for the glass and door installers | Partition supplier | Every wall closed and taped; every window, slider and door opening framed, square and at the size on the glass list, with backing for hinges and tracks. |
+| ⬜ | 5.3 | **Partition and double-wall supplier, one job:** rooftop insulation and Hardiflex lining, rooftop T&B framed fibre-cement above the block courses, terrace frontage inner wall (insulation and Hardiflex behind the metal cladding), bedroom Wall 1 double wall, backing for the annex barn door track. Then set the provisions for the glass and door installers | Partition supplier | Every wall closed and taped; every window, slider and door opening framed, square and at the size on the glass list, with backing for hinges and tracks. |
 | 🔒 | 5.4 | **All ceilings in one go** (gate G6 first): metal furring, then White Oak PVC in the bedroom, living room, kitchen and dining; gypsum on the terrace; gypsum with vents in the rooftop room | Ceiling crew | Every ceiling closed with every light, box and access point marked; fan and pendant hooks fixed to the slab. |
 | ⬜ | 5.5 | **Glass and doors in one go:** measure the finished openings, then install all 6 glass items (terrace jalousie, living room slider, partition window, rooftop slider, T&B awning window, aircon frame) and hang the rooftop room door, rooftop T&B door and car bay partition door | Glass supplier, carpenter | All installed, sealed and locking; temporary covers gone. Protect the glass and tracks during floor work. |
 | ⬜ | 5.6 | Floors and tiles: rooftop T&B and ground T&B tiles, rooftop room porcelain, self-leveller then SPC in the bedroom and living room | Tiler, floor installer | Floors laid with skirting; the slider bottom track sits flush. |
