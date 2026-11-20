@@ -1,7 +1,7 @@
 ---
 title: Build sequence
 status: Building
-cost: "≈ ₱1.18M–1.87M with labour"
+cost: "≈ ₱1.18M–1.88M with labour"
 price_source: mixed
 updated: 20 Nov 2026
 summary: The order of the whole renovation, from the steel stair to the last fixture, with the induction cooktop added after fit-out. Each step says who does it and when it counts as done, so after every finished step you know exactly what comes next. This is the master plan; the room and system pages hold the details.
@@ -25,14 +25,14 @@ summary: The order of the whole renovation, from the steel stair to the last fix
 
 | Phase | What | Main trades | Materials (₱) | Labour anchor 30–40% (₱) | Supplier-installed, equipment, demolition (₱) | Phase budget (₱) |
 |---|---|---|---|---|---|---|
-| 1 | Demolition contract, then the steel stair | Demolition crew, welder | 34,784–45,284 | 11,050–16,100 (welder 8,500 agreed) | 20,000–41,000 | **65,834–102,384** |
+| 1 | Demolition contract, then the steel stair | Demolition crew, welder | 37,284–50,284 | 11,800–18,100 (welder 8,500 agreed) | 20,000–41,000 | **69,084–109,384** |
 | 2 | Extend the rooftop slab over the terrace, weatherproof the rooftop room, clad the terrace frontage | Mason, steel fabricator | 80,750–125,720 | 24,225–50,288 | 3,000–5,000 | **107,975–181,008** |
 | 3 | New CHB walls (terrace side walls, car bay partition), front gate | Mason, welder, shutter shop | 36,570–51,670 | 10,971–20,668 | 17,000–27,000 | **64,541–99,338** |
 | 4 | Plumbing and electrical rough-in, ground floor included | Plumber, electrician | 169,965–256,775 | 50,990–102,710 | 2,500–4,000 | **223,455–363,485** |
 | 5 | Close up: partitions and double walls, ceilings in one go, glass and doors in one go, floors, paint | Partition supplier, ceiling crew, glass supplier, carpenter, tiler, painter | 291,540–383,700 | 87,462–153,480 | 168,400–259,900 | **547,402–797,080** |
 | 6 | Final fit-out | Electrician, plumber, carpenter, AC tech | 98,380–189,520 | 29,514–75,808 | 38,632–63,632 | **166,526–328,960** |
-| | **Total before contingency** | | **711,989–1,052,669** | **214,212–419,054** | **249,532–400,532** | **≈ 1,176,000–1,872,000** |
-| | **With 10% contingency on the Online part** | | | | | **≈ 1,291,000–2,057,000** |
+| | **Total before contingency** | | **714,489–1,057,669** | **214,962–421,054** | **249,532–400,532** | **≈ 1,179,000–1,879,000** |
+| | **With 10% contingency on the Online part** | | | | | **≈ 1,294,000–2,064,000** |
 
 After fit-out: the induction cooktop (its 30 A circuit goes in at Phase 4). Optional: kitchen and dining clean-up. Neither is in the total.
 
@@ -77,11 +77,12 @@ Do not start the step after a 🔒 gate until the check is done and written down
 
 🛒 **Buy lists:** [stair: still to buy](../stairs/stair-project-brief.html#costs) · [stair: original shopping list](../stairs/shopping-list-14nov.html) · [demolition contract materials](extra-materials.html#demolition-contract-materials-phase-1)
 
-**Cost:** phase budget **₱65,834–102,384** before contingency. **Every demolition price includes touch-up and finishing:** cut edges plastered and squared, rebar ends treated, debris hauled, ready for the next trade.
+**Cost:** phase budget **₱69,084–109,384** before contingency. **Every demolition price includes touch-up and finishing:** cut edges plastered and squared, rebar ends treated, debris hauled, ready for the next trade.
 
 | Part | Materials (₱) | Labour (₱) | Source |
 |---|---|---|---|
 | Steel stair: materials (₱18,589 spent, ₱7,695 still to buy) and welder | 26,284 | 8,500 agreed (anchor 7,885–10,514) | Local + Online |
+| Door steps at the rooftop room (20 Nov): 2 risers of about 18.5 cm from the annex landing up to deck level, small steel platform, handrail. Ask the same welder for an add-on price | 2,500–5,000 | 750–2,000 (30–40%) | Online |
 | Demolition contract, labour only (lump sum, touch-up and finishing included): slab cut 5,000–12,000; rooftop door opening 2,000–4,000; terrace counter 3,000–6,000; terrace to living room wall 10,000–19,000 | — | 20,000–41,000 | Online |
 | Demolition contract, materials: terrace lintel (placeholder until the engineer sizes it), new slab edge (rebar, epoxy, form, mortar), plaster and patching for the touch-up of every cut | 8,500–19,000 | 2,550–7,600 (30–40%) | Online |
 
@@ -114,12 +115,13 @@ Do not start the step after a 🔒 gate until the check is done and written down
 | ⬜ | 1.6 | Build the stair: stringers, treads, post, top tie at the top end of the opening, railing | Welder | All 12 treads in, left stringer bolted at 4 points, post under the right stringer, top tied to the slab edge; headroom over step 3 measured at about 200 cm. |
 | ⬜ | 1.7 | **Demolition visit 2** (can overlap with 1.6): open the terrace to living room wall under the cured lintel, plaster the edges, cover it | Demolition crew | Opening at the slider size with edges plastered, square and plumb (ready for the glass supplier to measure); props out only when the engineer says so; covered against rain. |
 | ⬜ | 1.8 | Upstairs guard rails on the open edges of the (now about 20 cm longer) opening, plus a temporary barrier | Welder | Nobody can fall into the opening from the rooftop side. |
-| ⬜ | 1.9 | Grind, prime, black enamel, vinyl treads; paint the new slab edge a bright colour | Welder, Rowil | Full paint coverage; vinyl on all 12 treads with contrasting nosing; headroom at step 3 written in the brief. |
-| ⬜ | 1.10 | Turnover checks, then pay the 70% (₱5,950) | Rowil, welder | Stress, noise, visual, measure (every riser 19.2 cm within about 6 mm) and safety checks all pass. Brief and site updated to "Done". |
+| ⬜ | 1.9 | **Door steps at the rooftop room:** the annex landing stays at the stair's top-step level, about 37 cm below the deck. Build 2 steel risers of about 18.5 cm, a small platform at deck level in front of the door (which opens inward) and a handrail | Welder | Both risers equal (about 18.5 cm) and level; platform solid and flush with the deck; handrail firm; door swings in clear of the platform. |
+| ⬜ | 1.10 | Grind, prime, black enamel, vinyl treads; paint the new slab edge a bright colour | Welder, Rowil | Full paint coverage; vinyl on all 12 treads with contrasting nosing; headroom at step 3 written in the brief. |
+| ⬜ | 1.11 | Turnover checks, then pay the 70% (₱5,950) | Rowil, welder | Stress, noise, visual (main stair and door steps), measure (every riser 19.2 cm within about 6 mm) and safety checks all pass. Brief and site updated to "Done". |
 
 ## Phase 2: Weatherproof the rooftop
 
-**Starts when:** the stair is done (1.10) and the rooftop room and terrace frontage are measured. **Unlocks:** a dry rooftop, so leaks into the 2nd floor stop before any ceiling goes up below.
+**Starts when:** the stair is done (1.11) and the rooftop room and terrace frontage are measured. **Unlocks:** a dry rooftop, so leaks into the 2nd floor stop before any ceiling goes up below.
 The rooftop roof and its columns are **already built**; no roof extension is needed. This phase closes the walls under the existing roof.
 🛒 **Buy lists:** [rooftop walls, half walls and T&B block courses](../rooms/rooftop-room.html#walls) · [slab extension over the terrace and frontage cladding](extra-materials.html#rooftop-slab-extension-over-the-terrace-and-the-frontage-cladding-phase-2)
 
@@ -138,7 +140,7 @@ The rooftop roof and its columns are **already built**; no roof extension is nee
 | ⬜ | 2.1 | Measure the rooftop room: front wall to back wall, inside width, roof height at the front and back of the room, slab slope, roof drains, annex position; terrace frontage width wall to wall, half wall height, and the height from the half wall top to the underside of the existing slab over the terrace; how far the existing slab reaches out (about 84 cm) | Rowil | Numbers sent; 3D model and rooftop page updated with them. |
 | ⬜ | 2.2 | Plan the sleeves: mark where the T&B drain and water pipes and every wall conduit pass through the new walls | Plumber, electrician, Rowil | Sleeve and conduit positions marked on the slab and on the drawing. |
 | 🔒 | 2.3 | Engineer check (gate G2) | Engineer | Slab extension design (beam or support, rebar, tie-in, props) given in writing; anchors, dowels, top fixing, typhoon fixings and core holes signed off. |
-| ⬜ | 2.4 | **Extend the rooftop slab over the terrace:** tear out the old terrace sheet roof and rusted framing, prop and form, set the engineer's beam and rebar tied into the existing slab, cast, cure, waterproof the top with a fall to a drain | Mason (engineer checks the rebar before the pour) | Engineer has seen the rebar before the pour; slab cast to the front edge; props left in for the time the engineer set; top waterproofed and flood tested; terrace below dry. |
+| ⬜ | 2.4 | **Extend the rooftop slab over the terrace:** tear out the old terrace sheet roof and rusted framing, prop and form, set the engineer's beam and rebar tied into the existing slab, **set two 25 mm PVC sleeves at the terrace back corner for the roof feed (power circuits 3, 12, 13 and the Cat6), coming up into the new 1 m half wall**, cast, cure, waterproof the top with a fall to a drain | Mason (engineer checks the rebar before the pour) | Engineer has seen the rebar before the pour; both roof-feed sleeves in place, capped and checked by the electrician before the pour; slab cast to the front edge; props left in for the time the engineer set; top waterproofed and flood tested; terrace below dry. |
 | ⬜ | 2.5 | Build the new 1 m 4″ CHB half walls on the front of the rooftop room, along the edges of the new slab extension (front and both sides), and on any line that has no half wall yet; patch the old parapets on the back and outer side. Set pipe sleeves and conduit into the blocks as they go up | Mason (plumber and electrician on call) | Half walls up and plastered; every sleeve and conduit stub in place and capped. |
 | ⬜ | 2.6 | T&B: 3 courses of block on all four walls (the framed fibre-cement above them comes at 5.3) | Mason | Block courses up with dowels, drain and water sleeves through. |
 | ⬜ | 2.7 | Steel frame on top of the half walls up to the existing roof purlins, wrap, container-van steel outside, flashing caps, trims and opening frames | Steel fabricator | Outer skin closed except the openings; caps over every half wall top; no daylight where the walls meet the roof. |
@@ -222,7 +224,7 @@ The rooftop roof and its columns are **already built**; no roof extension is nee
 | ⬜ | 5.2 | Waterproofing: ground T&B floor and shower walls (new layout), kitchen splash zone, terrace washer area | Mason or tiler | Flood test passed on each wet floor. |
 | ⬜ | 5.3 | **Partition and double-wall supplier, one job:** rooftop insulation and Hardiflex lining, rooftop T&B framed fibre-cement above the block courses, inner face of the terrace frontage strip above the jalousie (insulation and Hardiflex behind the metal cladding), bedroom Wall 1 double wall, backing for the annex barn door track. Then set the provisions for the glass and door installers | Partition supplier | Every wall closed and taped; every window, slider and door opening framed, square and at the size on the glass list, with backing for hinges and tracks. |
 | 🔒 | 5.4 | **All ceilings in one go** (gate G6 first): metal furring, then White Oak PVC in the bedroom, living room, kitchen and dining; gypsum on the terrace; gypsum with vents in the rooftop room | Ceiling crew | Every ceiling closed with every light, box and access point marked; fan and pendant hooks fixed to the slab. |
-| ⬜ | 5.5 | **Glass and doors in one go:** measure the finished openings, then install all 6 glass items (terrace jalousie wall to wall, after taking out the old aluminium slider window; living room slider, partition window, rooftop slider, T&B awning window, aircon frame) and hang the rooftop room door, rooftop T&B door and car bay partition door | Glass supplier, carpenter | All installed, sealed and locking; temporary covers gone. Protect the glass and tracks during floor work. |
+| ⬜ | 5.5 | **Glass and doors in one go:** measure the finished openings, then install all 6 glass items (terrace jalousie wall to wall, after taking out the old aluminium slider window; living room slider, partition window, rooftop slider, T&B awning window, aircon frame) and hang the rooftop room door (it now opens **inward**, into the room, 20 Nov), rooftop T&B door and car bay partition door | Glass supplier, carpenter | All installed, sealed and locking; temporary covers gone. Protect the glass and tracks during floor work. |
 | ⬜ | 5.6 | Floors and tiles: rooftop T&B and ground T&B tiles, rooftop room porcelain, self-leveller then SPC in the bedroom and living room | Tiler, floor installer | Floors laid with skirting; the slider bottom track sits flush. |
 | ⬜ | 5.7 | Paint: putty, prime, paint (Tulle White bedroom, warm greige living room, rooftop half walls and Hardiflex) | Painter or DIY | Two finish coats, no patches showing. |
 
