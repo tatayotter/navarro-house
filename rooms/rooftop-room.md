@@ -1,7 +1,7 @@
 ---
 title: Rooftop room
 status: Draft
-cost: "₱205k–344k"
+cost: "₱206k–346k"
 price_source: online
 updated: 18 Nov 2026
 summary: "The closed room on the rooftop under the existing shed roof, with its own T&B, a queen bed, a desk and a window aircon. Walls: 1 m concrete half wall, then container-van style steel outside and Hardiflex inside up to the roof. This page costs the walls, floor, ceiling, doors and windows, and T&B finishes."
@@ -25,13 +25,14 @@ Above the half wall, from the outside in:
 **The 1 m half wall:**
 
 - **Back and outer side:** use the existing concrete parapets. Patch and skim-coat the inside face, then paint.
-- **Front wall and annex-side wall (confirmed 18 Nov):** there's no parapet on these lines, so a new 1 m half wall in 4″ CHB, plastered both sides, goes on these two walls (about 8 m, leaving out the slider and door openings). The look is the same all round and floor-level water never reaches the steel frame.
+- **Front wall (confirmed 18 Nov):** no parapet here, so a new 1 m half wall in 4″ CHB, plastered both sides (about 3 m, leaving out the slider opening).
+- **Door wall on the annex side (changed 20 Nov):** no parapet here either. It gets **3 courses of 4″ CHB (about 60 cm)**, the same as the T&B, with the framed wall from there up. This wall is sheltered by the roof and the stair annex, so 60 cm is enough to keep floor water off the frame, and it's lighter.
 - **Top of the half wall:** a steel flashing cap over the joint, so rain running down the steel never gets into the top of the concrete.
 
 **Other details:**
 
 - **Top:** stops at the red steel purlins with a flashing that lets the roof move.
-- **Weight:** framed walls about 20 kg per m² (about 0.7 t in all). The new CHB half walls add about 1.6 t.
+- **Weight:** framed walls about 20 kg per m² (about 0.7 t in all). The new CHB half walls add about 1.2 t.
 - **Hanging things:** Hardiflex alone won't hold heavy items. Mark the stud lines, or add plywood backing behind the desk, TV and storage-wall positions before boarding. Below 1 m you can drill straight into the concrete.
 
 ## How the walls compared
@@ -50,13 +51,13 @@ For about 43 m² of new outside wall.
 
 | Section | Low (₱) | High (₱) | Source |
 |---|---|---|---|
-| Walls: half walls, framed walls above (container-van steel, insulation, Hardiflex), T&B walls, paint | 84,550 | 130,250 | Online |
+| Walls: half walls, framed walls above (container-van steel, insulation, Hardiflex), T&B walls, paint | 85,200 | 131,650 | Online |
 | Floor (porcelain tiles) | 16,500 | 28,700 | Online |
 | Ceiling with vents | 21,000 | 33,000 | Online |
 | Doors and windows | 34,500 | 62,000 | Online |
 | T&B waterproofing, tiles, fixtures | 29,650 | 58,900 | Online |
-| **Total before contingency** | **186,200** | **312,850** | |
-| **With 10% contingency** | **204,820** | **344,135** | |
+| **Total before contingency** | **186,850** | **314,250** | |
+| **With 10% contingency** | **205,535** | **345,675** | |
 
 **Not included:** the window aircon unit (about ₱18,000–26,000 for a 1 HP inverter, Online), bed, desk and storage-wall carpentry, wiring and the T&B exhaust fan (on the [electrical materials page](../house/electrical-materials.html)), pipes, core drilling and the raised T&B floor (on the [plumbing materials page](../house/plumbing-materials.html)), and engineer fees.
 
@@ -66,7 +67,8 @@ The framed wall above the 1 m half walls covers about 35 m² after the door, sli
 
 | Item | Qty | Low (₱) | High (₱) | Source |
 |---|---|---|---|---|
-| New 1 m CHB half wall, plastered both sides, front and annex-side walls, dowelled to the slab | ~8 m² | 10,500 | 14,800 | Online |
+| New CHB half walls, plastered both sides, dowelled to the slab: 1 m on the front wall, 3 courses (60 cm) on the door wall | ~6 m² | 7,950 | 11,200 | Online |
+| Extra framed wall on the door wall (starts at 60 cm instead of 1 m) | ~2 m² | 3,200 | 5,000 | Online |
 | Existing parapets (back, outer side): patch and skim coat inside; paint all half walls (primer + paint) and labour | ~27 m² | 6,400 | 10,350 | Online |
 | Light steel frame (studs or C-purlins at 60 cm), angles on the half walls, frames around openings | 35 m² | 8,750 | 14,000 | Online |
 | Container-van style corrugated steel sheet, pre-painted, 0.4–0.5 mm (with laps and waste) | 40 m² | 14,000 | 22,000 | Online |
@@ -80,7 +82,7 @@ The framed wall above the 1 m half walls covers about 35 m² after the door, sli
 | T&B outer walls above the 1 m half wall: 12 mm fibre-cement instead of Hardiflex on the inside face | ~4.6 m² | 1,000 | 1,600 | Online |
 | T&B door frame, head and step curb | lot | 800 | 1,200 | Online |
 | Hardiflex paint: putty, primer, latex, and painting labour | ~41 m² | 4,500 | 7,350 | Online |
-| **Subtotal** | | **84,550** | **130,250** | |
+| **Subtotal** | | **85,200** | **131,650** | |
 
 Inside the T&B, the concrete at the bottom and the fibre-cement above are waterproofed and tiled (see below).
 
@@ -167,8 +169,8 @@ Laminated glass on the slider for typhoons adds about ₱4,000–7,000 (Online).
 
 The walls attaching to the roof columns and the slab load are already approved. Please check these details:
 
-1. **Slab load: confirmed OK (18 Nov).** The slab takes the new load: framed walls ~0.7 t, new CHB half walls ~1.6 t, T&B walls ~0.9 t (3-course block + framed fibre-cement, 20 Nov), floor tiles ~0.6 t, raised T&B floor ~0.6–0.9 t, ceiling ~0.3 t.
-2. **Bottom anchoring.** The steel frame bolts onto the top of the 1 m half walls. Confirm the anchor type into the old parapets (are they reinforced, and strong enough to hold a 2 m wall above them in typhoon wind?), and how the new CHB half walls are dowelled to the slab without breaking the roof waterproofing.
+1. **Slab load: confirmed OK (18 Nov).** The slab takes the new load: framed walls ~0.7 t, new CHB half walls ~1.2 t, T&B walls ~0.9 t (3-course block + framed fibre-cement, 20 Nov), floor tiles ~0.6 t, raised T&B floor ~0.6–0.9 t, ceiling ~0.3 t.
+2. **Bottom anchoring.** The steel frame bolts onto the top of the half walls (1 m, or 60 cm on the door wall). Confirm the anchor type into the old parapets (are they reinforced, and strong enough to hold a 2 m wall above them in typhoon wind?), and how the new CHB half walls are dowelled to the slab without breaking the roof waterproofing.
 3. **Top connection.** The walls stop at the red steel purlins. The roof moves in typhoon winds, so the top fixing should allow movement while still holding the wall against wind.
 4. **Typhoon wind on the walls.** Confirm the frame member size and spacing, the cladding screw spacing, and the fixing of the frame to the columns, especially on the long annex-side wall.
 5. **Slab openings and drains.** Core holes for the T&B pipes, and any existing roof drain inside the room's footprint (move it or keep it as a floor drain).
