@@ -382,10 +382,10 @@ B(AX1-1.0,AX1-0.94,Y2,Y2+12*rs/13-0.04,zTop+0.30,zTop+0.24,mat.steel,annex);    
 // upstairs: guard rails on the open edges of the slab opening (top end left open = exit, turn left)
 railRun([OPx1+0.03,ARF,OPz0+0.03],[AX0+0.03,ARF,OPz0+0.03],2,annex);
 // annex top is ringed by concrete half walls (front + house side + corrugated side); exit at the back into the strip
-B(AX0-0.05,-T,ARF,ARF+1.0,AZ0,AZ0-0.15,mat.wall,annex); // house-side half wall removed: the expanded roof room's wall now runs along this edge (Rowil 18 Nov)
-B(AX0-0.2,AX0-0.05,ARF,ARF+1.0,AZ0,AZ0-0.15,mat.wall,annex);
+B(AX0-0.05,-T,ARF,RF+1.0,AZr,AZr-0.15,mat.wall,annex);   /* front half wall joined to the deck half wall, same top level (Rowil 20 Nov) */ // house-side half wall removed: the expanded roof room's wall now runs along this edge (Rowil 18 Nov)
+B(AX0-0.2,AX0-0.05,ARF,RF+1.0,AZr,AZr-0.15,mat.wall,annex);
 // step up from the annex top onto the house roof deck (~37 cm, Rowil 20 Nov): one intermediate concrete step at the exit
-B(AX1-0.3,AX1,ARF,ARF+0.185,zTop-0.05,AZ1+0.05,mat.slab,annex); setTimeout(()=>tag('Step up ~37 cm to roof deck',AX1-0.3,ARF+0.6,(zTop+AZ1)/2,3),0);
+// (replaced by the metal steps up to the relocated roof room door)
 // roof slab over 2nd floor
 B(-T,W+T,C2,RF,0,-D-T,mat.slab,L3);   // existing slab reaches 84 cm over the terrace; Rowil 20 Nov: extend slab + half wall out to the front edge (engineer to check)
 // terrace: no roof slab above; light sheet roof assumed
@@ -414,7 +414,11 @@ B(NX0,AX0-0.05,RF,RF+1.0,AZr,AZr-0.15,mat.wall,L3); B(AX0-0.2,AX0-0.05,RF,RF+1.0
 B(NX0-0.15,NX0,RF-0.15,RF+1.0,yL,-D-T,mat.wall,L3); B(NX0-0.15,0,RF,RF+1.0,-D,-D-T,mat.wall,L3); B(NX0-0.15,-T,RF,RF+1.0,yL,yL-0.15,mat.wall,L3);
 // right-side neighbour's unit: same layout as ours but ~1.2x wider (corner unit); ghost outline
 B(NX0,AX0-0.05,0,RF-0.15,yL,-D,mat.ghost,L3); B(AX0-0.05,-T,0,RF-0.15,yL,AZr,mat.ghost,L3); B(NX0,-T,0,Y2+2.55,0,yL,mat.ghost,L3);
-B(AX0-0.05,-T,RF-0.105,RF,AZ1-1.2,-D-T,mat.slab,L3);                    // annex slab continues to the back edge
+B(AX0-0.05,-T,ARF-0.105,ARF,AZ1-1.2,-D-T,mat.slab,L3);                    // annex landing continues to the back edge at the stair's top-step level (Rowil 20 Nov)
+// short metal stair from the annex landing up to the roof room door: 2 risers ~18.5 cm, platform at deck level in front of the door
+{const sx0=AX1-1.0; B(sx0,AX1,ARF+0.16,ARF+0.185,-10.15,-10.42,mat.steel,L3); B(sx0,AX1,RF-0.025,RF,-10.42,-11.65,mat.steel,L3);
+ [[-10.15],[-10.42],[-11.0],[-11.65]].forEach(([z])=>B(sx0,sx0+0.05,ARF,RF+0.9,z,z-0.05,mat.rail,L3)); B(sx0,sx0+0.05,RF+0.88,RF+0.92,-10.15,-11.7,mat.rail,L3);
+ setTimeout(()=>tag('New metal steps to roof room door',sx0+0.5,RF+1.1,-10.9,3),0);}
 // shed roof (dark fascia, wood soffit) over the back part
 // shed roof spans across to the neighbour's far (outer) wall, so their corrugated part sits under a second roof (Rowil 18 Nov)
 // real roof (site photos, 18 Nov): single-pitch corrugated sheet on red steel purlins, high at the firewall (back), sloping down to the front
@@ -445,7 +449,7 @@ B(0.37,0.95,RF+1.51,RF+1.91,RZ2+0.25,RZ2-0.3,M(0xe8e8e4),L3); B(0.4,0.92,RF+1.55
 // roof T&B high exhaust window (Rowil 18 Nov): 0.9 x 0.45 m, sill 1.8 m (above eye level), clear glass awning (no frosted glass in the house; privacy by curtains), in the T&B front wall facing the open slab
 B(W-1.3,W-0.4,RF+1.8,RF+2.25,RZ2-0.09,RZ2-0.11,mat.glass,L3); B(W-1.3,W-0.4,RF+2.22,RF+2.25,RZ2-0.03,RZ2-0.13,M(0x2a2c2e),L3);           // new SW front wall, keeps the 2-panel sliding glass door (position assumed)
 // annex-side wall on the column line (x 0-0.2, Rowil 18 Nov; the strip outside it is concrete cantilever slab): concrete half wall + cladding above, door at the stair's left turn off the landing (blue circle, no half wall there)
-const DZ0=-9.8, DZ1=-10.6;
+const DZ0=-10.75, DZ1=-11.55;   // roof room door moved toward the firewall (Rowil 20 Nov), reached by a short metal stair from the annex landing
 [[RZ2,DZ0],[DZ1,-D]].forEach(([a,b])=>{B(0,0.2,RF,RF+1.0,a,b,mat.wall,L3); slopeTop(0,0.2,RF+1.0,a,b,clad);});
 B(0,0.2,RF+2.05,RF+RH,DZ0,DZ1,clad,L3);
 const rmHinge=new THREE.Group(); rmHinge.position.set(0.16,RF,DZ1); L3.add(rmHinge); B(0,0.04,0,2.05,0,0.78,M(0x3a3633),rmHinge); 
@@ -796,7 +800,7 @@ function frame(now){const dt=Math.min((now-last)/1000,0.05);last=now;time+=reduc
   pHinge.rotation.y=st.pd*Math.PI/2; tbHinge.rotation.y=-st.tb*Math.PI/2; pgA.position.x=pgA0-st.pw*(30*IN-0.02); ptHinge.rotation.y=st.pt*Math.PI/2;
   blades.forEach(g=>g.rotation.x=-st.tw*1.3);
   slP[1].position.x=slX[1]-st.sl*sq*0.95; slP[2].position.x=slX[2]+st.sl*sq*0.95;
-  rmHinge.rotation.y=-1.1*st.rm; rwP.position.x=-st.rw*0.6; bdHinge.rotation.y=st.bd*Math.PI/2; rdHinge.position.z=RDz0+0.05-st.rd*0.88;
+  rmHinge.rotation.y=1.1*st.rm;   /* opens inward (Rowil 20 Nov) */ rwP.position.x=-st.rw*0.6; bdHinge.rotation.y=st.bd*Math.PI/2; rdHinge.position.z=RDz0+0.05-st.rd*0.88;
   fan.rotation.z+=O.ex.open&&!reduce?dt*8:0; cfRot.rotation.y+=reduce?0:dt*9*st.cf; sfHeads.forEach(h=>h.bl.rotation.z+=reduce?0:dt*16*st[h.id]);
   P.forEach(p=>{if(!p.on)return; p.pts3.visible=!elecOn&&!plumOn&&(level>=2||p.rooms.some(r=>['Car bay','Dining','Kitchen','T&B'].includes(r))); const pos=p.pts3.geometry.attributes.position.array,col=p.pts3.geometry.attributes.color.array;
     const sp=SPEED[wind]*6/p.len; const rev=(wind==='ne'&&!p.fixedDir);
