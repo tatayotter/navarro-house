@@ -36,7 +36,7 @@ Last updated: 20 November 2026.
 
 ### Steel stair (Phase 3)
 - [Project brief: design, costs, status](stairs/stair-project-brief.md)
-- [Full plan PDF v3.4](stairs/Stair_Works_Phase3_Plan_v3.4.pdf)
+- [Full plan PDF v3.5](stairs/Stair_Works_Phase3_Plan_v3.5.pdf)
 - [Welding details with measurements](stairs/weld-details.md) (19 Nov)
 - [Shopping list (14 Nov)](stairs/shopping-list-14nov.md)
 

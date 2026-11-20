@@ -2,7 +2,7 @@
 title: "Steel stair: welding details"
 status: For checking
 updated: 19 Nov 2026
-summary: How each welded piece goes together, with measurements, based on plan v3.4. Show this to the welder before cutting, and to the engineer for the items marked below.
+summary: How each welded piece goes together, with measurements, based on plan v3.5. Show this to the welder before cutting, and to the engineer for the items marked below.
 ---
 
 All measurements are in cm unless marked. Steel: ¼″×2″ angle bar, 2×4 C-channel, 2×2 tubular (1.5 mm), 1.4 mm plate. Final sizes are checked and cut on site.

@@ -8,12 +8,12 @@ updated: 20 Nov 2026
 
 Home project. Steel stair from the 2nd floor up through the rooftop slab opening (the old L stair, ground to 2nd, stays untouched).
 Owner manages directly: buys materials and hires a welder instead of the architect's contract.
-Source of truth: Stair_Works_Phase3_Plan_v3.4.pdf.
+Source of truth: Stair_Works_Phase3_Plan_v3.5.pdf.
 
 ## Status (20 Nov 2026)
 - Final design done from site measurements (v3.3); v3.4 adds the ~20 cm slab edge cut (engineer approved 20 Nov)
 - Steel, primer, rods, discs bought and delivered 16 Nov
-- Welder: NEW welder hired 20 Nov, PHP 8,500 labor quote; payment split, scope and days to confirm
+- Welder: NEW welder hired 20 Nov, PHP 8,500; 10 days, painting + installation included, rework free; payment split and tools to confirm
 - Next: buy 1 angle bar + anchors + extra rods, check ceiling stains, pay 30%, start
 
 ## Site measurements
@@ -72,4 +72,5 @@ Stress (walk, jump lightly, two people, push/pull railing) · Noise (no rattles)
 - 19 Nov: Welding details drawn (tread legs, wall anchor points, top ledger tie). Kept 12 treads + slab step = 13 steps (20 Nov).
 - 20 Nov: Slab edge at the bottom end of the opening cut back ~20 cm (engineer approved), in the demolition contract before welding. Headroom ~182 → ~200 cm. Guard rail +20 cm from spare tubular. Plan v3.4. Projected 33,284.
 - 20 Nov: Height rechecked: 249 cm annex floor to top of slab → 13 risers of ~19.15 cm (welder marks 249 ÷ 13). No design change.
-- 20 Nov: New welder hired; labor 7,000 → 8,500 (+1,500). Projected 33,284 → 34,784; buffer to the 35,000 budget ~216. PDF v3.5 needed (cost + welder agreement pages) once the new welder's terms are confirmed.
+- 20 Nov: New welder hired; labor 7,000 → 8,500 (+1,500). Projected 33,284 → 34,784; buffer to the 35,000 budget ~216.
+- 20 Nov: Welder terms: 10 days, painting + installation included, rework free. 30/70 split and tools still to confirm. Plan v3.5 (cost + welder pages).
