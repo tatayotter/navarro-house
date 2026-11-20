@@ -71,3 +71,4 @@ Stress (walk, jump lightly, two people, push/pull railing) · Noise (no rattles)
 - 18 Nov: Wording fix: stair runs 2nd floor → rooftop (old L stair untouched). Annex door → sliding barn door. No stair change.
 - 19 Nov: Welding details drawn (tread legs, wall anchor points, top ledger tie). Kept 12 treads + slab step = 13 steps (20 Nov).
 - 20 Nov: Slab edge at the bottom end of the opening cut back ~20 cm (engineer approved), in the demolition contract before welding. Headroom ~182 → ~200 cm. Guard rail +20 cm from spare tubular. Plan v3.4. Projected 33,284.
+- 20 Nov: Height rechecked: 249 cm annex floor to top of slab → 13 risers of ~19.15 cm (welder marks 249 ÷ 13). No design change.
