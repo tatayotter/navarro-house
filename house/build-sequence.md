@@ -123,7 +123,7 @@ Do not start the step after a 🔒 gate until the check is done and written down
 
 **Starts when:** the stair is done (1.11) and the rooftop room and terrace frontage are measured. **Unlocks:** a dry rooftop, so leaks into the 2nd floor stop before any ceiling goes up below.
 The rooftop roof and its columns are **already built**; no roof extension is needed. This phase closes the walls under the existing roof.
-🛒 **Buy lists:** [rooftop walls, half walls and T&B block courses](../rooms/rooftop-room.html#walls) · [terrace frontage outer skin](extra-materials.html#terrace-frontage-outer-skin-with-metal-cladding-phase-2)
+🛒 **Buy lists:** [rooftop walls, half walls and T&B block courses](../rooms/rooftop-room.html#walls) · [terrace roof and frontage cladding](extra-materials.html#terrace-frontage-cladding-and-new-terrace-roof-phase-2)
 
 **Cost (Online, from the [rooftop room page](../rooms/rooftop-room.html)):** phase budget **₱96,210–163,018** before contingency. The door opening was cut in the demolition contract (1.4). **Terrace frontage (confirmed 20 Nov):** the front is a 28 cm concrete half wall. The new jalousie sits on its front edge and runs wall to wall, replacing the old aluminium slider window. The **double wall with metal cladding** is the strip above the jalousie, up to the terrace roof. The same steel fabricator puts up the strip's frame and cladding in this phase, in the same visit as the rooftop steel, and **replaces the terrace roof** at the same time: the old sheets and the rusted framing come off, and new framing and sheets go on, matching the rooftop roof. The cladding matches the rooftop room's exterior cladding; the strip's inner face comes with the partition supplier at 5.3.
 
@@ -199,7 +199,7 @@ The rooftop roof and its columns are **already built**; no roof extension is nee
 
 **Starts when:** every test in Phase 4 has passed. **Unlocks:** fit-out.
 **Order inside this phase:** plaster and waterproofing, then the partition supplier (one job), then the ceiling crew (all rooms in one go), then glass and doors (one go), then floors and paint.
-🛒 **Buy lists:** [ceilings, all rooms](ceilings.html#cost-by-room) · [glass and aluminium, all 6 items](glass-aluminium.html#rough-cost) · [rooftop room floor, ceiling and T&B](../rooms/rooftop-room.html#tb-build) · [terrace frontage inner wall and ground T&B tiles](extra-materials.html#terrace-frontage-inner-wall-phase-5) · [car bay partition door](car-bay-partition.html#rough-cost) · [living room floor and paint](../rooms/living-room.html#cost-by-section) · [master bedroom](../rooms/master-bedroom.html#cost)
+🛒 **Buy lists:** [ceilings, all rooms](ceilings.html#cost-by-room) · [glass and aluminium, all 6 items](glass-aluminium.html#rough-cost) · [rooftop room floor, ceiling and T&B](../rooms/rooftop-room.html#tb-build) · [terrace frontage inner wall and ground T&B tiles](extra-materials.html#terrace-frontage-strip-inner-face-phase-5) · [car bay partition door](car-bay-partition.html#rough-cost) · [living room floor and paint](../rooms/living-room.html#cost-by-section) · [master bedroom](../rooms/master-bedroom.html#cost)
 
 **Cost (Online):** phase budget **₱547,402–797,080** before contingency.
 
