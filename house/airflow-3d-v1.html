@@ -284,9 +284,11 @@ for(let i=0;i<6;i++) for(let k=0;k<nb;k++){const g=new THREE.Mesh(new THREE.BoxG
    l.position.set(cx+dx,Y2+0.38,cz+sd*0.3); l.rotation.x=sd*0.55; L2.add(l);});});}
 // living/terrace wall: wall-to-wall 4-panel slider 2.30 m high, middle 2 slide
 B(0,W,Y2+2.30,C2,yL+0.05,yL-0.05,mat.wall,L2);
-const sq=W/4, slP=[];
-for(let i=0;i<4;i++){slP.push(B(i*sq,(i+1)*sq,Y2,Y2+2.30,yL+(i===1||i===2?0.02:-0.02),yL+(i===1||i===2?0.0:-0.04),mat.glass,L2));
-  B(i*sq,i*sq+0.04,Y2,Y2+2.30,yL+0.03,yL-0.05,mat.rail,L2);}
+// opening measured 430 cm wide (Rowil 20 Nov) -> slider 4.30 m, small wall returns at each end
+const SLX0=(W-4.30)/2, sq=4.30/4, slP=[];
+B(0,SLX0,Y2,Y2+2.30,yL+0.05,yL-0.05,mat.wall,L2); B(W-SLX0,W,Y2,Y2+2.30,yL+0.05,yL-0.05,mat.wall,L2);
+for(let i=0;i<4;i++){slP.push(B(SLX0+i*sq,SLX0+(i+1)*sq,Y2,Y2+2.30,yL+(i===1||i===2?0.02:-0.02),yL+(i===1||i===2?0.0:-0.04),mat.glass,L2));
+  B(SLX0+i*sq,SLX0+i*sq+0.04,Y2,Y2+2.30,yL+0.03,yL-0.05,mat.rail,L2);}
 const slX=slP.map(p=>p.position.x);
 // bedroom wall 3 with 100 cm door opening, door swings toward wall 4 (x=0)
 wallX(0,W,(yW3+yB)/2,0.10,Y2,C2,mat.wall,L2,[[0.35,1.35,Y2,Y2+2.10]]);
@@ -378,9 +380,9 @@ railRun([OPx1+0.03,RF,OPz0+0.03],[AX0+0.03,RF,OPz0+0.03],2,annex);
 B(AX0-0.05,-T,RF,RF+1.0,AZ0,AZ0-0.15,mat.wall,annex); // house-side half wall removed: the expanded roof room's wall now runs along this edge (Rowil 18 Nov)
 B(AX0-0.2,AX0-0.05,RF,RF+1.0,AZ0,AZ0-0.15,mat.wall,annex);
 // roof slab over 2nd floor
-B(-T,W+T,C2,RF,yL,-D-T,mat.slab,L3);
+B(-T,W+T,C2,RF,yL+0.84,-D-T,mat.slab,L3);   // slab runs 84 cm out over the terrace before the terrace roof slope starts (Rowil 20 Nov)
 // terrace: no roof slab above; light sheet roof assumed
-{const zA=yL, yA=RF+0.6, zB=0.3, yB2=Y2+2.55, L=Math.hypot(zB-zA,yA-yB2);   // lean-to: high at the house, sloping down to the street (~11 deg)
+{const zA=yL+0.84, yA=RF+0.45, zB=0.3, yB2=Y2+2.55, L=Math.hypot(zB-zA,yA-yB2);   // lean-to: high at the house, sloping down to the street (~11 deg)
  const tr=new THREE.Mesh(new THREE.BoxGeometry(W+2*T,0.05,L),mat.roof); tr.position.set(W/2,(yA+yB2)/2,(zA+zB)/2);
  tr.rotation.x=Math.atan2(yA-yB2,zB-zA); L3.add(tr);}
 

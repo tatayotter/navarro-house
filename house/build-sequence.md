@@ -95,7 +95,7 @@ Do not start the step after a 🔒 gate until the check is done and written down
 | Rooftop room: hammer the door opening in the existing half wall on the door side | 1 | Same crew and tools; opens the route for the rooftop work |
 | Terrace: break out the concrete counter, cap anything that fed it | 1 | Small job, same debris haul |
 | Terrace to living room wall: prop, cast the new beam or lintel | 1 | The lintel must be in and cured **before** the wall under it is removed |
-| Terrace to living room wall: open it taller and wider for the 4.18 × 2.4 m slider, cover it temporarily | 2 (about 7 days later) | Only after the lintel has cured and the engineer says the props can carry it |
+| Terrace to living room wall: open it taller and wider for the 4.30 × 2.4 m slider, cover it temporarily | 2 (about 7 days later) | Only after the lintel has cured and the engineer says the props can carry it |
 | Optional: core holes, if the plumber and electrician have marked them (roof T&B stack through the roof slab, terrace faucet, washer drain through the front wall, roof feed above the slider, bedroom aircon sleeve) | 1 or 2 | Saves a separate core-drill visit; otherwise the core-drill service comes at rough-in (Phase 4) |
 
 | Kept out of the contract | When instead | Why |

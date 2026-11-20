@@ -4,7 +4,7 @@ status: Planned
 cost: "₱230k–369k"
 price_source: online
 updated: 19 Nov 2026
-summary: The 418 × 440 cm family TV room on the 2nd floor, which also sleeps 2 guests. Cozy Japandi with walnut, warm greige walls and a sage counter. Costs cover the build and custom carpentry only; loose furniture and the TV are not included.
+summary: The family TV room (430 cm wide, measured 20 Nov) on the 2nd floor, which also sleeps 2 guests. Cozy Japandi with walnut, warm greige walls and a sage counter. Costs cover the build and custom carpentry only; loose furniture and the TV are not included.
 ---
 
 All figures are online prices (Sept–Nov 2026) and need local quotes. Get quotes for the slider, the carpentry and the WPC panels first, since those are the biggest unknowns.
@@ -31,7 +31,7 @@ All figures are online prices (Sept–Nov 2026) and need local quotes. Get quote
 | Floor area | 19 m² (order 21–22 m²) |
 | Wall paint area | 30 m², plus about 20 m² of double-height stairwell walls |
 | Ceiling area | 22 m² |
-| Terrace opening | 4.18 × 2.4 m, wall-to-wall 4-panel black aluminium slider |
+| Terrace opening | 4.30 × 2.4 m (opening measured 430 cm wide, 20 Nov), wall-to-wall 4-panel black aluminium slider |
 | Pantry counter | 2.15 m long, knee recess + bottle unit |
 
 ## Notes by section

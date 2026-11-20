@@ -24,7 +24,7 @@ summary: Every glass and aluminium item in the renovation in one list, ready to 
 | # | Item | Location | Size W × H (m) | Panels / operation | Glass | Screen | Qty |
 |---|---|---|---|---|---|---|---|
 | 1 | Jalousie window | 2nd floor terrace, front wall (faces the street) | 3.83 × 1.20, sill 0.90 | **6 bays** of glass blades (each about 0.64 m wide), crank or lever operator per bay | 4″ (100 mm) glass blades, 5–6 mm clear, about 12–13 blades per bay | Fixed insect screen inside, full width | 1 set (6 bays) |
-| 2 | Sliding door, wall to wall | 2nd floor, between living room and terrace | 4.18 × 2.40 | 4 panels, fixed–sliding–sliding–fixed (middle 2 slide, about 2.1 m clear) | 6 mm tempered clear | None (the jalousie screen covers the terrace) | 1 |
+| 2 | Sliding door, wall to wall | 2nd floor, between living room and terrace | 4.30 × 2.40 (opening measured 430 cm, 20 Nov) | 4 panels, fixed–sliding–sliding–fixed (middle 2 slide, about 2.1 m clear) | 6 mm tempered clear | None (the jalousie screen covers the terrace) | 1 |
 | 3 | Sliding window | Ground floor, car bay / dining partition wall, about 5.0 m in from the front, over the car (to watch the car and open for air) | 1.50 × 1.00, sill 1.00 | 2 panels, 1 fixed + 1 sliding | 6 mm tempered clear | Sliding fly screen | 1 |
 | 4 | Sliding glass door | Rooftop room, front wall | 1.30 × 2.10 | 2 panels, 1 fixed + 1 sliding | 6 mm tempered clear (laminated optional, for typhoons) | Sliding screen | 1 |
 | 5 | Awning window | Rooftop T&B, front wall, high up | 0.90 × 0.45, sill 1.80 (above eye level) | 1 top-hung awning, friction stays | 5 mm clear | Fixed screen | 1 |
