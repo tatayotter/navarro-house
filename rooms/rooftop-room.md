@@ -1,7 +1,7 @@
 ---
 title: Rooftop room
 status: Draft
-cost: "₱208k–348k"
+cost: "₱212k–353k"
 price_source: online
 updated: 18 Nov 2026
 summary: "The closed room on the rooftop under the existing shed roof, with its own T&B, a queen bed, a desk and a window aircon. Walls: 1 m concrete half wall, then container-van style steel outside and Hardiflex inside up to the roof. This page costs the walls, floor, ceiling, doors and windows, and T&B finishes."
@@ -18,7 +18,7 @@ Above the half wall, from the outside in:
 1. **Container-van style steel wall:** pre-painted steel sheets in a deep trapezoidal corrugation (the container-van look), about 0.4–0.5 mm, laid vertically and screwed to the frame. No outside painting. Real container-gauge steel (about 1.6 mm, welded) would be several times heavier and costlier, so this uses the look, not the gauge.
 2. **Insulation core:** 50 mm foil-faced rockwool or glasswool between the frame members, foil toward the steel to reflect heat. Every wall is insulated, including the sun-facing front (SW), outer side and back.
 3. **Frame:** light steel studs or C-purlins at 60 cm, fixed to the columns, a steel angle bolted on top of the half wall, and the purlins at the top.
-4. **Inside:** 6 mm Hardiflex, joints taped, puttied and painted. In the T&B: 12 mm fibre-cement board, waterproofed and tiled.
+4. **Inside:** 6 mm Hardiflex, joints taped, puttied and painted. The T&B is different: full-height concrete block (see T&B build below).
 
 ![Wall cut-through and top view of the rooftop room walls](rooftop-wall-diagram.png)
 
@@ -50,13 +50,13 @@ For about 43 m² of new outside wall.
 
 | Section | Low (₱) | High (₱) | Source |
 |---|---|---|---|
-| Walls: half walls, framed walls above (container-van steel, insulation, Hardiflex), T&B partitions, paint | 87,000 | 133,650 | Online |
+| Walls: half walls, framed walls above (container-van steel, insulation, Hardiflex), full-height CHB T&B, paint | 90,800 | 138,750 | Online |
 | Floor (porcelain tiles) | 16,500 | 28,700 | Online |
 | Ceiling with vents | 21,000 | 33,000 | Online |
 | Doors and windows | 34,500 | 62,000 | Online |
 | T&B waterproofing, tiles, fixtures | 29,650 | 58,900 | Online |
-| **Total before contingency** | **188,650** | **316,250** | |
-| **With 10% contingency** | **207,515** | **347,875** | |
+| **Total before contingency** | **192,450** | **321,350** | |
+| **With 10% contingency** | **211,695** | **353,485** | |
 
 **Not included:** the window aircon unit (about ₱18,000–26,000 for a 1 HP inverter, Online), bed, desk and storage-wall carpentry, wiring and the T&B exhaust fan (on the [electrical materials page](../house/electrical-materials.html)), pipes, core drilling and the raised T&B floor (on the [plumbing materials page](../house/plumbing-materials.html)), and engineer fees.
 
@@ -75,20 +75,43 @@ The framed wall above the 1 m half walls covers about 35 m² after the door, sli
 | Hardiflex 6 mm inside (with waste) | 38.5 m² | 7,150 | 9,650 | Online |
 | Flashings (incl. half-wall caps), corner trims, screws, joint tape, compound, sealant | 35 m² | 5,950 | 9,750 | Online |
 | Labour (frame, steel, insulation, boards) | 35 m² | 14,000 | 21,000 | Online |
-| T&B partitions (studs + fibre-cement both sides, 12 mm on the wet faces) and 12 mm board on the T&B outer walls | ~8 m² | 8,800 | 12,400 | Online |
-| Concrete curb 20 cm under the T&B partitions | ~3.3 m | 1,000 | 1,500 | Online |
+| T&B: 4″ CHB walls up to ceiling height, plastered both sides, with rebar, tie to columns, door lintel and step curb | ~11 m² | 13,600 | 19,000 | Online |
 | Hardiflex paint: putty, primer, latex, and painting labour | ~41 m² | 4,500 | 7,350 | Online |
-| **Subtotal** | | **87,000** | **133,650** | |
+| **Subtotal** | | **90,800** | **138,750** | |
 
-Inside the T&B, the half wall is waterproofed and tiled directly (covered under T&B finishes).
+Inside the T&B, all four walls are concrete block up to the ceiling, waterproofed and tiled (see below).
 
-## T&B finishes
+## T&B build
 
-About 1.6 × 1.7 m. With fibre-cement inside, the T&B walls can be tiled normally: 12 mm fibre-cement board on the wet faces, a waterproofing membrane, then tiles. The plumbing page already covers the raised floor and its membrane.
+About 1.6 × 1.7 m, in the front corner on the outer side. Shower in the front-outer corner (diagonal from the door, no glass screen), toilet on the outer wall, lavatory on the front wall by the door.
+
+**Walls: full-height concrete, not half concrete.** The rest of the room is 1 m concrete with a framed wall above, but the T&B is better as 4″ CHB on all four sides up to the ceiling (about 2.4 m):
+
+- The shower sits in the outer corner, exactly where the room's walls switch from concrete to the steel-framed wall. Concrete there means no studs or board edges to rot if water gets behind the tiles.
+- Tiles hold best on plastered CHB, and any mason can build it.
+- A leak here drips into the living room below, so it's worth the sturdiest build.
+- The slab takes the weight (confirmed 18 Nov). The T&B walls add about 2 t in total.
+
+On the two outer walls, the container-van steel outside carries on over the CHB on battens, so the outside still looks the same. Above the ceiling (2.4 m up to the roof), the framed wall continues as in the rest of the room.
+
+**Floor, from the slab up:**
+
+1. Keep the existing roof waterproofing on the slab; patch it where the pipes go through.
+2. Raised floor: about 10–15 cm of lightweight fill and screed (it hides the pipes and gives the fall). This is on the plumbing page.
+3. Slope the screed 1–2% toward the floor drain in the shower corner. The shower zone sits 2–3 cm lower than the rest of the T&B.
+4. Waterproofing membrane over the whole floor, 30 cm up the walls, and full height (about 2.1 m) on the two shower walls. Collars around every pipe.
+5. Flood test for 24–48 hours, then tile.
+6. Step-up curb at the door, so water can't run into the room.
+
+**Pipes:**
+
+- **Drains:** the T&B sits above the old stairwell, so the toilet, floor drain and lavatory run under the raised floor to the 100 mm stack in the stairwell corner. One core hole through the roof slab, and the stack goes down the stairwell chase to the new septic tank. A vent pipe goes up through the roof.
+- **Water:** a ½″ PPR line comes up the same stairwell chase from the car-bay tank and pump. It has a shut-off valve inside the T&B, and the rooftop faucet outside the front wall tees off it.
+- **Steam:** the exhaust fan sits high on a wall near the shower (on the electrical page).
 
 | Item | Qty | Low (₱) | High (₱) | Source |
 |---|---|---|---|---|
-| Waterproofing membrane: full height in the shower, 30 cm up the other walls, board joints, pipe collars | ~9 m² | 3,000 | 5,500 | Online |
+| Waterproofing membrane: floor, full height on the shower walls, 30 cm up the other walls, pipe collars | ~9 m² | 3,000 | 5,500 | Online |
 | Tiles: anti-slip floor + full-height walls (17 m² + 10%) | 19 m² | 6,650 | 13,300 | Online |
 | Tile adhesive and grout | lot | 2,200 | 2,800 | Online |
 | Tiler labour | 17 m² | 6,000 | 8,500 | Online |
@@ -98,7 +121,7 @@ About 1.6 × 1.7 m. With fibre-cement inside, the T&B walls can be tiled normall
 | Floor drain, mirror, holders | lot | 1,800 | 3,800 | Online |
 | **Subtotal** | | **29,650** | **58,900** | |
 
-Use a flexible tile adhesive on fibre-cement board. Flood-test the T&B floor for 24–48 hours after waterproofing and before tiling, because a leak here drips into the living room below.
+Flood-test the T&B floor for 24–48 hours after waterproofing and before tiling, because a leak here drips into the living room below.
 
 ## Floor
 
@@ -143,11 +166,12 @@ Laminated glass on the slider for typhoons adds about ₱4,000–7,000 (Online).
 
 The walls attaching to the roof columns and the slab load are already approved. Please check these details:
 
-1. **Slab load: confirmed OK (18 Nov).** The slab takes the new load: framed walls ~0.7 t, new CHB half walls ~1.6 t, T&B partitions ~0.2 t, floor tiles ~0.6 t, raised T&B floor ~0.6–0.9 t, ceiling ~0.3 t.
+1. **Slab load: confirmed OK (18 Nov).** The slab takes the new load: framed walls ~0.7 t, new CHB half walls ~1.6 t, full-height CHB T&B walls ~2 t (added 20 Nov), floor tiles ~0.6 t, raised T&B floor ~0.6–0.9 t, ceiling ~0.3 t.
 2. **Bottom anchoring.** The steel frame bolts onto the top of the 1 m half walls. Confirm the anchor type into the old parapets (are they reinforced, and strong enough to hold a 2 m wall above them in typhoon wind?), and how the new CHB half walls are dowelled to the slab without breaking the roof waterproofing.
 3. **Top connection.** The walls stop at the red steel purlins. The roof moves in typhoon winds, so the top fixing should allow movement while still holding the wall against wind.
 4. **Typhoon wind on the walls.** Confirm the frame member size and spacing, the cladding screw spacing, and the fixing of the frame to the columns, especially on the long annex-side wall.
 5. **Slab openings and drains.** Core holes for the T&B pipes, and any existing roof drain inside the room's footprint (move it or keep it as a floor drain).
+6. **T&B concrete walls.** Rebar dowels into the slab, ties to the corner column, and the lintel over the T&B door. Also check that the stack core is clear of the stairwell beams.
 
 ## To measure on 19 Nov
 
@@ -158,7 +182,7 @@ The walls attaching to the roof columns and the slab load are already approved. 
 
 ## Order of work
 
-1. Engineer check, then build the new half walls, the T&B curb and the T&B floor.
+1. Engineer check, then build the new half walls, the full-height T&B walls and the T&B floor.
 2. Plumbing rough-in and waterproofing; flood test.
 3. Steel frame on the half walls, container-van steel outside, flashing caps, trims and opening frames.
 4. Wiring and boxes inside the frame, insulation, backing boards, then Hardiflex.
