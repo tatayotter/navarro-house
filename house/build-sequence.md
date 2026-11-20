@@ -11,7 +11,7 @@ summary: The order of the whole renovation, from the steel stair to the last fix
 
 | | Step | What to do now |
 |---|---|---|
-| 👉 **Now** | **1.1 Engineer walk-through and the welder** | Show the engineer the [welding details](../stairs/weld-details.html) and every demolition job: slab cut size, door opening header, terrace lintel and props. Confirm the welder's days and tools. |
+| 👉 **Now** | **1.1 Engineer walk-through and the welder** | Show the engineer the [welding details](../stairs/weld-details.html) and the remaining demolition jobs: door opening header, terrace lintel and props (the slab cut is already approved ✅). Confirm the welder's days and tools. |
 | ⏭ **Next up** | 1.2 Quote the demolition contract | One lump sum for the slab cut, rooftop door opening, terrace counter and terrace wall (with lintel), debris haul included. |
 | 📏 **Do anytime now** | Open items below | Rooftop measurements, local quotes, electrician's check. They unlock Phases 2 to 4. |
 
@@ -59,7 +59,7 @@ Do not start the step after a 🔒 gate until the check is done and written down
 
 | Gate | Before | Who | What they check |
 |---|---|---|---|
-| 🔒 G1 | Demolition and welding start (step 1.1) | Engineer | Stair v3.3 [welding details](../stairs/weld-details.html): tread mount, 1.4 mm plate, right stringer span, wall anchors. **Slab headroom cut:** about 20 cm off the bottom-end edge of the opening (over step 3) for about 2.0 m headroom; the cut rebar, the new edge detail, and the slab span after the cut. **Rooftop door opening:** any tie beam or rebar cut, header over the door. **Terrace to living room wall:** lintel size, props, and the order (lintel cured before the wall below comes out). **Terrace counter:** whether it ties into the wall or slab. |
+| 🔒 G1 | Demolition and welding start (step 1.1) | Engineer | Stair v3.3 [welding details](../stairs/weld-details.html): tread mount, 1.4 mm plate, right stringer span, wall anchors. ✅ **Slab headroom cut: approved by the engineer (20 Nov).** **Rooftop door opening:** any tie beam or rebar cut, header over the door. **Terrace to living room wall:** lintel size, props, and the order (lintel cured before the wall below comes out). **Terrace counter:** whether it ties into the wall or slab. |
 | 🔒 G2 | Rooftop walls and terrace frontage cladding (step 2.3) | Engineer | **Terrace frontage:** how the cladding frame fixes to the existing front wall and slab edge, and typhoon wind on the street face. Dowels for the new half walls without breaking the roof waterproofing, anchors into the old parapets, top fixing at the purlins of the existing roof, typhoon fixings, core holes and roof drains, the T&B corner. See the [rooftop room page](../rooms/rooftop-room.html#for-the-engineer). |
 | 🔒 G3 | New CHB walls and the gate (steps 3.2 to 3.5) | Engineer | **Terrace side walls:** that the terrace slab (and any cantilever) carries about 2 t of new CHB walls or that they sit on beams; dowels into the slab, ties into the columns and the shared walls, a top tie to the beam or roof framing, typhoon wind;  car bay partition lintel and tie-in to the shared side walls; gate demolition (beam not resting on the hollow-block piers, new post base and anchors). |
 | 🔒 G4 | The septic dig (step 4.2) | Engineer and plumber | Septic size, rebar and concrete mix, distance from the party wall and front column footings, car-rated cover. |
@@ -71,7 +71,7 @@ Do not start the step after a 🔒 gate until the check is done and written down
 **Starts when:** now. **Unlocks:** safe access to the rooftop for Phase 2, and every opening the later phases need.
 **Why demolition comes first:** cutting the slab over a finished stair would drop concrete and dust on new treads and paint, and the stair room is easier to prop and work in while it's empty. So the slab is cut first, and the rest of the demolition is bundled into the **same contract**: one crew, one price, two short visits. (The cut is at the bottom end of the opening, over step 3. The stair's top tie is on the other edge, at the top end, so the cut doesn't touch it.)
 
-**Slab cut size: about 20 cm.** Headroom over step 3 is about 182 cm now. Cutting the edge back moves it over a lower step, so each 1 cm cut adds about 0.94 cm of headroom (19.2 cm rise per 20.5 cm tread). 20 cm gives **about 200 cm**, which clears a 5′10″ (178 cm) person by about 22 cm, enough to walk up comfortably without ducking, and matches the usual 2.0 m stair headroom. 10 cm would give about 191 cm, 15 cm about 196 cm. Cutting more than about 20 cm gains nothing, because the beam over step 1 already limits headroom to about 199 cm. The engineer confirms the final size.
+**Slab cut size: about 20 cm.** Headroom over step 3 is about 182 cm now. Cutting the edge back moves it over a lower step, so each 1 cm cut adds about 0.94 cm of headroom (19.2 cm rise per 20.5 cm tread). 20 cm gives **about 200 cm**, which clears a 5′10″ (178 cm) person by about 22 cm, enough to walk up comfortably without ducking, and matches the usual 2.0 m stair headroom. 10 cm would give about 191 cm, 15 cm about 196 cm. Cutting more than about 20 cm gains nothing, because the beam over step 1 already limits headroom to about 199 cm. ✅ **The engineer has approved the slab cutout (20 Nov).** Cut to the approved size and edge detail.
 
 **Cost:** phase budget **₱64,334–100,884** before contingency. **Every demolition price includes touch-up and finishing:** cut edges plastered and squared, rebar ends treated, debris hauled, ready for the next trade.
 
@@ -81,13 +81,13 @@ Do not start the step after a 🔒 gate until the check is done and written down
 | Demolition contract, labour only (lump sum, touch-up and finishing included): slab cut 5,000–12,000; rooftop door opening 2,000–4,000; terrace counter 3,000–6,000; terrace to living room wall 10,000–19,000 | — | 20,000–41,000 | Online |
 | Demolition contract, materials: terrace lintel (placeholder until the engineer sizes it), new slab edge (rebar, epoxy, form, mortar), plaster and patching for the touch-up of every cut | 8,500–19,000 | 2,550–7,600 (30–40%) | Online |
 
-**Stair brief change:** the brief says "no slab trimming for now". With the cut in this contract, add to its change log: *"20 Nov: slab edge over step 3 to be cut back about 20 cm (engineer to confirm) in the demolition contract, before welding. Headroom over step 3 goes from ~182 to ~200 cm. Upstairs guard rail along that edge gets about 20 cm longer."* The PDF needs a **v3.4** once the engineer confirms the size, because the headroom figures and the opening size change.
+**Stair brief change:** the brief says "no slab trimming for now". With the cut in this contract, add to its change log: *"20 Nov: slab edge over step 3 to be cut back about 20 cm (approved by the engineer) in the demolition contract, before welding. Headroom over step 3 goes from ~182 to ~200 cm. Upstairs guard rail along that edge gets about 20 cm longer."* The PDF needs a **v3.4** with the approved cut size, because the headroom figures and the opening size change.
 
 ### What goes in the demolition contract
 
 | In the contract | Visit | Why it fits here |
 |---|---|---|
-| Stair headroom: cut back the slab edge over step 3 by about 20 cm (engineer to confirm) and re-form the new edge | 1 | Best before the stair is welded (no debris on the new stair); also the noisiest, dustiest job, best done once |
+| Stair headroom: cut back the slab edge over step 3 by about 20 cm (engineer approved ✅) and re-form the new edge | 1 | Best before the stair is welded (no debris on the new stair); also the noisiest, dustiest job, best done once |
 | Rooftop room: hammer the door opening in the existing half wall on the door side | 1 | Same crew and tools; opens the route for the rooftop work |
 | Terrace: break out the concrete counter, cap anything that fed it | 1 | Small job, same debris haul |
 | Terrace to living room wall: prop, cast the new beam or lintel | 1 | The lintel must be in and cured **before** the wall under it is removed |
@@ -102,10 +102,10 @@ Do not start the step after a 🔒 gate until the check is done and written down
 
 | Status | # | Step | Who | Done when |
 |---|---|---|---|---|
-| 👉 | 1.1 | Engineer walk-through (gate G1), and confirm the welder's scope, days and tools | Rowil, engineer, welder | Engineer has signed off the stair welding details and written the slab cut size (about 20 cm) and edge detail, the door opening header, the terrace lintel size and the propping order. Welder start date agreed. |
+| 👉 | 1.1 | Engineer walk-through (gate G1), and confirm the welder's scope, days and tools | Rowil, engineer, welder | Engineer has signed off the stair welding details and written the door opening header, the terrace lintel size and the propping order. Welder start date agreed. |
 | ⬜ | 1.2 | Get the demolition contract quoted as one lump sum, with the job list above, touch-up and finishing of every cut, debris haul and clean-up included | Rowil | Two quotes in; one crew chosen; price tagged Local. Open below the Online guess. |
 | ⬜ | 1.3 | Buy the last stair items: angle bar, ½″ and ⅜″ anchors, extra rods, flap disc; check the ceiling stains and the beam to column crack | Rowil | Everything on the stair "still to buy" list is on site except the paint and vinyl; leak cause known (or ruled out). |
-| ⬜ | 1.4 | **Demolition visit 1:** slab cut and new edge, rooftop door opening, terrace counter, prop and cast the terrace lintel, marked core holes | Demolition crew | Slab edge cut to the engineer's size and re-formed; door opening and counter done and their edges plastered and squared; floor patched where the counter stood; lintel cast with props in; debris hauled. |
+| ⬜ | 1.4 | **Demolition visit 1:** slab cut and new edge, rooftop door opening, terrace counter, prop and cast the terrace lintel, marked core holes | Demolition crew | Slab edge cut to the engineer's approved size and re-formed; door opening and counter done and their edges plastered and squared; floor patched where the counter stood; lintel cast with props in; debris hauled. |
 | ⬜ | 1.5 | Pay the welder's 30% (₱2,100) once visit 1 is cleaned up | Rowil | Stair room clear of debris, new slab edge finished; 30% paid; receipt kept. |
 | ⬜ | 1.6 | Build the stair: stringers, treads, post, top tie at the top end of the opening, railing | Welder | All 12 treads in, left stringer bolted at 4 points, post under the right stringer, top tied to the slab edge; headroom over step 3 measured at about 200 cm. |
 | ⬜ | 1.7 | **Demolition visit 2** (can overlap with 1.6): open the terrace to living room wall under the cured lintel, plaster the edges, cover it | Demolition crew | Opening at the slider size with edges plastered, square and plumb (ready for the glass supplier to measure); props out only when the engineer says so; covered against rain. |
