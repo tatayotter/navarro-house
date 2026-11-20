@@ -258,9 +258,11 @@ const fan=B(0.16,0.41,Y2+1.96,Y2+2.21,-D-0.06,-D-0.09,mat.slat,L2);
 const rdHinge=new THREE.Group(); rdHinge.position.set(0.05,Y2,RDz0+0.05); L2.add(rdHinge); B(-0.02,0.02,0,2.12,0,-0.90,mat.walnut,rdHinge);
 B(0.03,0.07,Y2+2.14,Y2+2.18,RDz0+0.1,yW3+0.06,mat.rail,L2);   // track runs back toward the bedroom corner (column blocks the street side)
 B(0,0.15,Y2,C2,RDz0+0.28,RDz0,mat.wall,L2);   // column holding the stair-opening beam, 177 cm from the bedroom wall
-// front facade: wall with terrace windows (assumed 3.8 x 1.2 m, sill 0.9), jalousie
-const WX0=0.3, WX1=W-0.3, WY0=Y2+0.9, WY1=Y2+2.1;
-wallX(-T,W+T,-0.1,0.2,Y2,Y2+2.55,mat.wall,L2,[[WX0,WX1,WY0,WY1]]);
+// front facade (Rowil 20 Nov): 28 cm concrete half wall, wall-to-wall jalousie on its front edge (sill 0.9, 1.2 high, to measure),
+// strip above = double wall with metal cladding outside matching the rooftop room
+const WX0=0.065, WX1=W-0.065, WY0=Y2+0.9, WY1=Y2+2.1, tClad=M(0x57514c,{roughness:.9});
+B(-T,W+T,Y2,WY0,0,-0.2,mat.wall,L2); B(-T,WX0,WY0,WY1,0,-0.2,mat.wall,L2); B(WX1,W+T,WY0,WY1,0,-0.2,mat.wall,L2);
+B(-T,W+T,WY1,Y2+2.55,0,-0.2,tClad,L2);
 B(0,W,Y2,WY0,-0.2,-0.28,mat.wall,L2);   // half wall under the windows is 28 cm deep: a wide sill ledge (Rowil 20 Nov)
 B(-T,0,C2,Y2+2.55,0,yL,mat.party,L2); cutables.push(B(W,W+T,C2,Y2+2.55,0,yL,mat.party,L2));
 // 40 cm slab ledge above the ground entrance with potted bougainvilleas
@@ -270,12 +272,12 @@ B(-T,W+T,Y2-0.15,Y2,0,0.4,mat.slab,L2);
   const pot=new THREE.Mesh(new THREE.CylinderGeometry(0.15,0.11,0.3,14),terra); pot.position.set(x,Y2+0.15,z); pot.castShadow=true; L2.add(pot);
   [[0,0.45,0,0.2,leaf],[0.08,0.6,0.02,0.15,bloom],[-0.1,0.55,-0.03,0.14,bloom],[0.02,0.75,0.05,0.12,bloom]].forEach(([dx,dy,dz,r,m])=>{
    const b=new THREE.Mesh(new THREE.SphereGeometry(r,10,8),m); b.position.set(x+dx,Y2+dy,z+dz); b.castShadow=true; L2.add(b);});}}
-// jalousie windows: 6 bays (Rowil 18 Nov; size and sill still assumed until measured) of glass louvre blades on aluminium frames (blades tilt open)
-const wq=(WX1-WX0)/6, blades=[], jal=M(0xa9cfe0,{transparent:true,opacity:.45,roughness:.1,metalness:.1}), alu=M(0x2b2d2f,{metalness:.5,roughness:.4});
-for(let i=0;i<=6;i++) B(WX0+i*wq-0.025,WX0+i*wq+0.025,WY0,WY1,-0.06,-0.14,alu,L2);
+// jalousie windows: 7 bays wall to wall (Rowil 20 Nov; size and sill to measure) of glass louvre blades on aluminium frames (blades tilt open)
+const wq=(WX1-WX0)/7, blades=[], jal=M(0xa9cfe0,{transparent:true,opacity:.45,roughness:.1,metalness:.1}), alu=M(0x2b2d2f,{metalness:.5,roughness:.4});
+for(let i=0;i<=7;i++) B(WX0+i*wq-0.025,WX0+i*wq+0.025,WY0,WY1,-0.06,-0.14,alu,L2);
 B(WX0,WX1,WY0,WY0+0.03,-0.06,-0.14,alu,L2); B(WX0,WX1,WY1-0.03,WY1,-0.06,-0.14,alu,L2);
 const nb=Math.floor((WY1-WY0-0.06)/0.1);
-for(let i=0;i<6;i++) for(let k=0;k<nb;k++){const g=new THREE.Mesh(new THREE.BoxGeometry(wq-0.06,0.105,0.006),jal);
+for(let i=0;i<7;i++) for(let k=0;k<nb;k++){const g=new THREE.Mesh(new THREE.BoxGeometry(wq-0.06,0.105,0.006),jal);
  g.position.set(WX0+(i+0.5)*wq,WY0+0.03+(k+0.5)*0.1,-0.1); L2.add(g); blades.push(g);}
 // terrace: wooden picnic table with attached benches (4 seats, Rowil 18 Nov), 120 long x 150 wide overall, centred
 {const tw=M(0x9b6b43,{roughness:.8}), cx=W/2, cz=yL/2, Lh=0.6;
@@ -388,7 +390,7 @@ B(AX1-0.3,AX1,ARF,ARF+0.185,zTop-0.05,AZ1+0.05,mat.slab,annex); setTimeout(()=>t
 B(-T,W+T,C2,RF,yL+0.84,-D-T,mat.slab,L3);   // slab runs 84 cm out over the terrace before the terrace roof slope starts (Rowil 20 Nov)
 // terrace: no roof slab above; light sheet roof assumed
 {const zA=yL+0.84, yA=RF+0.45, zB=0.3, yB2=Y2+2.55, L=Math.hypot(zB-zA,yA-yB2);   // lean-to: high at the house, sloping down to the street (~11 deg)
- const tr=new THREE.Mesh(new THREE.BoxGeometry(W+2*T,0.05,L),mat.roof); tr.position.set(W/2,(yA+yB2)/2,(zA+zB)/2);
+ const tr=new THREE.Mesh(new THREE.BoxGeometry(W+2*T,0.05,L),M(0x2a2c2e,{metalness:.3,roughness:.5}));   // new sheets matching the rooftop roof (Rowil 20 Nov) tr.position.set(W/2,(yA+yB2)/2,(zA+zB)/2);
  tr.rotation.x=Math.atan2(yA-yB2,zB-zA); L3.add(tr);}
 
 // ---------- ROOF (L3) ----------
