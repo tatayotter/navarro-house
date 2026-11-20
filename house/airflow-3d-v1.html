@@ -109,7 +109,7 @@ button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
 (function(){
 const IN=0.0254;
 const W=174.5*IN, D=482*IN, T=0.15;          // inside width / depth, wall thickness
-const Y2=2.50, C1=2.395, C2=Y2+2.395, RF=5.0; // floor & ceiling levels
+const Y2=2.50, C1=2.395, C2=Y2+2.76, RF=C2+0.105; // floor & ceiling levels; 2nd floor: bare floor to slab 276, beams 16 deep (Rowil 20 Nov, same everywhere)
 const view=document.getElementById('view');
 const renderer=new THREE.WebGLRenderer({antialias:true});
 renderer.setPixelRatio(Math.min(devicePixelRatio,2)); renderer.shadowMap.enabled=true;
