@@ -359,15 +359,16 @@ B(W-0.25,W,Y2+1.9,Y2+2.2,-D+1.0,-D+1.9,mat.white,L2);
 // the far (outer) wall and entry walls are plywood on timber; ~23 cm gap to the plywood.
 const AX0=-T-1.23, AX1=-T, AZ0=-245*IN, AZ1=AZ0-3.62;
 const annex=new THREE.Group(); L2.add(annex);
-const sz0=AZ0-1.04, rs=RF-Y2, zTop=sz0-2.46;
-B(AX0-0.05,AX0,Y2-0.12,RF-0.105,AZ0,AZ1,mat.ply,annex); B(AX0,AX1,Y2-0.12,Y2,AZ0,AZ1,mat.slab,annex);   // plywood far wall, floor
-B(AX0-0.05,AX1,Y2-0.12,RF-0.105,AZ0,AZ0+0.05,mat.ply,annex);                                          // plywood entry wall
-B(AX0,AX1,Y2-0.12,RF-0.105,AZ1,AZ1-0.05,mat.ply,annex);
+const ARF=Y2+2.49;   // annex: floor level with living, 249 to top of the annex slab (Rowil 20 Nov); house rooftop slab is higher (276 clear inside)
+const sz0=AZ0-1.04, rs=ARF-Y2, zTop=sz0-2.46;
+B(AX0-0.05,AX0,Y2-0.12,ARF-0.105,AZ0,AZ1,mat.ply,annex); B(AX0,AX1,Y2-0.12,Y2,AZ0,AZ1,mat.slab,annex);   // plywood far wall, floor
+B(AX0-0.05,AX1,Y2-0.12,ARF-0.105,AZ0,AZ0+0.05,mat.ply,annex);                                          // plywood entry wall
+B(AX0,AX1,Y2-0.12,ARF-0.105,AZ1,AZ1-0.05,mat.ply,annex);
 // slab above (underside 239.5) with opening 102 x 194, 19 cm from the left wall, flush to the far wall, ending at the top step
 const OPx1=AX1-0.19, OPx0=OPx1-1.02, OPz0=zTop+1.94;
-B(AX0,AX1,RF-0.105,RF,AZ0,OPz0,mat.slab,annex); B(AX0,AX1,RF-0.105,RF,zTop,AZ1-1.2,mat.slab,annex); B(OPx1,AX1,RF-0.105,RF,OPz0,zTop,mat.slab,annex); B(AX0-0.05,OPx0,RF-0.105,RF,OPz0,zTop,mat.slab,annex);
+B(AX0,AX1,ARF-0.105,ARF,AZ0,OPz0,mat.slab,annex); B(AX0,AX1,ARF-0.105,ARF,zTop,AZ1-1.2,mat.slab,annex); B(OPx1,AX1,ARF-0.105,ARF,OPz0,zTop,mat.slab,annex); B(AX0-0.05,OPx0,ARF-0.105,ARF,OPz0,zTop,mat.slab,annex);
 // column on the left (house) wall just before step 1, beam (underside 218) over step 1
-B(AX1-0.16,AX1,Y2,RF-0.105,sz0+0.30,sz0+0.02,mat.wall,annex); B(AX0,AX1,Y2+2.18,RF-0.105,sz0+0.30,sz0-0.12,mat.wall,annex);
+B(AX1-0.16,AX1,Y2,ARF-0.105,sz0+0.30,sz0+0.02,mat.wall,annex); B(AX0,AX1,Y2+2.18,ARF-0.105,sz0+0.30,sz0-0.12,mat.wall,annex);
 for(let i=0;i<12;i++){const zf=sz0-i*0.205; B(AX1-1.0,AX1,Y2+(i+1)*rs/13-0.04,Y2+(i+1)*rs/13,zf,zf-0.24,mat.steel,annex);}
 B(AX1-1.0,AX1-0.94,Y2,Y2+12*rs/13-0.04,zTop+0.30,zTop+0.24,mat.steel,annex);                         // one post under right stringer top
 // railing RIGHT side only: posts at treads 1,3,5,7,9,11,12, handrail 90 cm + mid-rail, ends at the top step
@@ -375,10 +376,10 @@ B(AX1-1.0,AX1-0.94,Y2,Y2+12*rs/13-0.04,zTop+0.30,zTop+0.24,mat.steel,annex);    
  [1,3,5,7,9,11,12].forEach(i=>bar([xo,ty(i),tz(i)],[xo,ty(i)+0.9,tz(i)],0.014,mat.rail,annex));
  bar([xo,ty(1)+0.9,tz(1)],[xo,ty(12)+0.9,tz(12)],0.022,mat.rail,annex); bar([xo,ty(1)+0.45,tz(1)],[xo,ty(12)+0.45,tz(12)],0.01,mat.rail,annex);}
 // upstairs: guard rails on the open edges of the slab opening (top end left open = exit, turn left)
-railRun([OPx1+0.03,RF,OPz0+0.03],[AX0+0.03,RF,OPz0+0.03],2,annex);
+railRun([OPx1+0.03,ARF,OPz0+0.03],[AX0+0.03,ARF,OPz0+0.03],2,annex);
 // annex top is ringed by concrete half walls (front + house side + corrugated side); exit at the back into the strip
-B(AX0-0.05,-T,RF,RF+1.0,AZ0,AZ0-0.15,mat.wall,annex); // house-side half wall removed: the expanded roof room's wall now runs along this edge (Rowil 18 Nov)
-B(AX0-0.2,AX0-0.05,RF,RF+1.0,AZ0,AZ0-0.15,mat.wall,annex);
+B(AX0-0.05,-T,ARF,ARF+1.0,AZ0,AZ0-0.15,mat.wall,annex); // house-side half wall removed: the expanded roof room's wall now runs along this edge (Rowil 18 Nov)
+B(AX0-0.2,AX0-0.05,ARF,ARF+1.0,AZ0,AZ0-0.15,mat.wall,annex);
 // roof slab over 2nd floor
 B(-T,W+T,C2,RF,yL+0.84,-D-T,mat.slab,L3);   // slab runs 84 cm out over the terrace before the terrace roof slope starts (Rowil 20 Nov)
 // terrace: no roof slab above; light sheet roof assumed
