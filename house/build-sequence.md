@@ -94,7 +94,7 @@ Do not start the step after a 🔒 gate until the check is done and written down
 
 | Kept out of the contract | When instead | Why |
 |---|---|---|
-| Stripping the ground T&B | With plumbing rough-in (Phase 4) | It is the only toilet in the house until the new one is finished |
+| Stripping the ground T&B | In the plumbing package with the septic and all piping (Phase 4) | It is the only toilet in the house until the new one is finished |
 | Breaking the car bay floor for the septic and drain trenches | With the plumber (Phase 4) | Open trenches block the car; the plumber digs to their own levels |
 | Gate centre infill and hollow-block piers | With the shutter install (Phase 3) | The front stays open and insecure from demolition until the shutter is fitted |
 
@@ -157,12 +157,12 @@ The rooftop roof and its columns are **already built**; no roof extension is nee
 ## Phase 4: Plumbing and electrical rough-in
 
 **Starts when:** all walls are in their final place (Phases 2 and 3). **Unlocks:** close-up. Nothing gets plastered over or ceilinged in until its test passes.
-**Includes the ground floor:** the ground T&B is remodelled to the new layout, the kitchen sink stays on city water, and all ground floor drains go to the new septic tank. **Includes the washing machine's hook-up** (faucet, drain, RCD outlet); the machine itself is a household purchase, not part of the build.
+**One plumbing package (confirmed 20 Nov):** one plumber takes the ground T&B strip-out and remodel, the new septic tank and all the piping in the house as a single contract, quoted together. **Includes the ground floor:** the ground T&B is remodelled to the new layout, the kitchen sink stays on city water, and all ground floor drains go to the new septic tank. **Includes the washing machine's hook-up** (faucet, drain, RCD outlet); the machine itself is a household purchase, not part of the build.
 **Cost (Online):** phase budget **₱219,619–357,605** before contingency. The electrical permit is not costed yet. See [plumbing materials](plumbing-materials.html) and [electrical materials](electrical-materials.html).
 
 | Trade | Materials (₱) | Labour anchor 30–40% (₱) |
 |---|---|---|
-| Plumber: septic, drains and vents, water lines, tank (pump comes in Phase 6). The plumbing page guessed ₱30,000–55,000 labour | 86,500–130,950 | 25,950–52,380 |
+| Plumber, one package: ground T&B strip-out and remodel piping, septic, drains and vents, water lines, tank (pump comes in Phase 6). The plumbing page guessed ₱30,000–55,000 labour | 86,500–130,950 | 25,950–52,380 |
 | Electrician: panel, wire, conduit and boxes, network, sundries | 80,515–121,625 | 24,155–48,650 |
 | Core drilling service through the roof slab | 2,500–4,000 | included |
 
@@ -171,7 +171,7 @@ The rooftop roof and its columns are **already built**; no roof extension is nee
 | ⬜ | 4.1 | Get the neighbours' written agreement for access to the old shared septic manhole through our kitchen | Rowil | Signed note on access; old tank location marked. |
 | 🔒 | 4.2 | Engineer and plumber confirm the septic size and build (gate G4) | Engineer, plumber | Size, rebar and mix agreed. |
 | ⬜ | 4.3 | Dig and build the new 2-chamber septic under the car bay with a car-rated cover; outflow to the street drain | Plumber and helpers | Tank cast and cured, water-tight test passed, cover in. |
-| ⬜ | 4.4 | Drains and vents: strip the old ground T&B and re-lay its drains for the new layout; kitchen sink via a grease trap; roof T&B stack down the stairwell corner; terrace washing machine drain to the facade; cap our old lines into the shared tank | Plumber | All drains run to the new tank; old lines capped; water poured in every drain reaches the tank. |
+| ⬜ | 4.4 | Drains and vents: strip out the old ground T&B (fixtures, tiles, old pipes) and re-lay its drains for the new layout; kitchen sink via a grease trap; roof T&B stack down the stairwell corner; terrace washing machine drain to the facade; cap our old lines into the shared tank | Plumber | All drains run to the new tank; old lines capped; water poured in every drain reaches the tank. |
 | ⬜ | 4.5 | Water: 1,000 L car bay tank and its plinth, city water to the kitchen and ground T&B with the crossover, PPR to the roof T&B, the terrace washer faucet and the hose faucets, every valve at its marked height | Plumber | **Pressure test held for 24 hours** with no drop; valves match the [water valves page](water-valves.html). |
 | 🔒 | 4.6 | Electrician verifies the whole electrical plan (gate G5) | Licensed electrician | Written OK on the load calculation, panel, wire sizes and switch type. |
 | ⬜ | 4.7 | New panel on the car bay left wall, conduits and boxes in every room, wires pulled, roof feed through the terrace ceiling and under the terrace roof, the 30 A induction circuit (cooktop comes later), pump and washer RCD circuits | Electrician | Every box has its wires; **insulation test passed on every circuit**; panel labelled. |
@@ -246,6 +246,7 @@ The rooftop roof and its columns are **already built**; no roof extension is nee
 | ⬜ | Ceiling crew: one quote for all six ceilings at 5.4 | 5.4 | Rowil |
 | ⬜ | Glass and aluminium quotes from at least two suppliers for all 6 items (same series, colour, glass) | 5.5 | Rowil |
 | ⬜ | Ground T&B new layout: measure it and pick fixtures | 4.4, 5.2 | Rowil |
+| ⬜ | Plumbing package: one quote for the ground T&B strip-out and remodel, septic tank and all piping | Phase 4 | Rowil, plumber |
 | ⬜ | Living room: stair void length, door widths, mini fridge, carpentry quote, paint samples, White Oak sample against the walnut | 5.4, 5.7, 6.4 | Rowil |
 | ⬜ | Induction cooktop model (kW on the nameplate) and pump model (watts) for the electrician | Gate G5 | Rowil |
 | ⬜ | PVC ceiling panels: buy before the sale ends 30 Nov and store flat indoors | 5.4 | Rowil |
