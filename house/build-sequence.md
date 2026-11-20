@@ -17,6 +17,8 @@ summary: The order of the whole renovation, from the steel stair to the last fix
 
 **How to update this page:** when a step is finished, change its ⬜ or 👉 to ✅, put 👉 on the next step, and copy that step into the "You are here" table. Each step's **Done when** column is the test: if every part of it is true, move on.
 
+**Buy lists:** each phase has a 🛒 line linking the materials list for that phase. Items with no plan page of their own are on [items without a plan page](extra-materials.html).
+
 **Status marks:** ✅ done · 👉 doing now · ⬜ not started · 🔒 waiting on an engineer or electrician sign-off
 
 ## The six phases at a glance
@@ -73,6 +75,8 @@ Do not start the step after a 🔒 gate until the check is done and written down
 
 **Slab cut size: about 20 cm.** Headroom over step 3 is about 182 cm now. Cutting the edge back moves it over a lower step, so each 1 cm cut adds about 0.94 cm of headroom (19.2 cm rise per 20.5 cm tread). 20 cm gives **about 200 cm**, which clears a 5′10″ (178 cm) person by about 22 cm, enough to walk up comfortably without ducking, and matches the usual 2.0 m stair headroom. 10 cm would give about 191 cm, 15 cm about 196 cm. Cutting more than about 20 cm gains nothing, because the beam over step 1 already limits headroom to about 199 cm. ✅ **The engineer has approved the slab cutout (20 Nov).** Cut to the approved size and edge detail.
 
+🛒 **Buy lists:** [stair: still to buy](../stairs/stair-project-brief.html#costs) · [stair: original shopping list](../stairs/shopping-list-14nov.html) · [demolition contract materials](extra-materials.html#demolition-contract-materials-phase-1)
+
 **Cost:** phase budget **₱64,334–100,884** before contingency. **Every demolition price includes touch-up and finishing:** cut edges plastered and squared, rebar ends treated, debris hauled, ready for the next trade.
 
 | Part | Materials (₱) | Labour (₱) | Source |
@@ -117,6 +121,8 @@ Do not start the step after a 🔒 gate until the check is done and written down
 
 **Starts when:** the stair is done (1.10) and the rooftop room and terrace frontage are measured. **Unlocks:** a dry rooftop, so leaks into the 2nd floor stop before any ceiling goes up below.
 The rooftop roof and its columns are **already built**; no roof extension is needed. This phase closes the walls under the existing roof.
+🛒 **Buy lists:** [rooftop walls, half walls and T&B block courses](../rooms/rooftop-room.html#walls) · [terrace frontage outer skin](extra-materials.html#terrace-frontage-outer-skin-with-metal-cladding-phase-2)
+
 **Cost (Online, from the [rooftop room page](../rooms/rooftop-room.html)):** phase budget **₱72,397–125,482** before contingency. The door opening was cut in the demolition contract (1.4). **Terrace frontage (20 Nov):** a double wall with metal cladding outside. The same steel fabricator puts up its outer frame and cladding in this phase, in the same visit as the rooftop steel, so the front is weathertight early; the inner wall comes with the partition supplier at 5.3.
 
 | Trade | Materials (₱) | Labour anchor 30–40% (₱) |
@@ -140,6 +146,8 @@ The rooftop roof and its columns are **already built**; no roof extension is nee
 ## Phase 3: Other structural work
 
 **Starts when:** Phase 2 is weathertight, and the engineer has signed gate G3. The terrace wall is already open from Phase 1. **Unlocks:** final wall lines, so pipes and wires can run to where they belong.
+🛒 **Buy lists:** [terrace side walls](extra-materials.html#terrace-side-walls-4-chb-phase-3) · [car bay partition](car-bay-partition.html#rough-cost) · [front gate](../gate/gate-plan-draft.html#shopping-list-rough-php)
+
 **Cost (Online):** phase budget **₱64,541–99,338** before contingency. The terrace to living room wall was opened in the demolition contract (Phase 1). **All new CHB walls go to one mason in one go:** the terrace side walls and the car bay partition. The partition's door and window go in with the other doors and glass at 5.5.
 
 | Trade | Materials (₱) | Labour anchor 30–40% (₱) |
@@ -162,6 +170,8 @@ The rooftop roof and its columns are **already built**; no roof extension is nee
 
 **Starts when:** all walls are in their final place (Phases 2 and 3). **Unlocks:** close-up. Nothing gets plastered over or ceilinged in until its test passes.
 **One plumbing package (confirmed 20 Nov):** one plumber takes the ground T&B strip-out and remodel, the new septic tank and all the piping in the house as a single contract, quoted together. **Includes the ground floor:** the ground T&B is remodelled to the new layout, the kitchen sink stays on city water, and all ground floor drains go to the new septic tank. **Includes the washing machine's hook-up** (faucet, drain, RCD outlet); the machine itself is a household purchase, not part of the build.
+🛒 **Buy lists:** [plumbing materials](plumbing-materials.html#summary) (septic, pipes, tank) · [electrical materials](electrical-materials.html#item-list) (panel, wire, conduit and boxes, network, sundries)
+
 **Cost (Online):** phase budget **₱219,619–357,605** before contingency. The electrical permit is not costed yet. See [plumbing materials](plumbing-materials.html) and [electrical materials](electrical-materials.html).
 
 | Trade | Materials (₱) | Labour anchor 30–40% (₱) |
@@ -185,6 +195,8 @@ The rooftop roof and its columns are **already built**; no roof extension is nee
 
 **Starts when:** every test in Phase 4 has passed. **Unlocks:** fit-out.
 **Order inside this phase:** plaster and waterproofing, then the partition supplier (one job), then the ceiling crew (all rooms in one go), then glass and doors (one go), then floors and paint.
+🛒 **Buy lists:** [ceilings, all rooms](ceilings.html#cost-by-room) · [glass and aluminium, all 6 items](glass-aluminium.html#rough-cost) · [rooftop room floor, ceiling and T&B](../rooms/rooftop-room.html#tb-build) · [terrace frontage inner wall and ground T&B tiles](extra-materials.html#terrace-frontage-inner-wall-phase-5) · [car bay partition door](car-bay-partition.html#rough-cost) · [living room floor and paint](../rooms/living-room.html#cost-by-section) · [master bedroom](../rooms/master-bedroom.html#cost)
+
 **Cost (Online):** phase budget **₱548,652–799,786** before contingency.
 
 | Trade or part | Materials (₱) | Labour anchor 30–40% (₱) |
@@ -214,6 +226,8 @@ The rooftop roof and its columns are **already built**; no roof extension is nee
 ## Phase 6: Final fit-out
 
 **Starts when:** floors and paint are done. **Ends when:** every room is in use.
+🛒 **Buy lists:** [switches, outlets, lights and fans](electrical-materials.html#switches-and-outlets) · [fixtures for the ground T&B and kitchen](extra-materials.html#fixtures-phase-6) · [rooftop T&B fixtures](../rooms/rooftop-room.html#tb-build) · [pump](plumbing-materials.html#tank-and-pump-car-bay-auto-stop) · [living room carpentry](../rooms/living-room.html#cost-by-section)
+
 **Cost (Online):** phase budget **₱166,526–328,960** before contingency.
 
 | Trade or part | Materials (₱) | Labour anchor 30–40% (₱) |
