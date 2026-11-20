@@ -244,7 +244,7 @@ const VZ0=-254*IN, VZ1=-326*IN, VX0=W-2.77;   // opening 182 x 277 measured from
 B(-T,W+T,C1,Y2,0,VZ0,mat.slab,L2); B(-T,W+T,C1,Y2,VZ1,-D-T,mat.slab,L2); B(-T,VX0,C1,Y2,VZ0,VZ1,mat.slab,L2);
 
 // ---------- 2ND FLOOR (L2) ----------
-const yL=-99*IN, yW3=-333.5*IN, yB=-337.5*IN;
+const yL=-99*IN, yW3=-330.5*IN, yB=-334.5*IN;   // living 5.78 m partition to bedroom wall (Rowil, iPhone Measure 20 Nov)
 B(0,W,Y2,Y2+0.01,0,yL,mat.tile,L2); B(0,W,Y2,Y2+0.01,yL,VZ0,mat.oak,L2); B(0,VX0,Y2,Y2+0.01,VZ0,VZ1,mat.oak,L2);
 B(0,W,Y2,Y2+0.01,VZ1,-D,mat.oak,L2);
 // left wall with rooftop-stair door (80 cm), right wall solid (cutaway), back wall with exhaust vent + glass blocks
@@ -634,7 +634,7 @@ function eTag(t,x,y,z,lv){tag(t,x,y,z,lv);tags[tags.length-1].el=1;}
 const GC=2.25, LC=Y2+2.30, BC=Y2+2.18, ceilM=M(0xf7f5f0);
 const ceil=(x0,x1,y0,y1,h,par)=>cutables.push(B(x0*IN,x1*IN,h,h+0.012,-y0*IN,-y1*IN,ceilM,par));
 ceil(0,W/IN,200,254,GC,L1); ceil(0,VX0/IN,254,326,GC,L1); ceil(0,W/IN,326,D/IN,GC,L1);
-ceil(0,W/IN,0,99,LC,L2); ceil(0,W/IN,99,254,LC,L2); ceil(0,VX0/IN,254,326,LC,L2); ceil(0,W/IN,326,333.5,LC,L2); ceil(0,W/IN,337.5,D/IN,BC,L2);
+ceil(0,W/IN,0,99,LC,L2); ceil(0,W/IN,99,254,LC,L2); ceil(0,VX0/IN,254,326,LC,L2); ceil(0,W/IN,326,330.5,LC,L2); ceil(0,W/IN,334.5,D/IN,BC,L2);
 {
  const F=[[L1,0],[L2,Y2]];
  const items={1:{
