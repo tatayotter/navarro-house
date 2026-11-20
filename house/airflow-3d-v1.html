@@ -248,7 +248,7 @@ const yL=-99*IN, yW3=-332.1*IN, yB=-336.1*IN;   // living 5.82 m partition to be
 B(0,W,Y2,Y2+0.01,0,yL,mat.tile,L2); B(0,W,Y2,Y2+0.01,yL,VZ0,mat.oak,L2); B(0,VX0,Y2,Y2+0.01,VZ0,VZ1,mat.oak,L2);
 B(0,W,Y2,Y2+0.01,VZ1,-D,mat.oak,L2);
 // left wall with rooftop-stair door (80 cm), right wall solid (cutaway), back wall with exhaust vent + glass blocks
-const RDz0=-255*IN, RDz1=RDz0-0.80;
+const RDz0=yW3+1.77, RDz1=RDz0-0.80;   // annex door: 80 cm, back edge ~97 cm from the bedroom wall, column on its street side (Rowil photo 20 Nov)
 wallZ(-0.0,-D-T,-T/2,T,Y2,C2,mat.party,L2,[[RDz0,RDz1,Y2,Y2+2.05]]);
 cutables.push(B(W,W+T,Y2,C2,0,-D-T,mat.party,L2));
 wallX(-T,W+T,-D-T/2,T,Y2,C2,mat.party,L2,[[0.15,0.42,Y2+1.95,Y2+2.22],[1.0,3.3,Y2+1.8,Y2+2.1]]);
@@ -256,7 +256,8 @@ B(1.0,3.3,Y2+1.8,Y2+2.1,-D-0.04,-D-0.11,mat.glassBlock,L2);
 const fan=B(0.16,0.41,Y2+1.96,Y2+2.21,-D-0.06,-D-0.09,mat.slat,L2);
 // sliding barn door on the living-room side, slides toward the street
 const rdHinge=new THREE.Group(); rdHinge.position.set(0.05,Y2,RDz0+0.05); L2.add(rdHinge); B(-0.02,0.02,0,2.12,0,-0.90,mat.walnut,rdHinge);
-B(0.03,0.07,Y2+2.14,Y2+2.18,RDz0+1.0,RDz1-0.1,mat.rail,L2);
+B(0.03,0.07,Y2+2.14,Y2+2.18,RDz0+0.1,yW3+0.06,mat.rail,L2);   // track runs back toward the bedroom corner (column blocks the street side)
+B(0,0.15,Y2,C2,RDz0+0.28,RDz0,mat.wall,L2);   // column holding the stair-opening beam, 177 cm from the bedroom wall
 // front facade: wall with terrace windows (assumed 3.8 x 1.2 m, sill 0.9), jalousie
 const WX0=0.3, WX1=W-0.3, WY0=Y2+0.9, WY1=Y2+2.1;
 wallX(-T,W+T,-0.1,0.2,Y2,Y2+2.55,mat.wall,L2,[[WX0,WX1,WY0,WY1]]);
@@ -358,7 +359,7 @@ B(W-0.25,W,Y2+1.9,Y2+2.2,-D+1.0,-D+1.9,mat.white,L2);
 // room 1.23 wide, entry 1.04 deep, run 2.46 rising toward the back, 13 risers x 19.2, 12 treads 100x24 at 20.5,
 // walking up (toward the back) the LEFT wall is the house's concrete wall, so the stair is flush to it;
 // the far (outer) wall and entry walls are plywood on timber; ~23 cm gap to the plywood.
-const AX0=-T-1.23, AX1=-T, AZ0=-245*IN, AZ1=AZ0-3.62;
+const AX0=-T-1.23, AX1=-T, AZ0=RDz1+1.04, AZ1=AZ0-3.62, AZr=-245*IN;   // annex entry 1.04 m ends at the door's back edge; stair climbs toward the firewall (Rowil 20 Nov). AZr = rooftop reference line (unchanged until rooftop is re-measured)
 const annex=new THREE.Group(); L2.add(annex);
 const ARF=Y2+2.49;   // annex: floor level with living, 249 to top of the annex slab (Rowil 20 Nov); house rooftop slab is higher (276 clear inside)
 const sz0=AZ0-1.04, rs=ARF-Y2, zTop=sz0-2.46;
@@ -394,7 +395,7 @@ B(-T,W+T,C2,RF,yL+0.84,-D-T,mat.slab,L3);   // slab runs 84 cm out over the terr
 // rooftop per Rowil's sketch (18 Nov): closed room in the back-right corner (window faces SW, door on its
 // left wall near the back), 1 m walkway on the annex side, stair arrives at the back and turns left into
 // a strip along the back edge. Roof runs from the back to the annex front wall (Rowil 18 Nov); front part open.
-const RZ=-8.1, RZ2=AZ0-0.05, RX0=1.03, RH=2.55, RFZ=AZ0;  // roof runs from the back to where the stair annex wall begins
+const RZ=-8.1, RZ2=AZr-0.05, RX0=1.03, RH=2.55, RFZ=AZr;  // roof runs from the back to where the stair annex wall begins
 const clad=M(0x57514c,{roughness:.9}), soffit=M(0x6e3d24), fasc=M(0x2a2c2e,{metalness:.3,roughness:.5}), conc=M(0xdcd8d0);
 // parapets: annex side only up to the stair top, then open into the back strip; outer edge of the strip
 cutables.push(B(W,W+T,RF,RF+1.0,yL,RZ2-0.05,mat.wall,L3));
@@ -402,15 +403,15 @@ B(-T,W+T,RF,RF+1.0,yL,yL-0.15,mat.wall,L3);
 // neighbour's rooftop slab (annex side), renovated and shared with us (Rowil 18 Nov): same level, about the
 // same width as our house, from the front parapet line to the back; our side parapet is removed so the decks join
 const NX0=-T-1.2*W;  // corner unit, about 1.2x our width (Rowil 18 Nov); its outer side faces the side street (SE)
-B(NX0,-T,RF-0.15,RF,yL,AZ0,mat.slab,L3);                               // walkable part: front, up to the annex front wall
+B(NX0,-T,RF-0.15,RF,yL,AZr,mat.slab,L3);                               // walkable part: front, up to the annex front wall
 // back part beside the annex: no slab any more, corrugated roofing (not walkable), raised flush with our roof slab (Rowil 18 Nov), ringed by a concrete half wall
 const corr=M(0x9aa3a8,{metalness:.5,roughness:.45});
-for(let x=NX0+0.05;x<AX0-0.2;x+=0.15) B(x,x+0.07,RF-0.04,RF,AZ0-0.15,-D,corr,L3);
-B(NX0,AX0-0.15,RF-0.08,RF-0.04,AZ0-0.15,-D,corr,L3);
-B(NX0,AX0-0.05,RF,RF+1.0,AZ0,AZ0-0.15,mat.wall,L3); B(AX0-0.2,AX0-0.05,RF,RF+1.0,AZ0-0.15,-D,mat.wall,L3);
+for(let x=NX0+0.05;x<AX0-0.2;x+=0.15) B(x,x+0.07,RF-0.04,RF,AZr-0.15,-D,corr,L3);
+B(NX0,AX0-0.15,RF-0.08,RF-0.04,AZr-0.15,-D,corr,L3);
+B(NX0,AX0-0.05,RF,RF+1.0,AZr,AZr-0.15,mat.wall,L3); B(AX0-0.2,AX0-0.05,RF,RF+1.0,AZr-0.15,-D,mat.wall,L3);
 B(NX0-0.15,NX0,RF-0.15,RF+1.0,yL,-D-T,mat.wall,L3); B(NX0-0.15,0,RF,RF+1.0,-D,-D-T,mat.wall,L3); B(NX0-0.15,-T,RF,RF+1.0,yL,yL-0.15,mat.wall,L3);
 // right-side neighbour's unit: same layout as ours but ~1.2x wider (corner unit); ghost outline
-B(NX0,AX0-0.05,0,RF-0.15,yL,-D,mat.ghost,L3); B(AX0-0.05,-T,0,RF-0.15,yL,AZ0,mat.ghost,L3); B(NX0,-T,0,Y2+2.55,0,yL,mat.ghost,L3);
+B(NX0,AX0-0.05,0,RF-0.15,yL,-D,mat.ghost,L3); B(AX0-0.05,-T,0,RF-0.15,yL,AZr,mat.ghost,L3); B(NX0,-T,0,Y2+2.55,0,yL,mat.ghost,L3);
 B(AX0-0.05,-T,RF-0.105,RF,AZ1-1.2,-D-T,mat.slab,L3);                    // annex slab continues to the back edge
 // shed roof (dark fascia, wood soffit) over the back part
 // shed roof spans across to the neighbour's far (outer) wall, so their corrugated part sits under a second roof (Rowil 18 Nov)
@@ -793,7 +794,7 @@ function frame(now){const dt=Math.min((now-last)/1000,0.05);last=now;time+=reduc
   pHinge.rotation.y=st.pd*Math.PI/2; tbHinge.rotation.y=-st.tb*Math.PI/2; pgA.position.x=pgA0-st.pw*(30*IN-0.02); ptHinge.rotation.y=st.pt*Math.PI/2;
   blades.forEach(g=>g.rotation.x=-st.tw*1.3);
   slP[1].position.x=slX[1]-st.sl*sq*0.95; slP[2].position.x=slX[2]+st.sl*sq*0.95;
-  rmHinge.rotation.y=-1.1*st.rm; rwP.position.x=-st.rw*0.6; bdHinge.rotation.y=st.bd*Math.PI/2; rdHinge.position.z=RDz0+0.05+st.rd*0.92;
+  rmHinge.rotation.y=-1.1*st.rm; rwP.position.x=-st.rw*0.6; bdHinge.rotation.y=st.bd*Math.PI/2; rdHinge.position.z=RDz0+0.05-st.rd*0.88;
   fan.rotation.z+=O.ex.open&&!reduce?dt*8:0; cfRot.rotation.y+=reduce?0:dt*9*st.cf; sfHeads.forEach(h=>h.bl.rotation.z+=reduce?0:dt*16*st[h.id]);
   P.forEach(p=>{if(!p.on)return; p.pts3.visible=!elecOn&&!plumOn&&(level>=2||p.rooms.some(r=>['Car bay','Dining','Kitchen','T&B'].includes(r))); const pos=p.pts3.geometry.attributes.position.array,col=p.pts3.geometry.attributes.color.array;
     const sp=SPEED[wind]*6/p.len; const rev=(wind==='ne'&&!p.fixedDir);
