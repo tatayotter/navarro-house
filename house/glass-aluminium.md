@@ -1,7 +1,7 @@
 ---
 title: Glass and aluminium works
 status: Measuring
-cost: "₱104k–164k"
+cost: "₱106k–168k"
 price_source: online
 updated: 19 Nov 2026
 summary: Every glass and aluminium item in the renovation in one list, ready to show suppliers for quotes. Sizes are provisional until each opening is measured on site. The gate and the steel stair are steel works and are not on this list.
@@ -23,7 +23,7 @@ summary: Every glass and aluminium item in the renovation in one list, ready to 
 
 | # | Item | Location | Size W × H (m) | Panels / operation | Glass | Screen | Qty |
 |---|---|---|---|---|---|---|---|
-| 1 | Jalousie window | 2nd floor terrace, front wall (faces the street) | 3.83 × 1.20, sill 0.90 | **6 bays** of glass blades (each about 0.64 m wide), crank or lever operator per bay | 4″ (100 mm) glass blades, 5–6 mm clear, about 12–13 blades per bay | Fixed insect screen inside, full width | 1 set (6 bays) |
+| 1 | Jalousie window | 2nd floor terrace, front, on the front edge of the 28 cm concrete half wall, **wall to wall** (replaces the old aluminium slider window, 20 Nov) | about 4.3 wide (wall to wall, measure) × 1.20, sill 0.90 | **7 bays** of glass blades (about 0.6 m each; confirm the bay count with the supplier after measuring), crank or lever operator per bay | 4″ (100 mm) glass blades, 5–6 mm clear, about 12–13 blades per bay | Fixed insect screen inside, full width | 1 set (6 bays) |
 | 2 | Sliding door, wall to wall | 2nd floor, between living room and terrace | 4.30 × 2.40 (opening measured 430 cm, 20 Nov) | 4 panels, fixed–sliding–sliding–fixed (middle 2 slide, about 2.1 m clear) | 6 mm tempered clear | None (the jalousie screen covers the terrace) | 1 |
 | 3 | Sliding window | Ground floor, car bay / dining partition wall, about 5.0 m in from the front, over the car (to watch the car and open for air) | 1.50 × 1.00, sill 1.00 | 2 panels, 1 fixed + 1 sliding | 6 mm tempered clear | Sliding fly screen | 1 |
 | 4 | Sliding glass door | Rooftop room, front wall | 1.30 × 2.10 | 2 panels, 1 fixed + 1 sliding | 6 mm tempered clear (laminated optional, for typhoons) | Sliding screen | 1 |
@@ -36,13 +36,13 @@ summary: Every glass and aluminium item in the renovation in one list, ready to 
 
 | # | Item | Low (₱) | High (₱) | Source |
 |---|---|---|---|---|
-| 1 | Jalousie, 6 bays, with screen | 14,000 | 26,000 | Online |
+| 1 | Jalousie, wall to wall (about 7 bays), with screen; remove the old slider window | 16,000 | 30,000 | Online |
 | 2 | Living room 4-panel slider | 60,000 | 87,000 | Online |
 | 3 | Car bay partition sliding window, with fly screen | 7,000 | 12,000 | Online |
 | 4 | Rooftop room slider | 18,000 | 30,000 | Online |
 | 5 | Rooftop T&B awning window | 3,000 | 5,500 | Online |
 | 6 | Aircon sleeve frame | 1,500 | 3,000 | Online |
-| | **Total** | **103,500** | **163,500** | |
+| | **Total** | **105,500** | **167,500** | |
 
 Items 2, 4, 5 and 6 are already counted in the [living room](../rooms/living-room.html) and [rooftop room](../rooms/rooftop-room.html) costs, so don't add them twice. Going from 4 to 6 jalousie bays adds roughly ₱1,500–3,000 (2 more mullions and operators) but gives shorter, stiffer blades that rattle less.
 
@@ -53,7 +53,7 @@ Laminated glass instead of tempered on the living slider adds about ₱15,000–
 General rule: measure each opening **after** it is finished (plastered, or the steel frame is in), not before.
 
 - **Every opening:** measure width at the top, middle and bottom, and height at the left, middle and right. Use the smallest number. Measure both diagonals; if they differ by more than 1 cm, tell the supplier.
-- **1. Jalousie:** the existing terrace window opening (width, height, sill height from the terrace floor). Check if the old frame comes out and who removes it. Confirm the 6 bays divide the width evenly.
+- **1. Jalousie (wall to wall, 20 Nov):** measure wall to wall on the front edge of the 28 cm half wall, and from the half wall top to the underside of the new cladding strip. The old aluminium slider window comes out; ask the supplier to remove and haul it. Confirm the bays divide the width evenly.
 - **2. Living slider:** only after the wall is widened and the new beam or lintel is in (engineer). Note the finished floor level (self-leveller + SPC) so the bottom track sits flush, and the ceiling height for the head track.
 - **3. Car bay window:** after the partition wall is built and plastered. Check the sill height lets you see the car from the dining side, and keep the window clear of the wood door frame and the water tank.
 - **4. Rooftop slider:** after the half wall and steel frame are built. Finished tile level, and a raised sill (5–10 cm) so rain doesn't blow in. Faces the open slab and typhoon wind: ask the supplier which series they'd use there.

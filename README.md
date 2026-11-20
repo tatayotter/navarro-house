@@ -9,8 +9,8 @@ Last updated: 20 November 2026.
 ## What's happening now
 | Part | Status |
 |---|---|
-| Build sequence | Master plan from the stair to the last fixture: 6 phases, who does each step, "done when" checks and engineer/electrician gates, labour anchor 30–40% of materials per job, about ₱1.14M–1.82M before contingency; ceilings, partitions and glass+doors each done in one go (mostly online estimates); see `house/build-sequence.md`. Now: Phase 1, step 1.1. |
-| Buy list: other items | Materials for jobs without their own plan page (demolition contract, terrace side walls, terrace frontage, ground T&B tiles, fixtures), about ₱52k–108k (online estimate); see `house/extra-materials.md`. Each build sequence phase links its buy lists. |
+| Build sequence | Master plan from the stair to the last fixture: 6 phases, who does each step, "done when" checks and engineer/electrician gates, labour anchor 30–40% of materials per job, about ₱1.16M–1.85M before contingency; ceilings, partitions and glass+doors each done in one go (mostly online estimates); see `house/build-sequence.md`. Now: Phase 1, step 1.1. |
+| Buy list: other items | Materials for jobs without their own plan page (demolition contract, terrace side walls, terrace frontage, ground T&B tiles, fixtures), about ₱66k–126k (online estimate); see `house/extra-materials.md`. Each build sequence phase links its buy lists. |
 | Steel stair (Phase 3) | Plan v3.4: slab edge cut back ~20 cm for headroom (engineer OK). Steel bought. Welder hired, starting soon. |
 | Front gate | Design settled (roll-up car shutter + small door). Waiting on final measurements. |
 | Master bedroom | Plan and costing done (about ₱167k with buffer). |
@@ -18,7 +18,7 @@ Last updated: 20 November 2026.
 | Electrical wiring | Whole-house plan drafted: 20 ceiling lights + 5 pendants, 31 outlets, 12 smart switch plates. The water pump and roof room window aircon have their own circuits. Materials about ₱121k–192k (online estimate). Waiting for the electrician to check. |
 | 3D model | Whole house in 3D with airflow, electrical layer and phone view. Kitchen re-arranged (bar counter, fridge by the T&B). |
 | Rooftop | Roof room enlarged to take in the old deck area: no deck, no hallway; door at the top of the steel stair. Walls decided: 1 m concrete half wall all round, then container-van style steel outside, insulation and Hardiflex inside up to the roof; tiled floor, gypsum ceiling, about ₱205k–344k with buffer (T&B: 3 courses of block + framed fibre-cement) (online estimate), see `rooms/rooftop-room.md`. Slab load confirmed OK; engineer to check wall anchoring. |
-| Glass and aluminium | Schedule of all windows, sliding doors, the terrace jalousie (now 6 bays) for supplier quotes, about ₱104k–164k (online estimate); see `house/glass-aluminium.md`. Sizes provisional until measured. |
+| Glass and aluminium | Schedule of all windows, sliding doors, the terrace jalousie (now wall to wall) for supplier quotes, about ₱106k–168k (online estimate); see `house/glass-aluminium.md`. Sizes provisional until measured. |
 | Car bay partition | Solid wall with a solid wood main door and a sliding window over the car (changed 19 Nov), about ₱35k–64k (online estimate); see `house/car-bay-partition.md`. Wood undecided; local door + jamb quote pending. |
 
 ## Where the prices come from

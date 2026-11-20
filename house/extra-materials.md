@@ -1,7 +1,7 @@
 ---
 title: "Buy list: items without a plan page"
 status: Draft
-cost: "₱52k–108k materials"
+cost: "₱66k–126k materials"
 price_source: online
 updated: 20 Nov 2026
 summary: Materials for the jobs added to the build sequence that have no plan page of their own yet. They cover the demolition contract, the terrace side walls, the terrace frontage, the ground T&B remodel and the fixtures. Quantities are estimates; measure on site before buying. Labour is budgeted separately at 30–40% of materials on the build sequence page.
@@ -31,26 +31,31 @@ About 12 m² for both walls (2 × about 2.5 × 2.4 m). Measure before buying.
 | Skim coat for the finish | lot | 500 | 1,000 | Online |
 | **Subtotal** | | **9,200** | **14,800** | |
 
-## Terrace frontage, outer skin with metal cladding (Phase 2)
+## Terrace frontage cladding and new terrace roof (Phase 2)
 
-About 7–9 m² after the jalousie opening. Same materials as the rooftop room walls, bought together.
-
-| Item | Qty | Low (₱) | High (₱) | Source |
-|---|---|---|---|---|
-| Light steel frame (studs or C-purlins), angles, frame around the jalousie opening | 7–9 m² | 1,750 | 3,600 | Online |
-| Metal cladding, container-van style, pre-painted (with laps and waste) | 8–10 m² | 2,450 | 4,950 | Online |
-| Breathable wrap behind the cladding | 7–9 m² | 350 | 810 | Online |
-| Flashings (top and sill), trims, screws, sealant | lot | 1,190 | 2,520 | Online |
-| **Subtotal** | | **5,740** | **11,880** | |
-
-## Terrace frontage, inner wall (Phase 5)
+The strip above the jalousie, up to the terrace roof, wall to wall: about 2.5–3.5 m² (measure). Same materials as the rooftop room walls, bought together. The new terrace roof replaces the old sheets and the rusted framing (20 Nov), matching the rooftop roof; the cladding matches the rooftop room's exterior cladding.
 
 | Item | Qty | Low (₱) | High (₱) | Source |
 |---|---|---|---|---|
-| Light steel frame for the inner wall | 7–9 m² | 1,750 | 3,600 | Online |
-| Insulation 50 mm, foil-faced rockwool or glasswool | 7–9 m² | 840 | 1,980 | Online |
-| Hardiflex 6 mm (with waste) | 8–10 m² | 1,300 | 2,260 | Online |
-| **Subtotal** | | **3,890** | **7,840** | |
+| Light steel frame, angles, level head for the jalousie | 2.5–3.5 m² | 625 | 1,400 | Online |
+| Metal cladding, container-van style, pre-painted (with laps and waste) | 3–4 m² | 875 | 1,925 | Online |
+| Breathable wrap behind the cladding | 2.5–3.5 m² | 125 | 315 | Online |
+| Flashings at the roof, trims, screws, sealant | lot | 425 | 980 | Online |
+| New terrace roof sheets matching the rooftop roof, with laps | ~14 m² | 4,900 | 7,700 | Online |
+| New rafters and purlins (tubular and C-purlins) | lot | 10,000 | 14,000 | Online |
+| Insulation under the sheets, like the rooftop | ~13 m² | 1,300 | 2,300 | Online |
+| Flashing at the wall, gutter, roof screws, sealant | lot | 2,000 | 4,000 | Online |
+| Primer and enamel for the new framing | lot | 1,500 | 2,500 | Online |
+| **Subtotal** | | **21,750** | **35,120** | |
+
+## Terrace frontage strip, inner face (Phase 5)
+
+| Item | Qty | Low (₱) | High (₱) | Source |
+|---|---|---|---|---|
+| Light steel frame for the inner face | 2.5–3.5 m² | 625 | 1,400 | Online |
+| Insulation 50 mm, foil-faced rockwool or glasswool | 2.5–3.5 m² | 300 | 770 | Online |
+| Hardiflex 6 mm (with waste) | 2.5–3.5 m² | 465 | 880 | Online |
+| **Subtotal** | | **1,390** | **3,050** | |
 
 ## Ground T&B remodel, waterproofing and tiles (Phase 5)
 
@@ -78,6 +83,6 @@ The rooftop T&B fixtures are on the [rooftop room page](../rooms/rooftop-room.ht
 
 | | Low (₱) | High (₱) |
 |---|---|---|
-| **Total on this page** | **52,480** | **107,920** |
+| **Total on this page** | **65,980** | **126,370** |
 
 <!-- Rules: no city name, street address or GPS coordinates on any page. Tag every price Local or Online. -->
