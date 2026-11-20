@@ -17,7 +17,7 @@ Last updated: 19 November 2026.
 | 3D model | Whole house in 3D with airflow, electrical layer and phone view. Kitchen re-arranged (bar counter, fridge by the T&B). |
 | Rooftop | Roof room enlarged to take in the old deck area: no deck, no hallway; door at the top of the steel stair. Walls decided: 1 m concrete half wall all round, then container-van style steel outside, insulation and Hardiflex inside up to the roof; tiled floor, gypsum ceiling, about ₱208k–348k with buffer (online estimate), see `rooms/rooftop-room.md`. Slab load confirmed OK; engineer to check wall anchoring. |
 | Glass and aluminium | Schedule of all windows, sliding doors, the terrace jalousie (now 6 bays) for supplier quotes, about ₱104k–164k (online estimate); see `house/glass-aluminium.md`. Sizes provisional until measured. |
-| Car bay partition | Solid wall with a solid wood main door and a sliding window over the car (changed 19 Nov), about ₱35k–64k (online estimate); see `house/car-bay-partition.md`. Sizes provisional. |
+| Car bay partition | Solid wall with a solid wood main door and a sliding window over the car (changed 19 Nov), about ₱35k–64k (online estimate); see `house/car-bay-partition.md`. Wood undecided; local door + jamb quote pending. |
 
 ## Where the prices come from
 - **Local receipts and quotes:** steel stair materials already bought (₱18,589, store receipt), welder labour (₱7,000), architect's stair quote (₱64,850, for comparison).

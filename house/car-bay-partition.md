@@ -3,7 +3,7 @@ title: Car bay partition
 status: Draft
 cost: "₱35k–64k"
 price_source: online
-updated: 19 Nov 2026
+updated: 20 Nov 2026
 summary: The wall between the car bay and the dining area, about 5.0 m in from the front. It is now a solid wall with a solid wood main door and a sliding window you can see the car through and open for air. Sizes are a provisional fit around the water tank; confirm on site.
 ---
 
@@ -62,8 +62,8 @@ The old plan was a steel frame with a 1.80 m sliding glass door. The new plan is
 
 | Item | Low (₱) | High (₱) | Source |
 |---|---|---|---|
-| Solid wood door leaf, 0.80 × 2.10 m, kiln-dried | 8,000 | 18,000 | Online |
-| Solid wood jamb 2″ × 6″, treated | 2,500 | 4,500 | Online |
+| Solid wood door leaf, 0.80 × 2.10 m, kiln-dried (local quote pending) | 8,000 | 18,000 | Online |
+| Solid wood jamb 2″ × 6″, treated (local quote pending) | 2,500 | 4,500 | Online |
 | Hinges, lockset + deadbolt, door stop | 2,500 | 5,000 | Online |
 | Varnish all sides + carpenter to hang the door | 3,000 | 5,000 | Online |
 | Sliding window 1.50 × 1.00 m with screen (glass schedule item 3) | 7,000 | 12,000 | Online |
@@ -74,9 +74,11 @@ The old plan was a steel frame with a 1.80 m sliding glass door. The new plan is
 
 The window is also counted in the glass and aluminium total, so don't add it twice.
 
+**Door and jamb prices are placeholders.** The wood is not chosen yet. Final door measurements and a local supplier quote for the door and jamb are coming (20 Nov); those two lines become Local when the quote is in.
+
 ## Questions to settle
 
-- Wood: mahogany or tanguile, and natural finish or painted?
+- Wood: still undecided (mahogany, tanguile or other), and natural finish or painted? Waiting on final door measurements and a local quote for the door and jamb.
 - Measure on site: the walkway width between the car and the tank plinth, and the ceiling height at the partition.
 
 <!-- Leave a blank line before and after every table, or the site shows it as plain text. -->
