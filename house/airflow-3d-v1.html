@@ -380,6 +380,8 @@ railRun([OPx1+0.03,ARF,OPz0+0.03],[AX0+0.03,ARF,OPz0+0.03],2,annex);
 // annex top is ringed by concrete half walls (front + house side + corrugated side); exit at the back into the strip
 B(AX0-0.05,-T,ARF,ARF+1.0,AZ0,AZ0-0.15,mat.wall,annex); // house-side half wall removed: the expanded roof room's wall now runs along this edge (Rowil 18 Nov)
 B(AX0-0.2,AX0-0.05,ARF,ARF+1.0,AZ0,AZ0-0.15,mat.wall,annex);
+// step up from the annex top onto the house roof deck (~37 cm, Rowil 20 Nov): one intermediate concrete step at the exit
+B(AX1-0.3,AX1,ARF,ARF+0.185,zTop-0.05,AZ1+0.05,mat.slab,annex); setTimeout(()=>tag('Step up ~37 cm to roof deck',AX1-0.3,ARF+0.6,(zTop+AZ1)/2,3),0);
 // roof slab over 2nd floor
 B(-T,W+T,C2,RF,yL+0.84,-D-T,mat.slab,L3);   // slab runs 84 cm out over the terrace before the terrace roof slope starts (Rowil 20 Nov)
 // terrace: no roof slab above; light sheet roof assumed
