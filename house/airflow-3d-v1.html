@@ -262,7 +262,7 @@ B(0,0.15,Y2,C2,RDz0+0.28,RDz0,mat.wall,L2);   // column holding the stair-openin
 // strip above = double wall with metal cladding outside matching the rooftop room
 const WX0=0.065, WX1=W-0.065, WY0=Y2+0.9, WY1=Y2+2.1, tClad=M(0x57514c,{roughness:.9});
 B(-T,W+T,Y2,WY0,0,-0.2,mat.wall,L2); B(-T,WX0,WY0,WY1,0,-0.2,mat.wall,L2); B(WX1,W+T,WY0,WY1,0,-0.2,mat.wall,L2);
-B(-T,W+T,WY1,Y2+2.55,0,-0.2,tClad,L2);
+B(-T,W+T,WY1,C2,0,-0.2,tClad,L2);
 B(0,W,Y2,WY0,-0.2,-0.28,mat.wall,L2);   // half wall under the windows is 28 cm deep: a wide sill ledge (Rowil 20 Nov)
 B(-T,0,C2,Y2+2.55,0,yL,mat.party,L2); cutables.push(B(W,W+T,C2,Y2+2.55,0,yL,mat.party,L2));
 // 40 cm slab ledge above the ground entrance with potted bougainvilleas
@@ -387,9 +387,9 @@ B(AX0-0.2,AX0-0.05,ARF,ARF+1.0,AZ0,AZ0-0.15,mat.wall,annex);
 // step up from the annex top onto the house roof deck (~37 cm, Rowil 20 Nov): one intermediate concrete step at the exit
 B(AX1-0.3,AX1,ARF,ARF+0.185,zTop-0.05,AZ1+0.05,mat.slab,annex); setTimeout(()=>tag('Step up ~37 cm to roof deck',AX1-0.3,ARF+0.6,(zTop+AZ1)/2,3),0);
 // roof slab over 2nd floor
-B(-T,W+T,C2,RF,yL+0.84,-D-T,mat.slab,L3);   // slab runs 84 cm out over the terrace before the terrace roof slope starts (Rowil 20 Nov)
+B(-T,W+T,C2,RF,0,-D-T,mat.slab,L3);   // existing slab reaches 84 cm over the terrace; Rowil 20 Nov: extend slab + half wall out to the front edge (engineer to check)
 // terrace: no roof slab above; light sheet roof assumed
-{const zA=yL+0.84, yA=RF+0.45, zB=0.3, yB2=Y2+2.55, L=Math.hypot(zB-zA,yA-yB2);   // lean-to: high at the house, sloping down to the street (~11 deg)
+if(false){const zA=yL+0.84, yA=RF+0.45, zB=0.3, yB2=Y2+2.55, L=Math.hypot(zB-zA,yA-yB2);   // lean-to: high at the house, sloping down to the street (~11 deg)
  const tr=new THREE.Mesh(new THREE.BoxGeometry(W+2*T,0.05,L),M(0x2a2c2e,{metalness:.3,roughness:.5}));   // new sheets matching the rooftop roof (Rowil 20 Nov) tr.position.set(W/2,(yA+yB2)/2,(zA+zB)/2);
  tr.rotation.x=Math.atan2(yA-yB2,zB-zA); L3.add(tr);}
 
@@ -400,8 +400,8 @@ B(-T,W+T,C2,RF,yL+0.84,-D-T,mat.slab,L3);   // slab runs 84 cm out over the terr
 const RZ=-8.1, RZ2=AZr-0.05, RX0=1.03, RH=2.55, RFZ=AZr;  // roof runs from the back to where the stair annex wall begins
 const clad=M(0x57514c,{roughness:.9}), soffit=M(0x6e3d24), fasc=M(0x2a2c2e,{metalness:.3,roughness:.5}), conc=M(0xdcd8d0);
 // parapets: annex side only up to the stair top, then open into the back strip; outer edge of the strip
-cutables.push(B(W,W+T,RF,RF+1.0,yL,RZ2-0.05,mat.wall,L3));
-B(-T,W+T,RF,RF+1.0,yL,yL-0.15,mat.wall,L3);
+cutables.push(B(W,W+T,RF,RF+1.0,0,RZ2-0.05,mat.wall,L3));
+B(-T,W+T,RF,RF+1.0,0,-0.15,mat.wall,L3); B(-T,0,RF,RF+1.0,-0.15,yL,mat.wall,L3);   // half wall round the extended terrace part
 // neighbour's rooftop slab (annex side), renovated and shared with us (Rowil 18 Nov): same level, about the
 // same width as our house, from the front parapet line to the back; our side parapet is removed so the decks join
 const NX0=-T-1.2*W;  // corner unit, about 1.2x our width (Rowil 18 Nov); its outer side faces the side street (SE)
