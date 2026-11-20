@@ -1,7 +1,7 @@
 ---
 title: Build sequence
 status: Building
-cost: "≈ ₱1.10M–1.74M with labour"
+cost: "≈ ₱1.12M–1.78M with labour"
 price_source: mixed
 updated: 20 Nov 2026
 summary: The order of the whole renovation, from the steel stair to the last fixture, with the induction cooktop added after fit-out. Each step says who does it and when it counts as done, so after every finished step you know exactly what comes next. This is the master plan; the room and system pages hold the details.
@@ -11,8 +11,8 @@ summary: The order of the whole renovation, from the steel stair to the last fix
 
 | | Step | What to do now |
 |---|---|---|
-| 👉 **Now** | **1.1 Lock in the welder and the engineer check** | Confirm the welder's days and tools. Show the engineer the [welding details](../stairs/weld-details.html) (tread mount, 1.4 mm plate, right stringer span, slab edge and wall anchors). |
-| ⏭ **Next up** | 1.2 Buy the last stair items | Angle bar, anchors, extra rods, flap disc (list on the [stair brief](../stairs/stair-project-brief.html)). |
+| 👉 **Now** | **1.1 Engineer walk-through and the welder** | Show the engineer the [welding details](../stairs/weld-details.html) and every demolition job: slab cut size, door opening header, terrace lintel and props. Confirm the welder's days and tools. |
+| ⏭ **Next up** | 1.2 Quote the demolition contract | One lump sum for the slab cut, rooftop door opening, terrace counter and terrace wall (with lintel), debris haul included. |
 | 📏 **Do anytime now** | Open items below | Rooftop measurements, local quotes, electrician's check. They unlock Phases 2 to 4. |
 
 **How to update this page:** when a step is finished, change its ⬜ or 👉 to ✅, put 👉 on the next step, and copy that step into the "You are here" table. Each step's **Done when** column is the test: if every part of it is true, move on.
@@ -23,18 +23,18 @@ summary: The order of the whole renovation, from the steel stair to the last fix
 
 | Phase | What | Main trades | Materials (₱) | Labour anchor 30–40% (₱) | Supplier-installed, equipment, demolition (₱) | Phase budget (₱) |
 |---|---|---|---|---|---|---|
-| 1 | Finish the steel stair | Welder | 26,284 | 7,000 agreed (anchor 7,885–10,514) | — | **33,284** |
-| 2 | Rooftop door opening, then weatherproof the rooftop room | Mason, steel fabricator | 49,950–77,750 | 14,985–31,100 | 2,000–4,000 | **66,935–112,850** |
-| 3 | Demolition, terrace lintel, car bay partition, front gate | Mason, welder, shutter shop | 32,370–48,870 | 9,711–19,548 | 28,000–48,000 | **70,081–116,418** |
+| 1 | Demolition contract, then the steel stair | Demolition crew, welder | 34,784–45,284 | 9,550–14,600 (welder 7,000 agreed) | 20,000–41,000 | **64,334–100,884** |
+| 2 | Weatherproof the rooftop room | Mason, steel fabricator | 49,950–77,750 | 14,985–31,100 | — | **64,935–108,850** |
+| 3 | New CHB walls (terrace side walls, car bay partition), front gate | Mason, welder, shutter shop | 36,570–51,670 | 10,971–20,668 | 17,000–27,000 | **64,541–99,338** |
 | 4 | Plumbing and electrical rough-in, ground floor included | Plumber, electrician | 167,015–252,575 | 50,104–101,030 | 2,500–4,000 | **219,619–357,605** |
 | 5 | Close up: partitions and double walls, ceilings in one go, glass and doors in one go, floors, paint | Partition supplier, ceiling crew, glass supplier, carpenter, tiler, painter | 290,150–380,650 | 87,045–152,260 | 166,400–255,900 | **543,595–788,810** |
 | 6 | Final fit-out | Electrician, plumber, carpenter, AC tech | 98,380–189,520 | 29,514–75,808 | 38,632–63,632 | **166,526–328,960** |
-| | **Total before contingency** | | **664,149–975,649** | **198,359–386,746** | **237,532–375,532** | **≈ 1,100,000–1,738,000** |
-| | **With 10% contingency on the Online part** | | | | | **≈ 1,207,000–1,909,000** |
+| | **Total before contingency** | | **676,849–997,449** | **202,169–395,466** | **244,532–391,532** | **≈ 1,124,000–1,784,000** |
+| | **With 10% contingency on the Online part** | | | | | **≈ 1,233,000–1,960,000** |
 
 After fit-out: the induction cooktop (its 30 A circuit goes in at Phase 4). Optional: kitchen and dining clean-up. Neither is in the total.
 
-Sources: the stair materials and the welder's ₱7,000 are Local (receipts and an agreed price). Everything else is Online, from the plan pages, split by phase so nothing is counted twice.
+Sources: the stair materials already bought and the welder's ₱7,000 are Local (receipts and an agreed price). Everything else is Online, from the plan pages, split by phase so nothing is counted twice.
 
 ### The labour anchor (30–40% of materials)
 
@@ -51,7 +51,7 @@ Sources: the stair materials and the welder's ₱7,000 are Local (receipts and a
 - **Partitions and double walls:** **one supplier** does all framed partition and double-wall work in one job (step 5.3): the rooftop room's insulation and Hardiflex lining, the rooftop T&B framed fibre-cement, and the bedroom Wall 1 double wall. Before leaving, they **set the provisions for the glass and door installers**: framed openings, backing and fixing points.
 - **Glass and doors:** every window, slider and door is installed **in one go** after that (step 5.5). Until then the rooftop openings are closed temporarily with plywood or tarp.
 
-**Demolition** is labour only, so the 30–40% rule has nothing to anchor to: get it quoted as a lump sum (Online guesses are in Phases 2 and 3). **Not costed yet:** the electrical permit, the annex barn door. The ground T&B tiles and fixtures are estimated at the same rate as the rooftop T&B until it is measured. The master bedroom total includes its own ceiling, wiring and double wall, which also appear in Phases 4 and 5, so the grand total overlaps by roughly ₱20k–40k.
+**Demolition** is labour only, so the 30–40% rule has nothing to anchor to: get it quoted as a lump sum (Online guesses are in Phase 1). **Not costed yet:** the electrical permit, the annex barn door. The ground T&B tiles and fixtures are estimated at the same rate as the rooftop T&B until it is measured. The master bedroom total includes its own ceiling, wiring and double wall, which also appear in Phases 4 and 5, so the grand total overlaps by roughly ₱20k–40k.
 
 ## Engineer and electrician sign-off gates
 
@@ -59,74 +59,100 @@ Do not start the step after a 🔒 gate until the check is done and written down
 
 | Gate | Before | Who | What they check |
 |---|---|---|---|
-| 🔒 G1 | Welding starts (step 1.3) | Engineer | Stair v3.3 [welding details](../stairs/weld-details.html): tread mount, 1.4 mm plate, right stringer span, slab edge anchor distance, wall anchors. |
-| 🔒 G2 | Rooftop demolition and walls (step 2.3) | Engineer | **Door opening in the existing half wall:** is there a top tie beam or rebar that gets cut, and what header goes over the door. Dowels for the new half walls without breaking the roof waterproofing, anchors into the old parapets, top fixing at the purlins of the existing roof, typhoon fixings, core holes and roof drains, the T&B corner. See the [rooftop room page](../rooms/rooftop-room.html#for-the-engineer). |
-| 🔒 G3 | Any demolition, wall cut or new wall downstairs (steps 3.2 to 3.6) | Engineer | Terrace to living room wall: beam or lintel size, props, and the order (lintel in place before the wall below comes out); whether the terrace counter ties into the wall or slab; car bay partition lintel and tie-in to the shared side walls; gate demolition (beam not resting on the hollow-block piers, new post base and anchors). |
+| 🔒 G1 | Demolition and welding start (step 1.1) | Engineer | Stair v3.3 [welding details](../stairs/weld-details.html): tread mount, 1.4 mm plate, right stringer span, wall anchors. **Slab headroom cut:** how much, rebar and edge detail, and the top anchor distance from the new edge. **Rooftop door opening:** any tie beam or rebar cut, header over the door. **Terrace to living room wall:** lintel size, props, and the order (lintel cured before the wall below comes out). **Terrace counter:** whether it ties into the wall or slab. |
+| 🔒 G2 | Rooftop walls go up (step 2.3) | Engineer | Dowels for the new half walls without breaking the roof waterproofing, anchors into the old parapets, top fixing at the purlins of the existing roof, typhoon fixings, core holes and roof drains, the T&B corner. See the [rooftop room page](../rooms/rooftop-room.html#for-the-engineer). |
+| 🔒 G3 | New CHB walls and the gate (steps 3.2 to 3.5) | Engineer | **Terrace side walls:** that the terrace slab (and any cantilever) carries about 2 t of new CHB walls or that they sit on beams; dowels into the slab, ties into the columns and the shared walls, a top tie to the beam or roof framing, typhoon wind;  car bay partition lintel and tie-in to the shared side walls; gate demolition (beam not resting on the hollow-block piers, new post base and anchors). |
 | 🔒 G4 | The septic dig (step 4.2) | Engineer and plumber | Septic size, rebar and concrete mix, distance from the party wall and front column footings, car-rated cover. |
 | 🔒 G5 | Any wire is pulled (step 4.6) | Licensed electrician | The whole [electrical plan](electrical-materials.html): load calculation, wire and breaker sizes, main breaker, grounding, RCDs, no-neutral switches with bypass, permit. |
 | 🔒 G6 | Ceilings close (step 5.4) | Electrician and plumber | Insulation test on every circuit, pressure test held on every water line, every box and junction marked on the furring. |
 
-## Phase 1: Finish the steel stair
+## Phase 1: Demolition contract and the steel stair
 
-**Starts when:** now. **Unlocks:** safe access to the rooftop for Phase 2 (materials and workers go up the new stair).
-**Cost:** ₱33,284 projected against a ₱35,000 budget. Materials ₱26,284 (₱18,589 spent, Local; ₱7,695 still to buy, Online). Welder ₱7,000 agreed (Local), below the ₱7,885–10,514 anchor (30–40%). Details on the [stair brief](../stairs/stair-project-brief.html).
+**Starts when:** now. **Unlocks:** safe access to the rooftop for Phase 2, and every opening the later phases need.
+**Why demolition comes first:** the stair's top anchor bolts to the slab edge over the stair. If the headroom cut happened after welding, it would cut away that anchor. So the slab is cut first, and the rest of the demolition is bundled into the **same contract**: one crew, one price, two short visits.
+
+**Cost:** phase budget **₱64,334–100,884** before contingency. **Every demolition price includes touch-up and finishing:** cut edges plastered and squared, rebar ends treated, debris hauled, ready for the next trade.
+
+| Part | Materials (₱) | Labour (₱) | Source |
+|---|---|---|---|
+| Steel stair: materials (₱18,589 spent, ₱7,695 still to buy) and welder | 26,284 | 7,000 agreed (anchor 7,885–10,514) | Local + Online |
+| Demolition contract, labour only (lump sum, touch-up and finishing included): slab cut 5,000–12,000; rooftop door opening 2,000–4,000; terrace counter 3,000–6,000; terrace to living room wall 10,000–19,000 | — | 20,000–41,000 | Online |
+| Demolition contract, materials: terrace lintel (placeholder until the engineer sizes it), new slab edge (rebar, epoxy, form, mortar), plaster and patching for the touch-up of every cut | 8,500–19,000 | 2,550–7,600 (30–40%) | Online |
+
+**Stair brief change:** the brief says "no slab trimming for now". With the cut in this contract, add to its change log: *"20 Nov: slab edge over step 3 to be trimmed (engineer to size, was optional 10–15 cm) in the demolition contract, before welding. Top anchor to be fixed to the new edge."* The PDF needs a **v3.4** once the engineer gives the trim size, because the headroom figure and the top anchor detail change.
+
+### What goes in the demolition contract
+
+| In the contract | Visit | Why it fits here |
+|---|---|---|
+| Stair headroom: cut back the slab edge over step 3 (size by the engineer) and re-form the new edge | 1 | Must be before the stair is welded; it is also the noisiest, dustiest job, best done once |
+| Rooftop room: hammer the door opening in the existing half wall on the door side | 1 | Same crew and tools; opens the route for the rooftop work |
+| Terrace: break out the concrete counter, cap anything that fed it | 1 | Small job, same debris haul |
+| Terrace to living room wall: prop, cast the new beam or lintel | 1 | The lintel must be in and cured **before** the wall under it is removed |
+| Terrace to living room wall: open it taller and wider for the 4.18 × 2.4 m slider, cover it temporarily | 2 (about 7 days later) | Only after the lintel has cured and the engineer says the props can carry it |
+| Optional: core holes, if the plumber and electrician have marked them (roof T&B stack through the roof slab, terrace faucet, washer drain through the front wall, roof feed above the slider, bedroom aircon sleeve) | 1 or 2 | Saves a separate core-drill visit; otherwise the core-drill service comes at rough-in (Phase 4) |
+
+| Kept out of the contract | When instead | Why |
+|---|---|---|
+| Stripping the ground T&B | With plumbing rough-in (Phase 4) | It is the only toilet in the house until the new one is finished |
+| Breaking the car bay floor for the septic and drain trenches | With the plumber (Phase 4) | Open trenches block the car; the plumber digs to their own levels |
+| Gate centre infill and hollow-block piers | With the shutter install (Phase 3) | The front stays open and insecure from demolition until the shutter is fitted |
 
 | Status | # | Step | Who | Done when |
 |---|---|---|---|---|
-| 👉 | 1.1 | Confirm the welder's scope, days and tools; engineer looks at the welding details (gate G1) | Rowil, welder, engineer | Start date agreed; welder confirms machine, grinder, hammer drill and bits; engineer has OK'd or changed the details. |
-| ⬜ | 1.2 | Buy the last items: angle bar, ½″ and ⅜″ anchors, extra rods, flap disc | Rowil | Everything on the stair "still to buy" list is on site except the paint and vinyl (they come at 1.6). |
-| ⬜ | 1.3 | Check the ceiling stains and the beam to column crack; pay the 30% (₱2,100) | Rowil | Leak cause known (or ruled out); 30% paid; receipt kept. |
-| ⬜ | 1.4 | Build: stringers, treads, post, top anchor, railing | Welder | All 12 treads in, left stringer bolted at 4 points, post under the right stringer, top tied to the slab edge. |
-| ⬜ | 1.5 | Upstairs guard rails on the open edges of the opening, plus a temporary barrier | Welder | Nobody can fall into the opening from the rooftop side. |
-| ⬜ | 1.6 | Grind, prime, black enamel, vinyl treads, pad and paint the slab edge over step 3 | Welder, Rowil | Full paint coverage; vinyl on all 12 treads with contrasting nosing; edge padded and bright. |
-| ⬜ | 1.7 | Turnover checks, then pay the 70% (₱4,900) | Rowil, welder | Stress, noise, visual, measure (every riser 19.2 cm within about 6 mm) and safety checks all pass. Brief and site updated to "Done". |
+| 👉 | 1.1 | Engineer walk-through (gate G1), and confirm the welder's scope, days and tools | Rowil, engineer, welder | Engineer has signed off the stair welding details and written the slab cut size and edge detail, the door opening header, the terrace lintel size and the propping order. Welder start date agreed. |
+| ⬜ | 1.2 | Get the demolition contract quoted as one lump sum, with the job list above, touch-up and finishing of every cut, debris haul and clean-up included | Rowil | Two quotes in; one crew chosen; price tagged Local. Open below the Online guess. |
+| ⬜ | 1.3 | Buy the last stair items: angle bar, ½″ and ⅜″ anchors, extra rods, flap disc; check the ceiling stains and the beam to column crack | Rowil | Everything on the stair "still to buy" list is on site except the paint and vinyl; leak cause known (or ruled out). |
+| ⬜ | 1.4 | **Demolition visit 1:** slab cut and new edge, rooftop door opening, terrace counter, prop and cast the terrace lintel, marked core holes | Demolition crew | Slab edge cut to the engineer's size and re-formed; door opening and counter done and their edges plastered and squared; floor patched where the counter stood; lintel cast with props in; debris hauled. |
+| ⬜ | 1.5 | Pay the welder's 30% (₱2,100) once the new slab edge is ready for anchors | Rowil | Engineer or mason confirms the new edge is cured; 30% paid; receipt kept. |
+| ⬜ | 1.6 | Build the stair: stringers, treads, post, top anchor into the new slab edge, railing | Welder | All 12 treads in, left stringer bolted at 4 points, post under the right stringer, top tied to the new slab edge. |
+| ⬜ | 1.7 | **Demolition visit 2** (can overlap with 1.6): open the terrace to living room wall under the cured lintel, plaster the edges, cover it | Demolition crew | Opening at the slider size with edges plastered, square and plumb (ready for the glass supplier to measure); props out only when the engineer says so; covered against rain. |
+| ⬜ | 1.8 | Upstairs guard rails on the open edges of the opening, plus a temporary barrier | Welder | Nobody can fall into the opening from the rooftop side. |
+| ⬜ | 1.9 | Grind, prime, black enamel, vinyl treads; paint the new slab edge a bright colour | Welder, Rowil | Full paint coverage; vinyl on all 12 treads with contrasting nosing; headroom measured at step 3 and written in the brief. |
+| ⬜ | 1.10 | Turnover checks, then pay the 70% (₱4,900) | Rowil, welder | Stress, noise, visual, measure (every riser 19.2 cm within about 6 mm) and safety checks all pass. Brief and site updated to "Done". |
 
 ## Phase 2: Weatherproof the rooftop
 
-**Starts when:** the stair is done (1.7) and the rooftop room is measured. **Unlocks:** a dry rooftop, so leaks into the 2nd floor stop before any ceiling goes up below.
+**Starts when:** the stair is done (1.10) and the rooftop room is measured. **Unlocks:** a dry rooftop, so leaks into the 2nd floor stop before any ceiling goes up below.
 The rooftop roof and its columns are **already built**; no roof extension is needed. This phase closes the walls under the existing roof.
-**Cost (Online, from the [rooftop room page](../rooms/rooftop-room.html)):** phase budget **₱66,935–112,850** before contingency.
+**Cost (Online, from the [rooftop room page](../rooms/rooftop-room.html)):** phase budget **₱64,935–108,850** before contingency. The door opening was cut in the demolition contract (1.4).
 
 | Trade | Materials (₱) | Labour anchor 30–40% (₱) |
 |---|---|---|
 | Mason: new half walls, parapet patch, skim and paint, T&B block courses, curb | 19,500–28,850 | 5,850–11,540 |
 | Steel fabricator: light steel frame, container-van steel, breathable wrap, flashings and trims | 30,450–48,900 | 9,135–19,560 |
-| Demolition, labour only: door opening in the existing half wall, patching, debris | — | 2,000–4,000 lump sum |
 
 | Status | # | Step | Who | Done when |
 |---|---|---|---|---|
 | ⬜ | 2.1 | Measure the rooftop room: front wall to back wall, inside width, roof height at the front and back of the room, slab slope, roof drains, annex position | Rowil | Numbers sent; 3D model and rooftop page updated with them. |
 | ⬜ | 2.2 | Plan the sleeves: mark where the T&B drain and water pipes and every wall conduit pass through the new walls | Plumber, electrician, Rowil | Sleeve and conduit positions marked on the slab and on the drawing. |
-| 🔒 | 2.3 | Engineer check (gate G2) | Engineer | Door opening header and any tie beam in the half wall, anchors, dowels, top fixing, typhoon fixings and core holes signed off. |
-| ⬜ | 2.4 | **Demolition:** hammer the door opening in the existing half wall on the door (annex) side of the rooftop room, at the size on the rooftop plan (0.8 m door plus frame). Keep the debris off the roof drains | Mason | Opening cut clean and square, edges patched, rebar ends treated; header over the door in place as the engineer specified. |
-| ⬜ | 2.5 | Build the new 1 m 4″ CHB half wall on the front (and on any line that has no half wall yet); patch the old parapets on the back and outer side. Set pipe sleeves and conduit into the blocks as they go up | Mason (plumber and electrician on call) | Half walls up and plastered; every sleeve and conduit stub in place and capped. |
-| ⬜ | 2.6 | T&B: 3 courses of block on all four walls (the framed fibre-cement above them comes at 5.3) | Mason | Block courses up with dowels, drain and water sleeves through. |
-| ⬜ | 2.7 | Steel frame on top of the half walls up to the existing roof purlins, wrap, container-van steel outside, flashing caps, trims and opening frames | Steel fabricator | Outer skin closed except the openings; caps over every half wall top; no daylight where the walls meet the roof. |
-| ⬜ | 2.8 | Close the slider, window, aircon and door openings temporarily (plywood or tarp) | Steel fabricator or Rowil | Openings sealed against rain until glass and doors go in at 5.5. |
-| ⬜ | 2.9 | Water test: hose the walls and the joints where the walls meet the roof | Rowil | No water inside after a hard hose-down (and after the next heavy rain). |
+| 🔒 | 2.3 | Engineer check (gate G2) | Engineer | Anchors, dowels, top fixing, typhoon fixings and core holes signed off. |
+| ⬜ | 2.4 | Build the new 1 m 4″ CHB half wall on the front (and on any line that has no half wall yet); patch the old parapets on the back and outer side. Set pipe sleeves and conduit into the blocks as they go up | Mason (plumber and electrician on call) | Half walls up and plastered; every sleeve and conduit stub in place and capped. |
+| ⬜ | 2.5 | T&B: 3 courses of block on all four walls (the framed fibre-cement above them comes at 5.3) | Mason | Block courses up with dowels, drain and water sleeves through. |
+| ⬜ | 2.6 | Steel frame on top of the half walls up to the existing roof purlins, wrap, container-van steel outside, flashing caps, trims and opening frames | Steel fabricator | Outer skin closed except the openings; caps over every half wall top; no daylight where the walls meet the roof. |
+| ⬜ | 2.7 | Close the slider, window, aircon and door openings temporarily (plywood or tarp) | Steel fabricator or Rowil | Openings sealed against rain until glass and doors go in at 5.5. |
+| ⬜ | 2.8 | Water test: hose the walls and the joints where the walls meet the roof | Rowil | No water inside after a hard hose-down (and after the next heavy rain). |
 
 ## Phase 3: Other structural work
 
-**Starts when:** Phase 2 is weathertight, and the engineer has signed gate G3. **Unlocks:** final wall lines, so pipes and wires can run to where they belong.
-**Cost (Online):** phase budget **₱70,081–116,418** before contingency. The lintel figure is a placeholder until the engineer sizes it. The partition's door and window go in with the other doors and glass at 5.5.
+**Starts when:** Phase 2 is weathertight, and the engineer has signed gate G3. The terrace wall is already open from Phase 1. **Unlocks:** final wall lines, so pipes and wires can run to where they belong.
+**Cost (Online):** phase budget **₱64,541–99,338** before contingency. The terrace to living room wall was opened in the demolition contract (Phase 1). **All new CHB walls go to one mason in one go:** the terrace side walls and the car bay partition. The partition's door and window go in with the other doors and glass at 5.5.
 
 | Trade | Materials (₱) | Labour anchor 30–40% (₱) |
 |---|---|---|
+| Mason: terrace left and right side walls in 4″ CHB, about 12 m² (2 walls × about 2.5 × 2.4 m, measure), plastered and finished both sides, with dowels, stiffener columns and a top tie (sizes to the engineer) | 9,200–14,800 | 2,760–5,920 |
+| Labour only: remove the rotten plywood side walls and haul them (lump sum) | — | 2,000–4,000 |
 | Mason: car bay partition wall, lintel, sill band, threshold | 11,800–19,300 | 3,540–7,720 |
 | Welder: gate post, door and panel, demolition and patching (the gate plan guessed ₱8,000–10,000 labour) | 15,570–17,570 | 4,671–7,028 |
-| Mason: terrace beam or lintel (concrete, rebar, formwork), placeholder until the engineer sizes it | 5,000–12,000 | 1,500–4,800 |
-| Demolition, labour only: terrace counter removal and haul | — | 3,000–6,000 lump sum |
-| Demolition, labour only: open the terrace to living room wall, props, haul | — | 10,000–19,000 lump sum |
 | Shutter shop, installed: roll-up shutter | 15,000–23,000 | included |
 
 | Status | # | Step | Who | Done when |
 |---|---|---|---|---|
-| 🔒 | 3.1 | Engineer designs the terrace slider beam or lintel and the propping order, checks the terrace counter removal, the partition lintel and tie-in, and checks the gate demolition (gate G3) | Engineer | Written sizes for each lintel and the gate post base. |
-| ⬜ | 3.2 | **Demolition:** break out and remove the concrete counter on the terrace; cap any pipe or wire that fed it; haul the debris | Mason and helpers | Counter gone, floor patched level, nothing live left in the wall. |
-| ⬜ | 3.3 | **Demolition and lintel, terrace to living room wall:** prop the slab, cast or set the new beam or lintel **first**, then open the concrete partition taller and wider to fit the 4.18 × 2.4 m slider (2.1 m clear). Plaster the edges and cover the opening temporarily | Mason | New lintel in and cured (about 7 days) before the wall below is removed; opening square at the slider size; props out only after the engineer says so. |
-| ⬜ | 3.4 | Car bay partition: 4″ CHB wall about 5.0 m in, door and window openings, lintel and sill band, raised threshold | Mason | Wall up and plastered both sides with openings at the sizes on the [partition page](car-bay-partition.html). Confirm sizes on site first. |
-| ⬜ | 3.5 | Front gate: confirm the pier widths and the height to the beam; get 2 to 3 shutter shop quotes | Rowil | Shutter quote at 3.00 m clear, with the top slats perforated; price changes to Local. |
-| ⬜ | 3.6 | Remove the centre infill, set the steel post, install the roll-up shutter and the 80 × 210 solid door | Welder, shutter shop | Shutter rolls smoothly, door locks, louvres vent; see the [gate plan](../gate/gate-plan-draft.html). |
+| 🔒 | 3.1 | Engineer checks the terrace side walls (slab load, dowels, ties), designs the partition lintel and tie-in, and checks the gate demolition (gate G3) | Engineer | Written sizes for each lintel and the gate post base. |
+| ⬜ | 3.2 | **Terrace side walls:** take out the rotten plywood on the left and right, build 4″ CHB walls with dowels, stiffeners and a top tie, set sleeves and conduit boxes for the washer faucet, drain and outlets as the blocks go up, then plaster and finish both sides. Cover the terrace while the walls are open | Mason | Both walls up, plumb and plastered smooth both sides; no plywood left; sleeves and boxes in place; no gap at the top or at the columns. |
+| ⬜ | 3.3 | Car bay partition: 4″ CHB wall about 5.0 m in, door and window openings, lintel and sill band, raised threshold | Mason | Wall up and plastered both sides with openings at the sizes on the [partition page](car-bay-partition.html). Confirm sizes on site first. |
+| ⬜ | 3.4 | Front gate: confirm the pier widths and the height to the beam; get 2 to 3 shutter shop quotes | Rowil | Shutter quote at 3.00 m clear, with the top slats perforated; price changes to Local. |
+| ⬜ | 3.5 | Remove the centre infill, set the steel post, install the roll-up shutter and the 80 × 210 solid door | Welder, shutter shop | Shutter rolls smoothly, door locks, louvres vent; see the [gate plan](../gate/gate-plan-draft.html). |
 
 ## Phase 4: Plumbing and electrical rough-in
 
@@ -214,7 +240,8 @@ The rooftop roof and its columns are **already built**; no roof extension is nee
 | ⬜ | Rooftop room measurements: room depth and width, roof heights at the front and back of the room, slab slope, drains, annex position | Phase 2 | Rowil |
 | ⬜ | Local quote for the partition's solid wood door and jamb (kiln-dried mahogany or tanguile) | 5.5 | Rowil, carpenter |
 | ⬜ | Electrician's verification of all wiring decisions, including neutral vs no-neutral switches | Gate G5, Phase 4 | Licensed electrician |
-| ⬜ | Front gate: pier widths, height to the beam, which side the door goes, floor slope | 3.5 | Rowil |
+| ⬜ | Front gate: pier widths, height to the beam, which side the door goes, floor slope | 3.4 | Rowil |
+| ⬜ | Terrace side walls: measure their length and height (to replace the rotten plywood) | 3.2 | Rowil |
 | ⬜ | Partition and double-wall supplier: one quote for the whole job at 5.3 | 5.3 | Rowil |
 | ⬜ | Ceiling crew: one quote for all six ceilings at 5.4 | 5.4 | Rowil |
 | ⬜ | Glass and aluminium quotes from at least two suppliers for all 6 items (same series, colour, glass) | 5.5 | Rowil |
