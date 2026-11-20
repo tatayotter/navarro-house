@@ -260,6 +260,7 @@ B(0.03,0.07,Y2+2.14,Y2+2.18,RDz0+1.0,RDz1-0.1,mat.rail,L2);
 // front facade: wall with terrace windows (assumed 3.8 x 1.2 m, sill 0.9), jalousie
 const WX0=0.3, WX1=W-0.3, WY0=Y2+0.9, WY1=Y2+2.1;
 wallX(-T,W+T,-0.1,0.2,Y2,Y2+2.55,mat.wall,L2,[[WX0,WX1,WY0,WY1]]);
+B(0,W,Y2,WY0,-0.2,-0.28,mat.wall,L2);   // half wall under the windows is 28 cm deep: a wide sill ledge (Rowil 20 Nov)
 B(-T,0,C2,Y2+2.55,0,yL,mat.party,L2); cutables.push(B(W,W+T,C2,Y2+2.55,0,yL,mat.party,L2));
 // 40 cm slab ledge above the ground entrance with potted bougainvilleas
 B(-T,W+T,Y2-0.15,Y2,0,0.4,mat.slab,L2);
