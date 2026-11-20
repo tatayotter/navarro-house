@@ -220,7 +220,7 @@ const tbHinge=new THREE.Group(); tbHinge.position.set(W-0.02,0,-424.5*IN); L1.ad
 const R=Y2/13;
 [[340,347],[332,340],[324,332]].forEach(([a,b],i)=>B(143*IN,W,0,R*(i+1),-a*IN,-b*IN,mat.stair,L1));
 B(143*IN,W,0,R*4,-287*IN,-324*IN,mat.stair,L1);
-const fx0=143*IN, fx1=40*IN, gst=(fx0-fx1)/9;
+const fx0=143*IN, fx1=1.45,  /* top step 145 cm from the annex-side wall (Rowil 20 Nov) */ gst=(fx0-fx1)/9;
 // main flight: hardwood underside resting on the beams, hollow below (Rowil 18 Nov) = free-standing storage shelves facing the kitchen
 for(let i=0;i<8;i++){const x0=fx0-(i+1)*gst,x1=fx0-i*gst,top=R*(5+i)-0.2; B(x0,x1,Math.max(0,top),Math.max(0,top)+0.04,-290*IN,-324*IN,mat.wood,L1); B(x0,x1,Math.max(0,top)+0.04,R*(5+i),-290*IN,-324*IN,mat.stair,L1);
  if(top>0.3&&i<5){B(x0,x1,0,top,-290*IN,-290*IN-0.03,mat.wall,L1); B(x0,x0+0.02,0,top,-290*IN,-324*IN+0.02,mat.oak,L1);
@@ -240,7 +240,7 @@ function railRun(p0,p1,n,parent){for(let k=0;k<=n;k++){const t=k/n,x=p0[0]+(p1[0
  railRun([fx0-0.05,4*R,-324*IN+0.03],[fx1+0.05,Y2,-324*IN+0.03],9,L1); // main flight, kitchen side
  railRun([143*IN,4*R,-287*IN-0.03],[W-0.05,4*R,-287*IN-0.03],2,L1);} // landing front edge
 // slab between floors with stairwell void (x 40in..W, z 290..330in)
-const VZ0=-254*IN, VZ1=-326*IN, VX0=40*IN;
+const VZ0=-254*IN, VZ1=-326*IN, VX0=W-2.77;   // opening 182 x 277 measured from the right wall (Rowil 20 Nov)
 B(-T,W+T,C1,Y2,0,VZ0,mat.slab,L2); B(-T,W+T,C1,Y2,VZ1,-D-T,mat.slab,L2); B(-T,VX0,C1,Y2,VZ0,VZ1,mat.slab,L2);
 
 // ---------- 2ND FLOOR (L2) ----------
@@ -633,8 +633,8 @@ function eTag(t,x,y,z,lv){tag(t,x,y,z,lv);tags[tags.length-1].el=1;}
 // hung ceilings (assumed heights: ground 2.25, terrace + living 2.30, bedroom 2.18 per its brief); none in the car bay
 const GC=2.25, LC=Y2+2.30, BC=Y2+2.18, ceilM=M(0xf7f5f0);
 const ceil=(x0,x1,y0,y1,h,par)=>cutables.push(B(x0*IN,x1*IN,h,h+0.012,-y0*IN,-y1*IN,ceilM,par));
-ceil(0,W/IN,200,254,GC,L1); ceil(0,40,254,326,GC,L1); ceil(0,W/IN,326,D/IN,GC,L1);
-ceil(0,W/IN,0,99,LC,L2); ceil(0,W/IN,99,254,LC,L2); ceil(0,40,254,326,LC,L2); ceil(0,W/IN,326,333.5,LC,L2); ceil(0,W/IN,337.5,D/IN,BC,L2);
+ceil(0,W/IN,200,254,GC,L1); ceil(0,VX0/IN,254,326,GC,L1); ceil(0,W/IN,326,D/IN,GC,L1);
+ceil(0,W/IN,0,99,LC,L2); ceil(0,W/IN,99,254,LC,L2); ceil(0,VX0/IN,254,326,LC,L2); ceil(0,W/IN,326,333.5,LC,L2); ceil(0,W/IN,337.5,D/IN,BC,L2);
 {
  const F=[[L1,0],[L2,Y2]];
  const items={1:{
