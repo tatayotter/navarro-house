@@ -1,27 +1,27 @@
 ---
 title: Electrical materials
 status: Draft
-cost: "₱118k–₱187k"
+cost: "₱121k–₱192k"
 price_source: online
 updated: 20 Nov 2026
 summary: Material list for rewiring the whole house to the electrical plan, with quantities counted from the layout. Materials only; labour, permit and appliances are not included.
 ---
 
-All prices are online estimates (Nov 2026) and need local quotes. Quantities are counted from the [electrical layout](electrical-layout-v1.html) and include some waste. The licensed electrician sets the final wire sizes, breakers and main breaker from a load calculation, so treat this as a budget, not a shopping list.
+All prices are online estimates (Nov 2026) and need local quotes. Quantities are counted from the [electrical layout](electrical-layout-v1.html) and include some waste. The engineer sets the final wire sizes, breakers and main breaker; the draft load calculation is on the [sign-off page](electrical-signoff.html). Treat this as a budget, not a shopping list.
 
 ## Cost by section
 
 | Section | Low (₱) | High (₱) | Source |
 |---|---|---|---|
-| Panel and protection | 20,750 | 36,100 | Online |
-| Wire (THHN, copper) | 38,775 | 51,575 | Online |
+| Panel and protection | 22,400 | 38,800 | Online |
+| Wire (THHN, copper) | 40,075 | 53,375 | Online |
 | Conduit and boxes | 16,950 | 27,100 | Online |
 | Switches and outlets | 14,200 | 22,970 | Online |
 | Lights and fans | 12,730 | 25,650 | Online |
 | Network | 2,040 | 3,350 | Online |
 | Sundries | 2,000 | 3,500 | Online |
-| **Total before contingency** | **107,445** | **170,245** | |
-| **With 10% contingency** | **118,190** | **187,270** | |
+| **Total before contingency** | **110,395** | **174,745** | |
+| **With 10% contingency** | **121,435** | **192,220** | |
 
 **Not included:** labour, the electrical permit and inspection, the meter or service drop from the power company, the bedroom aircon, the roof window aircon, the water pump, the washing machine, the induction cooktop, the router and mesh units, stand and wall fans, and the living room ceiling fan.
 
@@ -45,12 +45,12 @@ All prices are online estimates (Nov 2026) and need local quotes. Quantities are
 | Item | Qty | Low (₱) | High (₱) | Source |
 |---|---|---|---|---|
 | 18-way plug-in panel board | 1 | 3,500 | 6,000 | Online |
-| Main breaker 60 A, 2-pole | 1 | 900 | 1,600 | Online |
-| Branch breakers 15–30 A (lighting, rooms, aircon, induction) | 9 | 3,150 | 5,400 | Online |
-| RCBO 20 A, 30 mA (car bay, kitchen counter, pump, roof, terrace washer) | 6 | 10,800 | 18,000 | Online |
+| Main breaker 70 A, 2-pole | 1 | 1,100 | 1,900 | Online |
+| Branch breakers 15–30 A (lighting, rooms, aircon, induction) | 8 | 2,800 | 4,800 | Online |
+| RCBO 15–20 A, 30 mA (roof lights and outlets, roof AC, kitchen counter, car bay, pump, terrace washer) | 7 | 12,600 | 21,000 | Online |
 | Grounding rod, clamp and ground bar | 1 | 900 | 1,600 | Online |
 | Surge protector (optional) | 1 | 1,500 | 3,500 | Online |
-| **Subtotal** | | **20,750** | **36,100** | |
+| **Subtotal** | | **22,400** | **38,800** | |
 
 ### Wire (THHN, copper)
 
@@ -60,8 +60,8 @@ All prices are online estimates (Nov 2026) and need local quotes. Quantities are
 | 3.5 mm² outlet wire, 150 m box (2 black, 2 white, 1 green) | 5 | 23,000 | 30,000 | Online |
 | 3.5 mm² washer circuit to the terrace, per metre (3 conductors × ~20 m) | 60 | 2,100 | 3,000 | Online |
 | 5.5 mm² induction circuit, per metre (3 conductors × ~15 m) | 45 | 2,475 | 3,375 | Online |
-| Service feeder from meter to panel (14 mm² + 8 mm² ground), per metre | 10 | 2,500 | 3,800 | Online |
-| **Subtotal** | | **38,775** | **51,575** | |
+| Service feeder from meter to panel (2 × 22 mm² + 8 mm² ground), per metre | 10 | 3,800 | 5,600 | Online |
+| **Subtotal** | | **40,075** | **53,375** | |
 
 ### Conduit and boxes
 

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 820" font-family="Arial,Helvetica,sans-serif" font-size="13">
+<rect width="900" height="820" fill="#fff"/>
+<g stroke="#111" stroke-width="2" fill="none">
+<line x1="60" y1="30" x2="60" y2="70"/>
+<circle cx="60" cy="90" r="20"/>
+<line x1="60" y1="110" x2="60" y2="150"/>
+<rect x="45" y="150" width="30" height="40"/>
+<line x1="60" y1="190" x2="60" y2="215"/>
+<line x1="60" y1="215" x2="60" y2="725" stroke-width="5"/>
+<line x1="60" y1="232" x2="110" y2="232"/><rect x="110" y="223" width="26" height="18"/><line x1="136" y1="232" x2="190" y2="232"/><polyline points="190,226 198,232 190,238"/>
+<line x1="60" y1="266" x2="110" y2="266"/><rect x="110" y="257" width="26" height="18"/><line x1="136" y1="266" x2="190" y2="266"/><polyline points="190,260 198,266 190,272"/>
+<line x1="60" y1="300" x2="110" y2="300"/><rect x="110" y="291" width="26" height="18"/><line x1="136" y1="300" x2="190" y2="300"/><polyline points="190,294 198,300 190,306"/>
+<line x1="60" y1="334" x2="110" y2="334"/><rect x="110" y="325" width="26" height="18"/><line x1="136" y1="334" x2="190" y2="334"/><polyline points="190,328 198,334 190,340"/>
+<line x1="60" y1="368" x2="110" y2="368"/><rect x="110" y="359" width="26" height="18"/><line x1="136" y1="368" x2="190" y2="368"/><polyline points="190,362 198,368 190,374"/>
+<line x1="60" y1="402" x2="110" y2="402"/><rect x="110" y="393" width="26" height="18"/><line x1="136" y1="402" x2="190" y2="402"/><polyline points="190,396 198,402 190,408"/>
+<line x1="60" y1="436" x2="110" y2="436"/><rect x="110" y="427" width="26" height="18"/><line x1="136" y1="436" x2="190" y2="436"/><polyline points="190,430 198,436 190,442"/>
+<line x1="60" y1="470" x2="110" y2="470"/><rect x="110" y="461" width="26" height="18"/><line x1="136" y1="470" x2="190" y2="470"/><polyline points="190,464 198,470 190,476"/>
+<line x1="60" y1="504" x2="110" y2="504"/><rect x="110" y="495" width="26" height="18"/><line x1="136" y1="504" x2="190" y2="504"/><polyline points="190,498 198,504 190,510"/>
+<line x1="60" y1="538" x2="110" y2="538"/><rect x="110" y="529" width="26" height="18"/><line x1="136" y1="538" x2="190" y2="538"/><polyline points="190,532 198,538 190,544"/>
+<line x1="60" y1="572" x2="110" y2="572"/><rect x="110" y="563" width="26" height="18"/><line x1="136" y1="572" x2="190" y2="572"/><polyline points="190,566 198,572 190,578"/>
+<line x1="60" y1="606" x2="110" y2="606"/><rect x="110" y="597" width="26" height="18"/><line x1="136" y1="606" x2="190" y2="606"/><polyline points="190,600 198,606 190,612"/>
+<line x1="60" y1="640" x2="110" y2="640"/><rect x="110" y="631" width="26" height="18"/><line x1="136" y1="640" x2="190" y2="640"/><polyline points="190,634 198,640 190,646"/>
+<line x1="60" y1="674" x2="110" y2="674"/><rect x="110" y="665" width="26" height="18"/><line x1="136" y1="674" x2="190" y2="674"/><polyline points="190,668 198,674 190,680"/>
+<line x1="60" y1="708" x2="110" y2="708"/><rect x="110" y="699" width="26" height="18"/><line x1="136" y1="708" x2="190" y2="708"/><polyline points="190,702 198,708 190,714"/>
+<line x1="60" y1="725" x2="60" y2="750" stroke-dasharray="4 3"/><line x1="40" y1="750" x2="80" y2="750"/><line x1="47" y1="757" x2="73" y2="757"/><line x1="54" y1="764" x2="66" y2="764"/>
+</g>
+<text x="75" y="35">Utility service drop, 230 V, 1φ, 60 Hz</text>
+<text x="52" y="95" font-weight="bold">kWh</text><text x="90" y="95">Utility meter</text>
+<text x="75" y="135">Service entrance: 2 × 22 mm² THHN + 8.0 mm² G in 32 mm PVC</text>
+<text x="90" y="168" font-weight="bold">Main breaker 70 AT / 100 AF, 2-pole</text><text x="90" y="185">Panel board, 18-way, car bay wall</text>
+<text x="114" y="236" font-size="11">15A</text><text x="205" y="230" font-weight="bold">C1 Lighting, ground floor</text><text x="205" y="245" font-size="11" fill="#444">15 AT 2P · 2 × 2.0 mm² + 2.0 mm² G THHN · 230 VA</text>
+<text x="114" y="270" font-size="11">15A</text><text x="205" y="264" font-weight="bold">C2 Lighting, 2nd floor</text><text x="205" y="279" font-size="11" fill="#444">15 AT 2P · 2 × 2.0 mm² + 2.0 mm² G THHN · 300 VA</text>
+<text x="114" y="304" font-size="11">15A</text><text x="205" y="298" font-weight="bold">C3 Lighting, rooftop</text><text x="205" y="313" font-size="11" fill="#444">15 AT 2P RCBO 30 mA · 2 × 2.0 mm² + 2.0 mm² G THHN · 140 VA</text>
+<text x="114" y="338" font-size="11">20A</text><text x="205" y="332" font-weight="bold">C4 Kitchen counter (small appliance)</text><text x="205" y="347" font-size="11" fill="#444">20 AT 2P RCBO 30 mA · 2 × 3.5 mm² + 2.0 mm² G THHN · 1,500 VA</text>
+<text x="114" y="372" font-size="11">20A</text><text x="205" y="366" font-weight="bold">C5 Fridge + range hood</text><text x="205" y="381" font-size="11" fill="#444">20 AT 2P · 2 × 3.5 mm² + 2.0 mm² G THHN · 400 VA</text>
+<text x="114" y="406" font-size="11">30A</text><text x="205" y="400" font-weight="bold">C6 Induction cooktop</text><text x="205" y="415" font-size="11" fill="#444">30 AT 2P · 2 × 5.5 mm² + 3.5 mm² G THHN · 3,500 VA</text>
+<text x="114" y="440" font-size="11">20A</text><text x="205" y="434" font-weight="bold">C7 Outlets, ground floor</text><text x="205" y="449" font-size="11" fill="#444">20 AT 2P RCBO 30 mA · 2 × 3.5 mm² + 2.0 mm² G THHN · 720 VA</text>
+<text x="114" y="474" font-size="11">20A</text><text x="205" y="468" font-weight="bold">C8 Outlets, living + terrace</text><text x="205" y="483" font-size="11" fill="#444">20 AT 2P · 2 × 3.5 mm² + 2.0 mm² G THHN · 1,620 VA</text>
+<text x="114" y="508" font-size="11">20A</text><text x="205" y="502" font-weight="bold">C9 Living pantry counter (small appliance)</text><text x="205" y="517" font-size="11" fill="#444">20 AT 2P · 2 × 3.5 mm² + 2.0 mm² G THHN · 1,500 VA</text>
+<text x="114" y="542" font-size="11">20A</text><text x="205" y="536" font-weight="bold">C10 Outlets, master bedroom</text><text x="205" y="551" font-size="11" fill="#444">20 AT 2P · 2 × 3.5 mm² + 2.0 mm² G THHN · 900 VA</text>
+<text x="114" y="576" font-size="11">20A</text><text x="205" y="570" font-weight="bold">C11 Aircon, master bedroom</text><text x="205" y="585" font-size="11" fill="#444">20 AT 2P · 2 × 3.5 mm² + 2.0 mm² G THHN · 1,800 VA</text>
+<text x="114" y="610" font-size="11">20A</text><text x="205" y="604" font-weight="bold">C12 Outlets, rooftop</text><text x="205" y="619" font-size="11" fill="#444">20 AT 2P RCBO 30 mA · 2 × 3.5 mm² + 2.0 mm² G THHN · 900 VA</text>
+<text x="114" y="644" font-size="11">20A</text><text x="205" y="638" font-weight="bold">C13 Aircon, roof room</text><text x="205" y="653" font-size="11" fill="#444">20 AT 2P RCBO 30 mA · 2 × 3.5 mm² + 2.0 mm² G THHN · 1,200 VA</text>
+<text x="114" y="678" font-size="11">20A</text><text x="205" y="672" font-weight="bold">C14 Water pump</text><text x="205" y="687" font-size="11" fill="#444">20 AT 2P RCBO 30 mA · 2 × 3.5 mm² + 2.0 mm² G THHN · 750 VA</text>
+<text x="114" y="712" font-size="11">20A</text><text x="205" y="706" font-weight="bold">C15 Washing machine, terrace</text><text x="205" y="721" font-size="11" fill="#444">20 AT 2P RCBO 30 mA · 2 × 3.5 mm² + 2.0 mm² G THHN · 1,000 VA</text>
+<text x="90" y="758">Ground bar → 8.0 mm² bare Cu → 16 mm × 3 m copper-clad ground rod (≤ 25 Ω)</text>
+<text x="880" y="805" text-anchor="end" font-size="11" fill="#444">Spares: 3 ways. All branch breakers 2-pole if both service conductors are live (engineer to confirm L-L or L-N).</text>
+</svg>

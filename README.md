@@ -15,7 +15,7 @@ Last updated: 20 November 2026.
 | Front gate | Design settled (roll-up car shutter + small door). Waiting on final measurements. |
 | Master bedroom | Plan and costing done (about ₱167k with buffer). |
 | Living room | Design and cost estimate done (₱228k–370k). |
-| Electrical wiring | Whole-house plan drafted: 20 ceiling lights + 5 pendants, 31 outlets, 12 smart switch plates. The water pump and roof room window aircon have their own circuits. Materials about ₱118k–187k (online estimate). Waiting for the electrician to check. |
+| Electrical wiring | Whole-house plan drafted: 20 ceiling lights + 5 pendants, 31 outlets, 12 smart switch plates. The water pump and roof room window aircon have their own circuits. Materials about ₱121k–192k (online estimate). Waiting for the electrician to check. |
 | 3D model | Whole house in 3D with airflow, electrical layer and phone view. Kitchen re-arranged (bar counter, fridge by the T&B). |
 | Rooftop | Roof room enlarged to take in the old deck area: no deck, no hallway; door at the top of the steel stair. Walls decided: 1 m concrete half wall all round, then container-van style steel outside, insulation and Hardiflex inside up to the roof; tiled floor, gypsum ceiling, about ₱205k–344k with buffer (T&B: 3 courses of block + framed fibre-cement) (online estimate), see `rooms/rooftop-room.md`. Slab load confirmed OK; engineer to check wall anchoring. |
 | Glass and aluminium | Schedule of all windows, sliding doors, the terrace jalousie (now 6 bays) for supplier quotes, about ₱104k–164k (online estimate); see `house/glass-aluminium.md`. Sizes provisional until measured. |
@@ -32,6 +32,7 @@ Last updated: 20 November 2026.
 - [3D model with airflow](house/airflow-3d-v1.html) (interactive, rotate with your finger or mouse)
 - [Electrical layout](house/electrical-layout-v1.html) (where lights, switches and outlets go)
 - [Electrical materials](house/electrical-materials.md) (material list and cost)
+- [Electrical sign-off set](house/electrical-signoff.md) (for the electrical engineer to check and sign)
 
 ### Steel stair (Phase 3)
 - [Project brief: design, costs, status](stairs/stair-project-brief.md)
