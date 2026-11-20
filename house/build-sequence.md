@@ -1,7 +1,7 @@
 ---
 title: Build sequence
 status: Building
-cost: "≈ ₱0.93M–1.38M"
+cost: "≈ ₱1.05M–1.62M with labour"
 price_source: mixed
 updated: 20 Nov 2026
 summary: The order of the whole renovation, from the steel stair to the last fixture. Each step says who does it and when it counts as done, so after every finished step you know exactly what comes next. This is the master plan; the room and system pages hold the details.
@@ -21,18 +21,29 @@ summary: The order of the whole renovation, from the steel stair to the last fix
 
 ## The six phases at a glance
 
-| Phase | What | Main trades | Cost (₱) | Source |
-|---|---|---|---|---|
-| 1 | Finish the steel stair to the rooftop | Welder | 33,284 | Local + Online |
-| 2 | Weatherproof the rooftop room | Mason, welder or steel fabricator, roofer | 119,050–192,250 + roof extension | Online |
-| 3 | Other structural work: terrace lintel, car bay partition, front gate | Mason, welder, shutter shop | 51,800–70,300 + lintel | Online |
-| 4 | Plumbing and electrical rough-in | Plumber, electrician | 199,515–311,575 + electrician labour | Online |
-| 5 | Close up: plaster, waterproofing, ceilings, glass, floors, paint | Mason, ceiling installer, glass supplier, tiler, painter | 402,700–543,650 | Online |
-| 6 | Final fit-out: switches, lights, pump, washer, carpentry, AC | Electrician, plumber, carpenter, AC tech | 127,912–224,052 + fixtures | Online |
-| | **Total before contingency** | | **≈ 934,000–1,375,000** | |
-| | **With 10% contingency on the Online part** | | **≈ 1,025,000–1,510,000** | |
+| Phase | What | Main trades | Materials (₱) | Labour anchor 30–40% (₱) | Supplier-installed and equipment (₱) | Phase budget (₱) |
+|---|---|---|---|---|---|---|
+| 1 | Finish the steel stair | Welder | 26,284 | 7,000 agreed (anchor 7,885–10,514) | — | **33,284** |
+| 2 | Weatherproof the rooftop room | Mason, steel fabricator, painter, carpenter | 82,550–132,750 | 24,765–53,100 | 22,500–38,500 | **129,815–224,350** + roof extension |
+| 3 | Terrace lintel, car bay partition, front gate | Mason, welder, shutter shop | 27,370–36,870 | 8,211–14,748 | 15,000–23,000 | **50,581–74,618** + lintel |
+| 4 | Plumbing and electrical rough-in | Plumber, electrician | 167,015–252,575 | 50,104–101,030 | 2,500–4,000 | **219,619–357,605** |
+| 5 | Close up: plaster, waterproofing, ceilings, glass, floors, paint | Mason, tiler, floor installer, painter, ceiling installer, glass supplier | 241,500–300,350 | 72,450–120,140 | 143,900–217,400 | **457,850–637,890** |
+| 6 | Final fit-out | Electrician, carpenter, plumber, AC tech | 89,280–160,420 | 26,784–64,168 | 38,632–63,632 | **154,696–288,220** |
+| | **Total before contingency** | | **633,999–909,249** | **189,314–360,186** | **222,532–346,532** | **≈ 1,046,000–1,616,000** |
+| | **With 10% contingency on the Online part** | | | | | **≈ 1,148,000–1,775,000** |
 
-Costs come from the existing plan pages, split by phase so nothing is counted twice. The stair is the only phase with real receipts so far. **Not costed yet:** the rooftop roof extension and overhang, the terrace lintel, electrician labour and permit, kitchen and dining finishes (floor, walls, cabinets), ground T&B and terrace finishes, the annex barn door, plumbing fixtures, the washing machine and induction cooktop. The master bedroom total includes its own ceiling and wiring, which also appear in Phases 4 and 5, so the grand total overlaps by roughly ₱20k–40k.
+Sources: the stair materials and the welder's ₱7,000 are Local (receipts and an agreed price). Everything else is Online, from the plan pages, split by phase so nothing is counted twice.
+
+### The labour anchor (30–40% of materials)
+
+**Rule (set 20 Nov):** for every hired job, labour is budgeted at **30–40% of the materials that job uses**, the common local labour markup. The low end of each range uses 30% of the low materials figure, the high end 40% of the high one. It is a **negotiation basis**, not a price to offer: open below 30% and try to settle there; 40% is the most to accept. Each phase below lists the anchor per trade, so you can see at a glance what a fair labour price is when a worker quotes.
+
+- **Materials** means the plan pages' estimates with their own labour lines taken out, so labour is never counted twice.
+- **Supplier-installed and equipment** items are priced by the shop with installation included (glass and aluminium, the roll-up shutter, PVC and gypsum ceilings, curtains, core drilling), or are machines (pump, aircon). No labour markup is added to them; negotiate them as one installed price.
+- **Example:** the stair welder agreed ₱7,000, which is 27% of the ₱26,284 stair materials, below even the 30% end (₱7,885) and well under 40% (₱10,514).
+- When a real quote comes in, write it next to the anchor in the phase and change its tag to Local.
+
+**Not costed yet:** the rooftop roof extension and overhang, the terrace lintel, the electrical permit, kitchen and dining finishes (floor, walls, cabinets), ground T&B and terrace finishes, the annex barn door, the ground floor plumbing fixtures, the washing machine and induction cooktop. The master bedroom total includes its own ceiling and wiring, which also appear in Phases 4 and 5, so the grand total overlaps by roughly ₱20k–40k.
 
 ## Engineer and electrician sign-off gates
 
@@ -50,7 +61,7 @@ Do not start the step after a 🔒 gate until the check is done and written down
 ## Phase 1: Finish the steel stair
 
 **Starts when:** now. **Unlocks:** safe access to the rooftop for Phase 2 (materials and workers go up the new stair).
-**Cost:** ₱33,284 projected against a ₱35,000 budget: ₱18,589 spent and ₱7,000 welder (Local), ₱7,695 still to buy (Online). Details on the [stair brief](../stairs/stair-project-brief.html).
+**Cost:** ₱33,284 projected against a ₱35,000 budget. Materials ₱26,284 (₱18,589 spent, Local; ₱7,695 still to buy, Online). Welder ₱7,000 agreed (Local), below the ₱7,885–10,514 anchor (30–40%). Details on the [stair brief](../stairs/stair-project-brief.html).
 
 | Status | # | Step | Who | Done when |
 |---|---|---|---|---|
@@ -65,7 +76,15 @@ Do not start the step after a 🔒 gate until the check is done and written down
 ## Phase 2: Weatherproof the rooftop
 
 **Starts when:** the stair is done (1.7) and the rooftop is measured. **Unlocks:** a dry rooftop, so leaks into the 2nd floor stop before any ceiling goes up below.
-**Cost:** walls ₱84,550–130,250 + doors and windows ₱34,500–62,000 = **₱119,050–192,250** (Online, from the [rooftop room page](../rooms/rooftop-room.html), before contingency). The roof extension and overhang are not costed yet.
+**Cost (Online, from the [rooftop room page](../rooms/rooftop-room.html)):** phase budget **₱129,815–224,350** before contingency. The roof extension and overhang are not costed yet.
+
+| Trade | Materials (₱) | Labour anchor 30–40% (₱) |
+|---|---|---|
+| Mason: new half walls, parapet patch and skim, T&B block courses, curb | 19,500–28,850 | 5,850–11,540 |
+| Steel fabricator: frame, container-van steel, wrap, insulation, Hardiflex, flashings, T&B fibre-cement | 46,550–73,050 | 13,965–29,220 |
+| Painter: Hardiflex putty, primer, paint | 4,500–7,350 | 1,350–2,940 |
+| Carpenter: weatherproof room door, T&B door | 12,000–23,500 | 3,600–9,400 |
+| Glass supplier, installed: rooftop slider, T&B awning window, aircon frame | 22,500–38,500 | included |
 
 | Status | # | Step | Who | Done when |
 |---|---|---|---|---|
@@ -82,7 +101,13 @@ Do not start the step after a 🔒 gate until the check is done and written down
 ## Phase 3: Other structural work
 
 **Starts when:** Phase 2 is weathertight, and the engineer has signed gate G3. **Unlocks:** final wall lines, so pipes and wires can run to where they belong.
-**Cost:** car bay partition wall, lintel and threshold ₱11,800–19,300 + front gate ₱40,000–51,000 = **₱51,800–70,300** (Online). The terrace lintel is not costed (engineer to design). The partition's door and window are costed in Phases 5 and 6.
+**Cost (Online):** phase budget **₱50,581–74,618** before contingency. The terrace lintel is not costed (engineer to design). The partition's door and window are costed in Phases 5 and 6.
+
+| Trade | Materials (₱) | Labour anchor 30–40% (₱) |
+|---|---|---|
+| Mason: partition wall, lintel, sill band, threshold | 11,800–19,300 | 3,540–7,720 |
+| Welder: gate post, door and panel, demolition and patching (the gate plan guessed ₱8,000–10,000 labour) | 15,570–17,570 | 4,671–7,028 |
+| Shutter shop, installed: roll-up shutter | 15,000–23,000 | included |
 
 | Status | # | Step | Who | Done when |
 |---|---|---|---|---|
@@ -95,7 +120,13 @@ Do not start the step after a 🔒 gate until the check is done and written down
 ## Phase 4: Plumbing and electrical rough-in
 
 **Starts when:** all walls are in their final place (Phases 2 and 3). **Unlocks:** close-up. Nothing gets plastered over or ceilinged in until its test passes.
-**Cost:** plumbing ₱119,000–189,950 (materials without the pump, plumber labour, core drilling) + electrical rough-in materials ₱80,515–121,625 (panel, wire, conduit and boxes, network, sundries) = **₱199,515–311,575** (Online). Electrician labour and the permit are not costed yet. See [plumbing materials](plumbing-materials.html) and [electrical materials](electrical-materials.html).
+**Cost (Online):** phase budget **₱219,619–357,605** before contingency. The electrical permit is not costed yet. See [plumbing materials](plumbing-materials.html) and [electrical materials](electrical-materials.html).
+
+| Trade | Materials (₱) | Labour anchor 30–40% (₱) |
+|---|---|---|
+| Plumber: septic, drains and vents, water lines, tank (pump comes in Phase 6). The plumbing page guessed ₱30,000–55,000 labour | 86,500–130,950 | 25,950–52,380 |
+| Electrician: panel, wire, conduit and boxes, network, sundries | 80,515–121,625 | 24,154–48,650 |
+| Core drilling service through the roof slab | 2,500–4,000 | included |
 
 | Status | # | Step | Who | Done when |
 |---|---|---|---|---|
@@ -111,16 +142,15 @@ Do not start the step after a 🔒 gate until the check is done and written down
 ## Phase 5: Close up
 
 **Starts when:** every test in Phase 4 has passed. **Unlocks:** fit-out.
-**Cost:** **₱402,700–543,650** (Online, before contingency):
+**Cost (Online):** phase budget **₱457,850–637,890** before contingency.
 
-| Part | Low (₱) | High (₱) | Source |
-|---|---|---|---|
-| Ceilings in all five rooms ([ceilings page](ceilings.html)) | 62,900 | 92,400 | Online |
-| Glass: terrace jalousie, living room slider, partition window ([glass and aluminium](glass-aluminium.html)) | 81,000 | 125,000 | Online |
-| Living room floor and wall paint | 39,850 | 53,850 | Online |
-| Rooftop room floor, ceiling, T&B waterproofing, tiles and fixtures | 67,150 | 120,600 | Online |
-| Master bedroom (whole room page, includes its ceiling and wiring) | 151,800 | 151,800 | Online |
-| **Total** | **402,700** | **543,650** | |
+| Trade or part | Materials (₱) | Labour anchor 30–40% (₱) |
+|---|---|---|
+| Living room floor (self-leveller, SPC) and wall paint | 39,850–53,850 | 11,955–21,540 |
+| Rooftop room: floor tiles, gypsum ceiling, T&B membrane, tiles and fixtures | 49,850–94,700 | 14,955–37,880 |
+| Master bedroom (whole room page, includes its ceiling and wiring; much of the prep is DIY, so aim well under the anchor) | 151,800 | 45,540–60,720 |
+| Ceiling installer, installed: PVC in four rooms, terrace gypsum ([ceilings page](ceilings.html)) | 62,900–92,400 | included |
+| Glass supplier, installed: terrace jalousie, living room slider, partition window ([glass and aluminium](glass-aluminium.html)) | 81,000–125,000 | included |
 
 | Status | # | Step | Who | Done when |
 |---|---|---|---|---|
@@ -135,7 +165,13 @@ Do not start the step after a 🔒 gate until the check is done and written down
 ## Phase 6: Final fit-out
 
 **Starts when:** floors and paint are done. **Ends when:** every room is in use.
-**Cost:** **₱127,912–224,052** (Online, before contingency): switches, outlets, lights and fans ₱26,930–48,620; quiet auto-stop pump ₱10,000–18,000; partition door, jamb and hardware ₱16,000–32,500; living room carpentry and curtains ₱56,982–98,932; rooftop window aircon ₱18,000–26,000. Plumbing fixtures, the washer and the induction cooktop are still to choose.
+**Cost (Online):** phase budget **₱154,696–288,220** before contingency. Ground floor plumbing fixtures, the washer and the induction cooktop are still to choose.
+
+| Trade or part | Materials (₱) | Labour anchor 30–40% (₱) |
+|---|---|---|
+| Electrician: switches, outlets, lights, fans | 26,930–48,620 | 8,079–19,448 |
+| Carpenter: partition door, jamb, hardware; living room counter, slat screen, TV wall, console | 62,350–111,800 | 18,705–44,720 |
+| Equipment and installed items: quiet auto-stop pump, rooftop window aircon, curtains with track | 38,632–63,632 | included (ask for install in the price) |
 
 | Status | # | Step | Who | Done when |
 |---|---|---|---|---|
