@@ -4,7 +4,7 @@ status: Planned
 cost: "₱39k–64k with labour"
 price_source: online
 updated: 22 Nov 2026
-summary: "The next two rooftop jobs after the steel stair (due about 28 Nov): the door opening at the stair's left turn, then the outside steel cladding on the back firewall and the left side wall. Materials list with quantities and costs, labour at 30–40% of materials. Sizes come from the 3D model until the rooftop is measured."
+summary: "The next two rooftop jobs after the steel stair (due about 28 Nov): the door opening at the stair's left turn, then the outside steel cladding on the back firewall and the left side wall. Drawings with measurements, materials list with quantities and costs, labour at 30–40% of materials. Sizes come from the 3D model until the rooftop is measured."
 ---
 
 All prices are online estimates (Nov 2026). Get local prices before buying and change the tag to Local when you have a receipt. Measure on site first: the quantities here use the 3D model's sizes.
@@ -13,11 +13,21 @@ All prices are online estimates (Nov 2026). Get local prices before buying and c
 
 1. **Door opening at the stair's left turn.** At the top of the steel stair you turn left off the annex landing into the rooftop room. The door (80 × 210 cm, opens inward) is near the firewall end. This job breaks a **rough opening about 90 cm wide** through the existing 1 m half wall between the annex landing and the rooftop deck, down to deck level, and squares and plasters the cut edges. The welder's short door steps (2 risers of about 18.5 cm and a platform) then fit into it.
 2. **Outside cladding, back and left side.** The first part of the rooftop room walls: steel frame on top of the existing 1 m concrete parapets up to the roof, breathable wrap, container-van style steel outside, flashing caps and trims.
-   - **Back (firewall):** full width, from the annex's outer side to the left corner, about 6.2 m × 1.75 m.
-   - **Left side:** from the firewall to the street-facing (front) wall of the rooftop room, about 6.0 m, 1.75 m high at the back down to about 1.45 m at the front (it follows the roof slope).
+   - **Back (firewall):** full width, from the annex's outer side to the left corner, about 6.2 m × 1.72 m.
+   - **Left side:** from the firewall to the street-facing (front) wall of the rooftop room, about 6.0 m, 1.72 m high at the back down to about 1.42 m at the front (it follows the roof slope).
    - About **21 m² in all**. Insulation and the Hardiflex inside come later with the partition supplier, as planned.
 
 **Order:** cut the opening right after the main stair welding, **before** the door steps and the final paint, so chipping dust doesn't land on fresh paint and the welder fits the steps to the finished opening. Cover the stair with a tarp while chipping. Then the cladding.
+
+## Drawings
+
+All sizes in cm, taken from the 3D model (≈). Measure on site before cutting or ordering steel.
+
+![Rooftop door opening: elevation from the annex landing and plan](img/rooftop-door-opening.png)
+
+![Back wall (firewall) outer cladding with measurements](img/rooftop-back-wall.png)
+
+![Left side wall outer cladding with measurements](img/rooftop-left-wall.png)
 
 ## Job 1: door opening materials
 
@@ -76,7 +86,7 @@ This was already in the demolition contract (₱2,000–4,000); it has only move
 ## Check with the engineer
 
 - **Door opening:** is the half wall reinforced or tied into a column or the annex slab? If rebar is cut, how should the jambs be finished (dowels or a small stiffener each side)? The wall also borders the neighbour's annex, so tell them before it's cut.
-- **Cladding (gate G2 on the build sequence):** anchors into the old parapets (can they hold a 1.75 m wall above them in typhoon wind?), the top fixing at the roof purlins that lets the roof move, and the screw spacing for the steel.
+- **Cladding (gate G2 on the build sequence):** anchors into the old parapets (can they hold a 1.72 m wall above them in typhoon wind?), the top fixing at the roof purlins that lets the roof move, and the screw spacing for the steel.
 
 ## To measure before buying
 
