@@ -3,7 +3,7 @@ title: Build sequence
 status: Building
 cost: "≈ ₱1.17M–1.86M with labour"
 price_source: mixed
-updated: 20 Nov 2026
+updated: 22 Nov 2026
 summary: The order of the whole renovation, from the steel stair to the last fixture, with the induction cooktop added after fit-out. Each step says who does it and when it counts as done, so after every finished step you know exactly what comes next. This is the master plan; the room and system pages hold the details.
 ---
 
@@ -11,8 +11,8 @@ summary: The order of the whole renovation, from the steel stair to the last fix
 
 | | Step | What to do now |
 |---|---|---|
-| 👉 **Now** | **1.1 Engineer walk-through and the welder** | Show the engineer the [welding details](../stairs/weld-details.html) and the remaining demolition jobs: door opening header, terrace lintel and props (the slab cut is already approved ✅). Confirm the welder's days and tools. |
-| ⏭ **Next up** | 1.2 Quote the demolition contract | One lump sum for the slab cut, rooftop door opening, terrace counter and terrace wall (with lintel), debris haul included. |
+| 👉 **Now** | **1.6 The welder is building the stair** | Due about **28 Nov**. Check each riser (19.2 cm) and the headroom as it goes up. |
+| ⏭ **Next up** | 1.6a Rooftop door opening, then 2.6 back and left wall cladding | Cut the door opening at the stair's left turn before the door steps and final paint, then clad the back firewall and the left side wall. Materials and costs: [door opening and cladding](rooftop-opening-cladding.html), ₱39k–64k with labour (Online). |
 | 📏 **Do anytime now** | Open items below | Rooftop measurements, local quotes, electrician's check. They unlock Phases 2 to 4. |
 
 **How to update this page:** when a step is finished, change its ⬜ or 👉 to ✅, put 👉 on the next step, and copy that step into the "You are here" table. Each step's **Done when** column is the test: if every part of it is true, move on.
@@ -93,7 +93,7 @@ Do not start the step after a 🔒 gate until the check is done and written down
 | In the contract | Visit | Why it fits here |
 |---|---|---|
 | Stair headroom: cut back the slab edge over step 3 by about 20 cm (engineer approved ✅) and re-form the new edge | 1 | Best before the stair is welded (no debris on the new stair); also the noisiest, dustiest job, best done once |
-| Rooftop room: hammer the door opening in the existing half wall on the door side | 1 | Same crew and tools; opens the route for the rooftop work |
+| Rooftop room: break the door opening (about 90 cm) at the stair's left turn, in the existing half wall between the annex landing and the deck | After the stair (step 1.6a) | Moved 22 Nov: done right after the main stair welding, before the door steps and final paint |
 | Terrace: break out the concrete counter, cap anything that fed it | 1 | Small job, same debris haul |
 | Terrace to living room wall: prop, cast the new beam or lintel | 1 | The lintel must be in and cured **before** the wall under it is removed |
 | Terrace to living room wall: open it taller and wider for the 4.30 × 2.4 m slider, cover it temporarily | 2 (about 7 days later) | Only after the lintel has cured and the engineer says the props can carry it |
@@ -107,12 +107,13 @@ Do not start the step after a 🔒 gate until the check is done and written down
 
 | Status | # | Step | Who | Done when |
 |---|---|---|---|---|
-| 👉 | 1.1 | Engineer walk-through (gate G1), and confirm the welder's scope, days and tools | Rowil, engineer, welder | Engineer has signed off the stair welding details and written the door opening header, the terrace lintel size and the propping order. Welder start date agreed. |
+| ✅ | 1.1 | Engineer walk-through (gate G1), and confirm the welder's scope, days and tools | Rowil, engineer, welder | Engineer has signed off the stair welding details and written the door opening header, the terrace lintel size and the propping order. Welder start date agreed. |
 | ⬜ | 1.2 | Get the demolition contract quoted as one lump sum, with the job list above, touch-up and finishing of every cut, debris haul and clean-up included | Rowil | Two quotes in; one crew chosen; price tagged Local. Open below the Online guess. |
 | ⬜ | 1.3 | Buy the last stair items: angle bar, ½″ and ⅜″ anchors, extra rods, flap disc; check the ceiling stains and the beam to column crack | Rowil | Everything on the stair "still to buy" list is on site except the paint and vinyl; leak cause known (or ruled out). |
-| ⬜ | 1.4 | **Demolition visit 1:** slab cut and new edge, rooftop door opening, terrace counter, prop and cast the terrace lintel, marked core holes | Demolition crew | Slab edge cut to the engineer's approved size and re-formed; door opening and counter done and their edges plastered and squared; floor patched where the counter stood; lintel cast with props in; debris hauled. |
+| ⬜ | 1.4 | **Demolition visit 1:** slab cut and new edge, terrace counter, prop and cast the terrace lintel, marked core holes | Demolition crew | Slab edge cut to the engineer's approved size and re-formed; counter done and their edges plastered and squared; floor patched where the counter stood; lintel cast with props in; debris hauled. |
 | ⬜ | 1.5 | Pay the welder's 30% (₱2,550, if the new welder keeps the 30/70 split) once visit 1 is cleaned up | Rowil | Stair room clear of debris, new slab edge finished; 30% paid; receipt kept. |
-| ⬜ | 1.6 | Build the stair: stringers, treads, post, top tie at the top end of the opening, railing | Welder | All 12 treads in, left stringer bolted at 4 points, post under the right stringer, top tied to the slab edge; headroom over step 3 measured at about 200 cm. |
+| 👉 | 1.6 | Build the stair: stringers, treads, post, top tie at the top end of the opening, railing | Welder (due about 28 Nov) | All 12 treads in, left stringer bolted at 4 points, post under the right stringer, top tied to the slab edge; headroom over step 3 measured at about 200 cm. |
+| ⬜ | 1.6a | **Rooftop door opening** at the stair's left turn: cut a rough opening about 90 cm wide through the existing half wall between the annex landing and the deck, down to deck level, before the door steps (1.9) and the final paint (1.10). Cover the stair with a tarp. [Materials and cost](rooftop-opening-cladding.html#job-1-door-opening-materials) | Demolition crew | Opening square and plumb, edges plastered, bottom at deck level, ready for the 80 × 210 door and the steps; engineer happy with the jambs. |
 | ⬜ | 1.7 | **Demolition visit 2** (can overlap with 1.6): open the terrace to living room wall under the cured lintel, plaster the edges, cover it | Demolition crew | Opening at the slider size with edges plastered, square and plumb (ready for the glass supplier to measure); props out only when the engineer says so; covered against rain. |
 | ⬜ | 1.8 | Upstairs guard rails on the open edges of the (now about 20 cm longer) opening, plus a temporary barrier | Welder | Nobody can fall into the opening from the rooftop side. |
 | ⬜ | 1.9 | **Door steps at the rooftop room:** the annex landing stays at the stair's top-step level, about 37 cm below the deck. Build 2 steel risers of about 18.5 cm, a small platform at deck level in front of the door (which opens inward) and a handrail | Welder | Both risers equal (about 18.5 cm) and level; platform solid and flush with the deck; handrail firm; door swings in clear of the platform. |
@@ -123,7 +124,7 @@ Do not start the step after a 🔒 gate until the check is done and written down
 
 **Starts when:** the stair is done (1.11) and the rooftop room and terrace frontage are measured. **Unlocks:** a dry rooftop, so leaks into the 2nd floor stop before any ceiling goes up below.
 The rooftop roof and its columns are **already built**; no roof extension is needed. This phase closes the walls under the existing roof.
-🛒 **Buy lists:** [rooftop walls, half walls and T&B block courses](../rooms/rooftop-room.html#walls) · [terrace roof and frontage cladding](extra-materials.html#terrace-frontage-cladding-and-new-terrace-roof-phase-2)
+🛒 **Buy lists:** [back and left wall cladding, itemised (first)](rooftop-opening-cladding.html#job-2-back-and-left-wall-cladding-materials) · [rooftop walls, half walls and T&B block courses](../rooms/rooftop-room.html#walls) · [terrace roof and frontage cladding](extra-materials.html#terrace-frontage-cladding-and-new-terrace-roof-phase-2)
 
 **Cost (Online, from the [rooftop room page](../rooms/rooftop-room.html)):** phase budget **₱96,210–163,018** before contingency. The door opening was cut in the demolition contract (1.4). **Terrace frontage (confirmed 20 Nov):** the front is a 28 cm concrete half wall. The new jalousie sits on its front edge and runs wall to wall, replacing the old aluminium slider window. The **double wall with metal cladding** is the strip above the jalousie, up to the terrace roof. The same steel fabricator puts up the strip's frame and cladding in this phase, in the same visit as the rooftop steel, and **replaces the terrace roof** at the same time: the old sheets and the rusted framing come off, and new framing and sheets go on, matching the rooftop roof. The cladding matches the rooftop room's exterior cladding; the strip's inner face comes with the partition supplier at 5.3.
 
@@ -142,7 +143,7 @@ The rooftop roof and its columns are **already built**; no roof extension is nee
 | 🔒 | 2.3 | Engineer check (gate G2) | Engineer | Anchors, dowels, top fixing, typhoon fixings and core holes signed off. |
 | ⬜ | 2.4 | Build the new 1 m 4″ CHB half wall on the front (and on any line that has no half wall yet); patch the old parapets on the back and outer side. Set pipe sleeves and conduit into the blocks as they go up | Mason (plumber and electrician on call) | Half walls up and plastered; every sleeve and conduit stub in place and capped. |
 | ⬜ | 2.5 | T&B: 3 courses of block on all four walls (the framed fibre-cement above them comes at 5.3) | Mason | Block courses up with dowels, drain and water sleeves through. |
-| ⬜ | 2.6 | Steel frame on top of the half walls up to the existing roof purlins, wrap, container-van steel outside, flashing caps, trims and opening frames | Steel fabricator | Outer skin closed except the openings; caps over every half wall top; no daylight where the walls meet the roof. |
+| ⬜ | 2.6 | **First (Rowil, 22 Nov): the back firewall and the left side wall** on the existing parapets, about 21 m², ₱35k–57k with labour ([itemised](rooftop-opening-cladding.html)); then the rest. Steel frame on top of the half walls up to the existing roof purlins, wrap, container-van steel outside, flashing caps, trims and opening frames | Steel fabricator | Outer skin closed except the openings; caps over every half wall top; no daylight where the walls meet the roof. |
 | ⬜ | 2.7 | Terrace, same visit, in a dry spell: (a) take off the old roof sheets and rusted framing; put up new primed and painted framing and new roof sheets matching the rooftop roof, with insulation, flashing at the wall and a gutter; (b) frame and clad the frontage strip above the window line to match the rooftop room's cladding, head of the future jalousie framed level | Steel fabricator | (a) New roof on, no daylight and no drips in the hose test, water runs to the gutter; (b) strip fully clad, no water behind it, jalousie head level and straight wall to wall. |
 | ⬜ | 2.8 | Close the slider, window, aircon and door openings temporarily (plywood or tarp) | Steel fabricator or Rowil | Openings sealed against rain until glass and doors go in at 5.5. |
 | ⬜ | 2.9 | Water test: hose the rooftop walls, the terrace frontage cladding and the joints where the walls meet the roof | Rowil | No water inside after a hard hose-down (and after the next heavy rain). |

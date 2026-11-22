@@ -1,7 +1,7 @@
 # Navarro House renovation
 
 Plans, costs and progress for our house renovation. Prices are in Philippine pesos (₱).
-Last updated: 20 November 2026.
+Last updated: 22 November 2026.
 
 > **For family:** open the website **https://tatayotter.github.io/navarro-house/** and tap any link.
 > The 3D model and plans open right in your phone or computer browser.
@@ -9,7 +9,8 @@ Last updated: 20 November 2026.
 ## What's happening now
 | Part | Status |
 |---|---|
-| Build sequence | Master plan from the stair to the last fixture: 6 phases, who does each step, "done when" checks and engineer/electrician gates, labour anchor 30–40% of materials per job, about ₱1.17M–1.86M before contingency; ceilings, partitions and glass+doors each done in one go (mostly online estimates); see `house/build-sequence.md`. Now: Phase 1, step 1.1. |
+| Build sequence | Master plan from the stair to the last fixture: 6 phases, who does each step, "done when" checks and engineer/electrician gates, labour anchor 30–40% of materials per job, about ₱1.17M–1.86M before contingency; ceilings, partitions and glass+doors each done in one go (mostly online estimates); see `house/build-sequence.md`. Now: Phase 1, step 1.6 (stair being built, due about 28 Nov). |
+| Rooftop opening and cladding | Next jobs after the stair: the door opening at the stair's left turn, then the outside steel cladding on the back firewall and the left side wall; materials list, about ₱39k–64k with labour (online estimate); see `house/rooftop-opening-cladding.md`. |
 | Buy list: other items | Materials for jobs without their own plan page (demolition contract, terrace side walls, terrace frontage, ground T&B tiles, fixtures), about ₱66k–126k (online estimate); see `house/extra-materials.md`. Each build sequence phase links its buy lists. |
 | Steel stair (Phase 3) | Plan v3.5: slab edge cut back ~20 cm (engineer OK). Steel bought. New welder (₱8,500, 10 days). |
 | Front gate | Design settled (roll-up car shutter + small door). Waiting on final measurements. |
